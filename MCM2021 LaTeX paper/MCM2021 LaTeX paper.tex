@@ -175,6 +175,17 @@ hygrothermal equations:
 \frac{dw}{d\phi}\cdot\frac{\partial \phi}{\partial t}=\nabla\cdot(D_{\phi}\nabla\phi+\delta_{p}\nabla\(\phi p_{sat}))
 \end{equation}
 
+Chapter 15 Mathematical Modeling of Fungal Growth
+
+\begin{equation}
+\frac{\delta\rho}{\delta t}=nv-d(\rho)
+\end{equation}
+
+\begin{equation}
+\frac{\delta n}{\delta t}=\frac{\delta nv}{\delta x}+\sigma(\rho, n)
+\end{equation}
+
+
 Where $P$ represents the total medpacks delivered, $\sum{t}$ is an estimate of the time for all the flights to occur, and $S$ represents the space left after packing all the drones (computed via the packing algorithm). Also, $C$ is our cost function output, the cost. The factor of $100000$ dividing $S$ is there to adjust the units of $S$ (it being on the order of $10^5$ while $\frac{P}{\sum{t}}$ is on the order of $10^0$) The time estimates are computed via the basic kinematic equation assuming constant speed, $\sum{t}=\sum{\frac{d}{v_d}}$ summed over all drone flights in the given plan. Here $d$ is distance traveled in a specified flight and $v_d$ is the max speed of the drone flying. This estimate of the time taken for a flight is assuming the drone is flying at max speed the whole way, and assuming equality of the time taken to fly to the hospital, and the time to fly back. The assumption of perfectly sequential ordering of the flights allows us to sum the times of individual flights to get the total time.
 
 \section{Results and Analysis}
