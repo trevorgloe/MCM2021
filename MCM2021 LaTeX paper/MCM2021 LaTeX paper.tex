@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MCM/ICM LaTeX Template %%
+%% 2021 MCM/ICM           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{left=1in,right=0.75in,top=1in,bottom=1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Replace ABCDEF in the next line with your chosen problem
+% and replace 1111111 with your Team Control Number
+\newcommand{\Problem}{MCM Problem A}
+\newcommand{\Team}{2125756}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{newtxtext}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{newtxmath} % must come after amsXXX
+
+\usepackage[pdftex]{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{multicol}
+
+\lhead{Team \Team}
+\rhead{}
+\cfoot{}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\graphicspath{{.}}  % Place your graphic files in the same directory as your main document
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .png}
+\thispagestyle{empty}
+\vspace*{-16ex}
+\centerline{\begin{tabular}{*3{c}}
+	\parbox[t]{0.3\linewidth}{\begin{center}\textbf{Problem Chosen}\\ \Large \textcolor{red}{\Problem}\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{2021\\ MCM/ICM\\ Summary Sheet}\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{Team Control Number}\\ \Large \textcolor{red}{\Team}\end{center}}	\\
+	\hline
+\end{tabular}}
+%%%%%%%%%%% Begin Summary %%%%%%%%%%%
+% Enter your summary here replacing the (red) text
+% Replace the text from here ...
+\begin{center}
+\textcolor{red}{%
+\lipsum[1]
+}
+\end{center}
+% to here
+%%%%%%%%%%% End Summary %%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\pagestyle{fancy}
+% Uncomment the next line to generate a Table of Contents
+%\tableofcontents 
+\newpage
+\setcounter{page}{1}
+\rhead{Page \thepage\ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{multicols}{2}
+\section{Hook}
+\lipsum[1]
+
+\section{Introduction}
+\lipsum[2]
+
+\section{Model formulation}
+\lipsum[3]
+
+\subsection{Assumptions}
+
+\begin{itemize}
+	\item Scheduling
+	\begin{itemize}
+		\item[--] Only the minimum supplies required daily are delivered to delivery locations, i.e. no rotating schedules and stockpiling of supplies to avoid needing to deliver to each daily
+		\item[--] Additional time for operations is not considered: no time is needed to be spent in between flights for loading supplies or recharging the drones, and no time is needed to land and deliver supplies at delivery locations
+	\end{itemize}
+	\item Packing
+	\begin{itemize}
+		\item[--] Elements can be stacked in any configuration without structural limitations
+	\end{itemize}
+	\item Flight path routing
+	\begin{itemize}
+		\item[--] Paths are perfectly straight
+		\item[--] Every path only has either the delivery location or storage container as origin and destination
+		\item[--] Paths are modeled in two dimensions i.e. no altitude changes are considered
+		\item[--] Not considering effects of having multiple drones flying at once
+	\end{itemize}
+	\item Environmental effects
+	\begin{itemize}
+		\item[--] Influences from wind are neglected
+		\item[--] The drones are assumed to be unobstructed by terrain
+		\item[--] The drones do not experience any malfunctions
+		\item[--] The earth’s curve is neglected
+	\end{itemize}
+\end{itemize}
+
+
+\subsection{Flight Path Sub-model}
+\lipsum[3]
+
+\subsection{Packing Sub-model}
+\lipsum[4]
+
+\subsection{Storage Location Determination}
+\lipsum[5]
+\[ 
+L_n = \sum_{i=1}^{m} p_i(x_i, y_i) / \sum_{i=1}^{m} p_i 
+\]
+where $L_n$ = Location number within grouping \\
+n being number of distinct locations (1 to 3) \\
+i = hospitals in the group \\
+p = package demand of hospital i \\
+x, y = longitude, latitude of hospital i \\
+The output lists a discrete set of groupings of the hospitals with the corresponding locations of the storage containers for each hospital group. In figure 1, one potential combination of hospitals grouped to specific storage locations is shown. 
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{}
+	\caption[Fig 1]{caption 0??}
+	\label{Fig 1}
+\end{figure}
+
+
+\subsection{Cost Function}
+I've copied the ten diff eqs from Numerical Prediction Model for Fungal Growth Coupled with Hygrothermal Transfer in Building Materials here:
+\begin{equation}
+\frac{\partial{u}}{\partial{t}}=\nabla\cdot(D_u\nabla u)+\theta f(u,n)-a(u,n)u-\gamma u
+\end{equation}
+
+\begin{equation}
+\frac{\partial{v}}{\partial{t}}=\nabla\cdot(D_v\nabla v)+a(u,n)u
+\end{equation}
+
+\begin{equation}
+D_u=\sigma_{1}\cdot u\cdot n
+\end{equation}
+
+\begin{equation}
+\sigma_{1}=\sigma_{1}(1+\delta), -0.5<\delta<0.5
+\end{equation}
+
+\begin{equation}
+f(u,n)=\sigma_{2}\left(\frac{f_1 n}{1+f_2 n}\right)\cdot u \cdot \zeta(T,\phi)
+\end{equation}
+
+\begin{equation}
+\zeta(T,\phi)=a_1exp(a_2\phi^2+a_3T^2+a_4\phi*T+a_5\phi+a_6T+a_7)
+\end{equation}
+
+\begin{equation}
+a(u,n)=\sigma_{3}\cdot\frac{1}{\left(1+\frac{u}{a_1}\right)\cdot\left(1+\frac{n}{a_2}\right)}
+\end{equation}
+
+\begin{equation}
+\frac{\partial n}{\partial t}=D_n\nabla^2n-f(u,n)
+\end{equation}
+
+hygrothermal equations:
+
+\begin{equation}
+\frac{dH}{dT}\cdot\frac{\partial T}{\partial t}=\nabla\cdot(\lambda\nabla T)+h_v\nabla\cdot(\delta_{p}\nabla(\phi p_{sat}))
+\end{equation}
+
+\begin{equation}
+\frac{dw}{d\phi}\cdot\frac{\partial \phi}{\partial t}=\nabla\cdot(D_{\phi}\nabla\phi+\delta_{p}\nabla\(\phi p_{sat}))
+\end{equation}
+
+Chapter 15 Mathematical Modeling of Fungal Growth
+
+\begin{equation}
+\frac{\delta\rho}{\delta t}=nv-d(\rho)
+\end{equation}
+
+\begin{equation}
+\frac{\delta n}{\delta t}=\frac{\delta nv}{\delta x}+\sigma(\rho, n)
+\end{equation}
+
+
+Where $P$ represents the total medpacks delivered, $\sum{t}$ is an estimate of the time for all the flights to occur, and $S$ represents the space left after packing all the drones (computed via the packing algorithm). Also, $C$ is our cost function output, the cost. The factor of $100000$ dividing $S$ is there to adjust the units of $S$ (it being on the order of $10^5$ while $\frac{P}{\sum{t}}$ is on the order of $10^0$) The time estimates are computed via the basic kinematic equation assuming constant speed, $\sum{t}=\sum{\frac{d}{v_d}}$ summed over all drone flights in the given plan. Here $d$ is distance traveled in a specified flight and $v_d$ is the max speed of the drone flying. This estimate of the time taken for a flight is assuming the drone is flying at max speed the whole way, and assuming equality of the time taken to fly to the hospital, and the time to fly back. The assumption of perfectly sequential ordering of the flights allows us to sum the times of individual flights to get the total time.
+
+\section{Results and Analysis}
+% TODO: \usepackage{graphicx} required
+\begin{figure*}
+	\centering
+	\includegraphics[width=0.7\linewidth]{}
+	\caption[Fig 1.]{caption 1}
+	\label{Fig 1.}
+\end{figure*}
+
+\subsection{Model output}
+\lipsum[6]
+
+\subsection{Parameter sensitivity}
+\lipsum[7]
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includegraphics[width=1.1\linewidth]{}
+	\caption[Fig 2]{caption 2}
+	\label{Fig 3}
+\end{figure}
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\linewidth]{}
+	\caption[Fig 3]{caption 3}
+	\label{Fig 4}
+\end{figure}
+
+
+\subsection{Limitations/ Further Work}
+\lipsum[8]
+\end{multicols}
+\end{document}
