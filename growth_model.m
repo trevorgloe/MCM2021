@@ -2,13 +2,14 @@ function [c,f,s] = growth_model(x,t,u,dxdt)
 %growth_model
 %implimentation of growth model equations 
 %dp/dt = nv - d
-%dn/dt = -d(nv)/dt + sigma
+%dn/dt = -d(nv)/dx + sigma
 
 %two equations, so each c,f, and s will be a 2 element vector
 rho = u(1);
 n = u(2);
 nu = 10;
-d = 10;
+gamma = 100;
+d = 2;
 sigma = 10;
 
 c = [1; 1];
