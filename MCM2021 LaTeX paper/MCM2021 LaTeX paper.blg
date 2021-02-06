@@ -1,0 +1,15 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'MCM2021 LaTeX paper.blg'
+[29] biber-darwin:315> INFO - === Fri Feb  5, 2021, 16:45:27
+[46] Biber.pm:371> INFO - Reading 'MCM2021 LaTeX paper.bcf'
+[115] Biber.pm:889> INFO - Found 1 citekeys in bib section 0
+[124] Biber.pm:4093> INFO - Processing section 0
+[132] Biber.pm:4254> INFO - Looking for bibtex format file 'masterbib.bib' for section 0
+[135] bibtex.pm:1523> INFO - LaTeX decoding ...
+[188] bibtex.pm:1340> INFO - Found BibTeX data source 'masterbib.bib'
+[202] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[202] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[202] Biber.pm:3921> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[202] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[207] bbl.pm:636> INFO - Writing 'MCM2021 LaTeX paper.bbl' with encoding 'UTF-8'
+[207] bbl.pm:739> INFO - Output to MCM2021 LaTeX paper.bbl
