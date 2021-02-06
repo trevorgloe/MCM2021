@@ -1,0 +1,9 @@
+%model of growth of fungus
+
+%growth model is given by the equations
+%dp/dt = nv - d
+%dn/dt = -d(nv)/dt + sigma
+
+L = 100;
+x = linspace(0,L,100);
+t = [linspace(0,0.05,
