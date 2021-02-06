@@ -100,7 +100,11 @@ The slower stress tolerant fungi will have a share of enzymes that indicate thei
 The faster fungi will have a share of enzymes that indicate their fast decomposition rate, but a moisture and temperature width that indicates their lack of stress tolerance to environmental fluctuations.
 
 \section{Model formulation}
-\lipsum[3]
+Maynard et. al took data on the productive rates of 8 different enzymes (5 hydrolytic and 3 oxidative to cover the spectrum of the cellulose-degradation process) and used a standard clustering approach to determine 4 representative enzymes of the entire set: cellobiohydrolase, acid phosphatase, peroxidase and phenoloxidase. The data for production of these enzymes comes from their open-source github. 
+
+We're making the assumption that the production of each enzyme is  equivalent to the amount of the enzyme present in the fungus. We took the production data and normalized it to z-score values. Each z-score was turned into a portion of that enzyme with e_x = (z-min)/(max-min) and then we divided each portion by the sum of all enzyme portions for each enzyme (e_x)/(e_1+e_2+e_3+e_4). This gives us a representation of the proportion of each enzyme relative to other enzymes. We made the assumption thatt the total mass of those four enzymes for each fungus is the same, and the fraction of enzyme mass from total mass.
+
+We made the assumption that the enzymes are not changing over time due to C/N changes or environmental fluctuations
 
 \subsection{Assumptions}
 
