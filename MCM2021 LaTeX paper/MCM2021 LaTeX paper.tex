@@ -23,6 +23,15 @@
 \usepackage{lipsum}
 \usepackage{multicol}
 
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt]{biblatex}
+\addbibresource{masterbib.bib}
+
 \lhead{Team \Team}
 \rhead{}
 \cfoot{}
@@ -70,7 +79,7 @@
 \lipsum[1]
 
 \section{Introduction}
-\lipsum[2]
+This is a test of the introduction \cite{Edelstein1982}
 
 \section{Model formulation}
 \lipsum[3]
@@ -133,37 +142,6 @@ The output lists a discrete set of groupings of the hospitals with the correspon
 
 \subsection{Cost Function}
 I've copied the ten diff eqs from Numerical Prediction Model for Fungal Growth Coupled with Hygrothermal Transfer in Building Materials here:
-\begin{equation}
-\frac{\partial{u}}{\partial{t}}=\nabla\cdot(D_u\nabla u)+\theta f(u,n)-a(u,n)u-\gamma u
-\end{equation}
-
-\begin{equation}
-\frac{\partial{v}}{\partial{t}}=\nabla\cdot(D_v\nabla v)+a(u,n)u
-\end{equation}
-
-\begin{equation}
-D_u=\sigma_{1}\cdot u\cdot n
-\end{equation}
-
-\begin{equation}
-\sigma_{1}=\sigma_{1}(1+\delta), -0.5<\delta<0.5
-\end{equation}
-
-\begin{equation}
-f(u,n)=\sigma_{2}\left(\frac{f_1 n}{1+f_2 n}\right)\cdot u \cdot \zeta(T,\phi)
-\end{equation}
-
-\begin{equation}
-\zeta(T,\phi)=a_1exp(a_2\phi^2+a_3T^2+a_4\phi*T+a_5\phi+a_6T+a_7)
-\end{equation}
-
-\begin{equation}
-a(u,n)=\sigma_{3}\cdot\frac{1}{\left(1+\frac{u}{a_1}\right)\cdot\left(1+\frac{n}{a_2}\right)}
-\end{equation}
-
-\begin{equation}
-\frac{\partial n}{\partial t}=D_n\nabla^2n-f(u,n)
-\end{equation}
 
 hygrothermal equations:
 
@@ -172,7 +150,7 @@ hygrothermal equations:
 \end{equation}
 
 \begin{equation}
-\frac{dw}{d\phi}\cdot\frac{\partial \phi}{\partial t}=\nabla\cdot(D_{\phi}\nabla\phi+\delta_{p}\nabla\(\phi p_{sat}))
+\frac{dw}{d\phi}\cdot\frac{\partial \phi}{\partial t}=\nabla\cdot(D_{\phi}\nabla\phi+\delta_{p}\nabla(\phi p_{sat})
 \end{equation}
 
 Chapter 15 Mathematical Modeling of Fungal Growth
@@ -222,5 +200,7 @@ Where $P$ represents the total medpacks delivered, $\sum{t}$ is an estimate of t
 
 \subsection{Limitations/ Further Work}
 \lipsum[8]
+
+\printbibliography
 \end{multicols}
 \end{document}

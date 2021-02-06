@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  4 FEB 2021 18:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  5 FEB 2021 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -731,67 +731,345 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \colbreak@box=\box73
 \mc@col@check@num=\count279
 )
-\c@theorem=\count280
-\c@definition=\count281
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 36
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks29
+\inpenc@posthook=\toks30
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2019/05/04 3.31 The Babel package
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2019/05/04 3.31 Babel switching mechanism
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2019/05/04 3.31 Babel common definitions
+\babel@savecnt=\count280
+\U@D=\dimen164
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count281
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count282
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count283
+\c@listtotal=\count284
+\c@listcount=\count285
+\c@liststart=\count286
+\c@liststop=\count287
+\c@citecount=\count288
+\c@citetotal=\count289
+\c@multicitecount=\count290
+\c@multicitetotal=\count291
+\c@instcount=\count292
+\c@maxnames=\count293
+\c@minnames=\count294
+\c@maxitems=\count295
+\c@minitems=\count296
+\c@citecounter=\count297
+\c@maxcitecounter=\count298
+\c@savedcitecounter=\count299
+\c@uniquelist=\count300
+\c@uniquename=\count301
+\c@refsection=\count302
+\c@refsegment=\count303
+\c@maxextratitle=\count304
+\c@maxextratitleyear=\count305
+\c@maxextraname=\count306
+\c@maxextradate=\count307
+\c@maxextraalpha=\count308
+\c@abbrvpenalty=\count309
+\c@highnamepenalty=\count310
+\c@lownamepenalty=\count311
+\c@maxparens=\count312
+\c@parenlevel=\count313
+\blx@tempcnta=\count314
+\blx@tempcntb=\count315
+\blx@tempcntc=\count316
+\blx@maxsection=\count317
+\blx@maxsegment@0=\count318
+\blx@notetype=\count319
+\blx@parenlevel@text=\count320
+\blx@parenlevel@foot=\count321
+\blx@sectionciteorder@0=\count322
+\blx@entrysetcounter=\count323
+\labelnumberwidth=\skip66
+\labelalphawidth=\skip67
+\biblabelsep=\skip68
+\bibitemsep=\skip69
+\bibnamesep=\skip70
+\bibinitsep=\skip71
+\bibparsep=\skip72
+\bibhang=\skip73
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\c@mincomprange=\count324
+\c@maxcomprange=\count325
+\c@mincompwidth=\count326
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'alphabetic.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count327
+\c@savedafterword=\count328
+\c@annotator=\count329
+\c@savedannotator=\count330
+\c@author=\count331
+\c@savedauthor=\count332
+\c@bookauthor=\count333
+\c@savedbookauthor=\count334
+\c@commentator=\count335
+\c@savedcommentator=\count336
+\c@editor=\count337
+\c@savededitor=\count338
+\c@editora=\count339
+\c@savededitora=\count340
+\c@editorb=\count341
+\c@savededitorb=\count342
+\c@editorc=\count343
+\c@savededitorc=\count344
+\c@foreword=\count345
+\c@savedforeword=\count346
+\c@holder=\count347
+\c@savedholder=\count348
+\c@introduction=\count349
+\c@savedintroduction=\count350
+\c@namea=\count351
+\c@savednamea=\count352
+\c@nameb=\count353
+\c@savednameb=\count354
+\c@namec=\count355
+\c@savednamec=\count356
+\c@translator=\count357
+\c@savedtranslator=\count358
+\c@shortauthor=\count359
+\c@savedshortauthor=\count360
+\c@shorteditor=\count361
+\c@savedshorteditor=\count362
+\c@labelname=\count363
+\c@savedlabelname=\count364
+\c@institution=\count365
+\c@savedinstitution=\count366
+\c@lista=\count367
+\c@savedlista=\count368
+\c@listb=\count369
+\c@savedlistb=\count370
+\c@listc=\count371
+\c@savedlistc=\count372
+\c@listd=\count373
+\c@savedlistd=\count374
+\c@liste=\count375
+\c@savedliste=\count376
+\c@listf=\count377
+\c@savedlistf=\count378
+\c@location=\count379
+\c@savedlocation=\count380
+\c@organization=\count381
+\c@savedorganization=\count382
+\c@origlocation=\count383
+\c@savedoriglocation=\count384
+\c@origpublisher=\count385
+\c@savedorigpublisher=\count386
+\c@publisher=\count387
+\c@savedpublisher=\count388
+\c@language=\count389
+\c@savedlanguage=\count390
+\c@origlanguage=\count391
+\c@savedoriglanguage=\count392
+\c@pageref=\count393
+\c@savedpageref=\count394
+\shorthandwidth=\skip74
+\shortjournalwidth=\skip75
+\shortserieswidth=\skip76
+\shorttitlewidth=\skip77
+\shortauthorwidth=\skip78
+\shorteditorwidth=\skip79
+\locallabelnumberwidth=\skip80
+\locallabelalphawidth=\skip81
+\localshorthandwidth=\skip82
+\localshortjournalwidth=\skip83
+\localshortserieswidth=\skip84
+\localshorttitlewidth=\skip85
+\localshortauthorwidth=\skip86
+\localshorteditorwidth=\skip87
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+\c@textcitecount=\count395
+\c@textcitetotal=\count396
+\c@textcitemaxnames=\count397
+\c@biburlnumpenalty=\count398
+\c@biburlucpenalty=\count399
+\c@biburllcpenalty=\count400
+\c@smartand=\count401
+)
+Package biblatex Info: Trying to load bibliography style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.bbx' found.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
+File: alphabetic.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count402
+\c@bbx:relatedtotal=\count403
+))
+Package biblatex Info: Trying to load citation style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.cbx' found.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
+File: alphabetic.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+\c@theorem=\count404
+\c@definition=\count405
+LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 45
 .
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 36.
+(Font)              scaled to size 12.0pt on input line 45.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
 
+(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
+)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count406
+\@quotereset=\count407
 (./MCM2021 LaTeX paper.aux)
 \openout1 = `"MCM2021 LaTeX paper.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 36.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 36
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 45.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 45
 .
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 36.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 36.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 45.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 45.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 36.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 45.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 36.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 36
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 45.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 45
 .
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 36.
-LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 3
-6.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 45.
+LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 4
+5.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    ... okay on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -827,53 +1105,30 @@ LaTeX Font Info:    ... okay on input line 36.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count282
-\c@mv@boldtabular=\count283
+\c@mv@tabular=\count408
+\c@mv@boldtabular=\count409
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
-\scratchdimen=\dimen164
+\scratchcounter=\count410
+\scratchdimen=\dimen165
 \scratchbox=\box74
-\nofMPsegments=\count285
-\nofMParguments=\count286
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count287
-\MPscratchDim=\dimen165
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
-\everyMPtoPDFconversion=\toks30
+\nofMPsegments=\count411
+\nofMParguments=\count412
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count413
+\MPscratchDim=\dimen166
+\MPnumerator=\count414
+\makeMPintoPDFobject=\count415
+\everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-)))
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
@@ -885,73 +1140,86 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 4
-6.
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `"MCM2021 LaTeX paper.bcf"'.
 
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file '"MCM2021 LaTeX paper".bbl' not found.
+
+No file "MCM2021 LaTeX paper".bbl.
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 5
+5.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 46.
+(Font)              scaled to size 12.0pt on input line 55.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 46.
+(Font)              scaled to size 8.8pt on input line 55.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 46.
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
+(Font)              scaled to size 6.6pt on input line 55.
+LaTeX Font Info:    Try loading font information for U+msa on input line 55.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
+LaTeX Font Info:    Try loading font information for U+msb on input line 55.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 46.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 55.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 46.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 55.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 46.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 55.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <12> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 55.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 46.
+(Font)              scaled to size 12.0pt on input line 55.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 46.
+(Font)              scaled to size 17.28pt on input line 55.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 69.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 69.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 78.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 78.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 78.
-LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 8
-1.
+(Font)              scaled to size 17.28pt on input line 78.
 
+
+LaTeX Warning: Citation 'Edelstein1982' on page 1 undefined on input line 82.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 87.
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 87.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 87.
+LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 9
+0.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 81.
+(Font)              scaled to size 12.0pt on input line 90.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -969,7 +1237,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 	\includegraphics[width=0.7\linewidth]{}
+l.137 	\includegraphics[width=0.7\linewidth]{}
                                               
 I could not locate the file with any of these extensions:
 .pdf,.jpg,.tif,.png
@@ -983,39 +1251,16 @@ environment!.
 
 Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
 environment!.
-
-
-Overfull \hbox (9.44296pt too wide) detected at line 158
-\OML/ntxmi/m/it/12 ^^P\LMS/ntxsy/m/n/12 ¹\OML/ntxmi/m/it/12 T; ^^^\LMS/ntxsy/m/
-n/12 º \U/ntxmia/m/it/12 = \OML/ntxmi/m/it/12 a[]exp\LMS/ntxsy/m/n/12 ¹\OML/ntx
-mi/m/it/12 a[]^^^[] \U/ntxmia/m/it/12 ý \OML/ntxmi/m/it/12 a[]T[] \U/ntxmia/m/i
-t/12 ý \OML/ntxmi/m/it/12 a[]^^^ \LMS/ntxsy/m/n/12 ^^C \OML/ntxmi/m/it/12 T \U/
-ntxmia/m/it/12 ý \OML/ntxmi/m/it/12 a[]^^^ \U/ntxmia/m/it/12 ý \OML/ntxmi/m/it/
-12 a[]T \U/ntxmia/m/it/12 ý \OML/ntxmi/m/it/12 a[]\LMS/ntxsy/m/n/12 º
- []
 
 [2]
 
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.175 ...dot(D_{\phi}\nabla\phi+\delta_{p}\nabla\(
-                                                  \phi p_{sat}))
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 ! LaTeX Error: File `' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.195 	\includegraphics[width=0.7\linewidth]{}
+l.173 	\includegraphics[width=0.7\linewidth]{}
                                               
 I could not locate the file with any of these extensions:
 .pdf,.jpg,.tif,.png
@@ -1029,7 +1274,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.209 	\includegraphics[width=1.1\linewidth]{}
+l.187 	\includegraphics[width=1.1\linewidth]{}
                                               
 I could not locate the file with any of these extensions:
 .pdf,.jpg,.tif,.png
@@ -1051,7 +1296,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.217 	\includegraphics[width=0.9\linewidth]{}
+l.195 	\includegraphics[width=0.9\linewidth]{}
                                               
 I could not locate the file with any of these extensions:
 .pdf,.jpg,.tif,.png
@@ -1066,29 +1311,43 @@ environment!.
 Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
 environment!.
 
-[3] [4] (./MCM2021 LaTeX paper.aux) ) 
+
+LaTeX Warning: Empty bibliography on input line 204.
+
+[3] [4] (./MCM2021 LaTeX paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                "MCM2021 LaTeX paper"
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to '"MCM2021 LaTeX paper".run.xml'.
+\openout1 = `"MCM2021 LaTeX paper.run.xml"'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 15902 strings out of 492616
- 274896 string characters out of 6129482
- 573359 words of memory out of 5000000
- 19617 multiletter control sequences out of 15000+600000
+ 22736 strings out of 492616
+ 402934 string characters out of 6129482
+ 900004 words of memory out of 5000000
+ 26382 multiletter control sequences out of 15000+600000
  577877 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,63p,1052b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/
-enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/d
-vips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q
--ts1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.e
-nc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/newtx/rntxmi7.pfb></usr/local/texlive/20
-19/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/tex
-mf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist
-/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
-ype1/public/newtx/txsys.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw
-/times/utmri8a.pfb>
-Output written on "MCM2021 LaTeX paper.pdf" (5 pages, 104017 bytes).
+ 40i,11n,63p,1052b,1594s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
+sr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texliv
+e/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2019/t
+exmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/2019/texmf-d
+ist/fonts/type1/public/tex-gyre/qtmb.pfb></usr/local/texlive/2019/texmf-dist/fo
+nts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
+pe1/public/newtx/rntxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
+lic/newtx/rntxmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/tx
+fonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/
+rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/newtx/txexs.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "MCM2021 LaTeX paper.pdf" (5 pages, 100399 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
