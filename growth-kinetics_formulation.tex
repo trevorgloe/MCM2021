@@ -1,0 +1,58 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\usepackage{amssymb}
+\usepackage{mathpazo}
+\usepackage{enumitem}
+\usepackage{amsthm}
+
+\title{MCM2021}
+
+
+\usepackage[margin=2cm]{geometry}
+
+\begin{document}
+\maketitle
+
+\section*{Growth model}
+Fungal growth models typically focus on the increase in overall biomass due to hyphal extension. As described by [Edelstein 1982], the growth of hyphae over time depends on the spacial density of hypae tips (from which hyphae can extend and grow), the tip extension rate and the hyphal death rate. The tips are created by various forms of branching. This model is summed up by the following equations:
+
+\begin{equation} \label {eq}
+    \frac{\partial \rho}{\partial t} = n\nu - d
+\end{equation}
+\begin{equation} \label {eq}
+    \frac{\partial n}{\partial t} = -\frac{\partial n\nu}{\partial x} + \sigma
+\end{equation}
+These equations form a basis for many other models, typically expanding on the effects of nutrient concentrations in the decomposing substrate. The largest assumption made by this model that we will differ from is the assumption that the mycellium grows over an unlimited nutrient supply. Both [Edelstein 1983 Growth and Metabolism in Mycelial Fungi] and [Davidson and Park, 1997] expanded on this model to include interactions with an external substrate by considering concentrations of nutrients both inside and outside the fungi. 
+\\ Another note-worthy growth model is described in [Du, Tran, Perre 2019]. This more recent model describes the growth of the fungus as a 3-dimensional reaction-diffusion equation based on microscopic growth mechanisms, also in terms of the tip density, tip extension rate, hyphal branching, and hyphal elimination rates. However this model also has an added term, the proportion of active tips. In all models, the terms for $\nu$, $\sigma$ are taken to be constants given from experimental data. As noted in [Edelstein 1982], these parameters are seen to depend on nutrient availability and environmental factors in practice. In the review of various fungal growth models described in [Bayesian model selection framework for identifying growth patterns in filamentous fungi, 2016], a specific method of modeling branching and hyphal death was found to match experimental observations in the widest variety of settings. Based on these results we will choose to implement the following relationships, comprising dichotomous branching, tip-hypha anastomosis, and hyphal death (or YHD). 
+\begin{equation} \label {eq}
+    \sigma = \alpha_{1}*n - \mu n \rho
+\end{equation}
+
+\begin{equation} \label {eq}
+    d = \gamma_{1}\rho
+\end{equation}
+To 
+Based on various studies (ADD CITATIONS), we have found a clear dependence of the tip elongation rate, $\nu$ on environmental conditions. For the purpose of this model, we will  define a relationship between 
+
+
+\section*{Decomposition kinetics}
+As is described in [Moore and Classen, 2015] [Edelstein 1983 Growth and Metabolism in Mycelial Fungi] [Moorhead and Sinsabaugh, 2006] [Parnas 1974] [Schimel and Weintraub 2003], the decomposition of a certain substance under the influence of a microbial decomposer is a function of the current concentration of the said substance by the Michaelis–Menton equation. In [Schimel and Weintraub 2003] and [Moorhead and Sinsabaugh, 2006], the maximum rate of this decomposition is proportional to the concentration of enzymes acting on it. Here, we make the assumption that the enzyme concentration is proportional to the concentration of biomass (fungi in our case) in our system. We will thus describe the decompostion of carbon in the substrate by the following equation.
+\begin{equation} \label{eq}
+    \frac{dC}{dt} = \frac{KBC}{K_{e}+C}
+\end{equation}
+The constant $K=rS_{M}S_{T}$ is taken to be the proportion of a specific enzyme to the total biomass of a specific species of fungi multiplied by two environmental limiting factors, as recommend in [Schimel and Weintraub 2003]. These limited factors are used by [Moorhead and Reynold 1990] to multiply the rates of carbon uptake from microorganism, although the model used a slightly simpler first order, linear equation. Here we use it in a similar way in limiting our maximum decay rate. The factors, $S_{M}$ and $S_{T}$ are computed by the following equations
+\begin{equation} \label{eq}
+    S_{M}=\alpha_{2} - \lambda \log_{10}(-\psi)
+\end{equation}
+\begin{equation} \label {eq}
+    S_{T} = XXXXX
+\end{equation}
+
+
+
+
+\end{document}
