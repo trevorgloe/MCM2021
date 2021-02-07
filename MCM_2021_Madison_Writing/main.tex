@@ -1,13 +1,18 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
-\title{mcm 2021}
+\title{MCM 2021 (Madison's Workspace/ Writing)}
 \author{}
-\date{February 2021}
+\date{}
 
 \usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{footnote}
+\usepackage{geometry}
+ \geometry{
+ left=1in
+ right=0.75in
+ }
 
 \begin{document}
 % To-do:
@@ -19,7 +24,7 @@
 % -complementary decomposition as a form of interaction
 % -advantages and disadvantages of general niches
 % -short vs long term fluctuations
-%     -soil hystersis and subtle effect --> shift soil profile long term
+%    -soil hystersis and subtle effect --> shift soil profile long term
 %     -short term soil profile not impacted, but temp and moisture content of ground
 % -environmental model pro con
 %     -3 comp: temp, water+soil comp-> water potential
@@ -28,6 +33,10 @@
 %     -generalizes ground as soil -> neglects roots
 %     -neglects unusual water storage, such as tundra
 %     -low resolution
+
+More updated to-do:
+- come up with environmental test cases (spreadsheet)
+
 \maketitle
 
 \section{Environmental Impacts}
@@ -41,7 +50,7 @@ This brings us to the issue of determining $\nu$ based on environmental factors.
 
 When considering a sampling of decomposition rates in various environment types, we must determine how to estimate temperate and water potentials that ground fungi would experience. In the case of determining $\nu$, this requires finding projected temperature and water potential.
 
-Amongst existing biome classification models, Whitaker's scheme \cite{whittaker1970} is perhaps the simplest, being particularly trait-based. Whitaker's scheme provides a layout of biomes based on mean annual temperature and mean annual precipitation. However, modern classification of biomes has drifted away from using these traits as definitive biome identifiers \cite{mucina2018}. These traits alone do not define all features of concern to fungal growth, such as soil composition for example. Thus, we can use a combination of Whitaker's scheme and additional profiling of the scheme to examine the advantages and disadvantages of different species in different environments. We will sample within the temperature range of Whitaker's scheme: $-15^{\circ}$ to $30^{\circ}$ C of mean annual temperature.
+Amongst existing biome classification models, Whitaker's scheme \cite{Whittaker1970} is perhaps the simplest, being particularly trait-based. Whitaker's scheme provides a layout of biomes based on mean annual temperature and mean annual precipitation. However, modern classification of biomes has drifted away from using these traits as definitive biome identifiers \cite{Mucina2018}. These traits alone do not define all features of concern to fungal growth, such as soil composition for example. Thus, we can use a combination of Whitaker's scheme and additional profiling of the scheme to examine the advantages and disadvantages of different species in different environments. We will sample within the temperature range of Whitaker's scheme: $-15^{\circ}$ to $30^{\circ}$ C of mean annual temperature.
 
  Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Ranges for moisture potential of these environments have been found experimentally from a variety of studies is shown in the following table. Note that these potentials are for various seasons, as we are aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions.
 
@@ -69,7 +78,7 @@ Amongst existing biome classification models, Whitaker's scheme \cite{whittaker1
 
 Given these estimates, we can have a probable example combination of temperature and moisture potential in various environments. Note that these are not wholly representative configurations, but rather examples to provide insight into how fungal species with specific traits may respond in discrete and distinct conditions likely to exist. 
 
-We can then find $\nu$ using experimental data from Maynard et al 2019. ****
+We can then find $\nu$ using experimental data from Maynard et al 2019. **** (talk about continuous data technique thingy in the extra methods info sheet)
 
 \subsection{Other Responses to Temperature and Water Potential}
 
@@ -127,23 +136,52 @@ Thus, we will use the two aforementioned schemes to provide us with a more focus
 
 Evidence has pointed towards the development of niches in fungal communities; in particular, niches for slow growing but more resilient species of fungi vs quicker-growing but more sensitive material \cite{GUIDE ONE****}. In addition, there are specialized lignin-consuming and slow growing strains \cite{Moorhead2006}. 
 
+\newpage
 \section{Model Parameters}
 
 Here are the model parameters for the coupled decomposition and growth model for Armillaria gallica located at 30.465247 degrees latitude and -89.040298 degree longitude secreting cellobiohydrolase (Cel7A) to decompose hardwood holocellulose \cite{Maynard2019} \cite{Kari2014}:
 
+\begin{savenotes}
+\begin{table}[ht]
 \begin{center}
  \begin{tabular}{|c c c c c|} 
  \hline
- Parameter & Symbol & Units & Value & Source \\
+ Parameter & Symbol & Value & Units & Source and Specification \\
  \hline\hline
- Half-Saturation Constant (Michaelis Constant) & $K_e$ & $\frac{g_{enzyme}}{L_{litter}} $ & 7 & \cite{Kari2014} Specific to Cel 7A in **** \\ 
+ Half-Saturation constant \footnote{Also called Michaelis Constant.} & $K_e$ & 7 & $\frac{g_{enzyme}}{L_{litter}} $ & \cite{Kari2014} Enzyme \\ 
  \hline
- Holocellulose carbon \footnote{We assume that all carbon compounds excluding lignin are holocellulose} & $LCI$ & $\frac{g}{??} $ & -.709 & \cite{Kari2014} \\ [1ex] 
+ Holocellulose carbon \footnote{We assume that all carbon compounds excluding lignin are holocellulose.} & $1-LCI \footnote{Where LCI is the lignocellulose index.}$  & 0.709 & N/A & \cite{Segato2014} \\ %comfirm unitless
+ \hline
+ Hyphal tip elongation rate& $\nu$& 0.250 & $\frac{mm}{day}$ & \cite{Maynard2019} Species, $\psi$, T\\
+ \hline
+ Temperature & T & 25 & $^{\circ}C$ &\cite{\Maynard2019} Specie's habitat\\
+ \hline
+ Water potential & $\psi$ & -0.5 & MPa &\cite{\Maynard2019}\\
+ \hline
+ Enzyme biomass ratio \footnote{Proportion of specific enzyme biomass to total enzyme biomass.} & r & 0.437 & $\frac{g}{g}$ &\cite{Maynard2019} Species\\
+ \hline
+ Hyphal death rate& $\gamma_1$ & 0.15 & $day^{-1}$ &\cite{Schnepf2008}\\
+ \hline
+ Anastomosis coefficent & $\mu$ & 0.3 & $\frac{mm}{day}$ &\cite{Lyn2016}\\ % Trevor sussed on units
+ \hline
+ Branching rate & $\alpha_1$ & 1.2372 & $day^{-1}$ &\cite{Du2019}\\
+ \hline
+ Intercept of $S_M$ function \footnote{The intercept of soil moisture effect on decay rate.}& $\alpha_2$ & 0.311 & N/A &\cite{Moorhead1991}\\
+ \hline
+ Slope of $S_M$ function & $\lambda$ & 0.345 & $N/A$ &\cite{Moorhead1991}\\ % units? might be MPa^{-1}, but comes out of log?
+ \hline
+ Soil moisture coefficient & $S_M$ & 0.4149 & N/A &\cite{Moorhead1991} $\psi$\\ % mention equation later in paper
+ \hline
+ Soil temperature coefficient & $S_T$ & 1 & N/A &\cite{Moorhead1991} T\\
+ \hline
+ Rate constant \footnote{Proportionality constant between maximum rate of decomposition and enzyme biomass.} & G & 10 & $g*mm^{-1}*day{-1}$ &\cite{Lustenhouwer2020}\footnote{Emprically derived.}\\  %value TBD, empirically derived, Trevor will justify
  \hline
 \end{tabular}
 \end{center}
+\end{table}
+\end{savenotes}
 
-
+\newpage
 \bibliographystyle{plain}
 \bibliography{references}
 \end{document}
