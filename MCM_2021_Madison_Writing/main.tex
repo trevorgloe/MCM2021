@@ -40,15 +40,17 @@
 
 
 % More updated to-do: ****
-% - come up with environmental test cases (spreadsheet)
-% - figure out how we will sample beyond discrete sampling
-% - RAINFOREST
 % - write about how they made the data resolution good enough to find nu
-% - talk about the other stuff impacted by temperature
+% - analysis
+%     - moisture tolerance
+% - make sure biomes are adequately described
 
 \maketitle
 
 \section{Environmental Impacts}
+
+\subsection{Environment and Moisture Tolerance}
+Moisture tolerance, as the difference between competitive ranking and moisture niche width for a given fungus, takes into account the response of specific fungi to its environment. Since it is more of an established response trait rather than a dynamic response, value will not be varied based on environmental conditions, but rather used for analysis of the interactions between species.
 
 \subsection{Environmental Influence on Hyphal Tip Extension ($\nu$)}
 Environmental impacts are introduced to the decomposition model through $\nu$, the hyphal tip elongation rate. This elongation occurs at tip of the hyphae via vesicles known as Spitzenkorper, but the mechanism of this extension remains unknown \cite{Steinberg2007}. As described in Gervais et al. 1999, "cell turgor pressure corresponds to an overpressure which allows the cell morphology, elongation, division and hence the biomass evolution" \cite{Gervais1999}. In fungi, cell turgor itself is respondent to water potential gradients rather than to active transport within the cell, making it very environmentally dependent \cite{Gervais1999}. Thus, we have reason to examine environmental impacts on fungal decomposition rates by varying $\nu$ outside of baselines for given species in set locations.
@@ -87,55 +89,29 @@ The following are the specific environments selected to represent various biomes
 \end{table}
 \end{savenotes}
 
-The following are the average annual temperatures of these biomes. Note that if ranges were given, the average of the maximum and minimum is the selected value.
+Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Ranges for moisture potential of these environments have been found experimentally from a variety of studies is shown in the following table. Note that single water potentials and temperatures are selected for sampling, as we are aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions. The following are the selected values of average annual temperatures and water potential for these biomes. If ranges are given, the average of the ranges or seasonal values is the selected value. For full ranges and data sources, see appendix TABLE ???.
 
+%% ACTUAL TABLE
 \begin{table}[H]
 \begin{center}
  \begin{tabular}{|c c c|} 
  \hline
- Biome/ Environment & Regional Average Annual Temperature [$^{\circ}C$] & Selected Value [$^{\circ}C$]\\ [0.5ex] 
+ Biome/ Environment & Temperature [$^{\circ}C$] & Water Potential [MPA]\\ [0.5ex] 
  \hline\hline
- Dessert (Arid) & 10 to 20 \cite{Davey2007} & 15 \\ 
+ Dessert (Arid) & 15 & -4.5 \\ 
  \hline
- Grasslands/shrublands (Semi-Arid) & 15.3 \cite{Pelaez1992} & 15.3 \\
+ Grasslands/shrublands (Semi-Arid) &15.3 & -3.2\\
  \hline
- Temperate Forest & -1.42 to 26.39 \cite{Zaz2018} & 12.49 \\
+ Temperate Forest & 12.49 & -1.09 \\
  \hline
- Boreal Forest (Arboreal)& -1.42 to 26.39 \cite{Zaz2018} & 12.49 \\
+ Boreal Forest (Arboreal)& 12.49 &  -1.51 \\
  \hline
- Tropical Rain Forest & 23 to 32 \cite{Paton2020} &27.5 \\
+ Tropical Rain Forest & 27.5 & -0.79 \\
  \hline
 \end{tabular}
 \end{center}
 \end{table}
 
- Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Ranges for moisture potential of these environments have been found experimentally from a variety of studies is shown in the following table. Note that single water potentials are selected for sampling, as we are aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions. These values are the average of the ranges or seasonal values given.
-
-%NEED TO EDIT TABLE WITH FOOTNOTES TO FIT (put spec envs?)
-%For himalayas, consider putting all values as footnotes
-\begin{savenotes}
-\begin{table}[ht]
-\begin{center}
- \begin{tabular}{|c c c|} 
- \hline
- Biome/ Environment & Water Potential Range [MPa] & Selected Value [MPa] \\ [0.5ex] 
- \hline\hline
- Dessert (Arid) & -4.0 to -5.0 MPa \cite{Nilsen1983} & -4.5 MPa \\ 
- \hline
- Grasslands/shrublands (Semi-Arid) & -1.4 to -5.0 \footnote{Measurements taken November through January at 100 cm soil depth.} \cite{Pelaez 1994} & -3.2 MPa\\
- \hline
- Temperate Forest & -0.44 (Fall), -1.19 (Winter), -0.58 (Spring), & -1.09 MPa\\
- &-1.42 (Early Summer), -1.81 (Summer) \cite{Zobel2001}&\\
- \hline
- Boreal Forest (Arboreal) & -0.83 (Fall), -1.20 (Winter), -0.55 (Spring),& -1.51 MPa\\
- &-1.61 (Early Summer), -3.36 (Summer) \cite{Zobel2001} &\\
- \hline
- Tropical Rain Forest & −1.57 MPa to 0.00 MPa  \cite{Kupers2018} & -0.79 \\ 
- \hline
-\end{tabular}
-\end{center}
-\end{table}
-\end{savenotes}
 
 Given these estimates, we can have a probable example combination of temperature and moisture potential in various environments. Note that these are not wholly representative configurations, but rather examples to provide insight into how fungal species with specific traits may respond in discrete and distinct conditions likely to exist. 
 
@@ -148,7 +124,7 @@ Our growth model takes into account temperature (T) and water potential ($\psi$)
 \begin{equation}
 \log_{10}(S_T) = \frac{T-25}{10}\log_{10}(Q)
 \end{equation}
-Although this equation does not take into account specific fungal response to temperature change, more recent evidence supports that this relationship is not direct, with most of the direct impact coming from moisture \cite{Petraglia2018}. As the ratio of rates of decomposition given a temperature change however, Q will represent the effective output of various mechanisms influenced by temperature rather than focusing on specific mechanisms.
+Although this equation does not take into account specific fungal response to temperature change, more recent evidence supports that this relationship is not direct, with most of the direct impact coming from moisture \cite{Petraglia2018}. As the ratio of rates of decomposition given a temperature change, Q as a parameter should represent the effective output of various mechanisms influenced by temperature rather than focusing on specific mechanisms. However, for the sake of simplicity, Q has been set standard constant to a value of 2.5 \cite{Moorhead1991}.
 
 Water potential also relates to a constant, $S_M$, in a simple equation described in Moorhead et al. (1991) using $\alpha_2$ and $\lambda$:
 \begin{equation}
@@ -161,34 +137,6 @@ These two parameters help calculate the maximum growth rate by the relationship:
 \end{equation}
 where r is the enzyme biomass ratio.
 
-
-\subsection{Responses to Other Environmental Parameters}
-****this whole part is chaos*** only if we have space/ time :(
-
-% USE FOR ANALYSIS OF HYSTERSIS ETC LATER
-The mean soil profile distributions by percentage is \cite{Zhao2019} \footnote{Note that here we neglect uncertainties for these percentages, as we need only a general estimate of the biome.}: 
-\begin{center}
- \begin{tabular}{|c c c c|} 
- \hline
- Biome/ Environment & Sand [\%] & Silt[\%] & Clay[\%] \\ [0.5ex] 
- \hline\hline
- Dessert (Arid) & 43.21 & 33.67 & 23.05 \\ 
- \hline
- Grasslands/shrublands (Semi-Arid) & 45.14 & 34.71 & 20.15 \\
- \hline
- Temperate Forest & 45.42 & 34.97 & 19.59 \\
- \hline
- Boreal Forest (Arboreal) & 50.01 & 32.77 & 17.22 \\
- \hline
- Tropical Rain Forest & 42.42 & 27.05 & 30.53 \\ [1ex] 
- \hline
-\end{tabular}
-\end{center}
-
-
-To define soil characteristics of various sample biomes within Whitaker's scheme, we can refer to the sampling documented in {}, which describes soil properties found in the top 30 cm.
-
-Thus, we will use the two aforementioned schemes to provide us with a more focused selection of the following environments, whose properties will be expanded upon:
 
 
 \newpage
@@ -229,7 +177,7 @@ Here are the model parameters for the coupled decomposition and growth model for
  \hline
  Soil temperature coefficient & $S_T$ & 1 & N/A &\cite{Moorhead1991} T\\
  \hline
- Rate of Increase & $Q$ & ?? & $^{\circ}C$ &\cite{Moorhead1991} T\\
+ Rate of Increase & $Q$ & 2.5 & $^{\circ}C$ &\cite{Moorhead1991} T\\
  \hline
  Rate constant \footnote{Proportionality constant between maximum rate of decomposition and enzyme biomass.} & G & 10 & $g*mm^{-1}*day{-1}$ &\cite{Lustenhouwer2020}\footnote{Emprically derived.}\\  %value TBD, empirically derived, Trevor will justify
  \hline
@@ -239,7 +187,85 @@ Here are the model parameters for the coupled decomposition and growth model for
 \end{savenotes}
 
 
+\section{Appendix Tables}
+
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|c c c|} 
+ \hline
+ Biome/ Environment & Average Annual Temperature [$^{\circ}C$] & Selected Value [$^{\circ}C$]\\ [0.5ex] 
+ \hline\hline
+ Dessert (Arid) & 10 to 20 \cite{Davey2007} & 15 \\ 
+ \hline
+ Grasslands/shrublands (Semi-Arid) & 15.3 \cite{Pelaez1992} & 15.3 \\
+ \hline
+ Temperate Forest & -1.42 to 26.39 \cite{Zaz2018} & 12.49 \\
+ \hline
+ Boreal Forest (Arboreal)& -1.42 to 26.39 \cite{Zaz2018} & 12.49 \\
+ \hline
+ Tropical Rain Forest & 23 to 32 \cite{Paton2020} &27.5 \\
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+ 
+
+%NEED TO EDIT TABLE WITH FOOTNOTES TO FIT (put spec envs?)
+%For himalayas, consider putting all values as footnotes
+\begin{savenotes}
+\begin{table}[ht]
+\begin{center}
+ \begin{tabular}{|c c c|} 
+ \hline
+ Biome/ Environment & Water Potential Range [MPa] & Selected Value [MPa] \\ [0.5ex] 
+ \hline\hline
+ Dessert (Arid) & -4.0 to -5.0 MPa \cite{Nilsen1983} & -4.5 MPa \\ 
+ \hline
+ Grasslands/shrublands (Semi-Arid) & -1.4 to -5.0 \footnote{Measurements taken November through January at 100 cm soil depth.} \cite{Pelaez 1994} & -3.2 MPa\\
+ \hline
+ Temperate Forest & -0.44 (Fall), -1.19 (Winter), -0.58 (Spring), & -1.09 MPa\\
+ &-1.42 (Early Summer), -1.81 (Summer) \cite{Zobel2001}&\\
+ \hline
+ Boreal Forest (Arboreal) & -0.83 (Fall), -1.20 (Winter), -0.55 (Spring),& -1.51 MPa\\
+ &-1.61 (Early Summer), -3.36 (Summer) \cite{Zobel2001} &\\
+ \hline
+ Tropical Rain Forest & −1.57 MPa to 0.00 MPa  \cite{Kupers2018} & -0.79 \\ 
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{savenotes}
+
 \newpage
 \bibliographystyle{plain}
 \bibliography{references}
 \end{document}
+
+% \subsection{Responses to Other Environmental Parameters}
+% ****this whole part is chaos*** only if we have space/ time :(
+
+% % USE FOR ANALYSIS OF HYSTERSIS ETC LATER
+% The mean soil profile distributions by percentage is \cite{Zhao2019} \footnote{Note that here we neglect uncertainties for these percentages, as we need only a general estimate of the biome.}: 
+% \begin{center}
+%  \begin{tabular}{|c c c c|} 
+%  \hline
+%  Biome/ Environment & Sand [\%] & Silt[\%] & Clay[\%] \\ [0.5ex] 
+%  \hline\hline
+%  Dessert (Arid) & 43.21 & 33.67 & 23.05 \\ 
+%  \hline
+%  Grasslands/shrublands (Semi-Arid) & 45.14 & 34.71 & 20.15 \\
+%  \hline
+%  Temperate Forest & 45.42 & 34.97 & 19.59 \\
+%  \hline
+%  Boreal Forest (Arboreal) & 50.01 & 32.77 & 17.22 \\
+%  \hline
+%  Tropical Rain Forest & 42.42 & 27.05 & 30.53 \\ [1ex] 
+%  \hline
+% \end{tabular}
+% \end{center}
+
+
+% To define soil characteristics of various sample biomes within Whitaker's scheme, we can refer to the sampling documented in {}, which describes soil properties found in the top 30 cm.
+
+% Thus, we will use the two aforementioned schemes to provide us with a more focused selection of the following environments, whose properties will be expanded upon:

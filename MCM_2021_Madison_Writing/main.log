@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 FEB 2021 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 FEB 2021 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -209,90 +209,204 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 49.
+(Font)              <12> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 49.
+(Font)              <8> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 49.
+(Font)              <6> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 54.
+(Font)              <7> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 54.
+(Font)              <5> on input line 56.
 
 Package natbib Warning: Citation `Steinberg2007' on page 1 undefined on input l
-ine 54.
+ine 56.
 
 
 Package natbib Warning: Citation `Gervais1999' on page 1 undefined on input lin
-e 54.
-
-
-Package natbib Warning: Citation `Gervais1999' on page 1 undefined on input lin
-e 54.
-
-
-Package natbib Warning: Citation `Maynard2019' on page 1 undefined on input lin
 e 56.
 
 
+Package natbib Warning: Citation `Gervais1999' on page 1 undefined on input lin
+e 56.
+
+
+Package natbib Warning: Citation `Maynard2019' on page 1 undefined on input lin
+e 58.
+
+
 Package natbib Warning: Citation `Whittaker1970' on page 1 undefined on input l
-ine 63.
+ine 65.
 
 
 Package natbib Warning: Citation `Mucina2018' on page 1 undefined on input line
- 63.
+ 65.
 
 
 Package natbib Warning: Citation `Whittaker1970' on page 1 undefined on input l
-ine 63.
+ine 65.
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package natbib Warning: Citation `Davey2007' on page 2 undefined on input line 
-98.
+Package natbib Warning: Citation `Abkenar2019' on page 2 undefined on input lin
+e 92.
 
 
-Package natbib Warning: Citation `Pelaez1992' on page 2 undefined on input line
- 100.
+Package natbib Warning: Citation `Petraglia2018' on page 2 undefined on input l
+ine 127.
 
 
-Package natbib Warning: Citation `Zaz2018' on page 2 undefined on input line 10
+Package natbib Warning: Citation `Moorhead1991' on page 2 undefined on input li
+ne 127.
+
+[2] [3]
+
+Package natbib Warning: Citation `Maynard2019' on page 4 undefined on input lin
+e 145.
+
+
+Package natbib Warning: Citation `Kari2014' on page 4 undefined on input line 1
+45.
+
+
+Package natbib Warning: Citation `Kari2014' on page 4 undefined on input line 1
+54.
+
+
+Package natbib Warning: Citation `Segato2014' on page 4 undefined on input line
+ 156.
+
+
+Package natbib Warning: Citation `Maynard2019' on page 4 undefined on input lin
+e 158.
+
+! Undefined control sequence.
+<argument> \Maynard 
+                    2019
+l.160 ...T & 25 & $^{\circ}C$ &\cite{\Maynard2019}
+                                                   Specie's habitat\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \Maynard 
+                    2019
+l.160 ...T & 25 & $^{\circ}C$ &\cite{\Maynard2019}
+                                                   Specie's habitat\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package natbib Warning: Citation `2019' on page 4 undefined on input line 160.
+
+! Undefined control sequence.
+<argument> \Maynard 
+                    2019
+l.162 ... $\psi$ & -0.5 & MPa &\cite{\Maynard2019}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \Maynard 
+                    2019
+l.162 ... $\psi$ & -0.5 & MPa &\cite{\Maynard2019}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package natbib Warning: Citation `2019' on page 4 undefined on input line 162.
+
+
+Package natbib Warning: Citation `Maynard2019' on page 4 undefined on input lin
+e 164.
+
+
+Package natbib Warning: Citation `Schnepf2008' on page 4 undefined on input lin
+e 166.
+
+
+Package natbib Warning: Citation `Lyn2016' on page 4 undefined on input line 16
+8.
+
+
+Package natbib Warning: Citation `Du2019' on page 4 undefined on input line 170
+.
+
+
+Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
+ne 172.
+
+
+Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
+ne 174.
+
+
+Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
+ne 176.
+
+
+Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
+ne 178.
+
+
+Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
+ne 180.
+
+
+Package natbib Warning: Citation `Lustenhouwer2020' on page 4 undefined on inpu
+t line 182.
+
+
+Package natbib Warning: Citation `Davey2007' on page 4 undefined on input line 
+198.
+
+
+Package natbib Warning: Citation `Pelaez1992' on page 4 undefined on input line
+ 200.
+
+
+Package natbib Warning: Citation `Zaz2018' on page 4 undefined on input line 20
 2.
 
 
-Package natbib Warning: Citation `Zaz2018' on page 2 undefined on input line 10
+Package natbib Warning: Citation `Zaz2018' on page 4 undefined on input line 20
 4.
 
 
-Package natbib Warning: Citation `Paton2020' on page 2 undefined on input line 
-106.
+Package natbib Warning: Citation `Paton2020' on page 4 undefined on input line 
+206.
 
 
-Overfull \hbox (18.35979pt too wide) in paragraph at lines 94--109
- [] 
- []
+Package natbib Warning: Citation `Nilsen1983' on page 4 undefined on input line
+ 223.
 
 
-Package natbib Warning: Citation `Abkenar2019' on page 2 undefined on input lin
-e 112.
+Package natbib Warning: Citation `Pelaez 1994' on page 4 undefined on input lin
+e 225.
 
 
-Package natbib Warning: Citation `Nilsen1983' on page 2 undefined on input line
- 123.
+Package natbib Warning: Citation `Zobel2001' on page 4 undefined on input line 
+228.
 
 
-Package natbib Warning: Citation `Pelaez 1994' on page 2 undefined on input lin
-e 125.
-
-
-Package natbib Warning: Citation `Zobel2001' on page 2 undefined on input line 
-128.
-
-
-Package natbib Warning: Citation `Zobel2001' on page 2 undefined on input line 
-131.
+Package natbib Warning: Citation `Zobel2001' on page 4 undefined on input line 
+231.
 
 
 ! Package inputenc Error: Unicode character − (U+2212)
@@ -302,172 +416,52 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133  Tropical Rain Forest & −
+l.233  Tropical Rain Forest & −
                                  1.57 MPa to 0.00 MPa  \cite{Kupers2018} & -...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-Package natbib Warning: Citation `Kupers2018' on page 2 undefined on input line
- 133.
+Package natbib Warning: Citation `Kupers2018' on page 4 undefined on input line
+ 233.
 
 
-Overfull \hbox (22.89877pt too wide) in paragraph at lines 119--136
+Overfull \hbox (22.89877pt too wide) in paragraph at lines 219--236
  [] 
  []
-
-[2]
-
-Package natbib Warning: Citation `Petraglia2018' on page 3 undefined on input l
-ine 151.
-
-
-Package natbib Warning: Citation `Zhao2019' on page 3 undefined on input line 1
-69.
-
-[3]
-
-Package natbib Warning: Citation `Maynard2019' on page 4 undefined on input lin
-e 197.
-
-
-Package natbib Warning: Citation `Kari2014' on page 4 undefined on input line 1
-97.
-
-
-Package natbib Warning: Citation `Kari2014' on page 4 undefined on input line 2
-06.
-
-
-Package natbib Warning: Citation `Segato2014' on page 4 undefined on input line
- 208.
-
-
-Package natbib Warning: Citation `Maynard2019' on page 4 undefined on input lin
-e 210.
-
-! Undefined control sequence.
-<argument> \Maynard 
-                    2019
-l.212 ...T & 25 & $^{\circ}C$ &\cite{\Maynard2019}
-                                                   Specie's habitat\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \Maynard 
-                    2019
-l.212 ...T & 25 & $^{\circ}C$ &\cite{\Maynard2019}
-                                                   Specie's habitat\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package natbib Warning: Citation `2019' on page 4 undefined on input line 212.
-
-! Undefined control sequence.
-<argument> \Maynard 
-                    2019
-l.214 ... $\psi$ & -0.5 & MPa &\cite{\Maynard2019}
-                                                  \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \Maynard 
-                    2019
-l.214 ... $\psi$ & -0.5 & MPa &\cite{\Maynard2019}
-                                                  \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package natbib Warning: Citation `2019' on page 4 undefined on input line 214.
-
-
-Package natbib Warning: Citation `Maynard2019' on page 4 undefined on input lin
-e 216.
-
-
-Package natbib Warning: Citation `Schnepf2008' on page 4 undefined on input lin
-e 218.
-
-
-Package natbib Warning: Citation `Lyn2016' on page 4 undefined on input line 22
-0.
-
-
-Package natbib Warning: Citation `Du2019' on page 4 undefined on input line 222
-.
-
-
-Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
-ne 224.
-
-
-Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
-ne 226.
-
-
-Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
-ne 228.
-
-
-Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
-ne 230.
-
-
-Package natbib Warning: Citation `Moorhead1991' on page 4 undefined on input li
-ne 232.
-
-
-Package natbib Warning: Citation `Lustenhouwer2020' on page 4 undefined on inpu
-t line 234.
 
 [4]
 No file main.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-(./main.aux) ) 
+[5] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  2378 strings out of 492616
  33735 string characters out of 6129482
- 111242 words of memory out of 5000000
+ 115242 words of memory out of 5000000
  6283 multiletter control sequences out of 15000+600000
  7895 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,16n,25p,937b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
-b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (4 pages, 155947 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on main.pdf (5 pages, 155913 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
