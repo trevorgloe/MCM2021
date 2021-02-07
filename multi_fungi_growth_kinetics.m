@@ -1,16 +1,17 @@
 %simulating the growth and decomposition systems coupled for several
 %different fungi, each with 4 different enzymes
 
-clear all
+% clear all
 
 %define what fungi are present
-fungi_vec = zeros(1,36);    %must be normalized to 1
-fungi_vec = linspace(0,1,36);
+fungi_vec = zeros(1,35);    %must be normalized to 1
+fungi_vec = linspace(0,1,35);
+fungi_vec = fungi_vec/((sum(fungi_vec))^1);
 
 %define domains
 n_x = 100;
 L = 100;
-t = linspace(0,2000,400);
+t = linspace(0,3000,400);
 x = linspace(0,L,n_x);
 dx = L/n_x;
 
@@ -18,26 +19,34 @@ dx = L/n_x;
 %initial conditions
 C_tot0 = 100;
 ic_rho_n = zeros(1,2*n_x);  %should be the same for all fungi
-ic_es = C_tot0*ones(1,36*4);
+ic_es = C_tot0*ones(1,35*4);
 
-IC = [repmat(ic_rho_n,1,36) ic_es C_tot0];
+IC = [repmat(ic_rho_n,1,35) ic_es C_tot0];
 
 
 
-fungi_enzyme_mat = 0.25*ones(4,36); %each row is a type of enzyme, each column is a specific fungus
+fungi_enzyme_mat = 0.25*ones(4,35); %each row is a type of enzyme, each column is a specific fungus
 % ^ the r values for each fungi and enzyme
+table = readtable('env_tests_config_master.csv');
+cell_table = table2cell(table);
+r_vals_cell = cell_table(6:40,2:5);
+r_vals = cell2mat(r_vals_cell);
+fungi_enzyme_mat = r_vals';
+%the convention for the enzymes will be in order 1. cellobiohydrolase, 2.
+%phosphatase, 3. phenoloxidase, 4. peroxidase
+
 
 
 
 %%
 %parameters ----------------------------------------------
 %environmental conditions
-T = 25;  %degrees celcius
-psi = -0.5;  %water potential
+% T = 25;  %degrees celcius
+% psi = -0.5;  %water potential
 alpha2 = 0.311;     %intercept in S_M equation
 lambda = 0.345;     %multiplier for S_M equation
-S_M = alpha2 - lambda*log10(-psi);
-S_T = 1;
+% S_M = alpha2 - lambda*log10(-psi);
+% S_T = 1;
 
 %growth model
 % nu = 0.250;     %tip elongation speed
@@ -56,22 +65,23 @@ G = 4.2e-3;  %decomposition rate constant (converts mm of hyphae to g carbon/day
 % K = S_M*S_T*r*r_e*G;
 % K_e = 7*(C0/(1.7867));     %convert half-saturation coefficient from mols to grams of carbon
 
-nu_vec = 0.25*ones(1,36);    %should be based on T and M
+% nu_vec = 0.25*ones(1,35);    %should be based on T and M
 
-K_e_vec = [1.86e-3 4.8e-3 0.47e-3 2e-6];    %half-saturation coeficients for each type of enzyme (molarity)
+K_e_vec = (67163)*[2e-6 0.94e-3 0.89e-3 0.747e-3];    %half-saturation coeficients for each type of enzyme (molarity)
+% K_e_vec = 0.7837*ones(1,4);
 
 tic
 [tout, u] = ode45(@total_growth_decom,t,IC,[],n_x,dx,nu_vec,gamma1,alpha1,mu,a,x,r_e_vec,fungi_enzyme_mat,S_T,S_M,G,K_e_vec,fungi_vec);
 toc
 
 %% Get data
-rho_ns = u(:,1:7200);
-C_enz = u(:,7201:7344);
-C_tot = u(:,7345);
+rho_ns = u(:,1:7000);
+C_enz = u(:,7001:7141);
+C_tot = u(:,7141);
 
-all_rho = zeros(36,length(t(1,:)),100);
-all_B = zeros(36,length(t(1,:)));
-for i = [1:36]
+all_rho = zeros(35,length(t(1,:)),100);
+all_B = zeros(35,length(t(1,:)));
+for i = [1:35]
     rho_fungi = zeros(length(t(1,:)),100);
     for j = [1:100]
         rho_fungi(:,j) = rho_ns(:,(i-1)*200+1+2*(j-1));
@@ -83,8 +93,8 @@ for i = [1:36]
         
 end
 
-all_C_enz = zeros(36,4,length(t(1,:)));
-for i = [1:36]
+all_C_enz = zeros(35,4,length(t(1,:)));
+for i = [1:35]
     all_C_enz(i,:,:) = C_enz(:,(i-1)*4+1:i*4)';
 end
 %each row of all_C_enz is a different type of fungus and each column is a
@@ -97,7 +107,7 @@ title('total carbon')
 
 figure
 hold on
-for i = [1:36]
+for i = [1:35]
     plot(t,all_B(i,:))
 end
 title('Different fungi all growing at different rates')
@@ -105,17 +115,19 @@ title('Different fungi all growing at different rates')
 figure
 hold on
 j = 1;
-for i = [1:36]
+for i = [1:35]
     plot(t,(C_tot0-squeeze(all_C_enz(i,j,:))))
 end
 title('Nutrient uptake of different species of fungi')    
 figure
 hold on
-for i = [1:36]
+contributions = zeros(35,length(t(1,:)));
+for i = [1:35]
     contribution = squeeze(4*C_tot0-(all_C_enz(i,1,:)+all_C_enz(i,2,:)+all_C_enz(i,3,:)+all_C_enz(i,4,:)));
-    disp(contribution)
+    contributions(i,:) = contribution;
     plot(t,(contribution)/C_tot0)
 end
+title('Individual contribution of paricular fungi species')
 
 
     

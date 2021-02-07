@@ -1,0 +1,23 @@
+%running the model repeatedly under varying environmental conditions
+
+%vary nu continuously through all the range of expected values 
+%(0.088 - 3.87) for desert
+%(0.246 - 9.81) for tropical rainforest
+
+all_nu = zeros(5,36);
+% all_
+
+table = readtable('env_tests_config_master.csv');
+cell_table = table2cell(table);
+nu_vals_cell = cell_table(6:40,8:12);
+nu_vals = cell2mat(nu_vals_cell)
+
+S_M_cell = cell_table(3,8:12);
+S_T_cell = cell_table(4,8:12);
+S_M_vals = cell2mat(S_M_cell);
+S_T_vals = cell2mat(S_T_cell);
+
+
+% Simulation in an arid environment
+
+    
