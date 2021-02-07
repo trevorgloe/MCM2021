@@ -58,7 +58,7 @@ G = 4.2e-3;  %decomposition rate constant (converts mm of hyphae to g carbon/day
 
 nu_vec = 0.25*ones(1,36);    %should be based on T and M
 
-K_e_vec = 7*(100/(1.7867))*ones(1,4);    %half-saturation coeficients for each type of enzyme
+K_e_vec = [1.86e-3 4.8e-3 0.47e-3 2e-6];    %half-saturation coeficients for each type of enzyme (molarity)
 
 tic
 [tout, u] = ode45(@total_growth_decom,t,IC,[],n_x,dx,nu_vec,gamma1,alpha1,mu,a,x,r_e_vec,fungi_enzyme_mat,S_T,S_M,G,K_e_vec,fungi_vec);
