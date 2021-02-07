@@ -21,19 +21,20 @@ n0 = 2;
 u(2*n_x-1) = 0;  %boundary conditions for x = L;
 u(2*n_x) = 0;    %boundary conditions for x = L;
 % dudt(1) = u(2)*nu - d;
-% u(2) = 0.709*(1e-9)*C*a*t+0.97;
-u(2) = a*t;
+% u(2) = 6.7;
+u(2) = 0.709*(4e-6)*a*t;    %need to include adjustment on boundary condition whenever implimenting C term
+% u(2) = a*t; 
 % u(1) = 1;
-% dudt(1) = 0.709*(1e-9)*C*u(2)*nu - gamma1*u(1);
-dudt(1) = u(4)*nu - gamma1*u(1);
+dudt(1) = 0.709*(1e7)*C*u(4)*nu - gamma1*u(1);
+% dudt(1) = u(4)*nu - gamma1*u(1);
 dudt(2) = nu*((u(6)-u(4))-(u(4)-u(2)))/(2*dx) + alpha1*u(2) - mu*u(2)*u(1);
 
 for i = [2:n_x]
     d = gamma1*u(2*i-1);
     rho = u(2*i-1);
     n = u(2*i);
-%     dudt(2*i-1) = 0.709*(1e-9)*C*n*nu - d;
-    dudt(2*i-1) = n*nu - d;
+    dudt(2*i-1) = 0.709*(1e9)*C*n*nu - d;
+%     dudt(2*i-1) = n*nu - d;
     dnvdx = nu*(u(2*i)-u(2*i-2))/dx;
     dudt(2*i) = -dnvdx + alpha1*n - mu*n*rho;
 end

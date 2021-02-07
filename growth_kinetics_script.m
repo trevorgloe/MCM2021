@@ -15,7 +15,7 @@ L = 1000;    %size of x space
 n_x = 100;   %number of points in x dim (number of ODEs)
 
 x = linspace(0,L,n_x);
-t = linspace(0,1096,100);
+t = linspace(0,4000,400);
 dx = L/n_x;
 B_tot = zeros(1,length(t));
 
@@ -47,8 +47,8 @@ mu = 0.3;   %anastomosis coefficient
 %decomposition kinetics
 r = 0.437;  %proportion of total enzymes that are the specific enzyme in question
 r_e = 0.04;     %proportion of microbial biomass that is enzymes
-g = 4.2e-3;  %decomposition rate constant (converts mm of hyphae to g carbon/day)
-K = S_M*S_T*r*r_e*g;
+G = 4.2e-3;  %decomposition rate constant (converts mm of hyphae to g carbon/day)
+K = S_M*S_T*r*r_e*G;
 K_e = 7*(C0/(1.7867));     %convert half-saturation coefficient from mols to grams of carbon
 
 
@@ -69,9 +69,10 @@ for i = [1:length(t)]
     B(i) = trapz(x,rho(i,:));
 end
 %recalculation
-n(:,1) = a.*t;
+
 n(:,n_x) = zeros(1,length(n(:,1)));
-C = u(:,201);
+C = u(:,n_x*2+1);
+n(:,1) = C'.*t*(0.2e-5)*a;
 
 B = B.*(100000*(10e-6)^2);
 
