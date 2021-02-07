@@ -1,8 +1,8 @@
 clear;
 close all;
 
-temp = 12.490000000000002;
-watpot = -1.51;
+temp = 27.5;
+watpot = -0.79;
 
 %% Temp
 TTC = readtable('Fungi_temperature_curves.csv'); %table of temperature curve
