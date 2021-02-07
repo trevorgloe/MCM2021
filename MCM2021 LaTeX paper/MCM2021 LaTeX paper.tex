@@ -81,29 +81,53 @@ sorting=ynt]{biblatex}
 \section{Introduction}
 This is a test of the introduction \cite{Gow1995}
 
+Biodiversity's impact on the system's overall efficiency:
+- the greater range you have of moisture/temperature niche widths, the more tolerant your fungal community will be overall to growing in any particular environmental because at least some constituents of the community will be close to idealized in that environment.
+- competition rank correlates heavily with hyphal extension rate — fungal communities with species who are highly competitive will go one of two ways: 1. the environmental conditions are ideal for the smaller niches of the highly competitive isolates, and so those isolates will dominate out over the other ones 2. the environmental conditions are not ideal for the highly competitive isolates, so the slower but more robust isolates will win out
+
+we have a spearman correlation coefficient relating production of each enzyme with decomposition rate — enzymes primarily involved with breaking down lignin (acid phosphatase) are strongly correlated with decreased decomposition rate.
+
+Strong correlation that increase production of acid phospatase results in decreased competitive rank, which makes sense because on average slower-growing fungi are less competitive than faster growing ones. Competitive rank has a 0.6 spearman correlation coefficient with growth performance
+
+Assumption: enzymes treatment of the different portions of holocellulose are the same 
+
+Implementation: each enzyme has its production rate from the data, multiply the parameter by that production rate and sum them all together to get dC/dt
+
+
+Prediction:
+The slower stress tolerant fungi will have a share of enzymes that indicate their slow decomposition rate, but a moisture and temperature width that indicate their stress tolerance to environmental fluctuations. 
+
+The faster fungi will have a share of enzymes that indicate their fast decomposition rate, but a moisture and temperature width that indicates their lack of stress tolerance to environmental fluctuations.
+
 \section{Model formulation}
-\lipsum[3]
+Maynard et. al took data on the productive rates of 8 different enzymes (5 hydrolytic and 3 oxidative to cover the spectrum of the cellulose-degradation process) and used a standard clustering approach to determine 4 representative enzymes of the entire set: cellobiohydrolase, acid phosphatase, peroxidase and phenoloxidase. The data for production of these enzymes comes from their open-source github. 
+
+We're making the assumption that the production of each enzyme is  equivalent to the amount of the enzyme present in the fungus. We took the production data and normalized it to z-score values. Each z-score was turned into a portion of that enzyme with e_x = (z-min)/(max-min) and then we divided each portion by the sum of all enzyme portions for each enzyme (e_x)/(e_1+e_2+e_3+e_4). This gives us a representation of the proportion of each enzyme relative to other enzymes. We made the assumption thatt the total mass of those four enzymes for each fungus is the same, and the fraction of enzyme mass from total mass.
+
+We made the assumption that the enzymes are not changing over time due to C/N changes or environmental fluctuations
 
 \subsection{Assumptions}
 
 \begin{itemize}
-	\item Scheduling
+	\item Growth
 	\begin{itemize}
-		\item[--] Only the minimum supplies required daily are delivered to delivery locations, i.e. no rotating schedules and stockpiling of supplies to avoid needing to deliver to each daily
-		\item[--] Additional time for operations is not considered: no time is needed to be spent in between flights for loading supplies or recharging the drones, and no time is needed to land and deliver supplies at delivery locations
+		\item[--] unlimited available resources (ground litter and woody fibers)
+		\item[--] neglecting effects from direct interactions between fungi
+		\item[--] PROBLEM: neglecting synergistic effects on growth/metabolic efficiency
+		\item[--] non-exhaustive substrates
 	\end{itemize}
-	\item Packing
+	\item Decomposition Kinetics
 	\begin{itemize}
 		\item[--] Elements can be stacked in any configuration without structural limitations
 	\end{itemize}
-	\item Flight path routing
+	\item Temperature/Moisture effects
 	\begin{itemize}
 		\item[--] Paths are perfectly straight
 		\item[--] Every path only has either the delivery location or storage container as origin and destination
 		\item[--] Paths are modeled in two dimensions i.e. no altitude changes are considered
 		\item[--] Not considering effects of having multiple drones flying at once
 	\end{itemize}
-	\item Environmental effects
+	\item Interactions
 	\begin{itemize}
 		\item[--] Influences from wind are neglected
 		\item[--] The drones are assumed to be unobstructed by terrain
