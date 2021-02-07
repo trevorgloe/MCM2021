@@ -14,7 +14,7 @@ for i = 2:242308
         arid_temp_nu{end+1} = TTC_cell{i,3};
     end
 end
-arid_temp = horzcat
+arid_temp = horzcat{}
 celldisp(arid_temp)
 
 %% Plot if you want
