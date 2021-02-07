@@ -1,0 +1,8 @@
+studied 2 effects on rho:
+alpha1 and gamma1
+
+In all cases, there are oscilations, eventually approching a limiting behavior in all x and t
+alpha1 controls the rho value that the end behavior ends on
+gamma1 controls how much oscillation or how quickly the rho values will reach that limiting behavior
+
+effect of mu: mu also limits end-behavior of rho similar to alpha1

@@ -11,18 +11,19 @@
 
 %%
 %Setting up domains ----------------------------------------
-L = 200;    %size of x space
+L = 1000;    %size of x space
 n_x = 100;   %number of points in x dim (number of ODEs)
 
 x = linspace(0,L,n_x);
-t = linspace(0,1500,500);
+t = linspace(0,1096,100);
 dx = L/n_x;
+B_tot = zeros(1,length(t));
 
 %%
 %initial conditions -----------------------------------------
 ic_rho_n = zeros(1,2*n_x);
 u0 = [0 0];
-C0 = 1000;
+C0 = 100;
 
 %%
 %parameters ----------------------------------------------
@@ -37,16 +38,16 @@ S_T = 1;
 %growth model
 nu = 0.250;     %tip elongation speed
 % d = 200;
-gamma1 = 0.73;    %hyphal death rate
-a = 0.56;     %boundary proliferation parameter
+gamma1 = 5.3e-3;    %hyphal death rate
+a = nu/1000;     %boundary proliferation parameter
 % sigma = 10;
-alpha1 = 1.2372;    %branching rate
-mu = 5.40e-5;   %anastomosis coefficient
+alpha1 =1.7;    %branching rate
+mu = 0.3;   %anastomosis coefficient
 
 %decomposition kinetics
 r = 0.437;  %proportion of total enzymes that are the specific enzyme in question
 r_e = 0.04;     %proportion of microbial biomass that is enzymes
-g = 1e-4;  %decomposition rate constant (converts mm of hyphae to g carbon/day)
+g = 4.2e-3;  %decomposition rate constant (converts mm of hyphae to g carbon/day)
 K = S_M*S_T*r*r_e*g;
 K_e = 7*(C0/(1.7867));     %convert half-saturation coefficient from mols to grams of carbon
 
@@ -62,9 +63,17 @@ for i = [1:length(u(1,:))/2]
     rho(:,i) = u(:,2*i-1);
     n(:,i) = u(:,2*i);
 end
+
+%get total hyphal length out of data
+for i = [1:length(t)]
+    B(i) = trapz(x,rho(i,:));
+end
 %recalculation
 n(:,1) = a.*t;
+n(:,n_x) = zeros(1,length(n(:,1)));
 C = u(:,201);
+
+B = B.*(100000*(10e-6)^2);
 
 %%
 %Plotting
@@ -86,3 +95,11 @@ colormap cool
 figure
 plot(t,C)
 title('Carbon-y bois')
+
+figure
+plot(t,B)
+title('Total fungal biomass over time')
+
+figure
+plot(t,B./(C'+B))
+title('Fraction of biomass that is microbial') 
