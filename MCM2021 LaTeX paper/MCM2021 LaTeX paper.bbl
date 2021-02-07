@@ -19,6 +19,216 @@
 
 \refsection{0}
   \datalist[entry]{ynt/global//global/global}
+    \entry{Edelstein1982}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2c3c8aaa1373744e32269ac3492bb520}{%
+           family={Edelstein},
+           familyi={E\bibinitperiod},
+           given={Leah},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{fullhash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{bibnamehash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{authorbibnamehash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{authornamehash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{authorfullhash}{2c3c8aaa1373744e32269ac3492bb520}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fungi have primitive tissues in which regulated spatial growth is known to occur. For this reason, they provide a convenient model system for some aspects of tissue growth in higher organisms. A mathematical description of growth and branching in fungi is derived in terms of continuum variables such as densities of filaments and tips of filaments. The equations contain a term for branching which takes on specific mathematical forms for distinct fungal morphologies (lateral or dichotomous branching, anastomosis, etc.). By analysing propagating solutions to these equations it is demonstrated that certain branching strategies may be advantageous to the propagation of the tissue. The model also suggests causes for ring-like patterns occasionally associated with the colonies of certain species of fungi.}
+      \field{issn}{0022-5193}
+      \field{journaltitle}{Journal of Theoretical Biology}
+      \field{number}{4}
+      \field{title}{The propagation of fungal colonies: a model for tissue growth}
+      \field{volume}{98}
+      \field{year}{1982}
+      \field{pages}{679\bibrangedash 701}
+      \range{pages}{23}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0022-5193(82)90146-1
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0022519382901461
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0022519382901461
+      \endverb
+    \endentry
+    \entry{Boddy2000}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5f7771a88d974908e2eb1d88177c7403}{%
+           family={Boddy},
+           familyi={B\bibinitperiod},
+           given={Lynne},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f7771a88d974908e2eb1d88177c7403}
+      \strng{fullhash}{5f7771a88d974908e2eb1d88177c7403}
+      \strng{bibnamehash}{5f7771a88d974908e2eb1d88177c7403}
+      \strng{authorbibnamehash}{5f7771a88d974908e2eb1d88177c7403}
+      \strng{authornamehash}{5f7771a88d974908e2eb1d88177c7403}
+      \strng{authorfullhash}{5f7771a88d974908e2eb1d88177c7403}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{Competition is the most common type of interaction occurring between wood-decaying higher fungi. Since competition for nutrients in organic resources is effectively brought about by competition for space, the common division into interference and exploitation competition is not very appropriate. Fungal competition can be divided into primary resource capture (obtaining uncolonized resources) and secondary resource capture (combat to obtain resources already colonized by other fungi). Combative mechanisms include antagonism at a distance, hyphal interference, mycoparasitism and gross mycelial contact. Interactions can result in deadlock or replacement, and a hierarchy of combative ability can be discerned amongst fungi that inhabit particular resources, but within this hierarchy there exists intransitivity, modification of outcome by other species and abiotic variables. Interactions can dramatically alter mycelial function, and have potential as biological control agents of fungal pathogens of trees and in service timber.}}
+      \field{issn}{0168-6496}
+      \field{journaltitle}{FEMS Microbiology Ecology}
+      \field{month}{03}
+      \field{number}{3}
+      \field{title}{{Interspecific combative interactions between wood-decaying basidiomycetes}}
+      \field{volume}{31}
+      \field{year}{2000}
+      \field{pages}{185\bibrangedash 194}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1111/j.1574-6941.2000.tb00683.x
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/femsec/article-pdf/31/3/185/18098041/31-3-185.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.1574-6941.2000.tb00683.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.1574-6941.2000.tb00683.x
+      \endverb
+    \endentry
+    \entry{Moorhead2006}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c11fe54d97c1bb34d16e57a09bbc2d13}{%
+           family={Moorhead},
+           familyi={M\bibinitperiod},
+           given={Daryl\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=74f973a7b3d66edc08b2b4a523332237}{%
+           family={Sinsabaugh},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6c625b55405692f95e568ca4a2dc238}
+      \strng{fullhash}{e6c625b55405692f95e568ca4a2dc238}
+      \strng{bibnamehash}{e6c625b55405692f95e568ca4a2dc238}
+      \strng{authorbibnamehash}{e6c625b55405692f95e568ca4a2dc238}
+      \strng{authornamehash}{e6c625b55405692f95e568ca4a2dc238}
+      \strng{authorfullhash}{e6c625b55405692f95e568ca4a2dc238}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Despite the central role of microorganisms in the decomposition of dead organic matter, few models have integrated the dynamics of litter chemistry with microbial interactions. Here we propose a functional resolution of the microbial community that parallels the commonly used chemical characterization of plant litter, i.e., a guild of opportunist microorganisms that grows quickly and has high affinity for soluble substrates, a guild of decomposer specialists that grows more slowly and has high affinity for holocellulose substrates, and a guild of miners that grows very slowly and is specialized for degrading lignin. This guild-based decomposition model (GDM) includes the interactions of holocellulose and lignin, manifest as mutual feedback controls on microbial-based activities. It also includes N limitations on early stages of litter decay resulting from nutritional demands of microorganisms and N inhibition on late stages of litter decay resulting from reduced lignin degradation. Competitive interactions between microbial guilds result from different growth rates and substrate affinities, given limits on microbial colonization of litter. Simulations are consistent with commonly reported and proposed patterns of microbial community succession during litter decay, changes in and controls imposed by litter chemistry, and system responses to N availability. Modest impacts of litter chemistry and N effects on patterns of decay can yield substantial impacts on the relative amount of litter remaining through time, the time required to stabilize litter carbon (i.e., as the lignin content approaches Ìf70\% of the total litter carbon), the relative contributions of different guilds to decay, and the net amount of microbial production. Moreover, seemingly inconsistent patterns in system responses to N regimes can be explained by interactions between litter chemistry and microbial guilds. A validation exercise demonstrated general correspondence of model behavior to field observations. However, relationships among mass loss, litter chemistry, and N availability were more variable in field studies than in simulations. Also, observed changes in litter quality indicated the progressive accumulation of microbial products. Hence, field studies suggest expanding GDM to include dynamics of microbial products and also suggest the utility of GDM in exploring site effects on decomposition as a result of differences in microbial community composition.}
+      \field{journaltitle}{Ecological Monographs}
+      \field{number}{2}
+      \field{title}{A THEORETICAL MODEL OF LITTER DECAY AND MICROBIAL INTERACTION}
+      \field{volume}{76}
+      \field{year}{2006}
+      \field{pages}{151\bibrangedash 174}
+      \range{pages}{24}
+      \verb{doi}
+      \verb https://doi.org/10.1890/0012-9615(2006)076[0151:ATMOLD]2.0.CO;2
+      \endverb
+      \verb{eprint}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1890/0012-9615%282006%29076%5B0151%3AATMOLD%5D2.0.CO%3B2
+      \endverb
+      \verb{urlraw}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/0012-9615%282006%29076%5B0151%3AATMOLD%5D2.0.CO%3B2
+      \endverb
+      \verb{url}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/0012-9615%282006%29076%5B0151%3AATMOLD%5D2.0.CO%3B2
+      \endverb
+      \keyw{decomposition,guild-based decomposition model,holocellulose,lignin,litter carbon,litter decay,microbial diversity,microbial guilds,N deposition,nitrogen availability}
+    \endentry
+    \entry{Toljander2006}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ba9935d9e077ca1827f517f7ea62c8e0}{%
+           family={Toljander},
+           familyi={T\bibinitperiod},
+           given={Ylva},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c38394f75fd01029efe54ffa1898f454}{%
+           family={Lindahl},
+           familyi={L\bibinitperiod},
+           given={Björn},
+           giveni={B\bibinitperiod}}}%
+        {{hash=33949ae968d85081e2b009d1e6a966f8}{%
+           family={Holmer},
+           familyi={H\bibinitperiod},
+           given={Lillian},
+           giveni={L\bibinitperiod}}}%
+        {{hash=317b3a7ced1938428687fddad1b205ea}{%
+           family={Högberg},
+           familyi={H\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{03a7913f7a249d6b0319c269808e177f}
+      \strng{fullhash}{a1ec01374757b58c77ec849e47e06d93}
+      \strng{bibnamehash}{03a7913f7a249d6b0319c269808e177f}
+      \strng{authorbibnamehash}{03a7913f7a249d6b0319c269808e177f}
+      \strng{authornamehash}{03a7913f7a249d6b0319c269808e177f}
+      \strng{authorfullhash}{a1ec01374757b58c77ec849e47e06d93}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Oecologia}
+      \field{month}{08}
+      \field{title}{Environmental fluctuations facilitate species co-existence and increase decomposition in communities of wood decay fungi}
+      \field{volume}{148}
+      \field{year}{2006}
+      \field{pages}{625\bibrangedash 31}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1007/s00442-006-0406-3
+      \endverb
+    \endentry
+    \entry{McGuire2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cafe33b4f8d0857ab3d07b1fbc91bc69}{%
+           family={McGuire},
+           familyi={M\bibinitperiod},
+           given={Krista\bibnamedelima L.},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b9eeda756ba8361b6fa21071f6a3db0e}{%
+           family={Treseder},
+           familyi={T\bibinitperiod},
+           given={Kathleen\bibnamedelima K.},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f31b2e5143c5314f9478750f53d56b7}
+      \strng{fullhash}{0f31b2e5143c5314f9478750f53d56b7}
+      \strng{bibnamehash}{0f31b2e5143c5314f9478750f53d56b7}
+      \strng{authorbibnamehash}{0f31b2e5143c5314f9478750f53d56b7}
+      \strng{authornamehash}{0f31b2e5143c5314f9478750f53d56b7}
+      \strng{authorfullhash}{0f31b2e5143c5314f9478750f53d56b7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Soil microbial communities are so vastly diverse that complex interactions, which alter ecosystem functions, may occur among microbial species and functional groups. In this review, we explore the empirical evidence for situations when shifts in the community structure of microbes would elicit a change in ecosystem process rates, specifically decomposition, even when microbial biomass remains constant. In particular, we are interested in a subset of these scenarios in which knowledge of microbial community structure would improve model predictions for ecosystem functions. Results from microcosm and field studies indicate that microbial species diversity, functional group diversity, and community composition can all influence ecosystem process rates. The underlying mechanisms that may elicit changes in ecosystem functions from shifts in microbial community structure include evolutionary constraints on microbial trait adaptation, trait correlations, dispersal limitation, and species interactions. The extent of microbial diversity in soils is not known, so it is presently not possible to model all scenarios of microbial community structure shifts. However, by incorporating documented patterns in functional groups that are relevant for a particular ecosystem process and potential relationships between microbial phylogeny and function, the predictive power of process models will be significantly improved. The inclusion of this information into process models is critical for predicting and understanding how ecosystem functions may shift in response to global change.}
+      \field{issn}{0038-0717}
+      \field{journaltitle}{Soil Biology and Biochemistry}
+      \field{number}{4}
+      \field{title}{Microbial communities and their relevance for ecosystem models: Decomposition as a case study}
+      \field{volume}{42}
+      \field{year}{2010}
+      \field{pages}{529\bibrangedash 535}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.soilbio.2009.11.016
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0038071709004313
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0038071709004313
+      \endverb
+      \keyw{Microbial community structure,Ecosystem function,Models,Nutrient cycling,Review}
+    \endentry
     \entry{Du2019}{article}{}
       \name{author}{3}{}{%
         {{hash=41376f0a011935dc6b94a49e7eded142}{%
@@ -66,7 +276,81 @@
       \endverb
       \keyw{Reaction-diffusion,Continuum modeling,Upscaling,Fungus}
     \endentry
+    \entry{Lustenhouwer2020}{article}{}
+      \name{author}{7}{}{%
+        {{hash=ed747f73666071b07add79af89915da1}{%
+           family={Lustenhouwer},
+           familyi={L\bibinitperiod},
+           given={Nicky},
+           giveni={N\bibinitperiod}}}%
+        {{hash=41951678b40e402bda4158c84d90b2b1}{%
+           family={Maynard},
+           familyi={M\bibinitperiod},
+           given={Daniel\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=f967505fd38e5864a45cbb95f9078bbb}{%
+           family={Bradford},
+           familyi={B\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=db91d87c18f1ef286126f4a49f9e133a}{%
+           family={Lindner},
+           familyi={L\bibinitperiod},
+           given={Daniel\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=0ae2e3c7c91a6f2532b36efc01da59df}{%
+           family={Oberle},
+           familyi={O\bibinitperiod},
+           given={Brad},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d8dc466eab3cef41194b04ea4dc66042}{%
+           family={Zanne},
+           familyi={Z\bibinitperiod},
+           given={Amy\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ccc6474f8a02958a2758dc5b88366df2}{%
+           family={Crowther},
+           familyi={C\bibinitperiod},
+           given={Thomas\bibnamedelima W.},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Academy of Sciences}%
+      }
+      \strng{namehash}{b5a3cfe622272ff0d5bde4fe894c2c14}
+      \strng{fullhash}{4d9cb36a288367608c0e14056a5b2136}
+      \strng{bibnamehash}{b5a3cfe622272ff0d5bde4fe894c2c14}
+      \strng{authorbibnamehash}{b5a3cfe622272ff0d5bde4fe894c2c14}
+      \strng{authornamehash}{b5a3cfe622272ff0d5bde4fe894c2c14}
+      \strng{authorfullhash}{4d9cb36a288367608c0e14056a5b2136}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fungi play a key role in the global carbon cycle as the main decomposers of litter and wood. Although current climate models reflect limited functional variation in microbial groups, fungi differ vastly in their decomposing ability. Here, we examine which traits explain fungal-mediated wood decomposition. In a laboratory study of 34 fungal isolates, we found that decomposing ability varies along a spectrum from stress-tolerant, poorly decomposing fungi to fast-growing, competitive fungi that rapidly decompose wood. We observed similar patterns in a 5-y field experiment, in which communities of fast-growing fungi more rapidly decomposed logs in the forest. Finally, we show how linking decomposition rates to known spatial patterns in fungal traits could improve broad-scale predictions of wood decomposition by fungi.As the primary decomposers of organic material in terrestrial ecosystems, fungi are critical agents of the global carbon cycle. Yet our ability to link fungal community composition to ecosystem functioning is constrained by a limited understanding of the factors accounting for different wood decomposition rates among fungi. Here we examine which traits best explain fungal decomposition ability by combining detailed trait-based assays on 34 saprotrophic fungi from across North America in the laboratory with a 5-y field study comprising 1,582 fungi isolated from 74 decomposing logs. Fungal growth rate (hyphal extension rate) was the strongest single predictor of fungal-mediated wood decomposition rate under laboratory conditions, and accounted for up to 27\% of the in situ variation in decomposition in the field. At the individual level, decomposition rate was negatively correlated with moisture niche width (an indicator of drought stress tolerance) and with the production of nutrient-mineralizing extracellular enzymes. Together, these results suggest that decomposition rates strongly align with a dominance-tolerance life-history trade-off that was previously identified in these isolates, forming a spectrum from slow-growing, stress-tolerant fungi that are poor decomposers to fast-growing, highly competitive fungi with fast decomposition rates. Our study illustrates how an understanding of fungal trait variation could improve our predictive ability of the early and midstages of wood decay, to which our findings are most applicable. By mapping our results onto the biogeographic distribution of the dominance-tolerance trade-off across North America, we approximate broad-scale patterns in intrinsic fungal-mediated wood decomposition rates.}
+      \field{issn}{0027-8424}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{21}
+      \field{title}{A trait-based understanding of wood decomposition by fungi}
+      \field{volume}{117}
+      \field{year}{2020}
+      \field{pages}{11551\bibrangedash 11558}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1073/pnas.1909166117
+      \endverb
+      \verb{eprint}
+      \verb https://www.pnas.org/content/117/21/11551.full.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.pnas.org/content/117/21/11551
+      \endverb
+      \verb{url}
+      \verb https://www.pnas.org/content/117/21/11551
+      \endverb
+    \endentry
   \enddatalist
+  \missing{Andren1999}
 \endrefsection
 \endinput
 
