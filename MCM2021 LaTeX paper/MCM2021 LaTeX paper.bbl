@@ -19,44 +19,52 @@
 
 \refsection{0}
   \datalist[entry]{ynt/global//global/global}
-    \entry{Gow1995}{book}{}
-      \name{editor}{2}{}{%
-        {{hash=7ff3643e2429efd80c437abcff3b3852}{%
-           family={Gow},
-           familyi={G\bibinitperiod},
-           given={Neil\bibnamedelimb A.\bibnamedelimi R.},
-           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=16ed44ca7781e96805da1a92de8e9a74}{%
-           family={Gadd},
-           familyi={G\bibinitperiod},
-           given={Geoffrey\bibnamedelima M.},
-           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+    \entry{Du2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=41376f0a011935dc6b94a49e7eded142}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e32c2c4b98563eafceabbb864b4a4d8e}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Thi-Bich-Thuy},
+           giveni={T\bibinithyphendelim B\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=50c1046fac122878404fb990e3b3e32f}{%
+           family={Perré},
+           familyi={P\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Springer Netherlands}%
-      }
-      \strng{namehash}{e0aeb5272c84d3e870b67f7fdd3f00fc}
-      \strng{fullhash}{e0aeb5272c84d3e870b67f7fdd3f00fc}
-      \strng{bibnamehash}{e0aeb5272c84d3e870b67f7fdd3f00fc}
-      \strng{editorbibnamehash}{e0aeb5272c84d3e870b67f7fdd3f00fc}
-      \strng{editornamehash}{e0aeb5272c84d3e870b67f7fdd3f00fc}
-      \strng{editorfullhash}{e0aeb5272c84d3e870b67f7fdd3f00fc}
-      \field{labelalpha}{GG95}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{editor}
+      \strng{namehash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \strng{fullhash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \strng{bibnamehash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \strng{authorbibnamehash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \strng{authornamehash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \strng{authorfullhash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{The Growing Fungus}
-      \field{year}{1995}
+      \field{abstract}{In this work, we present a new PDE model of the growth of Postia placenta, a species of brown rot fungus. The formulation was derived mainly from the biological mechanisms embedded in our discrete model, validated against experimental data. In order to mimic the growth mechanisms, we propose a new reaction-diffusion formulation, based on three variables: the concentration of tips, the branch density and the total hyphal density. The evolution of tips obeys a reaction-diffusion model, with constant diffusivity, while the evolution of the two other variables results from time integrals. The numerical solution is in excellent agreement with the averaged radial tip/hyphal densities of the mycelial network obtained by the discrete model. Thanks to the efficient exponential Euler method with Krylov subspace approximation, the solution needs only 3.5 s of CPU time to simulate 104-day of mycelium growth, in comparison with 8 hours for the discrete model. The great reduction of the RAM memory and computing time gives the possibility to upscale the simulation. The novelty of the PDE system is that the spatial colonization is formulated as a diffusion mechanism, which is self-standing, contrary to models based on an advection term. The continuous model can also reproduce the radial densities when the growth parameters in the discrete model are varied to adapt to different growth conditions. The correlation constructed between the two models provides us a tool for mutual insights between local biological mechanisms to the global biomass distribution, especially when analyzing experimental data.}
+      \field{issn}{0022-5193}
+      \field{journaltitle}{Journal of Theoretical Biology}
+      \field{title}{A 3-variable PDE model for predicting fungal growth derived from microscopic mechanisms}
+      \field{volume}{470}
+      \field{year}{2019}
+      \field{pages}{90\bibrangedash 100}
+      \range{pages}{11}
       \verb{doi}
-      \verb 10.1007/978-0-585-27576-5
+      \verb https://doi.org/10.1016/j.jtbi.2019.03.015
       \endverb
       \verb{urlraw}
-      \verb https://doi.org/10.1007/978-0-585-27576-5
+      \verb https://www.sciencedirect.com/science/article/pii/S0022519319301225
       \endverb
       \verb{url}
-      \verb https://doi.org/10.1007/978-0-585-27576-5
+      \verb https://www.sciencedirect.com/science/article/pii/S0022519319301225
       \endverb
+      \keyw{Reaction-diffusion,Continuum modeling,Upscaling,Fungus}
     \endentry
   \enddatalist
 \endrefsection

@@ -79,7 +79,7 @@ sorting=ynt]{biblatex}
 \lipsum[1]
 
 \section{Introduction}
-This is a test of the introduction \cite{Gow1995}
+This is a test of the introduction \cite{Du2019}
 
 Biodiversity's impact on the system's overall efficiency:
 - the greater range you have of moisture/temperature niche widths, the more tolerant your fungal community will be overall to growing in any particular environmental because at least some constituents of the community will be close to idealized in that environment.
@@ -102,7 +102,7 @@ The faster fungi will have a share of enzymes that indicate their fast decomposi
 \section{Model formulation}
 Maynard et. al took data on the productive rates of 8 different enzymes (5 hydrolytic and 3 oxidative to cover the spectrum of the cellulose-degradation process) and used a standard clustering approach to determine 4 representative enzymes of the entire set: cellobiohydrolase, acid phosphatase, peroxidase and phenoloxidase. The data for production of these enzymes comes from their open-source github. 
 
-We're making the assumption that the production of each enzyme is  equivalent to the amount of the enzyme present in the fungus. We took the production data and normalized it to z-score values. Each z-score was turned into a portion of that enzyme with e_x = (z-min)/(max-min) and then we divided each portion by the sum of all enzyme portions for each enzyme (e_x)/(e_1+e_2+e_3+e_4). This gives us a representation of the proportion of each enzyme relative to other enzymes. We made the assumption thatt the total mass of those four enzymes for each fungus is the same, and the fraction of enzyme mass from total mass.
+We're making the assumption that the production of each enzyme is  equivalent to the amount of the enzyme present in the fungus. We took the production data and normalized it to z-score values. Each z-score was turned into a portion of that enzyme with $e_x$ = (z-min)/(max-min) and then we divided each portion by the sum of all enzyme portions for each enzyme $(e_x)/(e_1+e_2+e_3+e_4)$. This gives us a representation of the proportion of each enzyme relative to other enzymes. We made the assumption thatt the total mass of those four enzymes for each fungus is the same, and the fraction of enzyme mass from total mass.
 
 We made the assumption that the enzymes are not changing over time due to C/N changes or environmental fluctuations
 
@@ -115,6 +115,13 @@ We made the assumption that the enzymes are not changing over time due to C/N ch
 		\item[--] neglecting effects from direct interactions between fungi
 		\item[--] PROBLEM: neglecting synergistic effects on growth/metabolic efficiency
 		\item[--] non-exhaustive substrates
+		\item[--] not considering N addition by anthropogenic nitrogen deposition
+		\item[--] LCI < 0.7 at all times because we're focusing on wood fibers and we don't want lignin block holocellulose decay in bad ways. but we could use the formula
+		\item[--] LCI is not changing over time anastomosis, the formation of reconnections. 
+		\item[--] dynamics regarding the rate of nutrient absorption and transport of metabolites within the
+		mycelium are ignored or simplified
+		\item[--] growth dynamics incurred by the formation of concentric density rings are not considered <-- this doesn't need to exist because we're considering growth in a 1D tube
+		\item[--] only considering one configuration of growth traits out of many possible options, that configuration being: tip-hypha anasmotosis, dichotomous branching, and hyphal death
 	\end{itemize}
 	\item Decomposition Kinetics
 	\begin{itemize}
