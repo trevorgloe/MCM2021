@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 FEB 2021 01:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 FEB 2021 02:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1234,40 +1234,36 @@ This may cause the page layout to be inconsistent, however.
 [1
 
 ]
-Overfull \hbox (14.17328pt too wide) in paragraph at lines 121--128
-[]\T1/ntxtlf/m/n/12 The Five Core Ten-ants: 1. growth/Decomposition
- []
-
-[2]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 176.
+(Font)              scaled to size 14.4pt on input line 109.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 176.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 109.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 176.
+(Font)              scaled to size 14.4pt on input line 109.
+ [2]
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 1
-79.
+89.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 179.
- [3]
-[4] [5]
+(Font)              scaled to size 12.0pt on input line 189.
+
+[3] [4] [5]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 300.
+(Font)              scaled to size 12.0pt on input line 310.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 300.
-LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 300
+(Font)              scaled to size 12.0pt on input line 310.
+LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 310
 .
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 300.
+(Font)              scaled to size 12.0pt on input line 310.
 
-[6] (./MCM2021 LaTeX paper.aux)
+[6] [7] (./MCM2021 LaTeX paper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1286,7 +1282,7 @@ Package logreq Info: Writing requests to '"MCM2021 LaTeX paper".run.xml'.
 Here is how much of TeX's memory you used:
  22827 strings out of 492616
  405194 string characters out of 6129482
- 914600 words of memory out of 5000000
+ 901102 words of memory out of 5000000
  26469 multiletter control sequences out of 15000+600000
  584033 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1306,10 +1302,10 @@ xmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
 /local/texlive/2019/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/t
 exlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "MCM2021 LaTeX paper.pdf" (7 pages, 147268 bytes).
+Output written on "MCM2021 LaTeX paper.pdf" (8 pages, 149412 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
