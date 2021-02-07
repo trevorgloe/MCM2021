@@ -1,0 +1,90 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\usepackage{amssymb}
+\usepackage{mathpazo}
+\usepackage{enumitem}
+\usepackage{amsthm}
+
+\title{MCM2021}
+
+
+\usepackage[margin=2cm]{geometry}
+
+\begin{document}
+\maketitle
+
+\section*{Growth model}
+Fungal growth models typically focus on the increase in overall biomass due to hyphal extension. As described by [Edelstein 1982], the growth of hyphae over time depends on the spacial density of hypae tips (from which hyphae can extend and grow), the tip extension rate and the hyphal death rate. The tips are created by various forms of branching. This model is summed up by the following equations:
+
+\begin{equation} \label {eq}
+    \frac{\partial \rho}{\partial t} = n\nu - d
+\end{equation}
+\begin{equation} \label {eq}
+    \frac{\partial n}{\partial t} = -\frac{\partial n\nu}{\partial x} + \sigma
+\end{equation}
+These equations form a basis for many other models, typically expanding on the effects of nutrient concentrations in the decomposing substrate. The largest assumption made by this model that we will differ from is the assumption that the mycellium grows over an unlimited nutrient supply. Both [Edelstein 1983 Growth and Metabolism in Mycelial Fungi] and [Davidson and Park, 1997] expanded on this model to include interactions with an external substrate by considering concentrations of nutrients both inside and outside the fungi. 
+\\ Another note-worthy growth model is described in [Du, Tran, Perre 2019]. This more recent model describes the growth of the fungus as a 3-dimensional reaction-diffusion equation based on microscopic growth mechanisms, also in terms of the tip density, tip extension rate, hyphal branching, and hyphal elimination rates. However this model also has an added term, the proportion of active tips. In all models, the terms for $\nu$, $\sigma$ are taken to be constants given from experimental data. As noted in [Edelstein 1982], these parameters are seen to depend on nutrient availability and environmental factors in practice. In the review of various fungal growth models described in [Bayesian model selection framework for identifying growth patterns in filamentous fungi, 2016], a specific method of modeling branching and hyphal death was found to match experimental observations in the widest variety of settings. Based on these results we will choose to implement the following relationships, comprising dichotomous branching, tip-hypha anastomosis, and hyphal death (or YHD). 
+\begin{equation} \label {eq}
+    \sigma = \alpha_{1}*n - \mu n \rho
+\end{equation}
+
+\begin{equation} \label {eq}
+    d = \gamma_{1}\rho
+\end{equation}
+To 
+Based on various studies (ADD CITATIONS), we have found a clear dependence of the tip elongation rate, $\nu$ on environmental conditions. For the purpose of this model, we will  define a relationship between 
+
+
+\section*{Decomposition kinetics}
+As is described in [Moore and Classen, 2015] [Edelstein 1983 Growth and Metabolism in Mycelial Fungi] [Moorhead and Sinsabaugh, 2006] [Parnas 1974] [Schimel and Weintraub 2003], the decomposition of a certain substance under the influence of a microbial decomposer is a function of the current concentration of the said substance by the Michaelis–Menton equation. In [Schimel and Weintraub 2003] and [Moorhead and Sinsabaugh, 2006], the maximum rate of this decomposition is proportional to the concentration of enzymes acting on it. Here, we make the assumption that the enzyme concentration is proportional to the concentration of biomass (fungi in our case) in our system. We will thus describe the decompostion of carbon in the substrate by the following equation.
+\begin{equation} \label{eq}
+    \frac{dC}{dt} = \frac{KBC}{K_{e}+C}
+\end{equation}
+The constant $K=rS_{M}S_{T}$ is taken to be the proportion of a specific enzyme to the total biomass of a specific species of fungi multiplied by two environmental limiting factors, as recommend in [Schimel and Weintraub 2003]. These limited factors are used by [Moorhead and Reynold 1990] to multiply the rates of carbon uptake from microorganism, although the model used a slightly simpler first order, linear equation. Here we use it in a similar way in limiting our maximum decay rate. The factors, $S_{M}$ and $S_{T}$ are computed by the following equations
+\begin{equation} \label{eq}
+    S_{M}=\alpha_{2} - \lambda \log_{10}(-\psi)
+\end{equation}
+\begin{equation} \label {eq}
+    S_{T} = XXXXX
+\end{equation}
+
+
+\section*{Parameters}
+\begin{center}
+\begin{tabular}{ c c c c }
+\nu & \alpha_{1} & \mu & \gamma_{1} \\
+0.28 cm/d & 0.74 d^{-1} & 0.15 cm^3m^{-1}d^{-1} & 0.73 d^{-1}\\
+\end{tabular}
+\end{center}
+
+\section*{Coupled growth and decomposition model}
+To see the dynamics effects of the fungal growth on the rates of decomposition reactions (via enzymes in the fungi) the above models are coupled such that the total biomass found from the growth model will multiply the maximum rate of the Michaelis-Menten reaction equation. The  relationship can be summarized as follows
+\begin{equation} \label {eq}
+    B = \int_{all x}\rho dx
+\end{equation}
+The rate of decrease of carbon will then be dynamically effected by the growth of the fungus, as apposed the the typical assumption of a static $B$, such as that described by [Schimel 2003]. The constant $K$ will then have to be accounting for the proportion of biomass in the fungal growth containing the necessary enzyme for the carbon decomposition, as the Michaelis-Menten equation is based on the concentration of the catalyzing enzyme. Thus our formulation of $K$ will change to account for this. 
+\begin{equation} \label {eq}
+    K = r*S_{M}*S_{T}*0.04*G
+\end{equation}
+Where $r$ is the dimensionless parameter relating the total biomass of enzymes in a species of fungus to the biomass of that specific fungus. The multiplication by $0.02$ is a generalization that for any given species of fungus, 2 percent of the biomass will be relevant enzymes [Moorhead 2006]. The rate constant $G$ relates the mass of relevant enzymes to the maximum rate of the decomposition reaction and is empirically derived (see later section). \\
+A more realistic coupling of the rates of carbon decomposition and the fungal growth should include the effect of available carbon on the fungi's growth rate. To account for this, we include a term multiplying $\nu$ that can be interpreted as the available carbon for the fungi to consume for growth. The first equation in the growth model then becomes
+\begin{equation} \label{eq}
+    \frac{\partial \rho}{\partial t} = (1-LCI)*(10^{-9})*C*n*\nu - d
+\end{equation}
+Where $LCI$ is the lignocellulose index of the certain material and thus $(1-LCI)$ is approximately the proportion of the substrate carbon stored in holocellulose. The multiplication by $(1*10^{-9}$ is approximation to convert grams of carbon to mm for hyphae. An investigation of the effects of including the carbon term in the growth model are addressed in a later section. \\
+So our coupled growth and decomposition models can be summarized by equations (10), (2), (5), and (8).
+
+\section*{Parameter selection and representative result}
+To select realistic values for the parameters, we created a representative run of the coupled growth and decomposition model, consulting the literature to find parameter values. An overview of the parameter selection for this representative run can be seen in (parameter table), however several parameters are worth some discussion. 
+\subsection*{Growth model parameters}
+The effect of two main parameters were studied for their effect on the growth model's result: the branching rate and the hyphal death rate. These parameters were not agreed upon in the literature so their effect on the model output was evaluated and they were selected from a pool of possible values based on the most likely realistic output. Most results of the growth model were comprised of traveling wave solutions, converging to a uniform distribution in both space and time. This can be thought of a the maximum growth of the fungus into it's total space. The branching rate ($\alpha_{1}$) was found to increase the hyphal density in the end behavior of the solution, with the ending density increasing as $\alpha_{1}$ increases. The hyphal death rate ($\gamma_{1}$) was found to increase the oscillations in time and thus larger $\gamma_{1}$ values would increase the oscillations and the time to reach a given end-behavior. Many of the papers discussing the values of these parameters [Edelstein 1982] [Lin 2016] [Schnepf 2007] [Du 2019] are concerned more with short term dynamics in perfectly ideal conditions. The purposes of this paper is the assess the long term decomposition rates under different conditions, so parameters that can predict long-term behavior, comparable to long term decomposition dynamics described in [Moorhead 2000] [Moorhead 2006] [Moorhead 1991] were selected.
+\subsection*{Decomposition parameters}
+The value for $G$ is interpreted as a rate constant, relating a concentration of relative enzymes to the maximum rate of carbon decomposition. formulation for $S_{M}$ and $S_{T}$ come from [Moorhead 1991] and in said model, a simpler equation is used for the reaction dynamics for decomposition of carbon. Because of this, we cannot use the same rate constant and must base this parameter of agreement with other models or experimental data. The most important aspect we examined for the section of $G$ was the timescale of decomposition to be comparable with that of [Lustenhouwer 2019].
+\subsection*{Representative results}
+As a representative result of the coupled growth and decomposition model, the two were run using the parameters summarized in (parameter table). In the growth model, $\rho$ was found to exibit travelling wave dispersion throughout space, as similarly shown in [Mimura 2000] and [Edelstein 1982]. Due to the simulation only running for a timespan of 3 years, the decrease in carbon over time looks fairly linear, with slight fluctuations likely due to the fluctuating fungal biomass densities over time.
+
+\end{document}
