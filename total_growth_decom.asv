@@ -1,4 +1,4 @@
-function dudt = total_growth_decom(t,u,n_x,dx,nu_vec,gamma1,alpha1,mu,a,allx,r_e_vec,r_mat,S_T,S_M,G,K_e_vec,fungi_vec)
+function dudt = total_growth_decom(t,u,n_x,dx,nu_vec,gamma1,alpha1,mu,a,allx,r_e_vec,r_mat,S_T,S_M,G,K_e_vec)
 %total_growth_decom this boy does it all
 %u is a 1x7345 array 
 %the first 7200 correspond to the 36 discretized pde's for each fungus
@@ -13,8 +13,7 @@ for i = [1:36]
     %calculate dudt for the i'th fungi
     nu = nu_vec(i);
     u_temp = [u(((i-1)*200+1):i*200)' u(7345)];
-    conc = fungi_vec(i);
-    dudt(((i-1)*200+1):i*200) = growth_ind(t,u_temp,n_x,dx,nu,gamma1,alpha1,mu,a,allx,conc);
+    dudt(((i-1)*200+1):i*200) = growth_ind(t,u,n_x,dx,nu,gamma1,alpha1,mu,a,allx);
 end
 
 
@@ -27,7 +26,6 @@ for i = [1:36]
     %different fungi
     r_e = r_e_vec(i);
     u_temp = u(((i-1)*200+1):i*200);  %rho and n for a specific fungi
-%     disp(u_temp)
     rho = zeros(1,length(u_temp)/2);
     for k=[1:length(u_temp)/2]
         rho(k) = u_temp(2*k-1);
@@ -39,9 +37,8 @@ for i = [1:36]
         r = r_mat(j,i);
         K = S_M*S_T*r*r_e*G;
         K_e = K_e_vec(j);
-        C_val = u(7345);
-        rate = decom_ind(t,C_val,n_x,dx,gamma1,alpha1,mu,a,allx,K,K_e,B(i));
-%         disp(rate)
+        C_val = u(7200+(i-1)*4+j);
+        rate = decom_ind(t,C_val,n_x,dx,gamma1,alpha1,mu,a,allx,K,K_e,B);
         dudt(7200+(i-1)*4+j) = rate;
         dedt((i-1)*4+j) = rate;
     end
@@ -51,9 +48,7 @@ end
 %calculate the total carbon being lost as the sum of all the contributions
 %by each enzyme in each fungi
 dudt(7345) = sum(dedt);
-% disp(B)
 
-dudt = dudt';
         
 
 
