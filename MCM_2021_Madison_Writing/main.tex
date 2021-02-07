@@ -7,12 +7,16 @@
 
 \usepackage{natbib}
 \usepackage{graphicx}
-\usepackage{footnote}
 \usepackage{geometry}
  \geometry{
  left=1in
- right=0.75in
+ %right=0.75in
  }
+
+% PACKAGES TO ADD TO PAPER
+\usepackage{footnote}
+\usepackage{float}
+\restylefloat{table}
 
 \begin{document}
 % To-do:
@@ -34,8 +38,13 @@
 %     -neglects unusual water storage, such as tundra
 %     -low resolution
 
-More updated to-do:
-- come up with environmental test cases (spreadsheet)
+
+% More updated to-do: ****
+% - come up with environmental test cases (spreadsheet)
+% - figure out how we will sample beyond discrete sampling
+% - RAINFOREST
+% - write about how they made the data resolution good enough to find nu
+% - talk about the other stuff impacted by temperature
 
 \maketitle
 
@@ -44,32 +53,84 @@ More updated to-do:
 \subsection{Environmental Influence on Hyphal Tip Extension ($\nu$)}
 Environmental impacts are introduced to the decomposition model through $\nu$, the hyphal tip elongation rate. This elongation occurs at tip of the hyphae via vesicles known as Spitzenkorper, but the mechanism of this extension remains unknown \cite{Steinberg2007}. As described in Gervais et al. 1999, "cell turgor pressure corresponds to an overpressure which allows the cell morphology, elongation, division and hence the biomass evolution" \cite{Gervais1999}. In fungi, cell turgor itself is respondent to water potential gradients rather than to active transport within the cell, making it very environmentally dependent \cite{Gervais1999}. Thus, we have reason to examine environmental impacts on fungal decomposition rates by varying $\nu$ outside of baselines for given species in set locations.
 
-This brings us to the issue of determining $\nu$ based on environmental factors. Experimental data from Maynard et al. 2019 shows the relationship between $\nu$ and the environmental parameters of water potential and temperature \cite{Maynard2019}.  Water potential as a parameter will take into account both moisture content to fungi as well as the availability of that moisture as dictated by the  soil composition.
+This brings us to the issue of determining $\nu$ based on environmental factors. Experimental data from Maynard et al. 2019 shows the relationship between $\nu$ and the environmental parameters of water potential ($\psi$) and temperature (T) \cite{Maynard2019}.  Water potential as a parameter will take into account both moisture content to fungi as well as the availability of that moisture as dictated by the  soil composition.
 
 \subsection{Estimating $\nu$ For Various Environments}
 
 When considering a sampling of decomposition rates in various environment types, we must determine how to estimate temperate and water potentials that ground fungi would experience. In the case of determining $\nu$, this requires finding projected temperature and water potential.
 
-Amongst existing biome classification models, Whitaker's scheme \cite{Whittaker1970} is perhaps the simplest, being particularly trait-based. Whitaker's scheme provides a layout of biomes based on mean annual temperature and mean annual precipitation. However, modern classification of biomes has drifted away from using these traits as definitive biome identifiers \cite{Mucina2018}. These traits alone do not define all features of concern to fungal growth, such as soil composition for example. Thus, we can use a combination of Whitaker's scheme and additional profiling of the scheme to examine the advantages and disadvantages of different species in different environments. We will sample within the temperature range of Whitaker's scheme: $-15^{\circ}$ to $30^{\circ}$ C of mean annual temperature.
 
- Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Ranges for moisture potential of these environments have been found experimentally from a variety of studies is shown in the following table. Note that these potentials are for various seasons, as we are aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions.
+Amongst existing biome classification models, Whitaker's scheme \cite{Whittaker1970} is perhaps the simplest, being particularly trait-based. Whitaker's scheme provides a layout of biomes based on mean annual temperature and mean annual precipitation. However, modern classification of biomes has drifted away from using these traits as definitive biome identifiers \cite{Mucina2018}. These traits alone do not define all features of concern to fungal growth, such as soil composition for example. In addition, by Whitaker's scheme, we find that a given biome can have a wide range of average annual temperatures (such as arid desserts ranging from about -10 to 30 $^{\circ}C$) \cite{Whittaker1970}. Thus, we can sample a range of temperature and moisture values to output various $\nu$ and then select certain regions to profile in order to gauge potential environments where fungi can decompose and interact.
+%We will sample within the temperature range of Whitaker's scheme: $-15^{\circ}$ to $30^{\circ}$ C of mean annual temperature.
 
+The following are the specific environments selected to represent various biomes:
+
+\begin{savenotes}
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|c c|} 
+ \hline
+ Biome & Specific Environment Selected \\ [0.5ex] 
+ \hline\hline
+ Dessert (Arid) & Sonoran Desert, USA \\ 
+ \hline
+ Grasslands/shrublands & (Semi-Arid), central Argentina\\
+ \hline
+ Temperate Forest & Sal Forests, central Himalayas\\
+ \hline
+ Boreal Forest (Arboreal) & Pine Forests, central Himalayas\\
+ \hline
+ Tropical Rain Forest & Tropical Forests, Barro Colorado Island, Panama \\
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{savenotes}
+
+The following are the average annual temperatures of these biomes. Note that if ranges were given, the average of the maximum and minimum is the selected value.
+
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|c c c|} 
+ \hline
+ Biome/ Environment & Regional Average Annual Temperature [$^{\circ}C$] & Selected Value [$^{\circ}C$]\\ [0.5ex] 
+ \hline\hline
+ Dessert (Arid) & 10 to 20 \cite{Davey2007} & 15 \\ 
+ \hline
+ Grasslands/shrublands (Semi-Arid) & 15.3 \cite{Pelaez1992} & 15.3 \\
+ \hline
+ Temperate Forest & -1.42 to 26.39 \cite{Zaz2018} & 12.49 \\
+ \hline
+ Boreal Forest (Arboreal)& -1.42 to 26.39 \cite{Zaz2018} & 12.49 \\
+ \hline
+ Tropical Rain Forest & 23 to 32 \cite{Paton2020} &27.5 \\
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+ Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Ranges for moisture potential of these environments have been found experimentally from a variety of studies is shown in the following table. Note that single water potentials are selected for sampling, as we are aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions. These values are the average of the ranges or seasonal values given.
+
+%NEED TO EDIT TABLE WITH FOOTNOTES TO FIT (put spec envs?)
+%For himalayas, consider putting all values as footnotes
 \begin{savenotes}
 \begin{table}[ht]
 \begin{center}
- \begin{tabular}{|c c c c|} 
+ \begin{tabular}{|c c c|} 
  \hline
- Biome/ Environment & Specific Location & Water Potential [MPa] \\ [0.5ex] 
+ Biome/ Environment & Water Potential Range [MPa] & Selected Value [MPa] \\ [0.5ex] 
  \hline\hline
- Dessert (Arid) & Sonoran Desrt, USA & -4.0 to -5.0 MPa \cite{Nilsen1983} \\ 
+ Dessert (Arid) & -4.0 to -5.0 MPa \cite{Nilsen1983} & -4.5 MPa \\ 
  \hline
- Grasslands/shrublands (Semi-Arid) & Grasslands, central Argentina \footnote{Measurements taken November through January at 100 cm soil depth.} & -1.4 to -5.0 \cite{Pelaez 1994}\\
+ Grasslands/shrublands (Semi-Arid) & -1.4 to -5.0 \footnote{Measurements taken November through January at 100 cm soil depth.} \cite{Pelaez 1994} & -3.2 MPa\\
  \hline
- Temperate Forest & Sal Forests, central Himalayas & -0.44 (Fall) to -1.81 (Summer) \cite{Zobel2001} \\
+ Temperate Forest & -0.44 (Fall), -1.19 (Winter), -0.58 (Spring), & -1.09 MPa\\
+ &-1.42 (Early Summer), -1.81 (Summer) \cite{Zobel2001}&\\
  \hline
- Boreal Forest (Arboreal) & Pine Forests, central Himalayas & -0.83 (Fall) to -3.36 (Summer) \cite{Zobel2001}\\
+ Boreal Forest (Arboreal) & -0.83 (Fall), -1.20 (Winter), -0.55 (Spring),& -1.51 MPa\\
+ &-1.61 (Early Summer), -3.36 (Summer) \cite{Zobel2001} &\\
  \hline
- Tropical Rain Forest & Tropical Karst Forests &  \\ [1ex] 
+ Tropical Rain Forest & −1.57 MPa to 0.00 MPa  \cite{Kupers2018} & -0.79 \\ 
  \hline
 \end{tabular}
 \end{center}
@@ -80,12 +141,30 @@ Given these estimates, we can have a probable example combination of temperature
 
 We can then find $\nu$ using experimental data from Maynard et al 2019. **** (talk about continuous data technique thingy in the extra methods info sheet)
 
+
 \subsection{Other Responses to Temperature and Water Potential}
 
-****
+Our growth model takes into account temperature (T) and water potential ($\psi$) in two more parameters: the soil temperature coefficient ($S_T$) and the soil temperature coefficient ($S_M$). Moorhead et al. (1991) provides a simple relationship between $S_T$ and T using the rate of increase (Q):
+\begin{equation}
+\log_{10}(S_T) = \frac{T-25}{10}\log_{10}(Q)
+\end{equation}
+Although this equation does not take into account specific fungal response to temperature change, more recent evidence supports that this relationship is not direct, with most of the direct impact coming from moisture \cite{Petraglia2018}. As the ratio of rates of decomposition given a temperature change however, Q will represent the effective output of various mechanisms influenced by temperature rather than focusing on specific mechanisms.
+
+Water potential also relates to a constant, $S_M$, in a simple equation described in Moorhead et al. (1991) using $\alpha_2$ and $\lambda$:
+\begin{equation}
+S_M = \alpha_2 -\lambda \log_{10}(-\psi)
+\end{equation}
+
+These two parameters help calculate the maximum growth rate by the relationship:
+\begin{equation}
+\beta = S_T S_M r
+\end{equation}
+where r is the enzyme biomass ratio.
+
 
 \subsection{Responses to Other Environmental Parameters}
-****this whoke part is chaos***
+****this whole part is chaos*** only if we have space/ time :(
+
 % USE FOR ANALYSIS OF HYSTERSIS ETC LATER
 The mean soil profile distributions by percentage is \cite{Zhao2019} \footnote{Note that here we neglect uncertainties for these percentages, as we need only a general estimate of the biome.}: 
 \begin{center}
@@ -110,31 +189,7 @@ The mean soil profile distributions by percentage is \cite{Zhao2019} \footnote{N
 To define soil characteristics of various sample biomes within Whitaker's scheme, we can refer to the sampling documented in {}, which describes soil properties found in the top 30 cm.
 
 Thus, we will use the two aforementioned schemes to provide us with a more focused selection of the following environments, whose properties will be expanded upon:
-\begin{itemize}
-\item Arid: We will focus on the arid biome of an arid dry desert. We will anticipate
 
-\item Semi-arid: We will focus on the semi-arid biome of a semi-arid. 
-
-\item Temperate: We will focus on a temperate climate of temperate forests
-
-\item Arboreal
-
-\item Tropical rain forests
-
-\end{itemize}
-
-% while Holdridge's scheme looks at precipitation along with mean annual biotemperatures and potential evapotranspiration ratio to mean total annual precipitation
-% \begin{figure}[h!]
-% \centering
-% \includegraphics[scale=1.7]{universe}
-% \caption{The Universe}
-% \label{fig:universe}
-% \end{figure}
-\section{Interactions}
-
-\subsection{Niches}
-
-Evidence has pointed towards the development of niches in fungal communities; in particular, niches for slow growing but more resilient species of fungi vs quicker-growing but more sensitive material \cite{GUIDE ONE****}. In addition, there are specialized lignin-consuming and slow growing strains \cite{Moorhead2006}. 
 
 \newpage
 \section{Model Parameters}
@@ -150,7 +205,7 @@ Here are the model parameters for the coupled decomposition and growth model for
  \hline\hline
  Half-Saturation constant \footnote{Also called Michaelis Constant.} & $K_e$ & 7 & $\frac{g_{enzyme}}{L_{litter}} $ & \cite{Kari2014} Enzyme \\ 
  \hline
- Holocellulose carbon \footnote{We assume that all carbon compounds excluding lignin are holocellulose.} & $1-LCI \footnote{Where LCI is the lignocellulose index.}$  & 0.709 & N/A & \cite{Segato2014} \\ %comfirm unitless
+ Holocellulose carbon \footnote{We assume that all carbon compounds excluding lignin are holocellulose.} & $1-LCI \footnote{Where LCI is the lignocellulose index.}$  & 0.709 & N/A & \cite{Segato2014} \\ %confirm unitless
  \hline
  Hyphal tip elongation rate& $\nu$& 0.250 & $\frac{mm}{day}$ & \cite{Maynard2019} Species, $\psi$, T\\
  \hline
@@ -174,12 +229,15 @@ Here are the model parameters for the coupled decomposition and growth model for
  \hline
  Soil temperature coefficient & $S_T$ & 1 & N/A &\cite{Moorhead1991} T\\
  \hline
+ Rate of Increase & $Q$ & ?? & $^{\circ}C$ &\cite{Moorhead1991} T\\
+ \hline
  Rate constant \footnote{Proportionality constant between maximum rate of decomposition and enzyme biomass.} & G & 10 & $g*mm^{-1}*day{-1}$ &\cite{Lustenhouwer2020}\footnote{Emprically derived.}\\  %value TBD, empirically derived, Trevor will justify
  \hline
 \end{tabular}
 \end{center}
 \end{table}
 \end{savenotes}
+
 
 \newpage
 \bibliographystyle{plain}
