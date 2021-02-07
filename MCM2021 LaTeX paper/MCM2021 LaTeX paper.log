@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 FEB 2021 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 FEB 2021 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1202,9 +1202,9 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 78.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 79.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 78.
+(Font)              scaled to size 17.28pt on input line 79.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1216,32 +1216,32 @@ This may cause the page layout to be inconsistent, however.
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 109.
+(Font)              scaled to size 14.4pt on input line 140.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 109.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 140.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 109.
+(Font)              scaled to size 14.4pt on input line 140.
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 1
-12.
+43.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 112.
+(Font)              scaled to size 12.0pt on input line 143.
  [2]
 [3]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 228.
+(Font)              scaled to size 12.0pt on input line 264.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 228.
-LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 228
+(Font)              scaled to size 12.0pt on input line 264.
+LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 264
 .
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 228.
+(Font)              scaled to size 12.0pt on input line 264.
  [4]
 (./MCM2021 LaTeX paper.aux)
 Package logreq Info: Writing requests to '"MCM2021 LaTeX paper".run.xml'.
@@ -1251,11 +1251,11 @@ Package logreq Info: Writing requests to '"MCM2021 LaTeX paper".run.xml'.
 Here is how much of TeX's memory you used:
  22797 strings out of 492616
  404228 string characters out of 6129482
- 895187 words of memory out of 5000000
+ 901214 words of memory out of 5000000
  26439 multiletter control sequences out of 15000+600000
  584033 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,63p,1724b,1590s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,11n,63p,1724b,1590s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{
 /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/l
 ocal/texlive/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/tex
@@ -1271,7 +1271,7 @@ xmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
 /local/texlive/2019/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/t
 exlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "MCM2021 LaTeX paper.pdf" (5 pages, 130632 bytes).
+Output written on "MCM2021 LaTeX paper.pdf" (5 pages, 132221 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

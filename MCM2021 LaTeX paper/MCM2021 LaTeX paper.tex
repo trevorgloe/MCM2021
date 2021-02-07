@@ -74,11 +74,40 @@ sorting=ynt]{biblatex}
 \rhead{Page \thepage\ }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \begin{multicols}{2}
-\section{Hook}
-\lipsum[1]
+\section{Pre-planning intro}
+The Five Core Tenants:
+1. growth/Decomposition continuous model
+- general explanation of the structure of fungi: hyphal extension rate, branching, tips, death, etc.
+- proportion of enzymes relative to the phases correlates with the speed of decomposition and effectiveness in a certain phase
+- substrate talk
+- phases talk
+- reasoning behind choosing a continuous model
+
+2. interactions between different fungi with differing characteristics
+- competitive interactions
+- synergy under richness and fluctuating temperatures
+- the more differing the characteristics of the fungi, the more likely they are to compete
+- the competitive ranking
+
+3. sensitivity to environmental fluctuations
+- slower-growth stress tolerant fungi vs fast growth more niche temp/moisture fungi determining which of these two wins out depends on how much the environment is fluctuating and what subset of fungi are present
+- fluctuating temperatures promotes growth
+- moisture talk
+- biome talk
+
+4. biodiversity's impact on systems overall efficiency
+- richness promotes growth
+- competition promotes efficiency
+- dominant species that 'wipe out' the community generally harm?
+
+5. effect on the carbon cycle
+- fungi/bacteria are the only life forms which can break down lignin and efficiency break down holocellulose litter — these poysaccarides make up a huge portion of the total ground litter biomass in the earth's forests
+
 
 \section{Introduction}
+
 This is a test of the introduction \cite{Du2019}
 
 Biodiversity's impact on the system's overall efficiency:
@@ -106,6 +135,8 @@ We're making the assumption that the production of each enzyme is  equivalent to
 
 We made the assumption that the enzymes are not changing over time due to C/N changes or environmental fluctuations
 
+The time scale for our model is following the experimental results from (paper cited by question) which indicates x\% log decomposition after 3 years and y\% decomposition of logs after 5 years for a wide sampling of fungus
+
 \subsection{Assumptions}
 
 \begin{itemize}
@@ -122,6 +153,7 @@ We made the assumption that the enzymes are not changing over time due to C/N ch
 		mycelium are ignored or simplified
 		\item[--] growth dynamics incurred by the formation of concentric density rings are not considered <-- this doesn't need to exist because we're considering growth in a 1D tube
 		\item[--] only considering one configuration of growth traits out of many possible options, that configuration being: tip-hypha anasmotosis, dichotomous branching, and hyphal death
+		\item[--] decomposition coefficients are representative of those families of enzymes
 	\end{itemize}
 	\item Decomposition Kinetics
 	\begin{itemize}
@@ -129,10 +161,7 @@ We made the assumption that the enzymes are not changing over time due to C/N ch
 	\end{itemize}
 	\item Temperature/Moisture effects
 	\begin{itemize}
-		\item[--] Paths are perfectly straight
-		\item[--] Every path only has either the delivery location or storage container as origin and destination
-		\item[--] Paths are modeled in two dimensions i.e. no altitude changes are considered
-		\item[--] Not considering effects of having multiple drones flying at once
+		\item[--] experimental data for water potentials in specific biomes/environments are representative of the conditions of those environments 
 	\end{itemize}
 	\item Interactions
 	\begin{itemize}
