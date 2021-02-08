@@ -1,23 +1,20 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'MCM2021 LaTeX paper.blg'
-[40] biber-darwin:315> INFO - === Sun Feb  7, 2021, 15:23:03
+[38] biber-darwin:315> INFO - === Sun Feb  7, 2021, 21:19:29
 [61] Biber.pm:371> INFO - Reading 'MCM2021 LaTeX paper.bcf'
-[132] Biber.pm:889> INFO - Found 24 citekeys in bib section 0
-[143] Biber.pm:4093> INFO - Processing section 0
-[152] Biber.pm:4254> INFO - Looking for bibtex format file 'masterbib.bib' for section 0
-[158] bibtex.pm:1523> INFO - LaTeX decoding ...
-[270] bibtex.pm:1340> INFO - Found BibTeX data source 'masterbib.bib'
-[350] Utils.pm:193> WARN - ISBN '2058-5276' in entry 'Maynard2019' is invalid - run biber with '--validate_datamodel' for details.
-[362] Utils.pm:193> WARN - ISBN '' in entry 'Whittaker1970' is invalid - run biber with '--validate_datamodel' for details.
-[364] Utils.pm:193> WARN - ISBN '' in entry 'Mucina2018' is invalid - run biber with '--validate_datamodel' for details.
-[382] Utils.pm:193> WARN - month field 'Oct' in entry 'Paton2019' is not an integer - this will probably not sort properly.
-[407] Utils.pm:193> WARN - I didn't find a database entry for 'Andren1999' (section 0)
-[407] Utils.pm:193> WARN - I didn't find a database entry for 'Moore' (section 0)
-[407] Utils.pm:193> WARN - I didn't find a database entry for 'Davey2007' (section 0)
-[428] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[428] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[429] Biber.pm:3921> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[429] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[455] bbl.pm:636> INFO - Writing 'MCM2021 LaTeX paper.bbl' with encoding 'UTF-8'
-[465] bbl.pm:739> INFO - Output to MCM2021 LaTeX paper.bbl
-[465] Biber.pm:110> INFO - WARNINGS: 7
+[137] Biber.pm:889> INFO - Found 22 citekeys in bib section 0
+[149] Biber.pm:4093> INFO - Processing section 0
+[158] Biber.pm:4254> INFO - Looking for bibtex format file 'masterbib.bib' for section 0
+[167] bibtex.pm:1523> INFO - LaTeX decoding ...
+[282] bibtex.pm:1340> INFO - Found BibTeX data source 'masterbib.bib'
+[332] Utils.pm:193> WARN - ISBN '2058-5276' in entry 'Maynard2019' is invalid - run biber with '--validate_datamodel' for details.
+[394] Utils.pm:193> WARN - ISBN '' in entry 'Whittaker1970' is invalid - run biber with '--validate_datamodel' for details.
+[396] Utils.pm:193> WARN - ISBN '' in entry 'Mucina2018' is invalid - run biber with '--validate_datamodel' for details.
+[405] Utils.pm:193> WARN - I didn't find a database entry for 'Petraglia2018' (section 0)
+[436] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[436] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[436] Biber.pm:3921> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[436] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[464] bbl.pm:636> INFO - Writing 'MCM2021 LaTeX paper.bbl' with encoding 'UTF-8'
+[473] bbl.pm:739> INFO - Output to MCM2021 LaTeX paper.bbl
+[474] Biber.pm:110> INFO - WARNINGS: 4

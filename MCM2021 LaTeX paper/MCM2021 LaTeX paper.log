@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 FEB 2021 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 FEB 2021 22:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -731,14 +731,31 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \colbreak@box=\box73
 \mc@col@check@num=\count279
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen164
+\captionmargin@=\dimen165
+\captionwidth=\dimen166
+\caption@tempdima=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
+)
+\c@caption@flags=\count280
+\c@ContinuedFloat=\count281
+)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box74
-\fn@width=\dimen164
+\fn@width=\dimen171
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count280
+\c@float@type=\count282
 \float@exts=\toks29
 \float@box=\box75
 \@float@everytoks=\toks30
@@ -762,11 +779,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2019/05/04 3.31 Babel common definitions
-\babel@savecnt=\count281
-\U@D=\dimen165
+\babel@savecnt=\count283
+\U@D=\dimen172
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count282
+\bbl@dirlevel=\count284
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -801,7 +818,7 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 )))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count283
+\lrq@indent=\count285
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -813,47 +830,47 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count284
-\c@listtotal=\count285
-\c@listcount=\count286
-\c@liststart=\count287
-\c@liststop=\count288
-\c@citecount=\count289
-\c@citetotal=\count290
-\c@multicitecount=\count291
-\c@multicitetotal=\count292
-\c@instcount=\count293
-\c@maxnames=\count294
-\c@minnames=\count295
-\c@maxitems=\count296
-\c@minitems=\count297
-\c@citecounter=\count298
-\c@maxcitecounter=\count299
-\c@savedcitecounter=\count300
-\c@uniquelist=\count301
-\c@uniquename=\count302
-\c@refsection=\count303
-\c@refsegment=\count304
-\c@maxextratitle=\count305
-\c@maxextratitleyear=\count306
-\c@maxextraname=\count307
-\c@maxextradate=\count308
-\c@maxextraalpha=\count309
-\c@abbrvpenalty=\count310
-\c@highnamepenalty=\count311
-\c@lownamepenalty=\count312
-\c@maxparens=\count313
-\c@parenlevel=\count314
-\blx@tempcnta=\count315
-\blx@tempcntb=\count316
-\blx@tempcntc=\count317
-\blx@maxsection=\count318
-\blx@maxsegment@0=\count319
-\blx@notetype=\count320
-\blx@parenlevel@text=\count321
-\blx@parenlevel@foot=\count322
-\blx@sectionciteorder@0=\count323
-\blx@entrysetcounter=\count324
+\c@tabx@nest=\count286
+\c@listtotal=\count287
+\c@listcount=\count288
+\c@liststart=\count289
+\c@liststop=\count290
+\c@citecount=\count291
+\c@citetotal=\count292
+\c@multicitecount=\count293
+\c@multicitetotal=\count294
+\c@instcount=\count295
+\c@maxnames=\count296
+\c@minnames=\count297
+\c@maxitems=\count298
+\c@minitems=\count299
+\c@citecounter=\count300
+\c@maxcitecounter=\count301
+\c@savedcitecounter=\count302
+\c@uniquelist=\count303
+\c@uniquename=\count304
+\c@refsection=\count305
+\c@refsegment=\count306
+\c@maxextratitle=\count307
+\c@maxextratitleyear=\count308
+\c@maxextraname=\count309
+\c@maxextradate=\count310
+\c@maxextraalpha=\count311
+\c@abbrvpenalty=\count312
+\c@highnamepenalty=\count313
+\c@lownamepenalty=\count314
+\c@maxparens=\count315
+\c@parenlevel=\count316
+\blx@tempcnta=\count317
+\blx@tempcntb=\count318
+\blx@tempcntc=\count319
+\blx@maxsection=\count320
+\blx@maxsegment@0=\count321
+\blx@notetype=\count322
+\blx@parenlevel@text=\count323
+\blx@parenlevel@foot=\count324
+\blx@sectionciteorder@0=\count325
+\blx@entrysetcounter=\count326
 \labelnumberwidth=\skip66
 \labelalphawidth=\skip67
 \biblabelsep=\skip68
@@ -864,9 +881,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip73
 \blx@bcfin=\read2
 \blx@bcfout=\write3
-\c@mincomprange=\count325
-\c@maxcomprange=\count326
-\c@mincompwidth=\count327
+\c@mincomprange=\count327
+\c@maxcomprange=\count328
+\c@mincompwidth=\count329
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -877,74 +894,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chem-angew.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count328
-\c@savedafterword=\count329
-\c@annotator=\count330
-\c@savedannotator=\count331
-\c@author=\count332
-\c@savedauthor=\count333
-\c@bookauthor=\count334
-\c@savedbookauthor=\count335
-\c@commentator=\count336
-\c@savedcommentator=\count337
-\c@editor=\count338
-\c@savededitor=\count339
-\c@editora=\count340
-\c@savededitora=\count341
-\c@editorb=\count342
-\c@savededitorb=\count343
-\c@editorc=\count344
-\c@savededitorc=\count345
-\c@foreword=\count346
-\c@savedforeword=\count347
-\c@holder=\count348
-\c@savedholder=\count349
-\c@introduction=\count350
-\c@savedintroduction=\count351
-\c@namea=\count352
-\c@savednamea=\count353
-\c@nameb=\count354
-\c@savednameb=\count355
-\c@namec=\count356
-\c@savednamec=\count357
-\c@translator=\count358
-\c@savedtranslator=\count359
-\c@shortauthor=\count360
-\c@savedshortauthor=\count361
-\c@shorteditor=\count362
-\c@savedshorteditor=\count363
-\c@labelname=\count364
-\c@savedlabelname=\count365
-\c@institution=\count366
-\c@savedinstitution=\count367
-\c@lista=\count368
-\c@savedlista=\count369
-\c@listb=\count370
-\c@savedlistb=\count371
-\c@listc=\count372
-\c@savedlistc=\count373
-\c@listd=\count374
-\c@savedlistd=\count375
-\c@liste=\count376
-\c@savedliste=\count377
-\c@listf=\count378
-\c@savedlistf=\count379
-\c@location=\count380
-\c@savedlocation=\count381
-\c@organization=\count382
-\c@savedorganization=\count383
-\c@origlocation=\count384
-\c@savedoriglocation=\count385
-\c@origpublisher=\count386
-\c@savedorigpublisher=\count387
-\c@publisher=\count388
-\c@savedpublisher=\count389
-\c@language=\count390
-\c@savedlanguage=\count391
-\c@origlanguage=\count392
-\c@savedoriglanguage=\count393
-\c@pageref=\count394
-\c@savedpageref=\count395
+\c@afterword=\count330
+\c@savedafterword=\count331
+\c@annotator=\count332
+\c@savedannotator=\count333
+\c@author=\count334
+\c@savedauthor=\count335
+\c@bookauthor=\count336
+\c@savedbookauthor=\count337
+\c@commentator=\count338
+\c@savedcommentator=\count339
+\c@editor=\count340
+\c@savededitor=\count341
+\c@editora=\count342
+\c@savededitora=\count343
+\c@editorb=\count344
+\c@savededitorb=\count345
+\c@editorc=\count346
+\c@savededitorc=\count347
+\c@foreword=\count348
+\c@savedforeword=\count349
+\c@holder=\count350
+\c@savedholder=\count351
+\c@introduction=\count352
+\c@savedintroduction=\count353
+\c@namea=\count354
+\c@savednamea=\count355
+\c@nameb=\count356
+\c@savednameb=\count357
+\c@namec=\count358
+\c@savednamec=\count359
+\c@translator=\count360
+\c@savedtranslator=\count361
+\c@shortauthor=\count362
+\c@savedshortauthor=\count363
+\c@shorteditor=\count364
+\c@savedshorteditor=\count365
+\c@labelname=\count366
+\c@savedlabelname=\count367
+\c@institution=\count368
+\c@savedinstitution=\count369
+\c@lista=\count370
+\c@savedlista=\count371
+\c@listb=\count372
+\c@savedlistb=\count373
+\c@listc=\count374
+\c@savedlistc=\count375
+\c@listd=\count376
+\c@savedlistd=\count377
+\c@liste=\count378
+\c@savedliste=\count379
+\c@listf=\count380
+\c@savedlistf=\count381
+\c@location=\count382
+\c@savedlocation=\count383
+\c@organization=\count384
+\c@savedorganization=\count385
+\c@origlocation=\count386
+\c@savedoriglocation=\count387
+\c@origpublisher=\count388
+\c@savedorigpublisher=\count389
+\c@publisher=\count390
+\c@savedpublisher=\count391
+\c@language=\count392
+\c@savedlanguage=\count393
+\c@origlanguage=\count394
+\c@savedoriglanguage=\count395
+\c@pageref=\count396
+\c@savedpageref=\count397
 \shorthandwidth=\skip74
 \shortjournalwidth=\skip75
 \shortserieswidth=\skip76
@@ -970,13 +987,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
-\c@textcitecount=\count396
-\c@textcitetotal=\count397
-\c@textcitemaxnames=\count398
-\c@biburlnumpenalty=\count399
-\c@biburlucpenalty=\count400
-\c@biburllcpenalty=\count401
-\c@smartand=\count402
+\c@textcitecount=\count398
+\c@textcitetotal=\count399
+\c@textcitemaxnames=\count400
+\c@biburlnumpenalty=\count401
+\c@biburlucpenalty=\count402
+\c@biburllcpenalty=\count403
+\c@smartand=\count404
 )
 Package biblatex Info: Trying to load bibliography style 'chem-angew'...
 Package biblatex Info: ... file 'chem-angew.bbx' found.
@@ -998,8 +1015,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count403
-\c@bbx:relatedtotal=\count404
+\c@bbx:relatedcount=\count405
+\c@bbx:relatedtotal=\count406
 ))))
 Package biblatex Info: Trying to load citation style 'chem-angew'...
 Package biblatex Info: ... file 'chem-angew.cbx' found.
@@ -1011,8 +1028,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count405
-\c@cbx@tempcntb=\count406
+\c@cbx@tempcnta=\count407
+\c@cbx@tempcntb=\count408
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1033,16 +1050,16 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-\c@theorem=\count407
-\c@definition=\count408
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 49
+\c@theorem=\count409
+\c@definition=\count410
+LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 54
 .
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 49.
+(Font)              scaled to size 12.0pt on input line 54.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1053,58 +1070,64 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count409
-\@quotereset=\count410
-(./MCM2021 LaTeX paper.aux)
+\@quotelevel=\count411
+\@quotereset=\count412
+(./MCM2021 LaTeX paper.aux
+
+LaTeX Warning: Label `eq' multiply defined.
+
+
+LaTeX Warning: Label `eq' multiply defined.
+
+)
 \openout1 = `"MCM2021 LaTeX paper.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 49.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 49
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 54.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 54
 .
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/omlntxmi.fd
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 49.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 54.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 49.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 49
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 54
 .
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 4
-9.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 5
+4.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    ... okay on input line 54.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1140,20 +1163,20 @@ LaTeX Font Info:    ... okay on input line 49.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count411
-\c@mv@boldtabular=\count412
+\c@mv@tabular=\count413
+\c@mv@boldtabular=\count414
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count413
-\scratchdimen=\dimen166
+\scratchcounter=\count415
+\scratchdimen=\dimen173
 \scratchbox=\box77
-\nofMPsegments=\count414
-\nofMParguments=\count415
+\nofMPsegments=\count416
+\nofMParguments=\count417
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count416
-\MPscratchDim=\dimen167
-\MPnumerator=\count417
-\makeMPintoPDFobject=\count418
+\MPscratchCnt=\count418
+\MPscratchDim=\dimen174
+\MPnumerator=\count419
+\makeMPintoPDFobject=\count420
 \everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1175,6 +1198,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1187,85 +1213,71 @@ Package biblatex Info: ... file '"MCM2021 LaTeX paper".bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Andren1999
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Davey2007
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Moore
+(biblatex)                Petraglia2018
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 49.
-Package biblatex Info: Reference segment=0 on input line 49.
-LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 5
-9.
+Package biblatex Info: Reference section=0 on input line 54.
+Package biblatex Info: Reference segment=0 on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 6
+4.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 59.
+(Font)              scaled to size 12.0pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 59.
+(Font)              scaled to size 8.8pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 59.
-LaTeX Font Info:    Try loading font information for U+msa on input line 59.
+(Font)              scaled to size 6.6pt on input line 64.
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 59.
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 59.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 64.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 59.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 64.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 59.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 64.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <12> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 59.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 59.
+(Font)              scaled to size 12.0pt on input line 64.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 59.
+(Font)              scaled to size 17.28pt on input line 64.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 87.
+(Font)              scaled to size 17.28pt on input line 92.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 93.
+(Font)              scaled to size 14.4pt on input line 98.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 93.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 98.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 93.
+(Font)              scaled to size 14.4pt on input line 98.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1276,114 +1288,75 @@ This may cause the page layout to be inconsistent, however.
 [1
 
 ]
-
-LaTeX Warning: Citation 'Davidson2012' on page 2 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'Du2019' on page 2 undefined on input line 111.
-
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 113.
+(Font)              scaled to size 14.4pt on input line 118.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 113.
+(Font)              scaled to size 10.5pt on input line 118.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.9pt on input line 113.
-
-LaTeX Warning: Citation 'Moore2015' on page 2 undefined on input line 117.
-
-[2]
+(Font)              scaled to size 7.9pt on input line 118.
+ [2]
 LaTeX Font Info:    Try loading font information for T1+ntxsups on input line 1
-61.
+74.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxsups.fd
 File: t1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 12.0pt on input line 161.
+(Font)              scaled to size 12.0pt on input line 174.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 161.
+(Font)              scaled to size 10.0pt on input line 174.
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 161.
+(Font)              scaled to size 10.0pt on input line 174.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 3 might be wrong on input line 171.
+(multicol)                Footnotes on page 3 might be wrong on input line 184.
 
 
 [3] [4]
-
-LaTeX Warning: Citation 'Petraglia2018' on page 5 undefined on input line 234.
-
-
-LaTeX Warning: Citation 'Moorhead1991' on page 5 undefined on input line 234.
-
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
-50.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+64.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 250.
- [5] [6]
-[7] [8]
+(Font)              scaled to size 12.0pt on input line 264.
+
+[5]
+<avg_contr_nu_environment.png, id=31, 1166.3575pt x 911.405pt>
+File: avg_contr_nu_environment.png Graphic file (type png)
+<use avg_contr_nu_environment.png>
+Package pdftex.def Info: avg_contr_nu_environment.png  used on input line 301.
+(pdftex.def)             Requested size: 487.82251pt x 381.18819pt.
+ [6] [7 <./avg_contr_nu_environment.png (PNG copy)>]
+<avg_contr_nu_competative_rankings.png, id=39, 1126.2075pt x 843.15pt>
+File: avg_contr_nu_competative_rankings.png Graphic file (type png)
+<use avg_contr_nu_competative_rankings.png>
+Package pdftex.def Info: avg_contr_nu_competative_rankings.png  used on input l
+ine 327.
+(pdftex.def)             Requested size: 238.91125pt x 178.85501pt.
+ [8 <./avg_contr_nu_competative_rankings.png (PNG copy)>] [9] [10]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 442.
+(Font)              scaled to size 12.0pt on input line 492.
+ [11] [12] (./MCM2021 LaTeX paper.aux)
 
-! Misplaced alignment tab character &.
-<argument> Journal of Scientific &
-                                   Industrial Research
-l.443 \end
-          {document}
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.443 \end
-          {document}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.443 \end
-          {document}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[9] (./MCM2021 LaTeX paper.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                "MCM2021 LaTeX paper"
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to '"MCM2021 LaTeX paper".run.xml'.
 \openout1 = `"MCM2021 LaTeX paper.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23046 strings out of 492616
- 410077 string characters out of 6129482
- 926126 words of memory out of 5000000
- 26680 multiletter control sequences out of 15000+600000
- 595241 words of font info for 129 fonts, out of 8000000 for 9000
+ 24190 strings out of 492616
+ 430942 string characters out of 6129482
+ 944808 words of memory out of 5000000
+ 27803 multiletter control sequences out of 15000+600000
+ 599814 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,11n,63p,2712b,1608s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,12n,92p,2712b,1608s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/us
 r/local/texlive/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/
 texlive/2019/texmf-dist/fonts/enc/dvips/base/ec.enc}{/usr/local/texlive/2019/te
@@ -1399,10 +1372,10 @@ usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2019/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "MCM2021 LaTeX paper.pdf" (10 pages, 159607 bytes).
+Output written on "MCM2021 LaTeX paper.pdf" (13 pages, 290152 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
