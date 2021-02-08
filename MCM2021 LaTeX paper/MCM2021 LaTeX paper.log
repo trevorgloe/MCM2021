@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 FEB 2021 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 FEB 2021 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1055,29 +1055,14 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count409
 \@quotereset=\count410
-(./MCM2021 LaTeX paper.aux
-
-LaTeX Warning: Label `eq' multiply defined.
-
-
-LaTeX Warning: Label `eq' multiply defined.
-
-
-LaTeX Warning: Label `eq' multiply defined.
-
-
-LaTeX Warning: Label `eq' multiply defined.
-
-
-LaTeX Warning: Label `eq' multiply defined.
-
-)
+(./MCM2021 LaTeX paper.aux)
 \openout1 = `"MCM2021 LaTeX paper.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 49.
 LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 49
 .
- (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/omlntxmi.fd
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 49.
@@ -1291,61 +1276,66 @@ This may cause the page layout to be inconsistent, however.
 [1
 
 ]
+
+LaTeX Warning: Citation 'Davidson2012' on page 2 undefined on input line 111.
+
+
+LaTeX Warning: Citation 'Du2019' on page 2 undefined on input line 111.
+
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 113.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.5pt on input line 113.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.9pt on input line 113.
- [2] [3]
-Overfull \hbox (24.3767pt too wide) in paragraph at lines 185--200
- [] 
- []
 
-LaTeX Font Info:    Try loading font information for T1+ntxsups on input line 2
-16.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxsups.fd
+LaTeX Warning: Citation 'Moore2015' on page 2 undefined on input line 117.
+
+[2]
+LaTeX Font Info:    Try loading font information for T1+ntxsups on input line 1
+61.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxsups.fd
 File: t1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 12.0pt on input line 216.
+(Font)              scaled to size 12.0pt on input line 161.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 216.
+(Font)              scaled to size 10.0pt on input line 161.
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 216.
+(Font)              scaled to size 10.0pt on input line 161.
 
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
-LaTeX Warning: Citation 'Kupers2019' on page 4 undefined on input line 224.
-
-
-Overfull \hbox (29.25754pt too wide) in paragraph at lines 210--227
- [] 
  []
 
 
-Overfull \vbox (79.18764pt too high) has occurred while \output is active []
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 3 might be wrong on input line 171.
 
 
-Overfull \vbox (79.18764pt too high) has occurred while \output is active []
+[3] [4]
+
+LaTeX Warning: Citation 'Petraglia2018' on page 5 undefined on input line 234.
 
 
-[4] [5]
-LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 3
-07.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+LaTeX Warning: Citation 'Moorhead1991' on page 5 undefined on input line 234.
+
+LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
+50.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 307.
-
-[6] [7]
+(Font)              scaled to size 12.0pt on input line 250.
+ [5] [6]
+[7] [8]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 429.
+(Font)              scaled to size 12.0pt on input line 442.
 
 ! Misplaced alignment tab character &.
 <argument> Journal of Scientific &
                                    Industrial Research
-l.430 \end
+l.443 \end
           {document}
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1354,11 +1344,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[8]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.430 \end
+l.443 \end
           {document}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1366,7 +1355,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.430 \end
+l.443 \end
           {document}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1379,9 +1368,6 @@ my insertion and my current dilemma will both disappear.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
-
-
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                "MCM2021 LaTeX paper"
 (biblatex)                and rerun LaTeX afterwards.
@@ -1391,13 +1377,13 @@ Package logreq Info: Writing requests to '"MCM2021 LaTeX paper".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23053 strings out of 492616
- 410116 string characters out of 6129482
- 930200 words of memory out of 5000000
- 26675 multiletter control sequences out of 15000+600000
- 599814 words of font info for 141 fonts, out of 8000000 for 9000
+ 23046 strings out of 492616
+ 410077 string characters out of 6129482
+ 926126 words of memory out of 5000000
+ 26680 multiletter control sequences out of 15000+600000
+ 595241 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,12n,63p,2712b,1608s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,11n,63p,2712b,1608s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/us
 r/local/texlive/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/
 texlive/2019/texmf-dist/fonts/enc/dvips/base/ec.enc}{/usr/local/texlive/2019/te
@@ -1413,7 +1399,7 @@ usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2019/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "MCM2021 LaTeX paper.pdf" (10 pages, 155475 bytes).
+Output written on "MCM2021 LaTeX paper.pdf" (10 pages, 159607 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
