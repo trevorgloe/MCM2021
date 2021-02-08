@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.0 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -37,7 +37,7 @@
       \strng{authornamehash}{e6105c061b5d3a6c6b11965dca40a1b1}
       \strng{authorfullhash}{e6105c061b5d3a6c6b11965dca40a1b1}
       \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Communities and ecosystems}
@@ -58,7 +58,7 @@
       \strng{authornamehash}{e3fdeebf093655762c4d7e4338fcf46e}
       \strng{authorfullhash}{e3fdeebf093655762c4d7e4338fcf46e}
       \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A theoretical model which gives the rate of microbial decomposition of organic material (plant or animal residues, or soil organic matter) is presented. Explicit equations for the rate of decomposition, mineralizations and immobilization are given. The main assumption of the model is that the rate of decomposition of any substrate is proportional to the growth rate of its decomposers. The main results of the model are: 1. Addition of extra nitrogen to materials poor in nitrogen increase their rate of decomposition; 2. Addition of extra nitrogen to a substrate whose initial carbon/nitrogen ratio is above a critical ratio (20–30) causes a decrease in the substrate's carbon/nitrogen ratio during its decomposition; 3. If the initial carbon/nitrogen ratio is below the critical one, no change in the substrate's ratio will occur with time; 4. Net mineralization of organic-nitrogen occurs when the substrate being decomposed has an initial carbon/nitrogen ratio which is below the critical one; 5. Addition of ammonium to such a substrate (point 4) will increase the rate of organic-nitrogen mineralization but not necessarily the rate of net mineralization. All the model results are analytical and independent of the values for the various parameters. Nevertheless the application of the model to real field conditions is discussed while presenting a numerical example.}
@@ -95,7 +95,7 @@
       \strng{authornamehash}{2c3c8aaa1373744e32269ac3492bb520}
       \strng{authorfullhash}{2c3c8aaa1373744e32269ac3492bb520}
       \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Fungi have primitive tissues in which regulated spatial growth is known to occur. For this reason, they provide a convenient model system for some aspects of tissue growth in higher organisms. A mathematical description of growth and branching in fungi is derived in terms of continuum variables such as densities of filaments and tips of filaments. The equations contain a term for branching which takes on specific mathematical forms for distinct fungal morphologies (lateral or dichotomous branching, anastomosis, etc.). By analysing propagating solutions to these equations it is demonstrated that certain branching strategies may be advantageous to the propagation of the tissue. The model also suggests causes for ring-like patterns occasionally associated with the colonies of certain species of fungi.}
@@ -137,7 +137,7 @@
       \strng{authornamehash}{0e27edc94a23c5b4e8d7f399910253ce}
       \strng{authorfullhash}{0e27edc94a23c5b4e8d7f399910253ce}
       \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A mathematical model for the growth and morphogenesis in colonies of mycelial fungi is given. The model consists of partial differential equations for accumulation of hyphae by apical growth, uptake of nutrient, and redistribution of a derived metabolite within the mycelium. Mechanisms for nutrient absorption and for metabolite translocation are discussed. An explanation for growth in the form of concentric mycelial rings is offered, based on the hypothesis that repeated metabolite buildup and depletion gives rise to different local branching rates, and thus distinct bands of hyphal densities.}
@@ -159,119 +159,72 @@
       \verb https://www.sciencedirect.com/science/article/pii/0022519383904101
       \endverb
     \endentry
-    \entry{Nilsen1983}{article}{}
-      \name{author}{5}{}{%
-        {{hash=50b207cff11a59320090f64891c1b555}{%
-           family={Nilsen},
-           familyi={N\bibinitperiod},
-           given={Erika\bibnamedelima Tallak},
-           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=b959a1fda7a66557cf1a32afb938182d}{%
-           family={Sharifi},
-           familyi={S\bibinitperiod},
-           given={M.\bibnamedelimi Rasoul},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=916ab6d3a86d516a6c13a35b80528d01}{%
-           family={Rundel},
+    \entry{Moorhead1991}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c11fe54d97c1bb34d16e57a09bbc2d13}{%
+           family={Moorhead},
+           familyi={M\bibinitperiod},
+           given={Daryl\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=e7779aa2bd818f8f4b757146c676f712}{%
+           family={Reynolds},
            familyi={R\bibinitperiod},
-           given={Philip\bibnamedelima W.},
-           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=97ce998b974ff5e739d0de487e6cd15c}{%
-           family={Jarrell},
-           familyi={J\bibinitperiod},
-           given={Wesley\bibnamedelima M.},
-           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=93e2f5a10bec9feffae656336f92de05}{%
-           family={Virginia},
-           familyi={V\bibinitperiod},
-           given={Ross\bibnamedelima A.},
-           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           given={James\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Ecological Society of America}%
-      }
-      \strng{namehash}{99ae79e228eeca7034d194de19bd6184}
-      \strng{fullhash}{255dc78e1269a202ef27dee62935da24}
-      \strng{bibnamehash}{99ae79e228eeca7034d194de19bd6184}
-      \strng{authorbibnamehash}{99ae79e228eeca7034d194de19bd6184}
-      \strng{authornamehash}{99ae79e228eeca7034d194de19bd6184}
-      \strng{authorfullhash}{255dc78e1269a202ef27dee62935da24}
+      \strng{namehash}{932ef3a8f2b6f38a6baeb6d7781f65ae}
+      \strng{fullhash}{932ef3a8f2b6f38a6baeb6d7781f65ae}
+      \strng{bibnamehash}{932ef3a8f2b6f38a6baeb6d7781f65ae}
+      \strng{authorbibnamehash}{932ef3a8f2b6f38a6baeb6d7781f65ae}
+      \strng{authornamehash}{932ef3a8f2b6f38a6baeb6d7781f65ae}
+      \strng{authorfullhash}{932ef3a8f2b6f38a6baeb6d7781f65ae}
       \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Diurnal and Seasonal water relations were monitored in a population of Prosopis glandulosa var. torreyana in the Sonoran Desert of southern California. Prosopis glandulosa at this research site acquired its water from a ground water source 4-6 m deep. Measurements of diurnal and seasonal cycles of aboveground environmental conditions, soil moisture, and soil water potential (to 6 m depth) were taken to ascertain environmental water availability and water stress. Leaf water potential, leaf conductance, leaf transpiration, relative saturation deficit of leaves, osmotic potential, and turgor potential were measured to evaluate plant adaptations to environmental water stress. Soil water potential was low (-4.0 to -5.0 MPa) in surface soil in relation to deep soil (-0.2) MPa). This difference was due to high surface soil salinity and low surface water content. the climatic conditions at the research site produced extreme water stress conditions in summer months when temperatures reached 50@?C, vapor pressure deficit (VPD) reached 8 kPa, and surface soil water potential was below -4.5 MPa. Although considerable plant water stress developed in these trees (midday leaf water potential -4.8 MPa), osmotic adjustment occurred and turgor was maintained on a diurnal and seasonal cycle. Prosopis glandulosa has adapted to avoid water stress by utilizing deep ground water, but this phreatophyte has also evolved physiological adaptations, such as osmotic adjustment and seasonally changing stomatal sensitivity to VPD, which result in greater tolerance of water stress.}
-      \field{issn}{00129658, 19399170}
-      \field{journaltitle}{Ecology}
-      \field{number}{6}
-      \field{title}{Diurnal and Seasonal Water Relations of the Desert Phreatophyte Prosopis Glandulosa (Honey Mesquite) in the Sonoran Desert of California}
-      \field{volume}{64}
-      \field{year}{1983}
-      \field{pages}{1381\bibrangedash 1393}
-      \range{pages}{13}
+      \field{abstract}{Numerous empirical studies have described the pathways of mass, C and N flows during decomposition, but there remains a paucity of data on underlying mechanisms in arid ecosystems. In the northern Chihuahuan Desert, termites remove large quantities of litter and act as carbon and nitrogen sinks, contributing to low soil fertility. In their absence, decomposition at the soil surface is primarily driven by abiotic weathering, but studies suggest buried litter decay occurs through microbiological activities. We develop a general, synthetic model to examine the interactions between buried litter, decomposer microorganisms, and C and N pools in this ecosystem. Our goal is to explore the mechanisms underlying observed patterns of decomposition in arid systems using a modelling approach that balances simplicity with enough detail to suggest the reasons for system behavior. To this end, we utilize elements of existing models, interfacing microbial physiology and population dynamics with empirical observations of C and N pool dynamics, litter mass loss and changing C:N ratios. Good agreement was achieved between simulated and observed patterns of mass loss and nitrogen concentrations once a time lag describing the microbial colonization of litter was included. Model results indicate nutrient availabilities may be determined by relatively short-term carbon dynamics mediated by microflora since soil organic matter and nitrogen content are low. Model behavior also suggests decomposer organisms immobilize nitrogen from surrounding soils, accounting for the elevated quantities observed within decaying materials. Past hypotheses have proposed that soil flora and fauna partially decouple decomposition processes from abiotic constraints in this system. This study indicates that the pattern of microbial activities, accounting for the decomposition of buried materials in the absence of termites, is primarily determined by climatic conditions.}
+      \field{issn}{0304-3800}
+      \field{journaltitle}{Ecological Modelling}
+      \field{title}{A general model of litter decomposition in the northern Chihuahuan Desert}
+      \field{volume}{56}
+      \field{year}{1991}
+      \field{pages}{197\bibrangedash 219}
+      \range{pages}{23}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0304-3800(91)90200-K
+      \endverb
       \verb{urlraw}
-      \verb http://www.jstor.org/stable/1937492
+      \verb https://www.sciencedirect.com/science/article/pii/030438009190200K
       \endverb
       \verb{url}
-      \verb http://www.jstor.org/stable/1937492
+      \verb https://www.sciencedirect.com/science/article/pii/030438009190200K
       \endverb
     \endentry
-    \entry{Pelaez1994}{article}{}
-      \name{author}{5}{}{%
-        {{hash=961cfe8c38690a251412f1bbc1a20896}{%
-           family={Peláez},
-           familyi={P\bibinitperiod},
-           given={D.V.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=cf4b05ccc87ddfa47edaa2aa75d28c99}{%
-           family={Distel},
-           familyi={D\bibinitperiod},
-           given={R.A.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=f15f0e0feecd928010af36ada4ff52ba}{%
-           family={Bóo},
-           familyi={B\bibinitperiod},
-           given={R.M.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=3f91d3cede8765338b9d5b432a71d433}{%
-           family={Elia},
-           familyi={E\bibinitperiod},
-           given={O.R.},
+    \entry{Andren1999}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=6a057cdf0b6c4f990f91b819a9a1b22f}{%
+           family={AndreÂna},
+           familyi={A\bibinitperiod},
+           given={O.},
            giveni={O\bibinitperiod}}}%
-        {{hash=2ed854a55abbc776ad2a0db7045855bc}{%
-           family={Mayor},
-           familyi={M\bibinitperiod},
-           given={M.D.},
-           giveni={M\bibinitperiod}}}%
+        {{hash=d4dd8aee83fb65a4956ceded86c9aeaf}{%
+           family={Balandreaub},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{66d0a58f31b35e33845a00b72234441b}
-      \strng{fullhash}{f951345e476a0a5ff8a6630416dd05d1}
-      \strng{bibnamehash}{66d0a58f31b35e33845a00b72234441b}
-      \strng{authorbibnamehash}{66d0a58f31b35e33845a00b72234441b}
-      \strng{authornamehash}{66d0a58f31b35e33845a00b72234441b}
-      \strng{authorfullhash}{f951345e476a0a5ff8a6630416dd05d1}
+      \strng{namehash}{38d500957fe919abdb62c321d087b5ca}
+      \strng{fullhash}{38d500957fe919abdb62c321d087b5ca}
+      \strng{bibnamehash}{38d500957fe919abdb62c321d087b5ca}
+      \strng{authorbibnamehash}{38d500957fe919abdb62c321d087b5ca}
+      \strng{authornamehash}{38d500957fe919abdb62c321d087b5ca}
+      \strng{authorfullhash}{38d500957fe919abdb62c321d087b5ca}
       \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The two-layer hypothesis argues that in shrublands shrubs take up most of the water from the lower layers of the soil whereas grasses take up most of the water from the upper layers of the soil. We tested two predictions from this hypothesis in a shrubland of central semi-arid Argentina: (1) the correlation between plant water potential and soil water potential in the upper layers is stronger for grasses than for shrubs and (2) rooting depth is greater for shrubs than for grasses. The apparent pattern of water use by the deciduous shrub (Prosopis caldenia) and the two perennial grasses (Stipa tenuis and Piptochaetium napostaense) under study was consistent with the two-layer hypothesis whereas the evergreen shrub (Condalia microphylla) did not support this model. Our results suggest that the pattern of water use by grasses and shrubs in shrublands may be dependent upon strategies to counteract water stress and the phenological patterns developed by species within each life form.}
-      \field{issn}{0140-1963}
-      \field{journaltitle}{Journal of Arid Environments}
-      \field{number}{1}
-      \field{title}{Water relations between shrubs and grasses in semi-arid Argentina}
-      \field{volume}{27}
-      \field{year}{1994}
-      \field{pages}{71\bibrangedash 78}
-      \range{pages}{8}
-      \verb{doi}
-      \verb https://doi.org/10.1006/jare.1994.1046
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0140196384710469
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0140196384710469
-      \endverb
+      \field{title}{Biodiversity and soil functioningÐfrom black box to can of worms ?}
+      \field{year}{1999}
     \endentry
     \entry{Gervais1999}{article}{}
       \name{author}{3}{}{%
@@ -291,17 +244,17 @@
            given={P.},
            giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{dd5c8fe3dd02d5a42640f092cd516a78}
+      \strng{namehash}{40c1c1a579cbaef8b8db32d1e2034c10}
       \strng{fullhash}{dd5c8fe3dd02d5a42640f092cd516a78}
       \strng{bibnamehash}{dd5c8fe3dd02d5a42640f092cd516a78}
       \strng{authorbibnamehash}{dd5c8fe3dd02d5a42640f092cd516a78}
-      \strng{authornamehash}{dd5c8fe3dd02d5a42640f092cd516a78}
+      \strng{authornamehash}{40c1c1a579cbaef8b8db32d1e2034c10}
       \strng{authorfullhash}{dd5c8fe3dd02d5a42640f092cd516a78}
       \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Scientific & Industrial Research}
+      \field{journaltitle}{Journal of Scientific \& Industrial Research}
       \field{title}{Fungal Cells Turgor Pressure: Theoretical Approach and Measurement}
       \field{volume}{58}
       \field{year}{1999}
@@ -323,7 +276,7 @@
       \strng{authornamehash}{5f7771a88d974908e2eb1d88177c7403}
       \strng{authorfullhash}{5f7771a88d974908e2eb1d88177c7403}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{{Competition is the most common type of interaction occurring between wood-decaying higher fungi. Since competition for nutrients in organic resources is effectively brought about by competition for space, the common division into interference and exploitation competition is not very appropriate. Fungal competition can be divided into primary resource capture (obtaining uncolonized resources) and secondary resource capture (combat to obtain resources already colonized by other fungi). Combative mechanisms include antagonism at a distance, hyphal interference, mycoparasitism and gross mycelial contact. Interactions can result in deadlock or replacement, and a hierarchy of combative ability can be discerned amongst fungi that inhabit particular resources, but within this hierarchy there exists intransitivity, modification of outcome by other species and abiotic variables. Interactions can dramatically alter mycelial function, and have potential as biological control agents of fungal pathogens of trees and in service timber.}}
@@ -349,63 +302,6 @@
       \verb https://doi.org/10.1111/j.1574-6941.2000.tb00683.x
       \endverb
     \endentry
-    \entry{Zobel2001}{article}{}
-      \name{author}{5}{}{%
-        {{hash=46375947b8420e2ecef7238ae4bffe9c}{%
-           family={Zobel},
-           familyi={Z\bibinitperiod},
-           given={Donald\bibnamedelima B.},
-           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=c69f7431d022efbd793bb9e451e505b7}{%
-           family={Garkoti},
-           familyi={G\bibinitperiod},
-           given={Satish\bibnamedelima C.},
-           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=bd2e03ac3db719a7a66893b231385e85}{%
-           family={Singh},
-           familyi={S\bibinitperiod},
-           given={Surendra\bibnamedelima P.},
-           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=b1e494ed2c73c7ae31fa5e429f9699e0}{%
-           family={Tewari},
-           familyi={T\bibinitperiod},
-           given={Ashish},
-           giveni={A\bibinitperiod}}}%
-        {{hash=be3674f5808db76b5859e9b1937defe3}{%
-           family={Negi},
-           familyi={N\bibinitperiod},
-           given={C.\bibnamedelimi M.\bibnamedelimi S.},
-           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Temporary Publisher}%
-      }
-      \strng{namehash}{dc4cf3f1a7b7c77ca3bf540398c67b7d}
-      \strng{fullhash}{5582eeedd8e9a36da9d65de36abaca7a}
-      \strng{bibnamehash}{dc4cf3f1a7b7c77ca3bf540398c67b7d}
-      \strng{authorbibnamehash}{dc4cf3f1a7b7c77ca3bf540398c67b7d}
-      \strng{authornamehash}{dc4cf3f1a7b7c77ca3bf540398c67b7d}
-      \strng{authorfullhash}{5582eeedd8e9a36da9d65de36abaca7a}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Water potential (ψ) of soil and trees was measured in 16 forests from 450 to 2310 m elevation in the Kumaun Himalaya, during a two-year period. Predawn ψ, averaged across all species at a site was high (i.e. not stressful) at low elevations and variable at higher elevations. The incidence of low ψ at high elevations was opposite the usual pattern elsewhere. Midday ψ varied similarly. Patterns of plant and soil ψ differed. ψ values, especially in summer and winter, were severe enough to affect tree growth adversely.}
-      \field{issn}{00113891}
-      \field{journaltitle}{Current Science}
-      \field{number}{6}
-      \field{title}{Patterns of water potential among forest types of the central Himalaya}
-      \field{volume}{80}
-      \field{year}{2001}
-      \field{pages}{774\bibrangedash 779}
-      \range{pages}{6}
-      \verb{urlraw}
-      \verb http://www.jstor.org/stable/24105664
-      \endverb
-      \verb{url}
-      \verb http://www.jstor.org/stable/24105664
-      \endverb
-    \endentry
     \entry{Schimel2003}{article}{}
       \name{author}{2}{}{%
         {{hash=971368e326236287d124461d646ac966}{%
@@ -426,7 +322,7 @@
       \strng{authornamehash}{85cdd76c9b593d11adf15a4035eb9b55}
       \strng{authorfullhash}{85cdd76c9b593d11adf15a4035eb9b55}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Traditional models of soil organic matter (SOM) decomposition are all based on first order kinetics in which the decomposition rate of a particular C pool is proportional to the size of the pool and a simple decomposition constant (dC/dt=kC). In fact, SOM decomposition is catalyzed by extracellular enzymes that are produced by microorganisms. We built a simple theoretical model to explore the behavior of the decomposition–microbial growth system when the fundamental kinetic assumption is changed from first order kinetics to exoenzymes catalyzed decomposition (dC/dt=KC×Enzymes). An analysis of the enzyme kinetics showed that there must be some mechanism to produce a non-linear response of decomposition rates to enzyme concentration—the most likely is competition for enzyme binding on solid substrates as predicted by Langmuir adsorption isotherm theory. This non-linearity also induces C limitation, regardless of the potential supply of C. The linked C and N version of the model showed that actual polymer breakdown and microbial use of the released monomers can be disconnected, and that it requires relatively little N to maintain the maximal rate of decomposition, regardless of the microbial biomass’ ability to use the breakdown products. In this model, adding a pulse of C to an N limited system increases respiration, while adding N actually decreases respiration (as C is redirected from waste respiration to microbial growth). For many years, researchers have argued that the lack of a respiratory response by soil microbes to added N indicates that they are not N limited. This model suggests that conclusion may be wrong. While total C flow may be limited by the functioning of the exoenzyme system, actual microbial growth may be N limited.}
@@ -469,7 +365,7 @@
       \strng{authornamehash}{e6c625b55405692f95e568ca4a2dc238}
       \strng{authorfullhash}{e6c625b55405692f95e568ca4a2dc238}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Despite the central role of microorganisms in the decomposition of dead organic matter, few models have integrated the dynamics of litter chemistry with microbial interactions. Here we propose a functional resolution of the microbial community that parallels the commonly used chemical characterization of plant litter, i.e., a guild of opportunist microorganisms that grows quickly and has high affinity for soluble substrates, a guild of decomposer specialists that grows more slowly and has high affinity for holocellulose substrates, and a guild of miners that grows very slowly and is specialized for degrading lignin. This guild-based decomposition model (GDM) includes the interactions of holocellulose and lignin, manifest as mutual feedback controls on microbial-based activities. It also includes N limitations on early stages of litter decay resulting from nutritional demands of microorganisms and N inhibition on late stages of litter decay resulting from reduced lignin degradation. Competitive interactions between microbial guilds result from different growth rates and substrate affinities, given limits on microbial colonization of litter. Simulations are consistent with commonly reported and proposed patterns of microbial community succession during litter decay, changes in and controls imposed by litter chemistry, and system responses to N availability. Modest impacts of litter chemistry and N effects on patterns of decay can yield substantial impacts on the relative amount of litter remaining through time, the time required to stabilize litter carbon (i.e., as the lignin content approaches Ìf70\% of the total litter carbon), the relative contributions of different guilds to decay, and the net amount of microbial production. Moreover, seemingly inconsistent patterns in system responses to N regimes can be explained by interactions between litter chemistry and microbial guilds. A validation exercise demonstrated general correspondence of model behavior to field observations. However, relationships among mass loss, litter chemistry, and N availability were more variable in field studies than in simulations. Also, observed changes in litter quality indicated the progressive accumulation of microbial products. Hence, field studies suggest expanding GDM to include dynamics of microbial products and also suggest the utility of GDM in exploring site effects on decomposition as a result of differences in microbial community composition.}
@@ -519,12 +415,12 @@
       }
       \strng{namehash}{03a7913f7a249d6b0319c269808e177f}
       \strng{fullhash}{a1ec01374757b58c77ec849e47e06d93}
-      \strng{bibnamehash}{03a7913f7a249d6b0319c269808e177f}
-      \strng{authorbibnamehash}{03a7913f7a249d6b0319c269808e177f}
+      \strng{bibnamehash}{a1ec01374757b58c77ec849e47e06d93}
+      \strng{authorbibnamehash}{a1ec01374757b58c77ec849e47e06d93}
       \strng{authornamehash}{03a7913f7a249d6b0319c269808e177f}
       \strng{authorfullhash}{a1ec01374757b58c77ec849e47e06d93}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Oecologia}
@@ -556,13 +452,13 @@
       \strng{authornamehash}{32eed840fa8c6675419d8519b4ced918}
       \strng{authorfullhash}{32eed840fa8c6675419d8519b4ced918}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1535-9778}
       \field{journaltitle}{Eukaryotic Cell}
       \field{number}{3}
-      \field{title}{Hyphal Growth: a Tale of Motors, Lipids, and the Spitzenk{ö}rper}
+      \field{title}{Hyphal Growth: a Tale of Motors, Lipids, and the Spitzenkörper}
       \field{volume}{6}
       \field{year}{2007}
       \field{pages}{351\bibrangedash 360}
@@ -600,7 +496,7 @@
       \strng{authornamehash}{0f31b2e5143c5314f9478750f53d56b7}
       \strng{authorfullhash}{0f31b2e5143c5314f9478750f53d56b7}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Soil microbial communities are so vastly diverse that complex interactions, which alter ecosystem functions, may occur among microbial species and functional groups. In this review, we explore the empirical evidence for situations when shifts in the community structure of microbes would elicit a change in ecosystem process rates, specifically decomposition, even when microbial biomass remains constant. In particular, we are interested in a subset of these scenarios in which knowledge of microbial community structure would improve model predictions for ecosystem functions. Results from microcosm and field studies indicate that microbial species diversity, functional group diversity, and community composition can all influence ecosystem process rates. The underlying mechanisms that may elicit changes in ecosystem functions from shifts in microbial community structure include evolutionary constraints on microbial trait adaptation, trait correlations, dispersal limitation, and species interactions. The extent of microbial diversity in soils is not known, so it is presently not possible to model all scenarios of microbial community structure shifts. However, by incorporating documented patterns in functional groups that are relevant for a particular ecosystem process and potential relationships between microbial phylogeny and function, the predictive power of process models will be significantly improved. The inclusion of this information into process models is critical for predicting and understanding how ecosystem functions may shift in response to global change.}
@@ -623,6 +519,61 @@
       \endverb
       \keyw{Microbial community structure,Ecosystem function,Models,Nutrient cycling,Review}
     \endentry
+    \entry{Davidson2012}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f68ef30532f592368bb271c939b22d8f}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={Eric\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0755fa229eb8227590a60867f166758f}{%
+           family={Samanta},
+           familyi={S\bibinitperiod},
+           given={Sudeep},
+           giveni={S\bibinitperiod}}}%
+        {{hash=74e411dbef194243b1aeff469db169a3}{%
+           family={Caramori},
+           familyi={C\bibinitperiod},
+           given={Samantha\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=03a93708bafb47afb968dfd43c6e74cc}{%
+           family={Savage},
+           familyi={S\bibinitperiod},
+           given={Kathleen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e2657401acbb67c1a13ec0dddcbde2a}
+      \strng{fullhash}{290bf4a561beeff199dd94f543b9f14a}
+      \strng{bibnamehash}{290bf4a561beeff199dd94f543b9f14a}
+      \strng{authorbibnamehash}{290bf4a561beeff199dd94f543b9f14a}
+      \strng{authornamehash}{0e2657401acbb67c1a13ec0dddcbde2a}
+      \strng{authorfullhash}{290bf4a561beeff199dd94f543b9f14a}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Decomposition of soil carbon stocks is one of the largest potential biotic feedbacks to climate change. Models of decomposition of soil organic matter and of soil respiration rely on empirical functions that relate variation in temperature and soil water content to rates of microbial metabolism using soil-C substrates. Here, we describe a unifying modeling framework to combine the effects of temperature, soil water content, and soluble substrate supply on decomposition of soluble soil-C substrates using simple functions based on process concepts. The model's backbone is the Michaelis–Menten equation, which describes the relationship between reaction velocity and soluble organic-C and O2 substrate concentrations at an enzyme's reactive site, which are determined by diffusivity functions based on soil water content. Temperature sensitivity is simulated by allowing the maximum velocity of the reaction (Vmax) to vary according to Arrhenius function. The Dual Arrhenius and Michaelis–Menten kinetics (DAMM) model core was able to predict effectively observations from of laboratory enzyme assays of β-glucosidase and phenol-oxidase across a range of substrate concentrations and incubation temperatures. The model also functioned as well or better than purely empirical models for simulating hourly and seasonal soil respiration data from a trenched plot in a deciduous forest at the Harvard Forest, in northeastern United States. The DAMM model demonstrates that enzymatic processes can be intrinsically temperature sensitive, but environmental constrains of substrate supply under soil moisture extremes can prevent that response to temperature from being observed. We discuss how DAMM could serve as a core module that is informed by other modules regarding microbial dynamics and supply of soluble-C substrates from plant inputs and from desorption of physically stabilized soil-C pools. Most importantly, it presents a way forward from purely empirical representation of temperature and moisture responses and integrates temperature-sensitive enzymatic processes with constraints of substrate supply.}
+      \field{journaltitle}{Global Change Biology}
+      \field{number}{1}
+      \field{title}{The Dual Arrhenius and Michaelis–Menten kinetics model for decomposition of soil organic matter at hourly to seasonal time scales}
+      \field{volume}{18}
+      \field{year}{2012}
+      \field{pages}{371\bibrangedash 384}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1111/j.1365-2486.2011.02546.x
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1365-2486.2011.02546.x
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2011.02546.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2011.02546.x
+      \endverb
+      \keyw{climate change,CO2,soil carbon,soil respiration,Q10}
+    \endentry
     \entry{Segato2014}{article}{}
       \name{author}{5}{}{%
         {{hash=38e8a6390d74be9bdf8286dd8fd3d9d4}{%
@@ -631,9 +582,9 @@
            given={Fernando},
            giveni={F\bibinitperiod}}}%
         {{hash=79fabb3c4c43eb9a913dbb8bc3f7ad0e}{%
-           family={Dam{á}sio},
+           family={Damásio},
            familyi={D\bibinitperiod},
-           given={Andr{é}\bibnamedelimb R.\bibnamedelimi L.},
+           given={André\bibnamedelimb R.\bibnamedelimi L.},
            giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
         {{hash=f7ed6d5eaa98e6af2372e9ec96f64858}{%
            family={Lucas},
@@ -658,12 +609,12 @@
       }
       \strng{namehash}{0f0b9f0b73258fc74b5125463e214847}
       \strng{fullhash}{7f8449c7b4cb22074434173f8117c676}
-      \strng{bibnamehash}{0f0b9f0b73258fc74b5125463e214847}
-      \strng{authorbibnamehash}{0f0b9f0b73258fc74b5125463e214847}
+      \strng{bibnamehash}{7f8449c7b4cb22074434173f8117c676}
+      \strng{authorbibnamehash}{7f8449c7b4cb22074434173f8117c676}
       \strng{authornamehash}{0f0b9f0b73258fc74b5125463e214847}
       \strng{authorfullhash}{7f8449c7b4cb22074434173f8117c676}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Biomass is constructed of dense recalcitrant polymeric materials: proteins, lignin, and holocellulose, a fraction constituting fibrous cellulose wrapped in hemicellulose-pectin. Bacteria and fungi are abundant in soil and forest floors, actively recycling biomass mainly by extracting sugars from holocellulose degradation. Here we review the genome-wide contents of seven Aspergillus species and unravel hundreds of gene models encoding holocellulose-degrading enzymes. Numerous apparent gene duplications followed functional evolution, grouping similar genes into smaller coherent functional families according to specialized structural features, domain organization, biochemical activity, and genus genome distribution. Aspergilli contain about 37 cellulase gene models, clustered in two mechanistic categories: 27 hydrolyze and 10 oxidize glycosidic bonds. Within the oxidative enzymes, we found two cellobiose dehydrogenases that produce oxygen radicals utilized by eight lytic polysaccharide monooxygenases that oxidize glycosidic linkages, breaking crystalline cellulose chains and making them accessible to hydrolytic enzymes. Among the hydrolases, six cellobiohydrolases with a tunnel-like structural fold embrace single crystalline cellulose chains and cooperate at nonreducing or reducing end termini, splitting off cellobiose. Five endoglucanases group into four structural families and interact randomly and internally with cellulose through an open cleft catalytic domain, and finally, seven extracellular β-glucosidases cleave cellobiose and related oligomers into glucose. Aspergilli contain, on average, 30 hemicellulase and 7 accessory gene models, distributed among 9 distinct functional categories: the backbone-attacking enzymes xylanase, mannosidase, arabinase, and xyloglucanase, the short-side-chain-removing enzymes xylan α-1,2-glucuronidase, arabinofuranosidase, and xylosidase, and the accessory enzymes acetyl xylan and feruloyl esterases.}
@@ -688,6 +639,61 @@
       \verb https://mmbr.asm.org/content/78/4/588
       \endverb
     \endentry
+    \entry{Moore2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7ffea55292885a30a76f9bee06742c33}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi A.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=850b9e61b9cc106cd1b82515e62128e8}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2a9b79fdf935e6871bb21aec795901b9}{%
+           family={Post},
+           familyi={P\bibinitperiod},
+           given={W.\bibnamedelimi M.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d0487f7fc9a47b37ab1f43293570b047}{%
+           family={Classen},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi T.},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff4ab6d7a08c963cc2d49a26d899efac}
+      \strng{fullhash}{721fa23b320863c8d197aa04d25fedef}
+      \strng{bibnamehash}{721fa23b320863c8d197aa04d25fedef}
+      \strng{authorbibnamehash}{721fa23b320863c8d197aa04d25fedef}
+      \strng{authornamehash}{ff4ab6d7a08c963cc2d49a26d899efac}
+      \strng{authorfullhash}{721fa23b320863c8d197aa04d25fedef}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Carbon cycle models often lack explicit belowground organism activity, yet belowground organisms regulate carbon storage and release in soil. Ectomycorrhizal fungi are important players in the carbon cycle because they are a conduit into soil for carbon assimilated by the plant. It is hypothesized that ectomycorrhizal fungi can also be active decomposers when plant carbon allocation to fungi is low. Here, we reviewed the literature on ectomycorrhizal decomposition and we developed a simulation model of the plant-mycorrhizae interaction where a reduction in plant productivity stimulates ectomycorrhizal fungi to decompose soil organic matter. Our review highlights evidence demonstrating the potential for ectomycorrhizal fungi to decompose soil organic matter. Our model output suggests that ectomycorrhizal activity accounts for a portion of carbon decomposed in soil, but this portion varied with plant productivity and the mycorrhizal carbon uptake strategy simulated. Lower organic matter inputs to soil were largely responsible for reduced soil carbon storage. Using mathematical theory, we demonstrated that biotic interactions affect predictions of ecosystem functions. Specifically, we developed a simple function to model the mycorrhizal switch in function from plant symbiont to decomposer. We show that including mycorrhizal fungi with the flexibility of mutualistic and saprotrophic lifestyles alters predictions of ecosystem function.}
+      \field{journaltitle}{Ecosphere}
+      \field{number}{3}
+      \field{title}{Decomposition by ectomycorrhizal fungi alters soil carbon storage in a simulation model}
+      \field{volume}{6}
+      \field{year}{2015}
+      \field{pages}{art29}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb https://doi.org/10.1890/ES14-00301.1
+      \endverb
+      \verb{eprint}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1890/ES14-00301.1
+      \endverb
+      \verb{urlraw}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/ES14-00301.1
+      \endverb
+      \verb{url}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/ES14-00301.1
+      \endverb
+      \keyw{carbon cycle,decomposition,ectomycorrhizae,extracellular enzyme activity,plant-soil interactions,simulation model,soil carbon sequestration}
+    \endentry
     \entry{Mucina2018}{book}{}
       \name{author}{1}{}{%
         {{hash=405a347c41d86e85877c821d9cf858e8}{%
@@ -706,7 +712,7 @@
       \strng{authornamehash}{405a347c41d86e85877c821d9cf858e8}
       \strng{authorfullhash}{405a347c41d86e85877c821d9cf858e8}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Biome: evolution of a crucial ecological and biogeographical concept}
@@ -736,14 +742,14 @@
            given={A.},
            giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{5505e61fa22fe2f94ee8cf97a4c0902c}
+      \strng{namehash}{9174522aae35584e512b10f64ef04818}
       \strng{fullhash}{5505e61fa22fe2f94ee8cf97a4c0902c}
       \strng{bibnamehash}{5505e61fa22fe2f94ee8cf97a4c0902c}
       \strng{authorbibnamehash}{5505e61fa22fe2f94ee8cf97a4c0902c}
-      \strng{authornamehash}{5505e61fa22fe2f94ee8cf97a4c0902c}
+      \strng{authornamehash}{9174522aae35584e512b10f64ef04818}
       \strng{authorfullhash}{5505e61fa22fe2f94ee8cf97a4c0902c}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Bragantia}
@@ -752,6 +758,53 @@
       \field{year}{2019}
       \field{pages}{119\bibrangedash 130}
       \range{pages}{12}
+    \endentry
+    \entry{Du2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=41376f0a011935dc6b94a49e7eded142}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e32c2c4b98563eafceabbb864b4a4d8e}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Thi-Bich-Thuy},
+           giveni={T\bibinithyphendelim B\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=50c1046fac122878404fb990e3b3e32f}{%
+           family={Perré},
+           familyi={P\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7d0ec731e44fa77639ee9f3fc2c495e}
+      \strng{fullhash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \strng{bibnamehash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \strng{authorbibnamehash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \strng{authornamehash}{a7d0ec731e44fa77639ee9f3fc2c495e}
+      \strng{authorfullhash}{32eb4ba40dde18cc3cad1ab72989b3ce}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this work, we present a new PDE model of the growth of Postia placenta, a species of brown rot fungus. The formulation was derived mainly from the biological mechanisms embedded in our discrete model, validated against experimental data. In order to mimic the growth mechanisms, we propose a new reaction-diffusion formulation, based on three variables: the concentration of tips, the branch density and the total hyphal density. The evolution of tips obeys a reaction-diffusion model, with constant diffusivity, while the evolution of the two other variables results from time integrals. The numerical solution is in excellent agreement with the averaged radial tip/hyphal densities of the mycelial network obtained by the discrete model. Thanks to the efficient exponential Euler method with Krylov subspace approximation, the solution needs only 3.5 s of CPU time to simulate 104-day of mycelium growth, in comparison with 8 hours for the discrete model. The great reduction of the RAM memory and computing time gives the possibility to upscale the simulation. The novelty of the PDE system is that the spatial colonization is formulated as a diffusion mechanism, which is self-standing, contrary to models based on an advection term. The continuous model can also reproduce the radial densities when the growth parameters in the discrete model are varied to adapt to different growth conditions. The correlation constructed between the two models provides us a tool for mutual insights between local biological mechanisms to the global biomass distribution, especially when analyzing experimental data.}
+      \field{issn}{0022-5193}
+      \field{journaltitle}{Journal of Theoretical Biology}
+      \field{title}{A 3-variable PDE model for predicting fungal growth derived from microscopic mechanisms}
+      \field{volume}{470}
+      \field{year}{2019}
+      \field{pages}{90\bibrangedash 100}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jtbi.2019.03.015
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022519319301225
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022519319301225
+      \endverb
+      \keyw{Reaction-diffusion,Continuum modeling,Upscaling,Fungus}
     \endentry
     \entry{Maynard2019}{article}{}
       \name{author}{9}{}{%
@@ -803,12 +856,12 @@
       }
       \strng{namehash}{9f272331e455ccaab1182cc30d704762}
       \strng{fullhash}{4690777e3d4ef95003343dffc77ba660}
-      \strng{bibnamehash}{9f272331e455ccaab1182cc30d704762}
-      \strng{authorbibnamehash}{9f272331e455ccaab1182cc30d704762}
+      \strng{bibnamehash}{4690777e3d4ef95003343dffc77ba660}
+      \strng{authorbibnamehash}{4690777e3d4ef95003343dffc77ba660}
       \strng{authornamehash}{9f272331e455ccaab1182cc30d704762}
       \strng{authorfullhash}{4690777e3d4ef95003343dffc77ba660}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Fungi are the primary agents of terrestrial decomposition, yet our understanding of fungal biogeography lags far behind that of plants, animals and bacteria. Here, we use a trait-based approach to quantify the niches of 23 species of basidiomycete wood decay fungi from across North America, and explore the linkages among functional trait expression, climate and phylogeny. Our analysis reveals a fundamental trade-off between abiotic stress tolerance and competitive ability, whereby fungi with wide thermal and moisture niches exhibit lower displacement ability. The magnitude of this dominance-tolerance trade-off is partially related to the environmental conditions under which the fungi were collected, with thermal niche traits exhibiting the strongest climate relationships. Nevertheless, moisture and thermal dominance-tolerance patterns exhibited contrasting phylogenetic signals, suggesting that these trends are influenced by a combination of niche sorting along taxonomic lines in tandem with acclimation and adaptation at the level of the individual. Collectively, our work reveals key insight into the life history strategies of saprotrophic fungi, demonstrating consistent trait trade-offs across broad spatial scales.}
@@ -828,90 +881,6 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1038/s41564-019-0361-5
-      \endverb
-    \endentry
-    \entry{Paton2019}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=ec4bc42842d3c39485efb606e94e4539}{%
-           family={Paton},
-           familyi={P\bibinitperiod},
-           given={Steve},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The Smithsonian Institution}%
-      }
-      \strng{namehash}{ec4bc42842d3c39485efb606e94e4539}
-      \strng{fullhash}{ec4bc42842d3c39485efb606e94e4539}
-      \strng{bibnamehash}{ec4bc42842d3c39485efb606e94e4539}
-      \strng{authorbibnamehash}{ec4bc42842d3c39485efb606e94e4539}
-      \strng{authornamehash}{ec4bc42842d3c39485efb606e94e4539}
-      \strng{authorfullhash}{ec4bc42842d3c39485efb606e94e4539}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{10}
-      \field{title}{Barro Colorado Island, Clearing_Temperature, manual}
-      \field{year}{2019}
-      \verb{doi}
-      \verb 10.25573/data.10042496.v3
-      \endverb
-      \verb{urlraw}
-      \verb https://smithsonian.figshare.com/articles/dataset/Barro_Colorado_Island_Clearing_Temperature_manual/10042496/3
-      \endverb
-      \verb{url}
-      \verb https://smithsonian.figshare.com/articles/dataset/Barro_Colorado_Island_Clearing_Temperature_manual/10042496/3
-      \endverb
-    \endentry
-    \entry{Zaz2019}{article}{}
-      \name{author}{4}{}{%
-        {{hash=d9120337d3ee9109a35a65972d592052}{%
-           family={Zaz},
-           familyi={Z\bibinitperiod},
-           given={S.\bibnamedelimi N.},
-           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=9671bc7623ae95b71f4f6c6e5ef09c2b}{%
-           family={Romshoo},
-           familyi={R\bibinitperiod},
-           given={S.\bibnamedelimi A.},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=06de629304674776951bd0ef9bbf2aae}{%
-           family={Krishnamoorthy},
-           familyi={K\bibinitperiod},
-           given={R.\bibnamedelimi T.},
-           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=c4015cc4d8dba5d1298085ac21f6b4d5}{%
-           family={Viswanadhapalli},
-           familyi={V\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \strng{namehash}{67b57311905733e6c80b7e67cf20bad2}
-      \strng{fullhash}{22f4b390f1e5bbedb079177d96cad090}
-      \strng{bibnamehash}{67b57311905733e6c80b7e67cf20bad2}
-      \strng{authorbibnamehash}{67b57311905733e6c80b7e67cf20bad2}
-      \strng{authornamehash}{67b57311905733e6c80b7e67cf20bad2}
-      \strng{authorfullhash}{22f4b390f1e5bbedb079177d96cad090}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Atmospheric Chemistry and Physics}
-      \field{number}{1}
-      \field{title}{Analyses of temperature and precipitation in the Indian Jammu and Kashmir region for the 1980--2016 period: implications for remote influence and extreme events}
-      \field{volume}{19}
-      \field{year}{2019}
-      \field{pages}{15\bibrangedash 37}
-      \range{pages}{23}
-      \verb{doi}
-      \verb 10.5194/acp-19-15-2019
-      \endverb
-      \verb{urlraw}
-      \verb https://acp.copernicus.org/articles/19/15/2019/
-      \endverb
-      \verb{url}
-      \verb https://acp.copernicus.org/articles/19/15/2019/
       \endverb
     \endentry
     \entry{Lustenhouwer2020}{article}{}
@@ -957,12 +926,12 @@
       }
       \strng{namehash}{b5a3cfe622272ff0d5bde4fe894c2c14}
       \strng{fullhash}{4d9cb36a288367608c0e14056a5b2136}
-      \strng{bibnamehash}{b5a3cfe622272ff0d5bde4fe894c2c14}
-      \strng{authorbibnamehash}{b5a3cfe622272ff0d5bde4fe894c2c14}
+      \strng{bibnamehash}{4d9cb36a288367608c0e14056a5b2136}
+      \strng{authorbibnamehash}{4d9cb36a288367608c0e14056a5b2136}
       \strng{authornamehash}{b5a3cfe622272ff0d5bde4fe894c2c14}
       \strng{authorfullhash}{4d9cb36a288367608c0e14056a5b2136}
       \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Fungi play a key role in the global carbon cycle as the main decomposers of litter and wood. Although current climate models reflect limited functional variation in microbial groups, fungi differ vastly in their decomposing ability. Here, we examine which traits explain fungal-mediated wood decomposition. In a laboratory study of 34 fungal isolates, we found that decomposing ability varies along a spectrum from stress-tolerant, poorly decomposing fungi to fast-growing, competitive fungi that rapidly decompose wood. We observed similar patterns in a 5-y field experiment, in which communities of fast-growing fungi more rapidly decomposed logs in the forest. Finally, we show how linking decomposition rates to known spatial patterns in fungal traits could improve broad-scale predictions of wood decomposition by fungi.As the primary decomposers of organic material in terrestrial ecosystems, fungi are critical agents of the global carbon cycle. Yet our ability to link fungal community composition to ecosystem functioning is constrained by a limited understanding of the factors accounting for different wood decomposition rates among fungi. Here we examine which traits best explain fungal decomposition ability by combining detailed trait-based assays on 34 saprotrophic fungi from across North America in the laboratory with a 5-y field study comprising 1,582 fungi isolated from 74 decomposing logs. Fungal growth rate (hyphal extension rate) was the strongest single predictor of fungal-mediated wood decomposition rate under laboratory conditions, and accounted for up to 27\% of the in situ variation in decomposition in the field. At the individual level, decomposition rate was negatively correlated with moisture niche width (an indicator of drought stress tolerance) and with the production of nutrient-mineralizing extracellular enzymes. Together, these results suggest that decomposition rates strongly align with a dominance-tolerance life-history trade-off that was previously identified in these isolates, forming a spectrum from slow-growing, stress-tolerant fungi that are poor decomposers to fast-growing, highly competitive fungi with fast decomposition rates. Our study illustrates how an understanding of fungal trait variation could improve our predictive ability of the early and midstages of wood decay, to which our findings are most applicable. By mapping our results onto the biogeographic distribution of the dominance-tolerance trade-off across North America, we approximate broad-scale patterns in intrinsic fungal-mediated wood decomposition rates.}
@@ -988,9 +957,7 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Andren1999}
-  \missing{Davey2007}
-  \missing{Moore}
+  \missing{Petraglia2018}
 \endrefsection
 \endinput
 
