@@ -1,4 +1,4 @@
-function dudt = total_growth_decom(t,u,n_x,dx,nu_vec,gamma1,alpha1,mu,a,allx,r_e_vec,r_mat,S_T,S_M,G,K_e_vec,fungi_vec)
+function dudt = total_growth_decom(t,u,n_x,dx,nu_vec,gamma1,alpha1,mu,a,allx,r_e_vec,r_mat,S_T,S_M,G,K_e_vec,fungi_vec,anual_cycle_nu1,anual_cycle_psi1,anual_cycle_nu2,anual_cycle_psi2)
 %total_growth_decom this boy does it all
 %u is a 1x7141 array 
 %the first 7000 correspond to the 36 discretized pde's for each fungus
@@ -7,6 +7,11 @@ function dudt = total_growth_decom(t,u,n_x,dx,nu_vec,gamma1,alpha1,mu,a,allx,r_e
 %the last term corresponds to the total carbon
 dudt = zeros(1,7141);
 
+[nu1 psi1] = nu_for_psi(t,anual_cycle_nu1,anual_cycle_psi1);
+[nu2 psi2] = nu_for_psi(t,anual_cycle_nu2,anual_cycle_psi2);
+nu_vec(1) = nu1;
+nu_vec(2) = nu2;
+% disp(nu1)
 
 %evaluating all the discretized pde's
 for i = [1:35]

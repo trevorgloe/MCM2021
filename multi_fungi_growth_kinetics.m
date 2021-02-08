@@ -3,10 +3,13 @@
 
 % clear all
 
+
+
 %define what fungi are present
 % fungi_vec = zeros(1,35);    %must be normalized to 1
 fungi_vec = ones(1,35);
-fungi_vec = fungi_vec/((sum(fungi_vec))^1);
+% fungi_vec = fungi_vec/((sum(fungi_vec))^1);
+fungi_vec = [0.5 0.5 zeros(1,33)];
 
 %define domains
 n_x = 100;
@@ -14,6 +17,18 @@ L = 100;
 t = linspace(0,3000,400);
 x = linspace(0,L,n_x);
 dx = L/n_x;
+
+%get anual cycles for psi and nu
+cycle_table = readtable('Annual_Cycle_Temp_Change_Temperate Forest - Annual_Cycle_Psi.csv');
+cycle_cell_table = table2cell(cycle_table);
+anual_cycle_nu1_cell = cycle_cell_table(1:138,3);
+anual_cycle_nu1 = cell2mat(anual_cycle_nu1_cell);
+anual_cycle_psi1_cell = cycle_cell_table(1:138,2);
+anual_cycle_psi1 = cell2mat(anual_cycle_psi1_cell);
+anual_cycle_nu2_cell = cycle_cell_table(1:138,7);
+anual_cycle_nu2 = cell2mat(anual_cycle_nu2_cell);
+anual_cycle_psi2_cell = cycle_cell_table(1:138,6);
+anual_cycle_psi2 = cell2mat(anual_cycle_psi2_cell);
 
 
 %initial conditions
@@ -71,7 +86,7 @@ K_e_vec = (67163)*[2e-6 0.94e-3 0.89e-3 0.747e-3];    %half-saturation coeficien
 % K_e_vec = 0.7837*ones(1,4);
 
 tic
-[tout, u] = ode45(@total_growth_decom,t,IC,[],n_x,dx,nu_vec,gamma1,alpha1,mu,a,x,r_e_vec,fungi_enzyme_mat,S_T,S_M,G,K_e_vec,fungi_vec);
+[tout, u] = ode45(@total_growth_decom,t,IC,[],n_x,dx,nu_vec,gamma1,alpha1,mu,a,x,r_e_vec,fungi_enzyme_mat,S_T,S_M,G,K_e_vec,fungi_vec,anual_cycle_nu1,anual_cycle_psi1,anual_cycle_nu2,anual_cycle_psi2);
 toc
 
 %% Get data
