@@ -137,7 +137,25 @@ These two parameters help calculate the maximum growth rate by the relationship:
 \end{equation}
 where r is the enzyme biomass ratio.
 
+\section{Niche Differentiation and Biodiversity}
+Although natural fungal niches are disperse, two distinct general categories of niches emerge from wide evidence: that of a a more competitive and faster growing fungus and that of a slower, more resilient group. The linear regression for the moisture niche width ($W_{mn}$) vs competitive ranking ($R_c$) across 34 different fungal species studied in Maynard et al. (2019) gives $W_{mn}= 1.84R_c + 2.9$, with an $R^2$ value of 0.227. Although the $R^2$ value of this regression is not particularly strong, the underlying negatively proportional relationship of the general data set is indicated. This idea trade-off between competitive ranking and moisture niche width is aligned with the prevailing niche distinction to pursue opportunism or stability. 
 
+Maynard et al. (2019) provides backing for this niche distinction by applying principal component analysis to a variety of potential fungal niche-associated traits. The results of this analysis points towards a similar direction: fungal species will lean towards one of these two profiles \cite{Maynard2019}.
+
+Decomposition of organic materials is essential to the continuation of carbon cycling, releasing carbon into the soil and atmosphere \cite{Lustenhouwer2019}. A system containing this niche configuration of fungal species that could potentially benefit two-fold. Stable slow-growing populations could serve as a basis for long-term fungal action, while the opportunist-leaning fungi could prove beneficial in continuing the fungal role in the face of a dynamic environment.
+
+%Support for these niches coexisting also comes from distinct roles in decomposition. ****(GET THIS IF YOU WANT TO MAKE THIS OWN FIRST PRINCIPLE)
+
+\section{Analysis}
+\subsection{$\nu$ vs Average Contribution to Substrate Decay} %avg_contr_nu_environment.fig
+Using the decomposition model, average contribution to substrate decay and the tip elongation rate $\nu$ can be found for each fungal species for a given environmental configuration. Aside from indicating an expected positive correlation between $\nu$ and contribution, we find that in general, environments with a higher moisture potential lead to greater contributions overall and a greater contribution sensitivity to $\nu$ in our model. Our model agrees with the notion of water potential serving as an important limiting factor to the decomposition ability of individual fungi. This corroborates with various findings, that find soil moisture as a particularly influential environmental factor, influencing elongation through pressure gradients and testing of tolerance \cite{Maynard2019} \cite{Lustenhouwer2019}. %i think there may be a better citation, i am tired
+%****In case linear regression added: The tropical rain forest environment, with a water potential of 0.76, lead to a }
+
+\subsection{Total Carbon vs Time for Specific Environments} %direct_compare_decom_environmen.fig
+Similarly, a sampling of different environmental parameters within the decomposition model demonstrates the decrease of total carbon in a fungal-waste system over time. Here, we see more moist soil environments lead to clearly more expedient rates of carbon total carbon decrease and reach total decomposition quicker in our model. Again in the model, the rain forest environment exceeds the other environmental profiles, effectively completing decomposition in under 1640 days (roughly 4.5 years.
+
+\subsection{Average Contribution vs $\nu$ with Competitive Rankings} %avg_contr_nu_competative_rankings.fig  Maybe ask trevor to change colors or flip colors (final point(s) difficult to see
+With one set of environmental parameters, we can gain insight into how different species of fungi potentially interact relative to each other. In addition to an expected lose positive correlation between $\nu$ and the average contribution of a given fungi, these is a lose correlation of higher fungi competitive ranking with greater $\nu$ and greater average contribution. This suggests that the fungi that are more 'active' in our model, with the largest growth rates and proportions, are also the most competitive. Competitive ranking has a higher correlation with $/nu$, indicating that in our model growth rate may be more significant than proportion when it comes to competitive circumstances. This aligns with established trends of the primary 2 fungal niches \cite{Maynard2019}.
 
 \newpage
 \section{Model Parameters}
@@ -189,6 +207,7 @@ Here are the model parameters for the coupled decomposition and growth model for
 
 \section{Appendix Tables}
 
+Environment Temperature Data:
 \begin{table}[H]
 \begin{center}
  \begin{tabular}{|c c c|} 
@@ -213,8 +232,9 @@ Here are the model parameters for the coupled decomposition and growth model for
 
 %NEED TO EDIT TABLE WITH FOOTNOTES TO FIT (put spec envs?)
 %For himalayas, consider putting all values as footnotes
+Environment Water Potential Data:
 \begin{savenotes}
-\begin{table}[ht]
+\begin{table}[H]
 \begin{center}
  \begin{tabular}{|c c c|} 
  \hline
@@ -236,6 +256,32 @@ Here are the model parameters for the coupled decomposition and growth model for
 \end{center}
 \end{table}
 \end{savenotes}
+
+Environmental & Parameter Table: 
+\begin{savenotes}
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|c c c c c|} 
+ \hline
+ Parameter & Symbol & Value & Units & Source and Specification \\
+ \hline\hline
+ Half-Saturation constants \footnote{Also called Michaelis Constant.} & $K_e$ & - & mM &  Enzyme \\ 
+   & $K_e$ - Phenol oxidase & 0.89 & mM &  \cite{Davidson2012}\\
+   & $K_e$ - Phosphatase & 0.94 & mM &  \cite{Nannipieri2010}\\
+   & $K_e$ - Peroxidase & 0.7475 & mM &  \cite{Chance1999}\\
+   & $K_e$ - Cellobiohydrolase & 13.90 & mM &  \cite{Razavi2015}\\
+ \hline
+ Hyphal tip elongation rate& $\nu(T,\psi)$& Various & $\frac{mm}{day}$ & \cite{Maynard2019} Species, $\psi$, T\\
+ \hline
+ Soil moisture coefficient & $S_M$ & $S_M = \alpha_2 -\lambda \log_{10}(-\psi)$ & N/A &\cite{Moorhead1991} $\psi$\\ % mention equation later in paper
+ \hline
+ Soil temperature coefficient & $S_T$ & $\log_{10}(S_T) = \frac{T-25}{10}\log_{10}(Q)$ & N/A &\cite{Moorhead1991} T\\ 
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{savenotes}
+
 
 \newpage
 \bibliographystyle{plain}
