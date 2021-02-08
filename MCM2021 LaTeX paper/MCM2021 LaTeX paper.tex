@@ -21,7 +21,7 @@
 \usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage{lipsum}
-\usepackage{multicol}
+\usepackage{multicol,caption}
 
 \usepackage{footnote}
 \usepackage{float}
@@ -46,6 +46,11 @@ sorting=ynt]{biblatex}
 \newtheorem{definition}{Definition}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{ColumnFigure}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+
 \begin{document}
 \graphicspath{{.}}  % Place your graphic files in the same directory as your main document
 \DeclareGraphicsExtensions{.pdf, .jpg, .tif, .png}
@@ -113,6 +118,14 @@ These equations will operate standing alone, without any other influences by enz
 \subsection{Environmental Influence on Hyphal Tip Extension ($\nu$)}
 Environmental impacts are introduced to the decomposition model through $\nu$, the hyphal tip elongation rate. The mechanism of elongation is relatively unknown; as described in Gervais et al. (1999), "cell turgor pressure corresponds to an overpressure which allows the cell morphology, elongation, division and hence the biomass evolution" \cite{Gervais1999, Steinberg2007}. In fungi, cell turgor comes from diffusion of water dictated by the water potential gradients rather active transport within the cell, making it very environmentally dependent \cite{Gervais1999}. This fact justifies determining $\nu$ based on environmental factors on fungal decomposition rates by varying $\nu$ outside of baselines for given species in set locations in our model. Experimental data from Maynard et al. 2019 shows the relationship between $\nu$ and the environmental parameters of water potential ($\psi$) and temperature (T) \cite{Maynard2019}.  Water potential as a parameter will take into account both moisture content to fungi as well as the availability of that moisture as dictated by the  soil composition.
 
+%\begin{figure*}
+%	\centering
+%	%\vspace*{-2ex}
+%	\includegraphics[width=0.7\linewidth]{avg_contr_nu_environment.png}
+%	\caption[Fig 1.]{Example optimized flight plan, ran with drone fleet size of 5, starting configuration 1, 5 allowed movements, and $\gamma$ = 2}
+%	\label{Fig 1.}
+%\end{figure*}
+
 \subsection{Decomposition kinetics}
 Moore et al. (2015), Edelstein (1983), Moorhead et al. (2006), Parnas (1974), and Schimel et al. (2003) describe the decomposition of a certain substrate by a microbial decomposer as a function of the substrate's concentration by the Michaelis–Menton equation \cite{Moore2015, Edelstein1983, Moorhead2006, Parnas1975, Schimel2003}. Schimel et al. (2003) and Moorhead et al. (2006) assert that decomposition levels off at a maximum rate proportional to the concentration of enzymes acting on it \cite{Schimel2003, Moorhead2006}. The decompostion of carbon in a substrate is described by the following equation.
 
@@ -156,9 +169,9 @@ TALK ABOUT ENZYMES FROM DATA IN MAYNARD
 
 Limited carbon availability will also impact a fungi's growth rate. To account for this, we include a term multiplying $\nu$ that can be interpreted as the available carbon for the fungi to consume for growth. The first equation in the growth model then becomes
 \begin{equation} \label{eq:10}
-\frac{\partial \rho}{\partial t} = (1-LCI)*(10^{-9})*C*n*\nu - d
+\frac{\partial \rho}{\partial t} = (1-LCI)*(10^{9})*C*n*\nu - d
 \end{equation}
-Where $LCI$ is the lignocellulose index\footnote{The lignocellulose index describes the ratio of non-hydrolysable lignin to hydrolysable holocellulose in litter} of a certain material and $(1-LCI)$ is then the proportion of the substrate carbon stored in holocellulose. Multiplying by $(1*10^{-9}$ is approximation to convert grams of carbon to hyphae length in mm. [citation needed for g to mm] An investigation of the effects of including the carbon term in the growth model are addressed in a later section. \\
+Where $LCI$ is the lignocellulose index\footnote{The lignocellulose index describes the ratio of non-hydrolysable lignin to hydrolysable holocellulose in litter} of a certain material and $(1-LCI)$ is then the proportion of the substrate carbon stored in holocellulose. Multiplying by $(1*10^{9}$ is approximation to convert grams of carbon to hyphae length in mm. [citation needed for g to mm] An investigation of the effects of including the carbon term in the growth model are addressed in a later section. \\
 
 So our coupled growth and decomposition models can be summarized by equations (\ref{eq:2}), (\ref{eq:3}), (\ref{eq:8}), and (\ref{eq:10}).
 
@@ -171,7 +184,7 @@ Amongst existing biome classification models, Whitaker's scheme \cite{Whittaker1
 
 The following are the specific environments selected to represent various biomes:
 
-\end{multicols}{2}
+\end{multicols}
 
 \begin{savenotes}
 	\begin{table}[H]
@@ -195,7 +208,7 @@ The following are the specific environments selected to represent various biomes
 	\end{table}
 \end{savenotes}
 
-Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Ranges for moisture potential of these environments have been found experimentally from a variety of studies is shown in the following table. Note that single water potentials and temperatures are selected for sampling, as we are aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions. The following are the selected values of average annual temperatures and water potential for these biomes. If ranges are given, the average of the ranges or seasonal values is the selected value. For full ranges and data sources, see appendix TABLE ???.
+Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Ranges for moisture potential of these environments have been found experimentally from a variety of studies is shown in the following table************. Note that single water potentials and temperatures are selected for sampling, as we are aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions. The following are the selected values of average annual temperatures and water potential for these biomes. If ranges are given, the average of the ranges or seasonal values is the selected value. For full ranges and data sources, see appendix TABLE ???.
 
 %% ACTUAL TABLE
 \begin{table}[H]
@@ -245,39 +258,76 @@ These two parameters help calculate the maximum growth rate by the relationship:
 where r is the enzyme biomass ratio.
 
 \subsection{Assumptions}
-
+\subsubsection{Growth}
 \begin{itemize}
-	\item Growth
-	\begin{itemize}
-		\item[--] unlimited available resources (ground litter and woody fibers)
-		\item[--] neglecting effects from direct interactions between fungi
-		\item[--] PROBLEM: neglecting synergistic effects on growth/metabolic efficiency
-		\item[--] non-exhaustive substrates
-		\item[--] not considering N addition by anthropogenic nitrogen deposition
-		\item[--] LCI < 0.7 at all times because we're focusing on wood fibers and we don't want lignin block holocellulose decay in bad ways. but we could use the formula
-		\item[--] LCI is not changing over time anastomosis, the formation of reconnections. 
-		\item[--] dynamics regarding the rate of nutrient absorption and transport of metabolites within the
-		mycelium are ignored or simplified
-		\item[--] growth dynamics incurred by the formation of concentric density rings are not considered <-- this doesn't need to exist because we're considering growth in a 1D tube
-		\item[--] only considering one configuration of growth traits out of many possible options, that configuration being: tip-hypha anasmotosis, dichotomous branching, and hyphal death
-		\item[--] decomposition coefficients are representative of those families of enzymes
-	\end{itemize}
-	\item Decomposition Kinetics
-	\begin{itemize}
-		\item[--] Elements can be stacked in any configuration without structural limitations
-	\end{itemize}
-	\item Temperature/Moisture effects
-	\begin{itemize}
-		\item[--] experimental data for water potentials in specific biomes/environments are representative of the conditions of those environments 
-	\end{itemize}
-	\item Interactions
-	\begin{itemize}
-		\item[--] Influences from wind are neglected
-		\item[--] The drones are assumed to be unobstructed by terrain
-		\item[--] The drones do not experience any malfunctions
-		\item[--] The earth’s curve is neglected
-	\end{itemize}
+	%\item Growth occurs in a 1-dimensional space *we should mention this in the formulation
+	\item Neglecting effects from direct interactions between fungi
+	\item Neglecting effects from N limitation
+	\item Litter is not added to or removed from the carbon pool by forces external of the fungi
+	\item LCI is xxx and remains constant over time
+	\item Dynamics regarding the rate of nutrient absorption and transport of metabolites within the
+	mycelium are ignored or simplified *more specific
+	\item Ignoring other growth traits: LIST
+	%\item Substrate use efficiency (SUE) is 1 *should be in the model formulation
+	\item Hyphal death rate $\gamma_{1}$ remains constant regardless of environmental fluctuations
+	\item 100\% of living hyphal tips are active
+	\item No biomass created by a fungus will be geometrically isolated from the substrate
+	\item Neglecting effects due to spacial limitations
+	%\item decomposition coefficients are representative of those families of enzymes
 \end{itemize}
+\subsubsection{Decomposition Kinetics}
+\begin{itemize}
+	\item Neglecting effects due to enzymes not included in the model
+	\item Production of enzymes increases proportionally with biomass
+	\item For any species of fungus, 2\% of the biomass will be relevant enzymes
+	\item Relative proportions of enzymes will stay constant regardless of environmental fluctuations
+	\item Neglecting effects on decomposition rate due to changing metabolic rate of the fungi
+\end{itemize}
+\subsubsection{Temperature/Moisture effects}
+\begin{itemize}
+	\item Turgor is a function of water potential
+	\item Fungal decomposition occurs in surface soil (0-30 cm)
+	\item Experimental data for water potentials in specific biomes/environments are representative of the conditions of those environments
+	\item Rate of increase of temperature $Q$ remains constant regardless of environmental fluctuations
+\end{itemize}
+
+\section*{Parameter selection and representative result}
+To select realistic values for the parameters, we created a representative run of the coupled growth and decomposition model, consulting the literature to find parameter values. An overview of the parameter selection for this representative run can be seen in (parameter table), however several parameters are worth some discussion. 
+\subsection*{Growth model parameters}
+The effect of two main parameters were studied for their effect on the growth model's result: the branching rate and the hyphal death rate. These parameters were not agreed upon in the literature so their effect on the model output was evaluated and they were selected from a pool of possible values based on the most likely realistic output. Most results of the growth model were comprised of traveling wave solutions, converging to a uniform distribution in both space and time. This can be thought of a the maximum growth of the fungus into it's total space. The branching rate ($\alpha_{1}$) was found to increase the hyphal density in the end behavior of the solution, with the ending density increasing as $\alpha_{1}$ increases. The hyphal death rate ($\gamma_{1}$) was found to increase the oscillations in time and thus larger $\gamma_{1}$ values would increase the oscillations and the time to reach a given end-behavior. Many of the papers discussing the values of these parameters [Edelstein 1982] [Lin 2016] [Schnepf 2007] [Du 2019] are concerned more with short term dynamics in perfectly ideal conditions. The purposes of this paper is the assess the long term decomposition rates under different conditions, so parameters that can predict long-term behavior, comparable to long term decomposition dynamics described in [Moorhead 2000] [Moorhead 2006] [Moorhead 1991] were selected.
+
+\end{multicols}
+\begin{center}
+\includegraphics[width=\linewidth]{avg_contr_nu_environment.png}
+\captionof{figure}{Figure caption}
+\label{Fig 2.}
+\end{center}
+\begin{multicols}{2}
+
+\subsection*{Decomposition parameters}
+The value for $G$ is interpreted as a rate constant, relating a concentration of relative enzymes to the maximum rate of carbon decomposition. formulation for $S_{M}$ and $S_{T}$ come from [Moorhead 1991] and in said model, a simpler equation is used for the reaction dynamics for decomposition of carbon. Because of this, we cannot use the same rate constant and must base this parameter of agreement with other models or experimental data. The most important aspect we examined for the section of $G$ was the timescale of decomposition to be comparable with that of [Lustenhouwer 2019].
+\subsection*{Representative results}
+As a representative result of the coupled growth and decomposition model, the two were run using the parameters summarized in (parameter table). In the growth model, $\rho$ was found to exibit travelling wave dispersion throughout space, as similarly shown in [Mimura 2000] and [Edelstein 1982]. Due to the simulation only running for a timespan of 3 years, the decrease in carbon over time looks fairly linear, with slight fluctuations likely due to the fluctuating fungal biomass densities over time. The first initial runs were done without the coupling term in the growth equations, so the growth model was assuming an abundance of nutrients and not affected by the decreasing concentration of carbon. Depending on the timescale being simulated, that could be a perfectly valid assumption, as short time scales tended to show little overall decrease in the concentration of holocellulose carbon. However the differences seen in including the nutrient availability term in the growth equations become more apparent as longer time scales are considered. The effects of this can be seen in our results. The overall biomass was also mostly unaffected other than replacing decaying oscillations towards a steady state with a somewhat constantly increasing biomass overtime with a decaying slope. Overall, including the nutrient availability term in the growth equation captures more of the fundamental interaction that this paper is concerned with (that of decomposing wood and ground litter rather than free-growing fungi), so it was included in further analysis. 
+
+
+\section*{Fungal species interaction}
+Due to the complex mechanisms of direct interaction between fungi, we chose to focus not on the direct interactions between the fungi in their consumption of the substraight, but on the interactions caused by differing rates of decomposition among different enzymes in varying environmental conditions and how the relative amounts of different bacteria in a fungi species will impact its competition. This was formulated in the model by taking the weighted sum of all contributions to the decomposition rate from any one of four enzymes in a given fungi species, represented in the following equation
+\begin{equation} \label{eq}
+\frac{dC_{1}}{dt} = c_{1,a}\frac{de_{1,a}}{dt} + c_{1,b}\frac{de_{1,d}}{dt} + c_{1,c}\frac{de_{1,c}}{dt} + c_{1,d}\frac{de_{1,d}}{dt}
+\end{equation}
+Where $c_{1,a}$ is a enzyme breakdown efficiency coefficient for the fungal species $1$ and enzyme $a$. Here the rate $\frac{dC_{1}}{dt}$ is representative of the rate of decay of the substrate by the fungi species $1$. The total decomposition rate is then given by the sum of all rates over the various species of fungi.
+\begin{equation} \label{eq}
+\frac{dC_{tot}}{dt} = \sum_{i=1}^{n}\frac{dC_{i}}{dt}
+\end{equation}
+Where $n$ is the total number of fungi being simulated. 
+
+
+\begin{ColumnFigure}
+	\centering
+	\includegraphics[width=\linewidth]{avg_contr_nu_competative_rankings.png}
+	\captionof{figure}{my caption of the figure}
+\end{ColumnFigure}
+
 
 \subsection{Environmental Influence on Hyphal Tip Extension}
 
