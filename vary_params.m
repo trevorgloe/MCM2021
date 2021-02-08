@@ -90,32 +90,32 @@ rankings = cell2mat(rankings_cell);
     
 S_M = S_M_vals(1);
 S_T = S_T_vals(1);
-% nu_vec = nu_vals(:,1);
-nu_vec = zeros(35,1);
+nu_vec = nu_vals(:,1);
+% nu_vec = zeros(35,1);
 multi_fungi_growth_kinetics
 
-nu1_over_time = zeros(1,400);
-nu2_over_time = zeros(1,400);
-psi1_over_time = zeros(1,400);
-for i = [1:400]
-    [nu1 psi1] = nu_for_psi(t(i),anual_cycle_nu1,anual_cycle_psi1);
-    [nu2 psi2] = nu_for_psi(t(i),anual_cycle_nu2,anual_cycle_psi2);
-    nu1_over_time(i) = nu1;
-    nu2_over_time(i) = nu2;
-    psi1_over_time(i) = psi1;
-end
-figure
-subplot(2,1,1)
-plot(t,nu1_over_time)
-hold on
-plot(t,nu2_over_time);
-hold off
-subplot(2,1,2);
-plot(t,psi1_over_time);
-
-figure
-plot(t,C_tot);
-
-
-
-    
+% nu1_over_time = zeros(1,400);
+% nu2_over_time = zeros(1,400);
+% psi1_over_time = zeros(1,400);
+% for i = [1:400]
+%     [nu1 psi1] = nu_for_psi(t(i),anual_cycle_nu1,anual_cycle_psi1);
+%     [nu2 psi2] = nu_for_psi(t(i),anual_cycle_nu2,anual_cycle_psi2);
+%     nu1_over_time(i) = nu1;
+%     nu2_over_time(i) = nu2;
+%     psi1_over_time(i) = psi1;
+% end
+% figure
+% subplot(2,1,1)
+% plot(t,nu1_over_time)
+% hold on
+% plot(t,nu2_over_time);
+% hold off
+% subplot(2,1,2);
+% plot(t,psi1_over_time);
+% 
+% figure
+% plot(t,C_tot);
+% 
+% 
+% 
+%     

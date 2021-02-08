@@ -1,0 +1,18 @@
+[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
+[0] Config.pm:315> INFO - Logfile is 'MCM2021 LaTeX paper.blg'
+[113] biber-MSWIN64:330> INFO - === 
+[135] Biber.pm:415> INFO - Reading 'MCM2021 LaTeX paper.bcf'
+[247] Biber.pm:952> INFO - Found 22 citekeys in bib section 0
+[265] Biber.pm:4334> INFO - Processing section 0
+[282] Biber.pm:4523> INFO - Looking for bibtex format file 'masterbib.bib' for section 0
+[305] bibtex.pm:1682> INFO - LaTeX decoding ...
+[427] bibtex.pm:1494> INFO - Found BibTeX data source 'masterbib.bib'
+[493] Utils.pm:395> WARN - ISBN '2058-5276' in entry 'Maynard2019' is invalid - run biber with '--validate_datamodel' for details.
+[590] Utils.pm:395> WARN - I didn't find a database entry for 'Petraglia2018' (section 0)
+[625] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[625] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[626] Biber.pm:4162> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[626] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[658] bbl.pm:651> INFO - Writing 'MCM2021 LaTeX paper.bbl' with encoding 'UTF-8'
+[676] bbl.pm:754> INFO - Output to MCM2021 LaTeX paper.bbl
+[684] Biber.pm:128> INFO - WARNINGS: 2
