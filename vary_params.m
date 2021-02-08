@@ -23,22 +23,69 @@ T_cell = cell_table(3,8:12);
 M_vals = cell2mat(M_cell);
 T_vals = cell2mat(T_cell);
 
+rankings_cell = cell_table(6:40,14);
+rankings = cell2mat(rankings_cell);
 
 % Simulation in an arid environment
 % S_M = S_M_vals(1);
 % S_T = S_T_vals(1);
 % nu_vec = nu_vals(:,1);
 % multi_fungi_growth_kinetics
+B_envir = zeros(5,35,400);
+C_tot_envir = zeros(5,1,400);
 
-for i = [1:5]
-    S_M = S_M_vals(i);
-    S_T = S_T_vals(i);
-    nu_vec = nu_vals(:,i);
+% for n = [1:5]
+%     S_M = S_M_vals(n);
+%     S_T = S_T_vals(n);
+%     nu_vec = nu_vals(:,n);
+%     multi_fungi_growth_kinetics
+%     
+%     contributions_envir(n,:,:) = contributions;
+%     B_envir(n,:,:) = all_B;
+%     C_tot_envir(n,:,:) = C_tot;
+%     
+% end
+
+%create concentration distribution sample points
+%restict the distributions for concetration to be guassians
+s_mat = zeros(35,60);
+for i = [1:35]
+    x = [1:35];
+    s_mat(:,i) = exp(-0.2*(x-i).^2);
+    s_mat(:,i) = s_mat(:,i)/(sum(s_mat(:,i)));
+end
+
+for i = [1:35]
+    x = [1:35];
+    s_mat(:,i+34) = exp(-0.01*(x-i).^2);
+    s_mat(:,i+34) = s_mat(:,i+34)/(sum(s_mat(:,i+34)));
+end
+
+%get the dot product of s (concentration distribution vector) with
+%competative ranking
+
+a_vals = zeros(1,60);
+for i = [1:60]
+    a_vals(i) = dot(s_mat(:,i),rankings);
+end
+
+% Simulation in an arid environment
+S_M = S_M_vals(1);
+S_T = S_T_vals(1);
+nu_vec = nu_vals(:,1);
+C_tot_dist = zeros(60,400);
+B_dist = zeros(60,35,400);
+contribution_disp = zeros(60,35,400);
+for run = [25:60]
+    fungi_vec = s_mat(:,run);
     multi_fungi_growth_kinetics
     
-    contributions_envir(i,:,:) = contributions;
-    
+    C_tot_dist(run,:) = C_tot;
+    B_dist(run,:,:) = all_B;
+    contribution_disp(run,:,:) = contributions;
+    disp(run)
 end
+
     
 
 

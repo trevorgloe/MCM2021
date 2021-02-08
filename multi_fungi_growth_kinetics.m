@@ -4,9 +4,9 @@
 % clear all
 
 %define what fungi are present
-fungi_vec = zeros(1,35);    %must be normalized to 1
-fungi_vec = linspace(0,1,35);
-fungi_vec = fungi_vec/((sum(fungi_vec))^1);
+% fungi_vec = zeros(1,35);    %must be normalized to 1
+% fungi_vec = ones(1,35);
+% fungi_vec = fungi_vec/((sum(fungi_vec))^1);
 
 %define domains
 n_x = 100;
@@ -101,33 +101,33 @@ end
 %different enzymes
 
 
-figure
-plot(t,C_tot)
-title('total carbon')
+% figure
+% plot(t,C_tot)
+% title('total carbon')
+% 
+% figure
+% hold on
+% for i = [1:35]
+%     plot(t,all_B(i,:))
+% end
+% title('Different fungi all growing at different rates')
 
-figure
-hold on
-for i = [1:35]
-    plot(t,all_B(i,:))
-end
-title('Different fungi all growing at different rates')
-
-figure
-hold on
-j = 1;
-for i = [1:35]
-    plot(t,(C_tot0-squeeze(all_C_enz(i,j,:))))
-end
-title('Nutrient uptake of different species of fungi')    
-figure
-hold on
+% figure
+% hold on
+% j = 1;
+% for i = [1:35]
+%     plot(t,(C_tot0-squeeze(all_C_enz(i,j,:))))
+% end
+% title('Nutrient uptake of different species of fungi')    
+% figure
+% hold on
 contributions = zeros(35,length(t(1,:)));
 for i = [1:35]
     contribution = squeeze(4*C_tot0-(all_C_enz(i,1,:)+all_C_enz(i,2,:)+all_C_enz(i,3,:)+all_C_enz(i,4,:)));
-    contributions(i,:) = contribution;
-    plot(t,(contribution)/C_tot0)
+    contributions(i,:) = contribution/C_tot0;
+%     plot(t,(contribution)/C_tot0)
 end
-title('Individual contribution of paricular fungi species')
+% title('Individual contribution of paricular fungi species')
 
 
     
