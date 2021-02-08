@@ -43,26 +43,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Analysis}{8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Distribution of relative concentration of fungi}{8}% 
+\contentsline {subsection}{\numberline {4.1}Total Carbon vs Time for Specific Environments}{8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Environmental fluctuations}{9}% 
+\contentsline {subsection}{\numberline {4.2}$\nu $ vs Average Contribution to Substrate Decay}{8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}$\nu $ vs Average Contribution to Substrate Decay}{9}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Total Carbon vs Time for Specific Environments}{10}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Average Contribution vs $\nu $ with Competitive Rankings}{10}% 
+\contentsline {subsection}{\numberline {4.3}Short-Term Environmental Fluctuations}{9}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Limitations}{10}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1}Growth Coupling}{10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Parameter Choices and Enzyme Concentration}{10}% 
+\contentsline {subsection}{\numberline {5.2}Decomposition kinetics}{11}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3}Direct Interactions}{11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Model Parameters}{12}% 
+\contentsline {subsection}{\numberline {5.4}Environmental Fluctuations}{12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Appendix Tables}{12}% 
+\contentsline {section}{\numberline {A}Model Parameters}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Appendix Figures}{13}% 
+\contentsline {section}{\numberline {B}Appendix Tables}{13}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Appendix Figures}{14}% 

@@ -452,6 +452,54 @@
       \verb https://doi.org/10.1111/j.1574-6941.2000.tb00683.x
       \endverb
     \endentry
+    \entry{Mimura2000}{article}{}
+      \name{author}{3}{}{%
+        {{hash=92245d11080d271954515f6a7af7d89a}{%
+           family={Mimura},
+           familyi={M\bibinitperiod},
+           given={Masayasu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=41bd46bd9b6ebf1373d5275b717b840b}{%
+           family={Sakaguchi},
+           familyi={S\bibinitperiod},
+           given={Hideo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fd4f5e5aa66270680972e35d71e21490}{%
+           family={Matsushita},
+           familyi={M\bibinitperiod},
+           given={Mitsugu},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6569b5d022c0c4869d052f210c99eefb}
+      \strng{fullhash}{952e4c590ea3034d20441544b31fe64c}
+      \strng{bibnamehash}{952e4c590ea3034d20441544b31fe64c}
+      \strng{authorbibnamehash}{952e4c590ea3034d20441544b31fe64c}
+      \strng{authornamehash}{6569b5d022c0c4869d052f210c99eefb}
+      \strng{authorfullhash}{952e4c590ea3034d20441544b31fe64c}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is well known from experiments that bacterial species Bacillus subtilis exhibit various colony patterns. These are essentially classified into five types in the morphological diagram, depending on the substrate softness and nutrient concentration. (A) diffusion-limited aggregation-like; (B) Eden-like; (C) concentric ring-like; (D) disk-like; and (E) dense branching morphology-like. There arises the naive question of whether the diversity of colony patterns observed in experiments is caused by different effects or governed by the same underlying principles. Our research has led us to propose reaction–diffusion models to describe the morphological diversity of colony patterns except for Eden-like ones.}
+      \field{issn}{0378-4371}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{number}{1}
+      \field{title}{Reaction–diffusion modelling of bacterial colony patterns}
+      \field{volume}{282}
+      \field{year}{2000}
+      \field{pages}{283\bibrangedash 303}
+      \range{pages}{21}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0378-4371(00)00085-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0378437100000856
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0378437100000856
+      \endverb
+      \keyw{Pattern formation,Bacterial colony,Reaction–diffusion models}
+    \endentry
     \entry{Moorhead2000}{article}{}
       \name{author}{2}{}{%
         {{hash=c11fe54d97c1bb34d16e57a09bbc2d13}{%
@@ -1434,6 +1482,83 @@
       \verb https://smithsonian.figshare.com/articles/dataset/Barro_Colorado_Island_Clearing_Temperature_manual/10042496/3
       \endverb
     \endentry
+    \entry{Petraglia2019}{article}{}
+      \name{author}{9}{}{%
+        {{hash=e17a95441f15e042cce2e6cb2cda392b}{%
+           family={Petraglia},
+           familyi={P\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=772fabc212f18f2362f3b2eaa1380aed}{%
+           family={Cacciatori},
+           familyi={C\bibinitperiod},
+           given={Cecilia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2f7b50fd006fd9310c8da9470ad02d1f}{%
+           family={Chelli},
+           familyi={C\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f71c913f85a0022db831e468bf9ebbd8}{%
+           family={Fenu},
+           familyi={F\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a5a62ffcff879b756feabf56c220bbbc}{%
+           family={Calderisi},
+           familyi={C\bibinitperiod},
+           given={Giulia},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1255882ed8fe27098d73a800b1d21819}{%
+           family={Gargano},
+           familyi={G\bibinitperiod},
+           given={Domenico},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4da1946ca0d964b6ed0a27b22622484b}{%
+           family={Abeli},
+           familyi={A\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=983b970a0567b25b56f88624bed1ae08}{%
+           family={Orsenigo},
+           familyi={O\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=923b99b12c865b161873f2bad8606970}{%
+           family={Carbognani},
+           familyi={C\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0c9946f97f7a4be5ec3b4d48fbde3e3}
+      \strng{fullhash}{426a0234f4522a66abf63efa6276c319}
+      \strng{bibnamehash}{426a0234f4522a66abf63efa6276c319}
+      \strng{authorbibnamehash}{426a0234f4522a66abf63efa6276c319}
+      \strng{authornamehash}{c0c9946f97f7a4be5ec3b4d48fbde3e3}
+      \strng{authorfullhash}{426a0234f4522a66abf63efa6276c319}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We examined the importance of litter quality and microclimate on early-stage litter mass loss, analysed the importance of interactions among environmental factors in determining key decomposition parameters and compared the variation in decomposition rates in vegetation types and sites with similar climate.}
+      \field{isbn}{1573-5036}
+      \field{journaltitle}{Plant and Soil}
+      \field{number}{1}
+      \field{title}{Litter decomposition: effects of temperature driven by soil moisture and vegetation type}
+      \field{volume}{435}
+      \field{year}{2019}
+      \field{pages}{187\bibrangedash 200}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/s11104-018-3889-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11104-018-3889-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11104-018-3889-x
+      \endverb
+    \endentry
     \entry{Zaz2019}{article}{}
       \name{author}{4}{}{%
         {{hash=d9120337d3ee9109a35a65972d592052}{%
@@ -1558,10 +1683,7 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Davey2007}
   \missing{Kari2014}
-  \missing{Lyn2016}
-  \missing{Petraglia2018}
 \endrefsection
 \endinput
 

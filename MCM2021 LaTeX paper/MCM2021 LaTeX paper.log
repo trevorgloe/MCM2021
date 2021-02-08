@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 11:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1264,28 +1264,7 @@ Package biblatex Info: ... file '"MCM2021 LaTeX paper".bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Davey2007
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
 (biblatex)                Kari2014
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Lyn2016
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Petraglia2018
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -1395,45 +1374,46 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 128.
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 180--182
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
-[3] [4] [5]
+[4] [5]
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
-87.
+85.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 287.
+(Font)              scaled to size 12.0pt on input line 285.
 
 [6]
 <biomass_growth_no_Cterm.png, id=38, 1126.2075pt x 843.15pt>
 File: biomass_growth_no_Cterm.png Graphic file (type png)
 <use biomass_growth_no_Cterm.png>
-Package pdftex.def Info: biomass_growth_no_Cterm.png  used on input line 339.
+Package pdftex.def Info: biomass_growth_no_Cterm.png  used on input line 337.
 (pdftex.def)             Requested size: 243.91125pt x 182.59885pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 340.
+(Font)              scaled to size 10.95pt on input line 338.
 <biomass_growth_Cterm.png, id=39, 1126.2075pt x 841.1425pt>
 File: biomass_growth_Cterm.png Graphic file (type png)
 <use biomass_growth_Cterm.png>
-Package pdftex.def Info: biomass_growth_Cterm.png  used on input line 344.
+Package pdftex.def Info: biomass_growth_Cterm.png  used on input line 342.
 (pdftex.def)             Requested size: 243.91125pt x 182.1641pt.
  [7 <./biomass_growth_no_Cterm.png (PNG copy)> <./biomass_growth_Cterm.png (PNG
- copy)>]
+ copy)>] [8] [9] [10] [11] [12]
 
-LaTeX Warning: Citation 'Mimura2000' on page 8 undefined on input line 362.
+LaTeX Warning: Citation 'Davey2007' on page 13 undefined on input line 491.
 
-[8] [9] [10] [11] [12] [13]
+[13] [14]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 557.
- [14]
+(Font)              scaled to size 12.0pt on input line 573.
+ [15]
 ! Missing { inserted.
 <to be read again> 
                    $
-l.558 \end
+l.574 \end
           {document}
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1443,7 +1423,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.558 \end
+l.574 \end
           {document}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1451,7 +1431,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[15] (./MCM2021 LaTeX paper.aux)
+[16] (./MCM2021 LaTeX paper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1468,11 +1448,11 @@ Package logreq Info: Writing requests to '"MCM2021 LaTeX paper".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25143 strings out of 492616
- 448128 string characters out of 6129482
- 995854 words of memory out of 5000000
- 28717 multiletter control sequences out of 15000+600000
- 616328 words of font info for 175 fonts, out of 8000000 for 9000
+ 25152 strings out of 492616
+ 448454 string characters out of 6129482
+ 990676 words of memory out of 5000000
+ 28725 multiletter control sequences out of 15000+600000
+ 616694 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,13n,92p,2712b,1704s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/us
@@ -1490,10 +1470,10 @@ usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2019/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "MCM2021 LaTeX paper.pdf" (17 pages, 256703 bytes).
+Output written on "MCM2021 LaTeX paper.pdf" (18 pages, 260480 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

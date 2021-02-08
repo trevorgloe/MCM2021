@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 09:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -534,7 +534,11 @@ LaTeX Warning: Citation `Zobel2001' on page 4 undefined on input line 114.
 
 LaTeX Warning: Citation `Maynard2019' on page 4 undefined on input line 114.
 
-[4] [5] [6] (./stuff.aux)
+[4] [5]
+
+LaTeX Warning: Citation `Razavi2015' on page 6 undefined on input line 123.
+
+[6] (./stuff.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -560,7 +564,7 @@ e/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
 xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on stuff.pdf (6 pages, 112091 bytes).
+Output written on stuff.pdf (6 pages, 114292 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
