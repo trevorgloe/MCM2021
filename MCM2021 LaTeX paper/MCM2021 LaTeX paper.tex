@@ -26,6 +26,11 @@
 \usepackage{footnote}
 \usepackage{float}
 \restylefloat{table}
+\usepackage{adjustbox}
+
+%\usepackage{syntonly}
+%\syntaxonly
+
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
@@ -75,6 +80,9 @@ sorting=ynt]{biblatex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
+\tableofcontents
+\listoftables
+\newpage
 \pagestyle{fancy}
 % Uncomment the next line to generate a Table of Contents
 %\tableofcontents 
@@ -101,7 +109,7 @@ When fungi come into contact with each other, competitive interactions are most 
 Under a constant temperature regime, previous research concludes that dominant fast-growing suppress other species which negatively impacts the overall community's efficiency. However fluctuating environmental conditions change the outcome and promote complementary growth \cite{Toljander2006}. An explanation for this is presented by Lustenhouwer et al. (2020) suggesting a spectrum between slow-growing, stress-tolerant fungi operating in a wider environmental range than fast-growing, highly competitive fungi \cite{Lustenhouwer2020}. 
 
 \subsection{Substrates}
-Determining which fungi are present in a community depends on the organic material, or 'substrate', being broken down. In the case of fungal-mediated wood decomposition, the substrate is made up of lignocellulose polysaccarides, and the fungi involved are equipped with specialized enzymes capable of splitting linkages in the polymers to harvest usable carbohydrates. Long-term wood decomposition follows a well-studied three-phase process: the first phase is dominated by fast and opportunistic fungus claiming easily-consumable soluble sugars, followed in the second phase by consistent and dependable decomposers that degrade the holocellulose constituting 65\%-85\% of the material \cite{Segato2014}. Slow and highly specialized fungi trail behind in the third phase to clean up rigid lignin polymers (15\%-35\%) with powerful oxidative enzymes \cite{Moorhead2006}. While phase progression is an important agent governing community changes on the long-term scale, this paper will focus on only the middle phase of cellulose decomposition and will not conider lignin decomposition. Fungi containing larger proportions of enzymes like acid phosphatase, which are associated with lignin decomposition, are demonstrated to strongly correlate with slower decomposition rates by Lustenhouwer et al. (2020) \cite{Lustenhouwer2020}.
+Determining which fungi are present in a community depends on the organic material, or 'substrate', being broken down. In the case of fungal-mediated wood decomposition, the substrate is made up of lignocellulose polysaccarides, and the fungi involved are equipped with specialized enzymes capable of splitting linkages in the polymers to harvest usable carbohydrates. Long-term wood decomposition follows a well-studied three-phase process: the first phase is dominated by fast and opportunistic fungus claiming easily-consumable soluble sugars, followed in the second phase by consistent and dependable decomposers that degrade the holocellulose constituting 65\%-85\% of the material \cite{Segato2014}. Slow and highly specialized fungi trail behind in the third phase to clean up rigid lignin polymers (15\%-35\%) with powerful oxidative enzymes \cite{Moorhead2006}. While phase progression is an important agent governing community changes on the long-term scale, this paper will focus on only the middle phase of cellulose decomposition and will not conider lignin decomposition. \cite{Lustenhouwer2020}.
 
 \subsection{Growth Model}
 An important step in modeling fungal communities is acknowledging separation between the growth rate and the decomposition rate of the fungus, which are influenced by different factors. Fungal growth models typically focus on the increase in overall biomass due to hyphal extension. Fungi with a greater density of hyphal tips per unit volume will grow and accrue biomass faster, as hyphae only grow from their tips. New tips are are created when hyphae branch off, while others die or fuse together via anasmotosis. Edelstein (1982) models these dynamics with the following:
@@ -113,10 +121,10 @@ An important step in modeling fungal communities is acknowledging separation bet
 \frac{\partial n}{\partial t} = -\frac{\partial n\nu}{\partial x} + \sigma
 \end{equation}
 
-These equations will operate standing alone, without any other influences by enzymes or growth limitations. This allows many models to treat it as a baseplate to expand upon. Edelstein (1983) and Davidson et al. (1997) do this by considering concentrations of nutrients inside the fungi and outside in the surrounding substrate \cite{Edelstein1983, Davidson2012}. Our model will likewise follow in eliminating the assumption that fungi grow over an unlimited nutrient supply. A more contemporary approach by Du et al. (2019) describes the growth of a fungus with a 3-dimensional reaction-diffusion equation based on microscopic growth mechanisms, also focusing on tip density and extension rate but with an added term to identify the proportion of tips which are actively growing \cite{Du2019}.
+Where \textbf{************} These equations will operate standing alone, without any other influences by enzymes or growth limitations. This allows many models to treat it as a baseplate to expand upon. Edelstein (1983) and Davidson et al. (1997) do this by considering concentrations of nutrients inside the fungi and outside in the surrounding substrate \cite{Edelstein1983, Davidson2012}. Our model will likewise follow in eliminating the assumption that fungi grow over an unlimited nutrient supply. A more contemporary approach by Du et al. (2019) describes the growth of a fungus with a 3-dimensional reaction-diffusion equation based on microscopic growth mechanisms, also focusing on tip density and extension rate but with an added term to identify the proportion of tips which are actively growing \cite{Du2019}.
 
 \subsection{Environmental Influence on Hyphal Tip Extension ($\nu$)}
-Environmental impacts are introduced to the decomposition model through $\nu$, the hyphal tip elongation rate. The mechanism of elongation is relatively unknown; as described in Gervais et al. (1999), "cell turgor pressure corresponds to an overpressure which allows the cell morphology, elongation, division and hence the biomass evolution" \cite{Gervais1999, Steinberg2007}. In fungi, cell turgor comes from diffusion of water dictated by the water potential gradients rather active transport within the cell, making it very environmentally dependent \cite{Gervais1999}. This fact justifies determining $\nu$ based on environmental factors on fungal decomposition rates by varying $\nu$ outside of baselines for given species in set locations in our model. Experimental data from Maynard et al. 2019 shows the relationship between $\nu$ and the environmental parameters of water potential ($\psi$) and temperature (T) \cite{Maynard2019}.  Water potential as a parameter will take into account both moisture content to fungi as well as the availability of that moisture as dictated by the  soil composition.
+Environmental impacts are introduced to the decomposition model through $\nu$, the hyphal tip elongation rate. The mechanism of elongation is relatively unknown; as described in Gervais et al. (1999), "cell turgor pressure corresponds to an overpressure which allows the cell morphology, elongation, division and hence the biomass evolution" \cite{Gervais1999, Steinberg2007}. In fungi, cell turgor comes from diffusion of water dictated by the water potential\footnote{Water potential ($\psi$) describes the content of availability of moisture surrounding a fungi as dictated by the soil composition.} gradients rather active transport within the cell, making it very environmentally dependent \cite{Gervais1999}. This fact justifies determining $\nu$ based on environmental factors on fungal decomposition rates by varying $\nu$ outside of baselines for given species in set locations in our model. Experimental data from Maynard et al. (2019) shows the relationship between $\nu$ and the environmental parameters of water potential ($\psi$) and temperature ($T$) \cite{Maynard2019}.
 
 %\begin{figure*}
 %	\centering
@@ -125,21 +133,21 @@ Environmental impacts are introduced to the decomposition model through $\nu$, t
 %	\caption[Fig 1.]{Example optimized flight plan, ran with drone fleet size of 5, starting configuration 1, 5 allowed movements, and $\gamma$ = 2}
 %	\label{Fig 1.}
 %\end{figure*}
-
 \subsection{Decomposition kinetics}
-Moore et al. (2015), Edelstein (1983), Moorhead et al. (2006), Parnas (1974), and Schimel et al. (2003) describe the decomposition of a certain substrate by a microbial decomposer as a function of the substrate's concentration by the Michaelis–Menton equation \cite{Moore2015, Edelstein1983, Moorhead2006, Parnas1975, Schimel2003}. Schimel et al. (2003) and Moorhead et al. (2006) assert that decomposition levels off at a maximum rate proportional to the concentration of enzymes acting on it \cite{Schimel2003, Moorhead2006}. The decompostion of carbon in a substrate is described by the following equation.
+Moore et al. (2015), Edelstein (1983), Moorhead et al. (2006), Parnas (1974), and Schimel et al. (2003) describe the decomposition of a certain substrate by a microbial decomposer as a function of the substrate's concentration with the Michaelis–Menton equation \cite{Moore2015, Edelstein1983, Moorhead2006, Parnas1975, Schimel2003}. Thus, decompostion of carbon in a substrate is described by the following equation.
 
 \begin{equation} \label{eq:3}
 \frac{dC}{dt} = \frac{KBC}{K_{e}+C}
 \end{equation}
-We make the assumption that the enzyme concentration is proportional to the concentration of biomass in our system represented by $r$ multiplied by two environmental limiting factors in $K=rS_{M}S_{T}$ \cite{Schimel2003}. Moorhead (1990) uses these limiting factors to multiply the rates of carbon uptake from microorganisms, although the model used a simpler first order, linear equation \cite{Moorhead2006}. Here we use it in a similar way in limiting our maximum decay rate. The factors, $S_{M}$ and $S_{T}$ are computed by the following equations:
-\begin{equation}
-S_{M}=\alpha_{2} - \lambda \log_{10}(-\psi)
-\end{equation}
-\begin{equation}
-\log_{10}(S_T) = \frac{T-25}{10}\log_{10}(Q)
-\end{equation}
-\pagebreak
+
+Where \textbf{******************}. Schimel et al. (2003) and Moorhead et al. (2006) assert that decomposition levels off at a maximum rate proportional to the concentration of enzymes acting on it \cite{Schimel2003, Moorhead2006}. To determine this enzyme concentration, we will make the assumption that enzyme concentration is proportional to the concentration of biomass in our system represented by $r$ multiplied by two environmental limiting factors in $K=rS_{M}S_{T}$ \cite{Schimel2003}. This environmental factors are discussed at greater length in \textbf{section that they're discussed}
+
+\subsection{Enzyme interactions}
+
+Enzymes produced by fungi are expelled into the surrounding substrate to autonomously break down macromolecules. Relative enzyme concentrations can be quantified by the production rates of each enzyme by a fungus. Production of enzymes is a metabolically taxing process, therefore fungi that produce enzymes which return much more usable energy and C than was put into making the enzyme, a high "return on investment", will be able to synthesize even more enzymes and grow rapidly \cite{Schimel2003}. Lustenhouwer et al (2020) strengthens this theory by showing through statistical analysis of 1582 various fungal isolats that fungi containing larger proportions of enzymes like acid phosphatase, which are associated with slow lignin decomposition, are demonstrated to strongly correlate with slower decomposition rates \cite{Lustenhouwer2020}. Lignin exemplifies a low return on investment, requiring powerful enzymes and greater energy input per unit C than holocellulose. But it's ultimately the fungi that have a subset of enzymes that best match their surrounding substrate which successfully grow and establish a niche. As an example, in a substrate of 70\%+ lignin, the slower growing fungi with lignin enzymes normally at a disadvantage will win out over other fungi competing for a fraction of available holocellulose.
+
+Communities with similar fungi of similar enzymatic makeup often see a few dominant species overwhelm the rest through competition for similar resources in the substrate, but communities of fungi with greatly differing enzymes will instead form distinct niches that partition different resources in which they are seperately able to grow. In these conditions, one dominant species faces difficulty in wiping out competitors who are individually masters of their own substrates. This effect is known as niche complementarity \cite{Toljander2006}. Research by Toljander et al. (2006) contends that environmental fluctuations further robustify a diverse community as faster growing highly competitive fungi are hindered by conditions that lapse out of their moisture and temperature niche, and slower growing stress-tolerant fungi benefit from decreased pressure by competitors. The resulting dampened and stable diverse community will decompose the most efficiently across a range of conditions \cite{Toljander2006}.
+
 \section{Model Formulation}
 
 
@@ -165,8 +173,6 @@ K = r*S_{M}*S_{T}*0.04*G
 \end{equation}
 Where $r$ is a dimensionless parameter representing the relative abundance of one enzyme out of the total enzyme biomass of that specific fungus. The multiplication by $0.02$ is a generalization that for any given species of fungus, 2\% of the biomass will be relevant enzymes \cite{Moorhead2006}. $G$ is an empirically derived rate constant relating the mass of relevant enzymes to the maximum rate of the decomposition.
 
-TALK ABOUT ENZYMES FROM DATA IN MAYNARD
-
 Limited carbon availability will also impact a fungi's growth rate. To account for this, we include a term multiplying $\nu$ that can be interpreted as the available carbon for the fungi to consume for growth. The first equation in the growth model then becomes
 \begin{equation} \label{eq:10}
 \frac{\partial \rho}{\partial t} = (1-LCI)*(10^{9})*C*n*\nu - d
@@ -175,11 +181,25 @@ Where $LCI$ is the lignocellulose index\footnote{The lignocellulose index descri
 
 So our coupled growth and decomposition models can be summarized by equations (\ref{eq:2}), (\ref{eq:3}), (\ref{eq:8}), and (\ref{eq:10}).
 
+\subsection{Defining Representative Enzymes}
+
+Maynard et al. (2019) collected data for 8 relevant enzymes and utilized a standard clustering approach to create a subset of four enzymes which best represented the effects by the fungi's enzymatic makeup on competitive interactions \cite{Maynard2019}. Our model utilizes this open-source data by normalizing the production rates of each enzyme and calculating their relative abundance as a fraction of the total enzyme biomass for that specific fungus. Interactions caused by differing rates of decomposition among different enzymes in varying environmental conditions is then represented in our model by taking the weighted sum of all contributions to the decomposition rate from any one of four enzymes in a given fungi species, represented in the following equation
+\begin{equation} \label{eq}
+\frac{dC_{1}}{dt} = c_{1,a}\frac{de_{1,a}}{dt} + c_{1,b}\frac{de_{1,d}}{dt} + c_{1,c}\frac{de_{1,c}}{dt} + c_{1,d}\frac{de_{1,d}}{dt}
+\end{equation}
+Where $c_{1,a}$ is a enzyme breakdown efficiency coefficient for the fungal species $1$ and enzyme $a$. Here the rate $\frac{dC_{1}}{dt}$ is representative of the rate of decay of the substrate by the fungi species $1$. Breakdown efficiencies $c_{1,a}$ for each enzyme were derived from correlation coefficients drawn from experimentally observed data in Lustenhouwer et al. (2020) \cite{Lustenhouwer2020}. 
+
+The total decomposition rate is then given by the sum of all rates over the various species of fungi.
+\begin{equation} \label{eq}
+\frac{dC_{tot}}{dt} = \sum_{i=1}^{n}\frac{dC_{i}}{dt}
+\end{equation}
+Where $n$ is the total number of fungi being simulated. \textbf{address the fact that all the 35 fungi will be growing/decomposing together at the same time}
+
 \subsection{Estimating $\nu$ For Various Environments}
 
 When considering a sampling of decomposition rates in various environment types, we must determine how to estimate temperate and water potentials that ground fungi would experience. In the case of determining $\nu$, this requires finding projected temperature and water potential.
 
-Amongst existing biome classification models, Whitaker's scheme \cite{Whittaker1970} is perhaps the simplest, being particularly trait-based. Whitaker's scheme provides a layout of biomes based on mean annual temperature and mean annual precipitation. However, modern classification of biomes has drifted away from using these traits as definitive biome identifiers \cite{Mucina2018}. These traits alone do not define all features of concern to fungal growth, such as soil composition for example. In addition, by Whitaker's scheme, we find that a given biome can have a wide range of average annual temperatures (such as arid desserts ranging from about -10 to 30 $^{\circ}C$) \cite{Whittaker1970}. Thus, we can sample a range of temperature and moisture values to output various $\nu$ and then select certain regions to profile in order to gauge potential environments where fungi can decompose and interact.
+Amongst existing biome classification models, Whitaker's scheme \cite{Whittaker1970} is notably simple, providing a layout of biomes based on mean annual temperature and mean annual precipitation. However, modern classification of biomes has drifted away from using these traits as definitive biome identifiers \cite{Mucina2018}. These traits alone do not define all features of concern to fungal growth, such as soil composition for example. In addition, by Whitaker's scheme, we find that a given biome can have a wide range of average annual temperatures (such as arid desserts ranging from about -10 to 30 $^{\circ}C$) \cite{Whittaker1970}. We can sample a range of temperature and moisture values to output various $\nu$ and then select certain regions to profile in order to gauge potential environments where fungi can decompose and interact.
 %We will sample within the temperature range of Whitaker's scheme: $-15^{\circ}$ to $30^{\circ}$ C of mean annual temperature.
 
 The following are the specific environments selected to represent various biomes:
@@ -204,11 +224,13 @@ The following are the specific environments selected to represent various biomes
 				Tropical Rain Forest & Tropical Forests, Barro Colorado Island, Panama \\
 				\hline
 			\end{tabular}
+			\vspace*{-3ex}
+			\captionof{table}{Specific Environments}\label{table1}
 		\end{center}
 	\end{table}
 \end{savenotes}
 
-Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Ranges for moisture potential of these environments have been found experimentally from a variety of studies is shown in the following table************. Note that single water potentials and temperatures are selected for sampling, as we are aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions. The following are the selected values of average annual temperatures and water potential for these biomes. If ranges are given, the average of the ranges or seasonal values is the selected value. For full ranges and data sources, see appendix TABLE ???.
+Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Single water potential and annual temperature values were selected from ranges of values experimentally determined by a variety of field studies on these environments (see: Table 2). This decision was made since we're aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions.
 
 %% ACTUAL TABLE
 \begin{table}[H]
@@ -228,16 +250,14 @@ Although water potentials can be approximated based on predictive models, the me
 			Tropical Rain Forest & 27.5 & -0.79 \\
 			\hline
 		\end{tabular}
+		\vspace*{-3ex}
+		\captionof{table}{Temperature \& Water Potentials}\label{table2}
 	\end{center}
 \end{table}
 
+Note that these are not wholly representative configurations, but rather examples to provide insight into how fungal species with specific traits may respond in discrete and distinct conditions likely to exist. We can then find $\nu$ using experimental data from Maynard et al 2019 \cite{Maynard2019}.\textbf{talk about continuous data technique thingy in the extra methods info sheet}
 
-Given these estimates, we can have a probable example combination of temperature and moisture potential in various environments. Note that these are not wholly representative configurations, but rather examples to provide insight into how fungal species with specific traits may respond in discrete and distinct conditions likely to exist. 
-
-We can then find $\nu$ using experimental data from Maynard et al 2019. **** (talk about continuous data technique thingy in the extra methods info sheet)
-
-\begin{multicols}{2}
-	
+\begin{multicols}{2}	
 \subsection{Other Responses to Temperature and Water Potential}
 
 Our growth model takes into account temperature (T) and water potential ($\psi$) in two more parameters: the soil temperature coefficient ($S_T$) and the soil temperature coefficient ($S_M$). Moorhead et al. (1991) provides a simple relationship between $S_T$ and T using the rate of increase (Q):
@@ -255,9 +275,11 @@ These two parameters help calculate the maximum growth rate by the relationship:
 \begin{equation}
 \beta = S_T S_M r
 \end{equation}
-where r is the enzyme biomass ratio.
+\textbf{why is this $\beta$ and not K?} 
 
 \subsection{Assumptions}
+
+Further assumptions made in the formulation of our model that have not yet been discussed are largely simplifications that are not relevant to any significant or interesting discussion. An itemized list of these assumptions is provided below.
 \subsubsection{Growth}
 \begin{itemize}
 	%\item Growth occurs in a 1-dimensional space *we should mention this in the formulation
@@ -291,203 +313,197 @@ where r is the enzyme biomass ratio.
 	\item Rate of increase of temperature $Q$ remains constant regardless of environmental fluctuations
 \end{itemize}
 
-\section*{Parameter selection and representative result}
-To select realistic values for the parameters, we created a representative run of the coupled growth and decomposition model, consulting the literature to find parameter values. An overview of the parameter selection for this representative run can be seen in (parameter table), however several parameters are worth some discussion. 
-\subsection*{Growth model parameters}
+\section{Parameter selection and representative result}
+To select realistic values for the parameters, we created a representative run of the coupled growth and decomposition model, consulting the literature to find parameter values. An overview of the parameter selection for this representative run can be seen in (parameter table), however several parameters are worth some discussion.
+ 
+\subsection{Growth model parameters}
 The effect of two main parameters were studied for their effect on the growth model's result: the branching rate and the hyphal death rate. These parameters were not agreed upon in the literature so their effect on the model output was evaluated and they were selected from a pool of possible values based on the most likely realistic output. Most results of the growth model were comprised of traveling wave solutions, converging to a uniform distribution in both space and time. This can be thought of a the maximum growth of the fungus into it's total space. The branching rate ($\alpha_{1}$) was found to increase the hyphal density in the end behavior of the solution, with the ending density increasing as $\alpha_{1}$ increases. The hyphal death rate ($\gamma_{1}$) was found to increase the oscillations in time and thus larger $\gamma_{1}$ values would increase the oscillations and the time to reach a given end-behavior. Many of the papers discussing the values of these parameters [Edelstein 1982] [Lin 2016] [Schnepf 2007] [Du 2019] are concerned more with short term dynamics in perfectly ideal conditions. The purposes of this paper is the assess the long term decomposition rates under different conditions, so parameters that can predict long-term behavior, comparable to long term decomposition dynamics described in [Moorhead 2000] [Moorhead 2006] [Moorhead 1991] were selected.
 
-\end{multicols}
-\begin{center}
-\includegraphics[width=\linewidth]{avg_contr_nu_environment.png}
-\captionof{figure}{Figure caption}
-\label{Fig 2.}
-\end{center}
-\begin{multicols}{2}
+%\end{multicols}
+%\begin{center}
+%\includegraphics[width=\linewidth]{avg_contr_nu_environment.png}
+%\captionof{figure}{Figure caption}
+%\label{Fig 2.}
+%\end{center}
+%\begin{multicols}{2}
 
-\subsection*{Decomposition parameters}
+\subsection{Decomposition parameters}
 The value for $G$ is interpreted as a rate constant, relating a concentration of relative enzymes to the maximum rate of carbon decomposition. formulation for $S_{M}$ and $S_{T}$ come from [Moorhead 1991] and in said model, a simpler equation is used for the reaction dynamics for decomposition of carbon. Because of this, we cannot use the same rate constant and must base this parameter of agreement with other models or experimental data. The most important aspect we examined for the section of $G$ was the timescale of decomposition to be comparable with that of [Lustenhouwer 2019].
-\subsection*{Representative results}
+
+\subsection{Representative results}
 As a representative result of the coupled growth and decomposition model, the two were run using the parameters summarized in (parameter table). In the growth model, $\rho$ was found to exibit travelling wave dispersion throughout space, as similarly shown in [Mimura 2000] and [Edelstein 1982]. Due to the simulation only running for a timespan of 3 years, the decrease in carbon over time looks fairly linear, with slight fluctuations likely due to the fluctuating fungal biomass densities over time. The first initial runs were done without the coupling term in the growth equations, so the growth model was assuming an abundance of nutrients and not affected by the decreasing concentration of carbon. Depending on the timescale being simulated, that could be a perfectly valid assumption, as short time scales tended to show little overall decrease in the concentration of holocellulose carbon. However the differences seen in including the nutrient availability term in the growth equations become more apparent as longer time scales are considered. The effects of this can be seen in our results. The overall biomass was also mostly unaffected other than replacing decaying oscillations towards a steady state with a somewhat constantly increasing biomass overtime with a decaying slope. Overall, including the nutrient availability term in the growth equation captures more of the fundamental interaction that this paper is concerned with (that of decomposing wood and ground litter rather than free-growing fungi), so it was included in further analysis. 
 
+\section{Analysis}
 
-\section*{Fungal species interaction}
-Due to the complex mechanisms of direct interaction between fungi, we chose to focus not on the direct interactions between the fungi in their consumption of the substraight, but on the interactions caused by differing rates of decomposition among different enzymes in varying environmental conditions and how the relative amounts of different bacteria in a fungi species will impact its competition. This was formulated in the model by taking the weighted sum of all contributions to the decomposition rate from any one of four enzymes in a given fungi species, represented in the following equation
+\subsection{Distribution of relative concentration of fungi}
+The model allows us to adjust the relative concentrations of each fungi species being simulated. In the model, this is represented with a set of $0<c_{i}\leq 1$ such that $\sum c_{i} = 1$. Each one of these $c_{i}$ multiplies the rates of hyphal density increase and boundary/initial conditions in the growth model. With this metric, the relative concentrations of different fungi species are forced to satisfy the conditions $B_{i}/B_{tot}=c_{i}$ where $B_{i}$ is the biomass of the $i$'th fungi species. This is obviously an unrealistic constraint on the system as the relative concentrations of different fungal species should fluctuate with time as the different species of fungi grow at varying rates. But for the purpose of assessing the effect of biodiversity on the overall decomposition of the substraight, concentration fluctuation would add unneeded complexity to the analysis. \\
+Also considered for this analysis are the competitive rankings of the different fungi species (CITATION NEEDED). The ranking-distribution coefficient, $a$ is then defined to be
 \begin{equation} \label{eq}
-\frac{dC_{1}}{dt} = c_{1,a}\frac{de_{1,a}}{dt} + c_{1,b}\frac{de_{1,d}}{dt} + c_{1,c}\frac{de_{1,c}}{dt} + c_{1,d}\frac{de_{1,d}}{dt}
+a = \sum_{i=1}^{n} c_{i}*R_{i}
 \end{equation}
-Where $c_{1,a}$ is a enzyme breakdown efficiency coefficient for the fungal species $1$ and enzyme $a$. Here the rate $\frac{dC_{1}}{dt}$ is representative of the rate of decay of the substrate by the fungi species $1$. The total decomposition rate is then given by the sum of all rates over the various species of fungi.
-\begin{equation} \label{eq}
-\frac{dC_{tot}}{dt} = \sum_{i=1}^{n}\frac{dC_{i}}{dt}
-\end{equation}
-Where $n$ is the total number of fungi being simulated. 
+Where $R_{i}$ s the competitive ranking for the $i$'th fungi species. The ranking-distribution coefficient can be though of as a dot-product in $n$-dimensional space (where $n$ is the number of various fungi species being simulated). So $a$ will be highest when the $n$-dimensional vectors "line-up" in the sense that the distribution of fungi species is closest to the distribution of competitive rankings.\\
+To study the effects of $a$ on the system overall, sample $c$ values had to be chosen. Due to a lack of literature results on simple, constant fungi distributions, arbitrary Gaussian distributions spread out over the different species of fungi were chosen. Because we are mainly concerned with the relation of any given distribution to the competitive rankings, the functions can be viewed as arbitrary or random distributions (because the ordering of fungal species in our Gaussian distribution has no physical meaning). The results of model runs using these various distributions is shown in (figure carbon-decrease-fungi-distribution). To assess the overall effectiveness of a single species distribution, the average carbon decrease over the whole interval was found via the equation $C_avg = \int (C_{0}-C)dt/(\delta t)$ where $C_{0}$ is our initial amount of carbon and $\delta t$ is the total time change over which the carbon decreases. The results of comparing this average carbon decomposed to the $a$ value for the species distribution in question is seen in (figure a-competative-distribution-coef-to-avg-Clost). Several interesting qualitative behaviors arise from the this comparison. Firstly, there is a clear smooth trend between $a$ and the average carbon decomposed up to approximately $a=0.65$. At this point the smooth trend completely vanishes and the data points appear to be randomly distributed in the area. We hypothesize that this critical value of $a$ could be representative of a bifurcation point; however further analysis on the dynamics of these coupled systems interacting would need to be done to investigate this hypothesis further. Additionally we notice that at this critical point, the average carbon decomposed tends to grow significantly. The physical interpretation of this critical point is deeply related to the effectiveness of the competitive rankings as they relate to a biologically diverse system. The results show that beyond a certain point, distributing the biodiversity more closely to the competitive rankings does not have any noticeable effect on the overall effectiveness of the system. \\
+This leads to two possibilities beyond the critical point for the system. One possibility is that optimum biodiversity is based on more complex dynamics than the competitive rankings can assess. The other possibility is that the system behaves in a chaotic or random nature beyond this critical point and no clear metric of biodiversity could be correlated to the effectiveness of a given distribution.
 
+\subsection{Environmental fluctuations}
+Realistically, the external environment dictates environmental conditions of the system both in short time scales (year fluctuations for example) and long time scales. To study the effects of these short time scale fluctuations, we choose to implement a yearly moisture cycle. The cycle dictates a repeating, yearly pattern of $\psi$ and thus $\nu$. To Incorporated this into the model, $\nu$ and $\psi$ were dynamically allocated over time based on the oscillatory behavior shown in (figure oscillating-psi-nu). Due to time limitations and scarce data on the parameters of these yearly oscillations, only two species of fungi were simulated. A comparison of their respective decomposition contributions with that of similar environmental conditions but static $\nu$ and $\psi$ is shown in (figure oscillating2nonoscillating-psi-contribution). There is no note-worthy new oscillatory motion seen in these results. There is also seen to be a slight increase in the effectiveness of both fungi in the oscillatory case. 
 
-\begin{ColumnFigure}
-	\centering
-	\includegraphics[width=\linewidth]{avg_contr_nu_competative_rankings.png}
-	\captionof{figure}{my caption of the figure}
-\end{ColumnFigure}
+\subsection{$\nu$ vs Average Contribution to Substrate Decay} %avg_contr_nu_environment.fig
+Using the decomposition model, average contribution to substrate decay and the tip elongation rate $\nu$ can be found for each fungal species for a given environmental configuration. Aside from indicating an expected positive correlation between $\nu$ and contribution, we find that in general, environments with a higher moisture potential lead to greater contributions overall and a greater contribution sensitivity to $\nu$ in our model. Our model agrees with the notion of water potential serving as an important limiting factor to the decomposition ability of individual fungi. This corroborates with various findings, that find soil moisture as a particularly influential environmental factor, influencing elongation through pressure gradients and testing of tolerance \cite{Maynard2019} \cite{Lustenhouwer2020}. %i think there may be a better citation, i am tired
+%****In case linear regression added: The tropical rain forest environment, with a water potential of 0.76, lead to a }
 
+\subsection{Total Carbon vs Time for Specific Environments} %direct_compare_decom_environmen.fig
+Similarly, a sampling of different environmental parameters within the decomposition model demonstrates the decrease of total carbon in a fungal-waste system over time. Here, we see more moist soil environments lead to clearly more expedient rates of carbon total carbon decrease and reach total decomposition quicker in our model. Again in the model, the rain forest environment exceeds the other environmental profiles, effectively completing decomposition in under 1640 days (roughly 4.5 years.
 
-\subsection{Environmental Influence on Hyphal Tip Extension}
+\subsection{Average Contribution vs $\nu$ with Competitive Rankings} %avg_contr_nu_competative_rankings.fig  Maybe ask trevor to change colors or flip colors (final point(s) difficult to see
+With one set of environmental parameters, we can gain insight into how different species of fungi potentially interact relative to each other. In addition to an expected lose positive correlation between $\nu$ and the average contribution of a given fungi, these is a lose correlation of higher fungi competitive ranking with greater $\nu$ and greater average contribution. This suggests that the fungi that are more 'active' in our model, with the largest growth rates and proportions, are also the most competitive. Competitive ranking has a higher correlation with $/nu$, indicating that in our model growth rate may be more significant than proportion when it comes to competitive circumstances. This aligns with established trends of the primary 2 fungal niches \cite{Maynard2019}.
 
-\subsection{Decomposition Kinetics}
-
-\subsection{Enzyme Implementation}
-
-\subsection{Moisture}
-
-\section{Pre-planning intro}
-
-The Five Core Tenants:
-1. growth/Decomposition continuous model
-- general explanation of the structure of fungi: hyphal extension rate, branching, tips, death, etc.
-- proportion of enzymes relative to the phases correlates with the speed of decomposition and effectiveness in a certain phase
-- substrate talk - LCI, lignin inhibition of holocellulose, common substrate compositions, how soil is different
-- phases talk
-- reasoning behind choosing a continuous model
-
-2. interactions between different fungi with differing characteristics
-- competitive interactions *
-- synergy under richness and fluctuating temperatures *
-- the more differing the characteristics of the fungi, the more likely they are to compete
-- the competitive ranking *
-
-3. sensitivity to environmental fluctuations
-- slower-growth stress tolerant fungi vs fast growth more niche temp/moisture fungi determining which of these two wins out depends on how much the environment is fluctuating and what subset of fungi are present *
-- fluctuating temperatures promotes growth
-- moisture talk *
-- biome talk
-
-4. biodiversity's impact on systems overall efficiency
-- richness promotes growth
-- competition promotes efficiency *
-- dominant species that 'wipe out' the community generally harm? *
-
-5. effect on the carbon cycle
-- fungi/bacteria are the only life forms which can break down lignin and efficiency break down holocellulose litter — these poysaccarides make up a huge portion of the total ground litter biomass in the earth's forests
-
-Biodiversity's impact on the system's overall efficiency:
-- the greater range you have of moisture/temperature niche widths, the more tolerant your fungal community will be overall to growing in any particular environmental because at least some constituents of the community will be close to idealized in that environment.
-- competition rank correlates heavily with hyphal extension rate — fungal communities with species who are highly competitive will go one of two ways: 1. the environmental conditions are ideal for the smaller niches of the highly competitive isolates, and so those isolates will dominate out over the other ones 2. the environmental conditions are not ideal for the highly competitive isolates, so the slower but more robust isolates will win out
-
-we have a spearman correlation coefficient relating production of each enzyme with decomposition rate — enzymes primarily involved with breaking down lignin (acid phosphatase) are strongly correlated with decreased decomposition rate.
-
-Strong correlation that increase production of acid phospatase results in decreased competitive rank, which makes sense because on average slower-growing fungi are less competitive than faster growing ones. Competitive rank has a 0.6 spearman correlation coefficient with growth performance
-
-Assumption: enzymes treatment of the different portions of holocellulose are the same 
-
-Implementation: each enzyme has its production rate from the data, multiply the parameter by that production rate and sum them all together to get dC/dt
-
-Recapitulating previous literature
-
-
-Prediction:
-The slower stress tolerant fungi will have a share of enzymes that indicate their slow decomposition rate, but a moisture and temperature width that indicate their stress tolerance to environmental fluctuations. 
-
-The faster fungi will have a share of enzymes that indicate their fast decomposition rate, but a moisture and temperature width that indicates their lack of stress tolerance to environmental fluctuations.
-
-\section{Model formulation}
-Maynard et. al took data on the productive rates of 8 different enzymes (5 hydrolytic and 3 oxidative to cover the spectrum of the cellulose-degradation process) and used a standard clustering approach to determine 4 representative enzymes of the entire set: cellobiohydrolase, acid phosphatase, peroxidase and phenoloxidase. The data for production of these enzymes comes from their open-source github. 
-
-We're making the assumption that the production of each enzyme is  equivalent to the amount of the enzyme present in the fungus. We took the production data and normalized it to z-score values. Each z-score was turned into a portion of that enzyme with $e_x$ = (z-min)/(max-min) and then we divided each portion by the sum of all enzyme portions for each enzyme $(e_x)/(e_1+e_2+e_3+e_4)$. This gives us a representation of the proportion of each enzyme relative to other enzymes. We made the assumption thatt the total mass of those four enzymes for each fungus is the same, and the fraction of enzyme mass from total mass.
-
-We made the assumption that the enzymes are not changing over time due to C/N changes or environmental fluctuations
-
-The time scale for our model is following the experimental results from (paper cited by question) which indicates x\% log decomposition after 3 years and y\% decomposition of logs after 5 years for a wide sampling of fungus
-
-\subsection{Assumptions}
-
-\begin{itemize}
-	\item Growth
-	\begin{itemize}
-		\item unlimited available resources (ground litter and woody fibers)
-		\item neglecting effects from direct interactions between fungi
-		\item PROBLEM: neglecting synergistic effects on growth/metabolic efficiency
-		\item non-exhaustive substrates
-		\item not considering N addition by anthropogenic nitrogen deposition
-		\item LCI < 0.7 at all times because we're focusing on wood fibers and we don't want lignin block holocellulose decay in bad ways. but we could use the formula
-		\item LCI is not changing over time anastomosis, the formation of reconnections. 
-		\item dynamics regarding the rate of nutrient absorption and transport of metabolites within the
-		mycelium are ignored or simplified
-		\item growth dynamics incurred by the formation of concentric density rings are not considered <-- this doesn't need to exist because we're considering growth in a 1D tube
-		\item only considering one configuration of growth traits out of many possible options, that configuration being: tip-hypha anasmotosis, dichotomous branching, and hyphal death
-		\item decomposition coefficients are representative of those families of enzymes
-	\end{itemize}
-	\item Decomposition Kinetics
-	\begin{itemize}
-		\item[--] Elements can be stacked in any configuration without structural limitations
-	\end{itemize}
-	\item Temperature/Moisture effects
-	\begin{itemize}
-		\item[--] experimental data for water potentials in specific biomes/environments are representative of the conditions of those environments 
-	\end{itemize}
-\end{itemize}
-
-
-\subsection{Cost Function}
-I've copied the ten diff eqs from Numerical Prediction Model for Fungal Growth Coupled with Hygrothermal Transfer in Building Materials here:
-
-hygrothermal equations:
-
-\begin{equation}
-\frac{dH}{dT}\cdot\frac{\partial T}{\partial t}=\nabla\cdot(\lambda\nabla T)+h_v\nabla\cdot(\delta_{p}\nabla(\phi p_{sat}))
-\end{equation}
-
-\begin{equation}
-\frac{dw}{d\phi}\cdot\frac{\partial \phi}{\partial t}=\nabla\cdot(D_{\phi}\nabla\phi+\delta_{p}\nabla(\phi p_{sat})
-\end{equation}
-
-Chapter 15 Mathematical Modeling of Fungal Growth
-
-\begin{equation}
-\frac{\delta\rho}{\delta t}=nv-d(\rho)
-\end{equation}
-
-\begin{equation}
-\frac{\delta n}{\delta t}=\frac{\delta nv}{\delta x}+\sigma(\rho, n)
-\end{equation}
-
-
-Where $P$ represents the total medpacks delivered, $\sum{t}$ is an estimate of the time for all the flights to occur, and $S$ represents the space left after packing all the drones (computed via the packing algorithm). Also, $C$ is our cost function output, the cost. The factor of $100000$ dividing $S$ is there to adjust the units of $S$ (it being on the order of $10^5$ while $\frac{P}{\sum{t}}$ is on the order of $10^0$) The time estimates are computed via the basic kinematic equation assuming constant speed, $\sum{t}=\sum{\frac{d}{v_d}}$ summed over all drone flights in the given plan. Here $d$ is distance traveled in a specified flight and $v_d$ is the max speed of the drone flying. This estimate of the time taken for a flight is assuming the drone is flying at max speed the whole way, and assuming equality of the time taken to fly to the hospital, and the time to fly back. The assumption of perfectly sequential ordering of the flights allows us to sum the times of individual flights to get the total time.
-
-\section{Results and Analysis}
-% TODO: \usepackage{graphicx} required
-%\begin{figure*}
+%\begin{ColumnFigure}
 %	\centering
-%	\includegraphics[width=0.7\linewidth]{}
-%	\caption[Fig 1.]{caption 1}
-%	\label{Fig 1.}
-%\end{figure*}
-
-\subsection{Model output}
-\lipsum[6]
-
-\subsection{Parameter sensitivity}
-\lipsum[7]
-
-% TODO: \usepackage{graphicx} required
-%\begin{figure}
-%	\centering
-%	\includegraphics[width=1.1\linewidth]{}
-%	\caption[Fig 2]{caption 2}
-%	\label{Fig 3}
-%\end{figure}
-
-% TODO: \usepackage{graphicx} required
-%\begin{figure}
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{}
-%	\caption[Fig 3]{caption 3}
-%	\label{Fig 4}
-%\end{figure}
-
-
-\subsection{Limitations/ Further Work}
-\lipsum[8]
-
-In all models, the terms for $\nu$, $\sigma$ are taken to be constants given from experimental data. [citations]. Lin et al. (2016) takes a different approach in reviewing previous literature to apply a model that closely matches experimental data, which we will take advantage of for our model.  
-
+%	\includegraphics[width=\linewidth]{avg_contr_nu_competative_rankings.png}
+%	\captionof{figure}{my caption of the figure}
+%\end{ColumnFigure}
 \end{multicols}
+\newpage
+\appendix
+\section{Model Parameters}
+
+Here are the model parameters for the coupled growth and decomposition model for Armillaria gallica located at 30.465247 degrees latitude and -89.040298 degree longitude secreting cellobiohydrolase (Cel7A) to decompose hardwood holocellulose \cite{Maynard2019, Kari2014}:
+
+\begin{savenotes}
+	\begin{table}[ht]
+		\begin{center}
+			\begin{tabular}{|c c c c c|} 
+				\hline
+				Parameter & Symbol & Value & Units & Source and Specification \\
+				\hline\hline
+				Half-Saturation constant \footnote{Also called Michaelis Constant.} & $K_e$ & 7 & $\frac{g_{enzyme}}{L_{litter}} $ & \cite{Kari2014} Enzyme \\ 
+				\hline
+				Holocellulose carbon \footnote{We assume that all carbon compounds excluding lignin are holocellulose.} & $1-LCI \footnote{Where LCI is the lignocellulose index.}$  & 0.709 & N/A & \cite{Segato2014} \\ %confirm unitless
+				\hline
+				Hyphal tip elongation rate& $\nu$& 0.250 & $\frac{mm}{day}$ & \cite{Maynard2019} Species, $\psi$, T\\
+				\hline
+				Temperature & T & 25 & $^{\circ}C$ &\cite{Maynard2019} Specie's habitat\\
+				\hline
+				Water potential & $\psi$ & -0.5 & MPa &\cite{Maynard2019}\\
+				\hline
+				Enzyme biomass ratio \footnote{Proportion of specific enzyme biomass to total enzyme biomass.} & r & 0.437 & $\frac{g}{g}$ &\cite{Maynard2019} Species\\
+				\hline
+				Hyphal death rate& $\gamma_1$ & 0.15 & $day^{-1}$ &\cite{Schnepf2008}\\
+				\hline
+				Anastomosis coefficent & $\mu$ & 0.3 & $\frac{mm}{day}$ &\cite{Lyn2016}\\ % Trevor sussed on units
+				\hline
+				Branching rate & $\alpha_1$ & 1.2372 & $day^{-1}$ &\cite{Du2019}\\
+				\hline
+				Intercept of $S_M$ function \footnote{The intercept of soil moisture effect on decay rate.}& $\alpha_2$ & 0.311 & N/A &\cite{Moorhead1991}\\
+				\hline
+				Slope of $S_M$ function & $\lambda$ & 0.345 & $N/A$ &\cite{Moorhead1991}\\ % units? might be MPa^{-1}, but comes out of log?
+				\hline
+				Soil moisture coefficient & $S_M$ & 0.4149 & N/A &\cite{Moorhead1991} $\psi$\\ % mention equation later in paper
+				\hline
+				Soil temperature coefficient & $S_T$ & 1 & N/A &\cite{Moorhead1991} T\\
+				\hline
+				Rate of Increase & $Q$ & 2.5 & $^{\circ}C$ &\cite{Moorhead1991} T\\
+				\hline
+				Rate constant \footnote{Proportionality constant between maximum rate of decomposition and enzyme biomass.} & G & 10 & $g*mm^{-1}*day{-1}$ &\cite{Lustenhouwer2020}\footnote{Emprically derived.}\\  %value TBD, empirically derived, Trevor will justify
+				\hline
+			\end{tabular}
+		\vspace*{-3ex}
+		\captionof{table}{Model Parameters}\label{table3}
+		\end{center}
+	\end{table}
+\end{savenotes}
+
+
+\section{Appendix Tables}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c c c|} 
+			\hline
+			Biome/ Environment & Average Annual Temperature [$^{\circ}C$] & Selected Value [$^{\circ}C$]\\ [0.5ex] 
+			\hline\hline
+			Dessert (Arid) & 10 to 20 \cite{Davey2007} & 15 \\ 
+			\hline
+			Grasslands/shrublands (Semi-Arid) & 15.3 \cite{Pelaez1994} & 15.3 \\
+			\hline
+			Temperate Forest & -1.42 to 26.39 \cite{Zaz2019} & 12.49 \\
+			\hline
+			Boreal Forest (Arboreal)& -1.42 to 26.39 \cite{Zaz2019} & 12.49 \\
+			\hline
+			Tropical Rain Forest & 23 to 32 \cite{Paton2019} &27.5 \\
+			\hline
+		\end{tabular}
+	\vspace*{-3ex}
+	\captionof{table}{Environment Temperature Data}\label{table6}
+	\end{center}
+\end{table}
+
+
+
+%NEED TO EDIT TABLE WITH FOOTNOTES TO FIT (put spec envs?)
+%For himalayas, consider putting all values as footnotes
+\begin{savenotes}
+	\begin{table}[H]
+		\begin{center}
+			\begin{adjustbox}{width=1\textwidth}
+			\begin{tabular}{|c c c|} 
+				\hline
+				Biome/ Environment & Water Potential Range [MPa] & Selected Value [MPa] \\ [0.5ex] 
+				\hline\hline
+				Dessert (Arid) & -4.0 to -5.0 MPa \cite{Nilsen1983} & -4.5 MPa \\ 
+				\hline
+				Grasslands/shrublands (Semi-Arid) & -1.4 to -5.0 \footnote{Measurements taken November through January at 100 cm soil depth.} \cite{Pelaez1994} & -3.2 MPa\\
+				\hline
+				Temperate Forest & -0.44 (Fall), -1.19 (Winter), -0.58 (Spring), & -1.09 MPa\\
+				&-1.42 (Early Summer), -1.81 (Summer) \cite{Zobel2001}&\\
+				\hline
+				Boreal Forest (Arboreal) & -0.83 (Fall), -1.20 (Winter), -0.55 (Spring),& -1.51 MPa\\
+				&-1.61 (Early Summer), -3.36 (Summer) \cite{Zobel2001} &\\
+				\hline
+				Tropical Rain Forest & -1.57 MPa to 0.00 MPa \cite{Kupers2019} & -0.79 \\
+				\hline
+			\end{tabular}
+			\end{adjustbox}
+		\vspace*{-3ex}
+		\captionof{table}{Environment Water Potential Data}\label{table4}
+		\end{center}
+	\end{table}
+\end{savenotes}
+
+\begin{savenotes}
+	\begin{table}[H]
+		\begin{center}
+			\begin{adjustbox}{width=1\textwidth}
+			\begin{tabular}{|c c c c c|} 
+				\hline
+				Parameter & Symbol & Value & Units & Source and Specification \\
+				\hline\hline
+				Half-Saturation constants \footnote{Also called Michaelis Constant.} & $K_e$ & - & mM &  Enzyme \\ 
+				& $K_e$ - Phenol oxidase & 0.89 & mM &  \cite{Davidson2012}\\
+				& $K_e$ - Phosphatase & 0.94 & mM &  \cite{Nannipieri2011}\\
+				& $K_e$ - Peroxidase & 0.7475 & mM &  \cite{Chance1943}\\
+				& $K_e$ - Cellobiohydrolase & 13.90 & mM &  \cite{Razavi2015}\\
+				\hline
+				Hyphal tip elongation rate& $\nu(T,\psi)$& Various & $\frac{mm}{day}$ & \cite{Maynard2019} Species, $\psi$, T\\
+				\hline
+				Soil moisture coefficient & $S_M$ & $S_M = \alpha_2 -\lambda \log_{10}(-\psi)$ & N/A &\cite{Moorhead1991} $\psi$\\ % mention equation later in paper
+				\hline
+				Soil temperature coefficient & $S_T$ & $\log_{10}(S_T) = \frac{T-25}{10}\log_{10}(Q)$ & N/A &\cite{Moorhead1991} T\\ 
+				\hline
+			\end{tabular}
+			\end{adjustbox}
+		\vspace*{-3ex}
+		\captionof{table}{Environmental \& Parameter Table}\label{table5}
+		\end{center}
+	\end{table}
+\end{savenotes}
+
+\section{Appendix Figures}
+
+Figures here
+
+%\end{multicols}
+\newpage
 \printbibliography
 \end{document}
