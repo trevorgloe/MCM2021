@@ -84,6 +84,7 @@ sorting=ynt]{biblatex}
 \begin{multicols}{2}
 \tableofcontents
 \listoftables
+\listoffigures
 \newpage
 \pagestyle{fancy}
 % Uncomment the next line to generate a Table of Contents
@@ -122,7 +123,7 @@ An important step in modeling fungal communities is acknowledging separation bet
 \frac{\partial n}{\partial t} = -\frac{\partial n\nu}{\partial x} + \sigma
 \end{equation}
 
-Where \textbf{************} These equations will operate standing alone, without any other influences by enzymes or growth limitations. This allows many models to treat it as a baseplate to expand upon. Edelstein (1983) and Davidson et al. (1997) do this by considering concentrations of nutrients inside the fungi and outside in the surrounding substrate \cite{Edelstein1983, Davidson2012}. Our model will likewise follow in eliminating the assumption that fungi grow over an unlimited nutrient supply. A more contemporary approach by Du et al. (2019) describes the growth of a fungus with a 3-dimensional reaction-diffusion equation based on microscopic growth mechanisms, also focusing on tip density and extension rate but with an added term to identify the proportion of tips which are actively growing \cite{Du2019}.
+Where  $\rho$ is the total hyphal density, $n$ is the tip density, $\nu$ is the hyphal extension rate, $d$ is the hyphal death rate, and $\sigma$ is the increase of tips due to branching. These equations will operate standing alone, without any other influences by enzymes or growth limitations. This allows many models to treat it as a baseplate to expand upon. Edelstein (1983) and Davidson et al. (1997) do this by considering concentrations of nutrients inside the fungi and outside in the surrounding substrate \cite{Edelstein1983, Davidson2012}. Our model will likewise follow in eliminating the assumption that fungi grow over an unlimited nutrient supply. A more contemporary approach by Du et al. (2019) describes the growth of a fungus with a 3-dimensional reaction-diffusion equation based on microscopic growth mechanisms, also focusing on tip density and extension rate but with an added term to identify the proportion of tips which are actively growing \cite{Du2019}.
 
 \subsection{Environmental Influence on Hyphal Tip Extension ($\nu$)}
 Environmental impacts are introduced to the decomposition model through $\nu$, the hyphal tip elongation rate. The mechanism of elongation is relatively unknown; as described in Gervais et al. (1999), "cell turgor pressure corresponds to an overpressure which allows the cell morphology, elongation, division and hence the biomass evolution" \cite{Gervais1999, Steinberg2007}. In fungi, cell turgor comes from diffusion of water dictated by the water potential\footnote{Water potential ($\psi$) describes the content of availability of moisture surrounding a fungi as dictated by the soil composition.} gradients rather active transport within the cell, making it very environmentally dependent \cite{Gervais1999}. This fact justifies determining $\nu$ based on environmental factors on fungal decomposition rates by varying $\nu$ outside of baselines for given species in set locations in our model. Experimental data from Maynard et al. (2019) shows the relationship between $\nu$ and the environmental parameters of water potential ($\psi$) and temperature ($T$) \cite{Maynard2019}.
@@ -141,7 +142,7 @@ Moore et al. (2015), Edelstein (1983), Moorhead et al. (2006), Parnas (1974), an
 \frac{dC}{dt} = \frac{KBC}{K_{e}+C}
 \end{equation}
 
-Where \textbf{******************}. Schimel et al. (2003) and Moorhead et al. (2006) assert that decomposition levels off at a maximum rate proportional to the concentration of enzymes acting on it \cite{Schimel2003, Moorhead2006}. To determine this enzyme concentration, we will make the assumption that enzyme concentration is proportional to the concentration of biomass in our system represented by $r$ multiplied by two environmental limiting factors in $K=rS_{M}S_{T}$ \cite{Schimel2003}. This environmental factors are discussed at greater length in \ref{Other Responses to Temperature and Water Potential}
+Where $B$ is the biomass of fungi, $C$ is the amount of carbon in the system and $K_{e}$ is the half-saturation coefficient. Schimel et al. (2003) and Moorhead et al. (2006) assert that decomposition levels off at a maximum rate proportional to the concentration of enzymes acting on it \cite{Schimel2003, Moorhead2006}. To determine this enzyme concentration, we will make the assumption that enzyme concentration is proportional to the concentration of biomass in our system represented by $r$ multiplied by two environmental limiting factors in $K=rS_{M}S_{T}$ \cite{Schimel2003}. This environmental factors are discussed at greater length in section \ref{Other Responses to Temperature and Water Potential}.
 
 \subsection{Enzyme interactions}
 
@@ -200,7 +201,7 @@ The total decomposition rate is then given by the sum of all rates over the vari
 \end{equation}
 Where $n$ is the total number of fungi being simulated. Our model simulates a system in which all 35 fungi are growing and decomposing at the same time and interacting through competition for a limited nutrient supply.
 
-\subsection{Estimating $\nu$ For Various Environments}
+\subsection{Estimating $\nu$ For Various Environments}\label{Environments Conditions}
 
 When considering a sampling of decomposition rates in various environment types, we must determine how to estimate temperate and water potentials that ground fungi would experience. In the case of determining $\nu$, this requires finding projected temperature and water potential.
 
@@ -281,20 +282,19 @@ S_M = \alpha_2 -\lambda \log_{10}(-\psi)
 Further assumptions made in the formulation of our model that have not yet been discussed are largely simplifications that are not relevant to any significant or interesting discussion. An itemized list of these assumptions is provided below.
 \subsubsection{Growth}
 \begin{itemize}
-	%\item Growth occurs in a 1-dimensional space *we should mention this in the formulation
+	\item Growth occurs in a 1-dimensional space
 	\item Neglecting effects from direct interactions between fungi
 	\item Neglecting effects from N limitation
 	\item Litter is not added to or removed from the carbon pool by forces external of the fungi
-	\item LCI is xxx and remains constant over time
+	\item LCI is 0.291 and remains constant over time
 	\item Dynamics regarding the rate of nutrient absorption and transport of metabolites within the
 	mycelium are ignored or simplified *more specific
-	\item Ignoring other growth traits: LIST
-	%\item Substrate use efficiency (SUE) is 1 *should be in the model formulation
+	\item Ignoring other growth traits
+	\item Substrate use efficiency (SUE) is 1
 	\item Hyphal death rate $\gamma_{1}$ remains constant regardless of environmental fluctuations
 	\item 100\% of living hyphal tips are active
 	\item No biomass created by a fungus will be geometrically isolated from the substrate
-	\item Neglecting effects due to spacial limitations
-	%\item decomposition coefficients are representative of those families of enzymes
+	\item Neglecting effects due to spacial limitations and phyiscal obstructions
 \end{itemize}
 \subsubsection{Decomposition Kinetics}
 \begin{itemize}
@@ -308,8 +308,10 @@ Further assumptions made in the formulation of our model that have not yet been 
 \begin{itemize}
 	\item Turgor is a function of water potential
 	\item Fungal decomposition occurs in surface soil (0-30 cm)
-	\item Experimental data for water potentials in specific biomes/environments are representative of the conditions of those environments
+	\item Experimental data for average water potentials in specific biomes/environments are representative of the conditions of those environments
+	\item Temperature and moisture are the only environmental parameters of significance to the model
 	\item Rate of increase of temperature $Q$ remains constant regardless of environmental fluctuations
+	\item Soil moisture potential is effectively equivalent to that found in ground litter and wood fibers
 \end{itemize}
 
 \section{Parameter selection and representative result}
@@ -331,23 +333,6 @@ Most results of the growth model were comprised of traveling wave solutions, con
 \subsection{Decomposition parameters}
 The value for $G$ represents a rate constant relating the concentration of relevant enzymes to the maximum rate of carbon decomposition. Formulation for $S_{M}$ and $S_{T}$ come from Moorhead et al. (1991) which uses a simpler equation to describe the reaction dynamics for decomposition of carbon \cite{Moorhead1991}. Our model adds complexity to this so we based this parameter on agreement with other more similar models and experimental data. The most important conclusion drawn for $G$ was in selecting a timescale of decomposition to be comparable with that of Lustenhouwer et al. (2019) \cite{Lustenhouwer2020}.
 
-\end{multicols}
-\begin{figure}[H]
-	\begin{subfigure}[t]{0.5\textwidth}
-		\includegraphics[width=\textwidth]{biomass_growth_no_Cterm.png}
-		\caption{Modello compartimentale mammellare (o mammillare).}
-		\label{fig-a}
-	\end{subfigure}\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\includegraphics[width=\textwidth]{biomass_growth_Cterm.png}
-		\caption{Modello compartimentale catenario.}
-		\label{fig-b}
-	\end{subfigure}
-	\caption{Principali topologie dei modelli compartimentali.} 
-	\label{fig:main}
-\end{figure}
-\begin{multicols}{2}
-
 %\end{multicols}
 %\begin{center}
 %\includegraphics[width=\linewidth]{biomass_growth_no_Cterm.png}
@@ -363,39 +348,114 @@ In the first initial runs, no coupling term defining a limited nutrient availabi
 
 Overall, including the nutrient availability term in the growth equation captures more of the fundamental interaction that this paper is concerned with (that of decomposing wood and ground litter rather than free-growing fungi), so it remained present for further analysis.
 
+\end{multicols}
+\begin{figure}[H]
+\begin{subfigure}[t]{0.5\textwidth}
+	\includegraphics[width=\textwidth]{biomass_growth_no_Cterm.png}
+	\caption{Growth independent of carbon concentration.}
+	\label{fig-a}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.5\textwidth}
+	\includegraphics[width=\textwidth]{biomass_growth_Cterm.png}
+	\caption{Growth rate proportional to available carbon}
+	\label{fig-b}
+\end{subfigure}
+\caption[Coupled/un-coupled fungi growth]{Fungal biomass of coupled growth and decomposition kinetics model} 
+\label{fig:main}
+\end{figure}
+\begin{multicols}{2}
+
+
 \section{Analysis}
 
 %This corroborates with various literature that finds soil moisture as a particularly influential environmental factor, influencing elongation through pressure gradients and testing of tolerance \cite{Maynard2019} \cite{Lustenhouwer2019}. %i think there may be a better citation, i am tired
 %****In case linear regression added: The tropical rain forest environment, with a water potential of 0.76, lead to a }
 
 \subsection{Total Carbon vs Time for Specific Environments} %direct_compare_decom_environmen.fig
-A sampling of different environmental parameters within the model was taken as described in section X****. The results of these model runs were taken in terms of the total grams of carbon over time. Here, we see more moist soil environments lead to clearly more expedient rates of total carbon decrease and reach complete carbon decomposition decomposition quicker in our model. The rain forest environment exceeds the other environmental profiles, effectively completing decomposition in under 1640 days (roughly 4.5 years. On this time scale of roughly 5 years individual biomes will exhibit negligible changes in environmental parameters. But biomes in a given area can change in non-negligible ways over longer time scales. We can consider these long term changes as the effective transition between different biomes and thus different overall performance, as assessed by the model. Therefore, difference in performance between different environments can be roughly equated to the change in performance under long term environmental fluctuations. 
+A sampling of different environmental parameters within the model was taken as described in section \ref{Environments Conditions}. The results of these model runs were taken in terms of the total grams of carbon over time, shown in Figure \ref{Decay Environments}. Here, we see more moist soil environments lead to clearly more expedient rates of total carbon decrease and reach complete carbon decomposition decomposition quicker in our model. The rain forest environment exceeds the other environmental profiles, effectively completing decomposition in under 1640 days (roughly 4.5 years. On this time scale of roughly 5 years individual biomes will exhibit negligible changes in environmental parameters. But biomes in a given area can change in non-negligible ways over longer time scales. We can consider these long term changes as the effective transition between different biomes and thus different overall performance, as assessed by the model. Therefore, difference in performance between different environments can be roughly equated to the change in performance under long term environmental fluctuations. 
 % FAK: tervor succy boi
 
+\end{multicols}
+\begin{center}\label{Decay Environments}
+\includegraphics[width=\linewidth]{direct_compare_decom_environment.png}
+\vspace*{-6ex}
+\captionof{figure}[Decomposition in five environments]{Total carbon in the substrate for five representative sampled environmental parameters.}
+\end{center}
+\begin{multicols}{2}
+
 \subsection{$\nu$ vs Average Contribution to Substrate Decay} %avg_contr_nu_environment.fig
+
 Using the decomposition model, average contribution to substrate decay and the tip elongation rate $\nu$ can be found for each fungal species for a given environmental configuration. 
 
 The contribution of a particular fungi over time is taken to be the absolute value of the decrease in total carbon caused by all enzymes of the specific fungi in question divided by the total initial carbon of the substraight. As described in the model formulation, these decreases are calculated independently and summed together to calculate the total carbon decrease. The average contribution is then calculated as $C_{avg} = \frac{ \int C_{cont} dt}{\delta t}$ where $C_{cont}$ is the contribution of the enzyme in question and $\delta t$ is the total change in time.
 
-With one set of environmental parameters, we can gain insight into how different species of fungi potentially perform relative to each other, show in figure. In addition to an expected loose positive correlation between $\nu$ and the average contribution of a given fungi, these is a lose correlation of higher fungi competitive ranking with greater $\nu$ and greater average contribution. This suggests that the fungi that are more 'active' in our model, with the largest performance dependence on $\nu$, are also the most competitive. Competitive ranking has a higher correlation with $\nu$, indicating that in our model growth rate may be more sensitive to $\nu$ in competitive circumstances. This aligns with established trends of the primary 2 fungal niches \cite{Maynard2019}.
+\begin{ColumnFigure}\label{Competitive rankings}
+	\centering
+	\includegraphics[width=\linewidth]{avg_contr_nu_competative_rankings.png}
+	\captionof{figure}[Contribution against $\nu$ with competitive ranking]{Average total decomposition contribution for specific fungi compared to hyphal extension rate. Coloring indicates competitive ranking coefficient.}
+\end{ColumnFigure}
 
-Result were also viewed under 5 different sets of environmental conditions (water potential and temperature), each corresponding to a different biome, shown in figure. The results show that the correlation between $\nu$ and fungi contribution changes with environmental parameters. We find that in general, environments with a higher moisture potential lead to greater contributions overall and a greater contribution sensitivity to $\nu$ in our model. Our model agrees with the notion of water potential serving as an important limiting factor to the decomposition ability of individual fungi. These results can be interpreted as moisture potential and temperature limiting the effectiveness of faster-growing fungi.  
+With one set of environmental parameters, we can gain insight into how different species of fungi potentially perform relative to each other, show in Figure \ref{Competitive rankings}. In addition to an expected loose positive correlation between $\nu$ and the average contribution of a given fungi, these is a lose correlation of higher fungi competitive ranking with greater $\nu$ and greater average contribution. This suggests that the fungi that are more 'active' in our model, with the largest performance dependence on $\nu$, are also the most competitive. Competitive ranking has a higher correlation with $\nu$, indicating that in our model growth rate may be more sensitive to $\nu$ in competitive circumstances. This aligns with established trends of the primary 2 fungal niches \cite{Maynard2019}.
+
+\end{multicols}
+\begin{center}\label{Environment Contributions}
+\includegraphics[width=\linewidth]{avg_contr_nu_environment.png}
+\captionof{figure}[Contribution against $\nu$ with five environments]{Average total decomposition contribution for specific fungi compared to hyphal extension rate. Coloring indicates values chosen for environmental parameters.}
+\label{Fig 4.}
+\end{center}
+\begin{multicols}{2}
+
+Results were also viewed under 5 different sets of environmental conditions (water potential and temperature), each corresponding to a different biome, shown in Figure \ref{Environment Contributions}. The results show that the correlation between $\nu$ and fungi contribution changes with environmental parameters. We find that in general, environments with a higher moisture potential lead to greater contributions overall and a greater contribution sensitivity to $\nu$ in our model. Our model agrees with the notion of water potential serving as an important limiting factor to the decomposition ability of individual fungi. These results can be interpreted as moisture potential and temperature limiting the effectiveness of faster-growing fungi.  
+
+Species of fungi with a generally higher competitive advantage (corresponding to points with a higher $\nu$ and higher contribution) are much more adversely affected by changes in environmental conditions than points with a generally lower competitive advantage. These species with a higher competitive advantage would then have a smaller moisture niche width (environmental changes affect them more adversely). This relationship implies that species in this niche would have a lower moisture tolerance, compared with species of less competitive advantage and less sensitivity to $\psi$. %here is bit connected to moisture tolerance
 
 \subsection{Short-Term Environmental Fluctuations}
-Realistically, the external environment dictates environmental conditions of the system both in short time scales (year fluctuations for example) and long time scales. Due to the time scales of our model, the effects of very fast fluctuations (due to outside forces) on the scale of days are not considered as relative changes in the model's state have negligible changes on the order of a day. Thus we define our short term fluctuations to be roughly seasonal as this dictates the majority of local environmental variability. To study the effects of these short time scale fluctuations, we choose to implement an abstracted yearly moisture cycle, specifically that of the temperate forest environment. The cycle oscillates between the average yearly maximum and minimum values of $\psi$ twice a year, creating a rough yearly pattern of $\psi$ and thus $\nu$ for a given fungi from experimental data \cite{Zobel2001}\cite{Maynard2019}. Note that this moisture model is limited in assuming one period oscillation between a maximum and a minimum yearly, neglecting the reality of oscillating between local minimum in summer and winter and locate maximums in fall and spring. To incorporate this into the model, $\nu$ and $\psi$ were dynamically allocated over time based on the oscillatory behavior shown in (figure oscillating-psi-nu). Due to time limitations and scarce data on the parameters over these yearly oscillations, only two species of fungi were simulated. A comparison of their respective decomposition contributions with that of similar environmental conditions but static $\nu$ and $\psi$ is shown in (figure oscillating2nonoscillating-psi-contribution). There is no note-worthy new oscillatory motion seen in these results. There is also seen to be a slight increase in the effectiveness of both fungi in the oscillatory case. The interpretation of this increase can be that for time scales on the order of a year, the positives affect of increasing $\nu$ is greater than that of the negative affect of decreasing $\nu$ by the same amount. This would lead us to believe that faster oscillations of $\nu$ will generally have a positive net impact on the decomposition. The frequency limits of this principle would require further investigation.
+
+
+Realistically, the external environment dictates environmental conditions of the system both in short time scales (year fluctuations for example) and long time scales. Due to the time scales of our model, the effects of very fast fluctuations (due to outside forces) on the scale of days are not considered as relative changes in the model's state have negligible changes on the order of a day. Thus we define our short term fluctuations to be roughly seasonal as this dictates the majority of local environmental variability. To study the effects of these short time scale fluctuations, we choose to implement an abstracted yearly moisture cycle, specifically that of the temperate forest environment. The cycle oscillates between the average yearly maximum and minimum values of $\psi$ twice a year, creating a rough yearly pattern of $\psi$ and thus $\nu$ for a given fungi from experimental data \cite{Zobel2001}\cite{Maynard2019}. Note that this moisture model is limited in assuming one period oscillation between a maximum and a minimum yearly, neglecting the reality of oscillating between local minimum in summer and winter and locate maximums in fall and spring. To incorporate this into the model, $\nu$ and $\psi$ were dynamically allocated over time based on the oscillatory behavior shown in Figure \ref{Oscillating nu}. 
+
+Due to time limitations and scarce data on the parameters over these yearly oscillations, only two species of fungi were simulated. A comparison of their respective decomposition contributions with that of similar environmental conditions but static $\nu$ and $\psi$ is shown in Figure \ref{Oscillating nu contributions}. There is no note-worthy new oscillatory motion seen in these results. There is also seen to be a slight increase in the effectiveness of both fungi in the oscillatory case. The interpretation of this increase can be that for time scales on the order of a year, the positives affect of increasing $\nu$ is greater than that of the negative affect of decreasing $\nu$ by the same amount. This would lead us to believe that faster oscillations of $\nu$ will generally have a positive net impact on the decomposition. The frequency limits of this principle would require further investigation.
+
+\begin{ColumnFigure}\label{Oscillating nu contributions}
+	\centering
+	\includegraphics[width=\linewidth]{oscillating_psi_contribution.png}
+	\captionof{figure}[Oscillating $\psi$ decomposition]{Contribution of two fungi species with yearly environmental fluctuations.}
+\end{ColumnFigure}
+
+\begin{ColumnFigure}\label{Oscillating nu}
+	\centering
+	\includegraphics[width=\linewidth]{oscillating_psi_nu.png}
+	\captionof{figure}[$\psi$ \& $\nu$ cycle]{Environmental parameters for figure above over time.}
+\end{ColumnFigure}
 
 \subsection*{Distribution of relative concentration of fungi}
+
 The model allows us to adjust the relative concentrations of each fungi species being simulated. In the model, this is represented with a set of $0<c_{i}\leq 1$ such that $\sum c_{i} = 1$. Each one of these $c_{i}$ multiplies the rates of hyphal density increase and boundary/initial conditions in the growth model. With this metric, the relative concentrations of different fungi species are forced to satisfy the conditions $B_{i}/B_{tot}=c_{i}$ where $B_{i}$ is the biomass of the '$i$'th fungi species. This is an unrealistic constraint, as the relative concentrations of different fungal species should fluctuate with time as the different species of fungi grow at varying rates. But for the purpose of assessing the effect of biodiversity on the overall decomposition of the substraight, concentration fluctuation would add unneeded complexity to the analysis. \\
 This analysis also considers the competitive rankings of the different fungi species \cite{Maynard2019}. The ranking-distribution coefficient, $a$ is then defined to be
-\begin{equation} \label{eq}
+\begin{equation}
 a = \sum_{i=1}^{n} c_{i}*R_{i}
 \end{equation}
 Where $R_{i}$ s the competitive ranking for the '$i$'th fungi species. The ranking-distribution coefficient can be though of as a dot-product in $n$-dimensional space (where $n$ is the number of various fungi species being simulated). So $a$ will be highest when the $n$-dimensional vectors "line-up" in the sense that the distribution of fungi species is closest to the distribution of competitive rankings.\\
-To study the effects of $a$ on the system overall, sample $c$ values had to be chosen. Due to a lack of literature results on simple, constant fungi distributions, arbitrary Gaussian distributions spread out over the different species of fungi were chosen. Because we are mainly concerned with the relation of any given distribution to the competitive rankings, the functions can be viewed as arbitrary or random distributions (because the ordering of fungal species in our Gaussian distribution has no physical meaning). The results of model runs using these various distributions is shown in (figure carbon-decrease-fungi-distribution). To assess the overall effectiveness of a single species distribution, the average carbon decrease over the whole interval was found via the equation $C_avg = \int (C_{0}-C)dt/(\delta t)$ where $C_{0}$ is our initial amount of carbon and $\delta t$ is the total time change over which the carbon decreases. The results of comparing this average carbon decomposed to the $a$ value for the species distribution in question is seen in (figure a-competative-distribution-coef-to-avg-Clost). Several interesting qualitative behaviors arise from the this comparison. Firstly, there is a clear smooth trend between $a$ and the average carbon decomposed up to approximately $a=0.65$. At this point the smooth trend completely vanishes and the data points appear to be randomly distributed in the area. We hypothesize that this critical value of $a$ could be representative of a bifurcation point; however further analysis on the dynamics of these coupled systems interacting would need to be done to investigate this hypothesis further. Additionally we notice that at this critical point, the average carbon decomposed tends to grow significantly. The physical interpretation of this critical point is deeply related to the effectiveness of the competitive rankings as they relate to a biologically diverse system. The results show that beyond a certain point, distributing the biodiversity more closely to the competitive rankings does not have any noticeable effect on the overall effectiveness of the system. \\
+To study the effects of $a$ on the system overall, sample $c$ values had to be chosen. Due to a lack of literature results on simple, constant fungi distributions, arbitrary Gaussian distributions spread out over the different species of fungi were chosen. Because we are mainly concerned with the relation of any given distribution to the competitive rankings, the functions can be viewed as arbitrary or random distributions (because the ordering of fungal species in our Gaussian distribution has no physical meaning). The total carbon in the subtrate over time in the model runs using these various distributions is shown in Figure \ref{Carbon Decrease Fungi Distribution}. 
+
+\begin{ColumnFigure}\label{Carbon Decrease Fungi Distribution}
+	\centering
+	\includegraphics[width=\linewidth]{carbon_decrease_fungi_distribution.png}
+	\captionof{figure}[Decomposition for different distributions]{Total carbon in substrate for sampled fungi species distributions.}
+\end{ColumnFigure}
+
+To assess the overall effectiveness of a single species distribution, the average carbon decrease over the whole interval was found via the equation $C_avg = \int (C_{0}-C)dt/(\delta t)$ where $C_{0}$ is our initial amount of carbon and $\delta t$ is the total time change over which the carbon decreases. The results of comparing this average carbon decomposed to the $a$ value for the species distribution in question is seen in Figure \ref{Competitive Distribution Coefficients}. Several interesting qualitative behaviors arise from the this comparison. Firstly, there is a clear smooth trend between $a$ and the average carbon decomposed up to approximately $a=0.65$. At this point the smooth trend completely vanishes and the data points appear to be randomly distributed in the area. We hypothesize that this critical value of $a$ could be representative of a bifurcation point; however further analysis on the dynamics of these coupled systems interacting would need to be done to investigate this hypothesis further. Additionally we notice that at this critical point, the average carbon decomposed tends to grow significantly. The physical interpretation of this critical point is deeply related to the effectiveness of the competitive rankings as they relate to a biologically diverse system. The results show that beyond a certain point, distributing the biodiversity more closely to the competitive rankings does not have any noticeable effect on the overall effectiveness of the system. \\
 This leads to two possibilities beyond the critical point for the system. One possibility is that optimum biodiversity is based on more complex dynamics than the competitive rankings can assess. The other possibility is that the system behaves in a chaotic or random nature beyond this critical point and no clear metric of biodiversity could be correlated to the effectiveness of a given distribution.
 
+\end{multicols}
+\begin{center}\label{Competitive Distribution Coefficients}
+\includegraphics[width=\linewidth]{a-competative-distribution-coef_to_avg_Clost.png}
+\captionof{figure}[Average total decomposition against a]{Average total decomposition as seen in Figure \ref{Carbon Decrease Fungi Distribution} plotted against ranking distribution coefficient for a certain species distribution.}
+\end{center}
+\begin{multicols}{2}
 
 \section{Limitations}
+\vspace*{-2ex}
 \subsection{Growth Coupling}
 The coupling between our growth model and our decomposition kinetics model was scarsely found in literature. Instead, literature would in some cases adopt a simpler mechanism to describe fungi growth to match decomposition kinetics of equal complexity to our model, or would in other cases implement a more complex mechanism for fungi nutrient uptake while neglecting much of the complexity from interactions between fungi and with the larger environment. This resulted in a lack of applicable parameters from literature to choose from for our coupled model, for which we decided either to pull parameter values from simpler models described above or to empirically derive our parameters by fitting the model output to other reasonable outputs (as was done with the parameter $G$). 
 
@@ -422,6 +482,10 @@ In this analysis, only the effects from varying $\psi$ were studied. Realistic e
 
 The correlations found between distributions of fungi species and overall performance of the system in the static environmental conditions of the Arid climate biome is poorly understood and would require further investigation or numerical fitting to be studied in more detail. The change occurring at the critical point may also be a result of numerical error in approximate solution to the differential equations being solved (although there is no other indication that this is the case). Further analysis of this correlation could include assessment of this correlation in different biomes and in oscillating environmental conditions. 
 
+\section{Conclusion}
+Advantages of certain species were taken into account via their relative concentrations of different enzymes as well as in their dependence of $\nu$ on temperature and moisture. These advantages were found to have a positive correlation with the contribution of different species to the overall decomposition. However, this exact relationship is unclear from the data. The competitive ranking of different fungi species was found to correlate to a higher sensitivity on $\nu$ in relation to the species' contribution to decomposition. Distributions according to these rankings in our model were found to positively impact overall system performance up to a critical point, where the trend dissolves completely. The presence of short term environmental fluctuations were found to have a slight positive impact on performance for a small sample of fungi species simulated. Long term environmental fluctuations, in the form of transforming overall biomes, indicates that overall fungi decomposition productivity should generally decrease as more arid conditions with less available moisture are approached.
+
+The dynamics of different biodiversity distributions is complex, resulting in limited scope of certain descriptive values, such as competitive ranking, in capturing the full efficiency of the system. For a given species, an increase in hyphal extensional rate corresponds to different relative increases in efficiency based on environmental conditions as well as the species' sensitivity to those conditions. Generally, increasing $\nu$ has a greater affect for species with a lower moisture tolerance in an optimal environment and a lesser affect for species with a lower moisture tolerance in a sub-optimal environment. Additionally, the results would imply that species with a lower moisture tolerance would perform significantly worse under long term fluctuations compared with species of a higher moisture tolerance, which would perform only slightly worse. The effect of short term fluctuations on species with a lower moisture tolerance would require further study to discern. 
 
 %\begin{ColumnFigure}
 %	\centering
@@ -564,9 +628,18 @@ Here are the model parameters for the coupled growth and decomposition model for
 	\end{table}
 \end{savenotes}
 
+\vspace*{-4ex}
 \section{Appendix Figures}
 
-Figures here
+\begin{center}\label{Rainbow Spaghetti}
+\includegraphics[width=0.6\linewidth]{contributions_over_time(rainbowspaghetti).png}
+\captionof{figure}[Contribution of 35 fungi]{Decomposition contribution of 35 simulated fungi in static arid environmental conditions.}
+\end{center}
+
+\begin{center}\label{Rho Growth 3D}
+\includegraphics[width=\linewidth]{rho_growth_no_Cterm.png}
+\captionof{figure}[Uncoupled growth model output]{Hyphal density in time and space for non carbon-limited growth model.}
+\end{center}
 
 %\end{multicols}
 \newpage

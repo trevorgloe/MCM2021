@@ -966,6 +966,74 @@
       \endverb
       \keyw{climate change,CO2,soil carbon,soil respiration,Q10}
     \endentry
+    \entry{Kari2014}{article}{}
+      \name{author}{6}{}{%
+        {{hash=e4da20d83d13644ce18db0e040b25120}{%
+           family={Kari},
+           familyi={K\bibinitperiod},
+           given={Jeppe},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5b0a4614df9473ba0eb5dee8454f396f}{%
+           family={Olsen},
+           familyi={O\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b0b9862305424a133cc22d4eecef1e02}{%
+           family={Borch},
+           familyi={B\bibinitperiod},
+           given={Kim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=561232864440a8e81df4c26453868637}{%
+           family={Cruys-Bagger},
+           familyi={C\bibinithyphendelim B\bibinitperiod},
+           given={Nicolaj},
+           giveni={N\bibinitperiod}}}%
+        {{hash=04b5582be9da67c13ffc90e2cd147718}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c1b0713a352a292fef95ae79d4b61e37}{%
+           family={Westh},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {American Society for Biochemistry}%
+        {Molecular Biology}%
+      }
+      \strng{namehash}{67d353c802ca66ba81a274aff6bcd2c1}
+      \strng{fullhash}{41c9d3f3180df87d37fd9928586b31cb}
+      \strng{bibnamehash}{41c9d3f3180df87d37fd9928586b31cb}
+      \strng{authorbibnamehash}{41c9d3f3180df87d37fd9928586b31cb}
+      \strng{authornamehash}{67d353c802ca66ba81a274aff6bcd2c1}
+      \strng{authorfullhash}{41c9d3f3180df87d37fd9928586b31cb}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cellobiohydrolases are exo-active glycosyl hydrolases that processively convert cellulose to soluble sugars, typically cellobiose. They effectively break down crystalline cellulose and make up a major component in industrial enzyme mixtures used for deconstruction of lignocellulosic biomass. Identification of the rate-limiting step for cellobiohydrolases remains controversial, and recent reports have alternately suggested either association (on-rate) or dissociation (off-rate) as the overall bottleneck. Obviously, this uncertainty hampers both fundamental mechanistic understanding and rational design of enzymes with improved industrial applicability. To elucidate the role of on- and off-rates, respectively, on the overall kinetics, we have expressed a variant in which a tryptophan residue (Trp-38) in the middle of the active tunnel has been replaced with an alanine. This mutation weakens complex formation, and the population of substrate-bound W38A was only about half of the wild type. Nevertheless, the maximal, steady-state rate was twice as high for the variant enzyme. It is argued that these opposite effects on binding and activity can be reconciled if the rate-limiting step is after the catalysis (i.e. in the dissociation process).}
+      \field{isbn}{1083-351X; 0021-9258}
+      \field{journaltitle}{The Journal of biological chemistry}
+      \field{month}{11}
+      \field{number}{47}
+      \field{title}{Kinetics of cellobiohydrolase (Cel7A) variants with lowered substrate affinity}
+      \field{volume}{289}
+      \field{year}{2014}
+      \field{pages}{32459\bibrangedash 32468}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1074/jbc.M114.604264
+      \endverb
+      \verb{urlraw}
+      \verb https://pubmed.ncbi.nlm.nih.gov/25271162
+      \endverb
+      \verb{url}
+      \verb https://pubmed.ncbi.nlm.nih.gov/25271162
+      \endverb
+      \keyw{Biodegradation; Biofuel; Cellobiohydrolase; Cellulose; Crystalline Cellulose Degradation; Enzyme Kinetics; Trichoderma reesei; Alanine/chemistry/genetics/metabolism; Amino Acid Substitution; Binding Sites/genetics; Binding,Competitive/genetics; Biocatalysis; Catalytic Domain/genetics; Cellobiose/metabolism; Cellulose/metabolism; Cellulose 1,4-beta-Cellobiosidase/chemistry/*genetics/metabolism; Fungal Proteins/chemistry/*genetics/metabolism; Kinetics; Models,Molecular; *Mutation; Protein Binding/genetics; Substrate Specificity; Thermodynamics; Trichoderma/enzymology/*genetics/metabolism; Tryptophan/chemistry/genetics/metabolism}
+    \endentry
     \entry{Segato2014}{article}{}
       \name{author}{5}{}{%
         {{hash=38e8a6390d74be9bdf8286dd8fd3d9d4}{%
@@ -1683,7 +1751,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Kari2014}
 \endrefsection
 \endinput
 

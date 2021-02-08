@@ -33,34 +33,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.5.3}Temperature/Moisture effects}{6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Parameter selection and representative result}{6}% 
+\contentsline {section}{\numberline {3}Parameter selection and representative result}{7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Growth model parameters}{7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Decomposition parameters}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Representative results}{8}% 
+\contentsline {subsection}{\numberline {3.3}Representative results}{7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Analysis}{8}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Total Carbon vs Time for Specific Environments}{8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}$\nu $ vs Average Contribution to Substrate Decay}{8}% 
+\contentsline {subsection}{\numberline {4.2}$\nu $ vs Average Contribution to Substrate Decay}{9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Short-Term Environmental Fluctuations}{9}% 
+\contentsline {subsection}{\numberline {4.3}Short-Term Environmental Fluctuations}{11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Limitations}{10}% 
+\contentsline {section}{\numberline {5}Limitations}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Growth Coupling}{10}% 
+\contentsline {subsection}{\numberline {5.1}Growth Coupling}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Decomposition kinetics}{11}% 
+\contentsline {subsection}{\numberline {5.2}Decomposition kinetics}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Direct Interactions}{11}% 
+\contentsline {subsection}{\numberline {5.3}Direct Interactions}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Environmental Fluctuations}{12}% 
+\contentsline {subsection}{\numberline {5.4}Environmental Fluctuations}{15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Model Parameters}{13}% 
+\contentsline {section}{\numberline {6}Conclusion}{15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Appendix Tables}{13}% 
+\contentsline {section}{\numberline {A}Model Parameters}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Appendix Figures}{14}% 
+\contentsline {section}{\numberline {B}Appendix Tables}{16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Appendix Figures}{17}% 
