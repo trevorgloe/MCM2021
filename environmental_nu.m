@@ -11,16 +11,17 @@ TTC_cell = table2cell(TTC);
 arid_temp_name = {};
 arid_temp_nu = {};
 count=0;
-for i = 2:242308
-    if TTC_cell{i,2} == temp
+for i = 5861:8642
+    %if TTC_cell{i,2} == temp
         count = count+1;
         arid_temp_name{count,1} = TTC_cell{i,1};
-        arid_temp_nu{count,2} = TTC_cell{i,3};
-    end
+        arid_temp_name{count,2} = TTC_cell{i,2};
+        arid_temp_nu{count,3} = TTC_cell{i,3};
+    %end
 end
 arid_temp = horzcat(arid_temp_name,arid_temp_nu);
 arid_temp_tab = cell2table(arid_temp);
-writetable(arid_temp_tab, 'arid_temp_tab.csv')
+writetable(arid_temp_tab, 'temp_forest_temperature_curve.csv')
 
 %% Water potential
 TMC = readtable('Fungi_moisture_curves.csv'); %table of moisture curves
@@ -29,16 +30,17 @@ TMC_cell = table2cell(TMC);
 arid_wp_name = {};
 arid_wp_nu = {};
 count=0;
-for i = 2:21336
-    if TMC_cell{i,2} == watpot
+for i = 46:183
+    %if TMC_cell{i,2} == watpot
         count = count+1;
         arid_wp_name{count,1} = TMC_cell{i,1};
-        arid_wp_nu{count,2} = TMC_cell{i,3};
-    end
+        arid_wp_name{count,2} = TMC_cell{i,2};
+        arid_wp_nu{count,3} = TMC_cell{i,3};
+    %end
 end
 arid_wp = horzcat(arid_wp_name,arid_wp_nu);
 arid_wp_tab = cell2table(arid_wp);
-writetable(arid_wp_tab, 'arid_wp_tab.csv')
+writetable(arid_wp_tab, 'temp_forest_moisture_curve.csv')
 
 %% Plot if you want
 

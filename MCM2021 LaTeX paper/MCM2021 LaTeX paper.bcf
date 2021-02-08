@@ -91,15 +91,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>999</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>999</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -383,6 +383,10 @@
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
     <bcf:option datatype="boolean">subentry</bcf:option>
+    <bcf:option datatype="boolean">articletitle</bcf:option>
+    <bcf:option datatype="boolean">chaptertitle</bcf:option>
+    <bcf:option datatype="boolean">pageranges</bcf:option>
+    <bcf:option datatype="boolean">biblabel</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
     <bcf:option datatype="integer">maxnames</bcf:option>
@@ -1998,11 +2002,38 @@
     <bcf:citekey order="1">McGuire2010</bcf:citekey>
     <bcf:citekey order="2">Andren1999</bcf:citekey>
     <bcf:citekey order="3">Edelstein1982</bcf:citekey>
-    <bcf:citekey order="4">Boddy2000</bcf:citekey>
-    <bcf:citekey order="5">Toljander2006</bcf:citekey>
-    <bcf:citekey order="6">Lustenhouwer2020</bcf:citekey>
-    <bcf:citekey order="7">Aspergilli</bcf:citekey>
-    <bcf:citekey order="8">Moorhead2006</bcf:citekey>
+    <bcf:citekey order="4">Maynard2019</bcf:citekey>
+    <bcf:citekey order="5">Boddy2000</bcf:citekey>
+    <bcf:citekey order="6">Maynard2019</bcf:citekey>
+    <bcf:citekey order="7">Toljander2006</bcf:citekey>
+    <bcf:citekey order="8">Lustenhouwer2020</bcf:citekey>
+    <bcf:citekey order="9">Segato2014</bcf:citekey>
+    <bcf:citekey order="10">Moorhead2006</bcf:citekey>
+    <bcf:citekey order="11">Lustenhouwer2020</bcf:citekey>
+    <bcf:citekey order="12">Edelstein1983</bcf:citekey>
+    <bcf:citekey order="12">Davidson2012</bcf:citekey>
+    <bcf:citekey order="13">Du2019</bcf:citekey>
+    <bcf:citekey order="14">Gervais1999</bcf:citekey>
+    <bcf:citekey order="14">Steinberg2007</bcf:citekey>
+    <bcf:citekey order="15">Gervais1999</bcf:citekey>
+    <bcf:citekey order="16">Maynard2019</bcf:citekey>
+    <bcf:citekey order="17">Moore2015</bcf:citekey>
+    <bcf:citekey order="17">Edelstein1983</bcf:citekey>
+    <bcf:citekey order="17">Moorhead2006</bcf:citekey>
+    <bcf:citekey order="17">Parnas1975</bcf:citekey>
+    <bcf:citekey order="17">Schimel2003</bcf:citekey>
+    <bcf:citekey order="18">Schimel2003</bcf:citekey>
+    <bcf:citekey order="18">Moorhead2006</bcf:citekey>
+    <bcf:citekey order="19">Schimel2003</bcf:citekey>
+    <bcf:citekey order="20">Moorhead2006</bcf:citekey>
+    <bcf:citekey order="21">Schimel2003</bcf:citekey>
+    <bcf:citekey order="22">Moorhead2006</bcf:citekey>
+    <bcf:citekey order="23">Whittaker1970</bcf:citekey>
+    <bcf:citekey order="24">Mucina2018</bcf:citekey>
+    <bcf:citekey order="25">Whittaker1970</bcf:citekey>
+    <bcf:citekey order="26">Abkenar2019</bcf:citekey>
+    <bcf:citekey order="27">Petraglia2018</bcf:citekey>
+    <bcf:citekey order="28">Moorhead1991</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

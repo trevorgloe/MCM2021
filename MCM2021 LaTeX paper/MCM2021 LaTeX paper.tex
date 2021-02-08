@@ -23,12 +23,16 @@
 \usepackage{lipsum}
 \usepackage{multicol}
 
+\usepackage{footnote}
+\usepackage{float}
+\restylefloat{table}
+
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 
 \usepackage[
 backend=biber,
-style=numeric,
+style=chem-angew,
 sorting=ynt]{biblatex}
 \addbibresource{masterbib.bib}
 
@@ -84,37 +88,196 @@ sorting=ynt]{biblatex}
 
 Decomposition by fungal and microbial communities is second only to photosynthesis in driving carbon cycling in the Earth's ecological communities \cite{McGuire2010}. While this significance is rarely understated, inner mechanisms and interactions within decomposition communities have been poory understood and treated as a 'black box' in the past by scientists studying ecosystem processes \cite{Andren1999}.
 
-Fungi are made up of hyphae: long winding filaments enmeshed together to form a thick mat of mycelium. At the frontline of battle, hyphal tips are extending forward and branching to cover new area at a velocity dictated by the hyphal extension rate, and concurrently other hyphae are dying off or merging together \cite{Edelstein1982}. Like machinery, each fungus has ideal operating conditions. Fungi native to dry or arid biomes will grow efficiently in a moisture-lacking environment when other fungi will falter. Maynard et al. (2019) defines these operating conditions by assigning temperature and moisture niche-widths to 37 studied species of fungi. 
+Fungi are made up of hyphae: long winding filaments enmeshed together to form a thick mat of mycelium. At the frontline of battle, hyphal tips are extending forward and branching to cover new area at a velocity dictated by the hyphal extension rate, and concurrently other hyphae are dying off or merging together \cite{Edelstein1982}. Like machinery, each fungus has ideal operating conditions. Fungi native to dry or arid biomes will grow efficiently in a moisture-lacking environment when other fungi will falter. Maynard et al. (2019) defines these operating conditions by assigning temperature and moisture niche-widths to 37 studied species of fungi \cite{Maynard2019}.
 
-When fungi come into contact with each other, competitive interactions are most often observed. Tactics studied in Boddy, L. (2000) include deploying diffusable toxins, obtaining nutrients parasitically, destruction of hyphae by intentional interference, and establishing wall-like barracades to thwart attackers \cite{Boddy2000}. Most researchers, including Maynard et al. (2019) construct a competitive ranking scale based on experimental observations to encapsulate the ramifications of these complex interactions. 
+\subsection{Competition}
+When fungi come into contact with each other, competitive interactions are most often observed. Tactics studied in Boddy, L. (2000) include deploying diffusable toxins, obtaining nutrients parasitically, destruction of hyphae by intentional interference, and establishing wall-like barracades to thwart attackers \cite{Boddy2000}. Most researchers, including Maynard et al. (2019) construct a competitive ranking scale based on experimental observations to encapsulate the ramifications of these complex interactions \cite{Maynard2019}.
 
 Under a constant temperature regime, previous research concludes that dominant fast-growing suppress other species which negatively impacts the overall community's efficiency. However fluctuating environmental conditions change the outcome and promote complementary growth \cite{Toljander2006}. An explanation for this is presented by Lustenhouwer et al. (2020) suggesting a spectrum between slow-growing, stress-tolerant fungi operating in a wider environmental range than fast-growing, highly competitive fungi \cite{Lustenhouwer2020}. 
 
-Determining which fungi are present in a community depends on the organic material, or 'substrate', being broken down. In the case of fungal-mediated wood decomposition, the substrate is made up of lignocellulose polysaccarides, and the fungi involved are equipped with specialized enzymes capable of splitting linkages in the polymers to harvest usable carbohydrates. Long-term wood decomposition follows a well-studied three-phase process: the first phase is dominated by fast and opportunistic fungus claiming easily-consumable soluble sugars, followed in the second phase by consistent and dependable decomposers that degrade the holocellulose constituting 65\%-85\% of the material \cite{Aspergilli}. Slow and highly specialized fungi trail behind in the third phase to clean up rigid lignin polymers (15\%-35\%) with powerful oxidative enzymes \cite{Moorhead2006}. While phase progression is an important agent governing community changes on the long-term scale, this paper will focus on only the middle phase of cellulose decomposition and will not conider lignin decomposition. Fungi containing larger proportions of enzymes like acid phosphatase, which are associated with lignin decomposition, are demonstrated to strongly correlate with slower decomposition rates by Lustenhouwer et al. (2020)
+\subsection{Substrates}
+Determining which fungi are present in a community depends on the organic material, or 'substrate', being broken down. In the case of fungal-mediated wood decomposition, the substrate is made up of lignocellulose polysaccarides, and the fungi involved are equipped with specialized enzymes capable of splitting linkages in the polymers to harvest usable carbohydrates. Long-term wood decomposition follows a well-studied three-phase process: the first phase is dominated by fast and opportunistic fungus claiming easily-consumable soluble sugars, followed in the second phase by consistent and dependable decomposers that degrade the holocellulose constituting 65\%-85\% of the material \cite{Segato2014}. Slow and highly specialized fungi trail behind in the third phase to clean up rigid lignin polymers (15\%-35\%) with powerful oxidative enzymes \cite{Moorhead2006}. While phase progression is an important agent governing community changes on the long-term scale, this paper will focus on only the middle phase of cellulose decomposition and will not conider lignin decomposition. Fungi containing larger proportions of enzymes like acid phosphatase, which are associated with lignin decomposition, are demonstrated to strongly correlate with slower decomposition rates by Lustenhouwer et al. (2020) \cite{Lustenhouwer2020}.
 
-An important step in modeling fungal communities is acknowledging separation between the growth rate and the decomposition rate of the fungus, which are influenced by different factors. Fungal growth models typically focus on the increase in overall biomass due to hyphal extension. As described by [Edelstein 1982], the growth of hyphae over time depends on the spacial density of hypae tips (from which hyphae can extend and grow), the tip extension rate, and the hyphal death rate. The tips are created by various forms of branching. This model is summed up by the following equations:
+\subsection{Growth Model}
+An important step in modeling fungal communities is acknowledging separation between the growth rate and the decomposition rate of the fungus, which are influenced by different factors. Fungal growth models typically focus on the increase in overall biomass due to hyphal extension. Fungi with a greater density of hyphal tips per unit volume will grow and accrue biomass faster, as hyphae only grow from their tips. New tips are are created when hyphae branch off, while others die or fuse together via anasmotosis. Edelstein (1982) models these dynamics with the following:
 
-\begin{equation} \label {eq}
+\begin{equation} \label{eq:1}
 \frac{\partial \rho}{\partial t} = n\nu - d
 \end{equation}
-\begin{equation} \label {eq}
+\begin{equation} \label{eq:2}
 \frac{\partial n}{\partial t} = -\frac{\partial n\nu}{\partial x} + \sigma
 \end{equation}
 
-These equations form a basis for many other models, typically expanding on the effects of nutrient concentrations in the decomposing substrate. The largest assumption made by this model that we will differ from is the assumption that the mycellium grows over an unlimited nutrient supply. Both [Edelstein 1983 Growth and Metabolism in Mycelial Fungi] and [Davidson and Park, 1997] expanded on this model to include interactions with an external substrate by considering concentrations of nutrients both inside and outside the fungi. 
-\\ Another note-worthy growth model is described in [Du, Tran, Perre 2019]. This more recent model describes the growth of the fungus as a 3-dimensional reaction-diffusion equation based on microscopic growth mechanisms, also in terms of the tip density, tip extension rate, hyphal branching, and hyphal elimination rates. However this model also has an added term, the proportion of active tips. In all models, the terms for $\nu$, $\sigma$ are taken to be constants given from experimental data. As noted in [Edelstein 1982], these parameters are seen to depend on nutrient availability and environmental factors in practice. 
+These equations will operate standing alone, without any other influences by enzymes or growth limitations. This allows many models to treat it as a baseplate to expand upon. Edelstein (1983) and Davidson et al. (1997) do this by considering concentrations of nutrients inside the fungi and outside in the surrounding substrate \cite{Edelstein1983, Davidson2012}. Our model will likewise follow in eliminating the assumption that fungi grow over an unlimited nutrient supply. A more contemporary approach by Du et al. (2019) describes the growth of a fungus with a 3-dimensional reaction-diffusion equation based on microscopic growth mechanisms, also focusing on tip density and extension rate but with an added term to identify the proportion of tips which are actively growing \cite{Du2019}.
 
+\subsection{Environmental Influence on Hyphal Tip Extension ($\nu$)}
+Environmental impacts are introduced to the decomposition model through $\nu$, the hyphal tip elongation rate. The mechanism of elongation is relatively unknown; as described in Gervais et al. (1999), "cell turgor pressure corresponds to an overpressure which allows the cell morphology, elongation, division and hence the biomass evolution" \cite{Gervais1999, Steinberg2007}. In fungi, cell turgor comes from diffusion of water dictated by the water potential gradients rather active transport within the cell, making it very environmentally dependent \cite{Gervais1999}. This fact justifies determining $\nu$ based on environmental factors on fungal decomposition rates by varying $\nu$ outside of baselines for given species in set locations in our model. Experimental data from Maynard et al. 2019 shows the relationship between $\nu$ and the environmental parameters of water potential ($\psi$) and temperature (T) \cite{Maynard2019}.  Water potential as a parameter will take into account both moisture content to fungi as well as the availability of that moisture as dictated by the  soil composition.
+
+\subsection{Decomposition kinetics}
+Moore et al. (2015), Edelstein (1983), Moorhead et al. (2006), Parnas (1974), and Schimel et al. (2003) describe the decomposition of a certain substrate by a microbial decomposer as a function of the substrate's concentration by the Michaelis–Menton equation \cite{Moore2015, Edelstein1983, Moorhead2006, Parnas1975, Schimel2003}. Schimel et al. (2003) and Moorhead et al. (2006) assert that decomposition levels off at a maximum rate proportional to the concentration of enzymes acting on it \cite{Schimel2003, Moorhead2006}. The decompostion of carbon in a substrate is described by the following equation.
+
+\begin{equation} \label{eq:3}
+\frac{dC}{dt} = \frac{KBC}{K_{e}+C}
+\end{equation}
+We make the assumption that the enzyme concentration is proportional to the concentration of biomass in our system represented by $r$ multiplied by two environmental limiting factors in $K=rS_{M}S_{T}$ \cite{Schimel2003}. Moorhead (1990) uses these limiting factors to multiply the rates of carbon uptake from microorganisms, although the model used a simpler first order, linear equation \cite{Moorhead2006}. Here we use it in a similar way in limiting our maximum decay rate. The factors, $S_{M}$ and $S_{T}$ are computed by the following equations:
+\begin{equation}
+S_{M}=\alpha_{2} - \lambda \log_{10}(-\psi)
+\end{equation}
+\begin{equation}
+\log_{10}(S_T) = \frac{T-25}{10}\log_{10}(Q)
+\end{equation}
+\pagebreak
 \section{Model Formulation}
 
+
 \subsection{Growth Model}
-In the review of various fungal growth models described in [Bayesian model selection framework for identifying growth patterns in filamentous fungi, 2016], a specific method of modeling branching and hyphal death was found to match experimental observations in the widest variety of settings. Based on these results we will choose to implement the following relationships, comprising dichotomous branching, tip-hypha anastomosis, and hyphal death (or YHD). 
-\begin{equation} \label {eq}
+In the review of various fungal growth models described in Lin et al. (2016), a specific method of modeling branching and hyphal death was found to match experimental observations in the widest variety of settings. Based on these results, for $\sigma$ and $d$ in (\ref{eq:1}) and (\ref{eq:2}) we will choose to implement the following relationships, comprising dichotomous branching, tip-hypha anastomosis, and hyphal death (or YHD). 
+\begin{equation} 
 \sigma = \alpha_{1}*n - \mu n \rho
 \end{equation}
 
-\begin{equation} \label {eq}
+\begin{equation}
 d = \gamma_{1}\rho
 \end{equation}
+
+Enzymes conducting decomposition make up a fraction of the total biomass, and the total biomass changes according to the growth rate. The total biomass $B$ defined in (\ref{eq:8}) multiplies by maximum rate of the Michaelis-Menion equation (\ref{eq:3}) to couple growth rate with decomposition rate. 
+
+\begin{equation} \label {eq:8}
+B = \int_{all x}\rho dx
+\end{equation}
+
+The rate of decomposition of carbon will then be dynamically effected by the growth of the fungus contrary to the typical assumption of a static $B$ as described by Schimel et al. (2003) \cite{Schimel2003}. Our formulation of $K$ which accounts for the proportion of biomass in the fungal growth containing the necessary enzyme for the carbon decomposition will change to account for this. 
+\begin{equation} \label {eq}
+K = r*S_{M}*S_{T}*0.04*G
+\end{equation}
+Where $r$ is a dimensionless parameter representing the relative abundance of one enzyme out of the total enzyme biomass of that specific fungus. The multiplication by $0.02$ is a generalization that for any given species of fungus, 2\% of the biomass will be relevant enzymes \cite{Moorhead2006}. $G$ is an empirically derived rate constant relating the mass of relevant enzymes to the maximum rate of the decomposition.
+
+TALK ABOUT ENZYMES FROM DATA IN MAYNARD
+
+Limited carbon availability will also impact a fungi's growth rate. To account for this, we include a term multiplying $\nu$ that can be interpreted as the available carbon for the fungi to consume for growth. The first equation in the growth model then becomes
+\begin{equation} \label{eq:10}
+\frac{\partial \rho}{\partial t} = (1-LCI)*(10^{-9})*C*n*\nu - d
+\end{equation}
+Where $LCI$ is the lignocellulose index\footnote{The lignocellulose index describes the ratio of non-hydrolysable lignin to hydrolysable holocellulose in litter} of a certain material and $(1-LCI)$ is then the proportion of the substrate carbon stored in holocellulose. Multiplying by $(1*10^{-9}$ is approximation to convert grams of carbon to hyphae length in mm. [citation needed for g to mm] An investigation of the effects of including the carbon term in the growth model are addressed in a later section. \\
+
+So our coupled growth and decomposition models can be summarized by equations (\ref{eq:2}), (\ref{eq:3}), (\ref{eq:8}), and (\ref{eq:10}).
+
+\subsection{Estimating $\nu$ For Various Environments}
+
+When considering a sampling of decomposition rates in various environment types, we must determine how to estimate temperate and water potentials that ground fungi would experience. In the case of determining $\nu$, this requires finding projected temperature and water potential.
+
+Amongst existing biome classification models, Whitaker's scheme \cite{Whittaker1970} is perhaps the simplest, being particularly trait-based. Whitaker's scheme provides a layout of biomes based on mean annual temperature and mean annual precipitation. However, modern classification of biomes has drifted away from using these traits as definitive biome identifiers \cite{Mucina2018}. These traits alone do not define all features of concern to fungal growth, such as soil composition for example. In addition, by Whitaker's scheme, we find that a given biome can have a wide range of average annual temperatures (such as arid desserts ranging from about -10 to 30 $^{\circ}C$) \cite{Whittaker1970}. Thus, we can sample a range of temperature and moisture values to output various $\nu$ and then select certain regions to profile in order to gauge potential environments where fungi can decompose and interact.
+%We will sample within the temperature range of Whitaker's scheme: $-15^{\circ}$ to $30^{\circ}$ C of mean annual temperature.
+
+The following are the specific environments selected to represent various biomes:
+
+\end{multicols}{2}
+
+\begin{savenotes}
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|c c|} 
+				\hline
+				Biome & Specific Environment Selected \\ [0.5ex] 
+				\hline\hline
+				Dessert (Arid) & Sonoran Desert, USA \\ 
+				\hline
+				Grasslands/shrublands & (Semi-Arid), central Argentina\\
+				\hline
+				Temperate Forest & Sal Forests, central Himalayas\\
+				\hline
+				Boreal Forest (Arboreal) & Pine Forests, central Himalayas\\
+				\hline
+				Tropical Rain Forest & Tropical Forests, Barro Colorado Island, Panama \\
+				\hline
+			\end{tabular}
+		\end{center}
+	\end{table}
+\end{savenotes}
+
+Although water potentials can be approximated based on predictive models, the measure is best found experimentally from soil samples \cite{Abkenar2019}. Ranges for moisture potential of these environments have been found experimentally from a variety of studies is shown in the following table. Note that single water potentials and temperatures are selected for sampling, as we are aiming to compare discrete environmental conditions rather than create a complete span of environmental conditions. The following are the selected values of average annual temperatures and water potential for these biomes. If ranges are given, the average of the ranges or seasonal values is the selected value. For full ranges and data sources, see appendix TABLE ???.
+
+%% ACTUAL TABLE
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c c c|} 
+			\hline
+			Biome/ Environment & Temperature [$^{\circ}C$] & Water Potential [MPA]\\ [0.5ex] 
+			\hline\hline
+			Dessert (Arid) & 15 & -4.5 \\ 
+			\hline
+			Grasslands/shrublands (Semi-Arid) &15.3 & -3.2\\
+			\hline
+			Temperate Forest & 12.49 & -1.09 \\
+			\hline
+			Boreal Forest (Arboreal)& 12.49 &  -1.51 \\
+			\hline
+			Tropical Rain Forest & 27.5 & -0.79 \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+Given these estimates, we can have a probable example combination of temperature and moisture potential in various environments. Note that these are not wholly representative configurations, but rather examples to provide insight into how fungal species with specific traits may respond in discrete and distinct conditions likely to exist. 
+
+We can then find $\nu$ using experimental data from Maynard et al 2019. **** (talk about continuous data technique thingy in the extra methods info sheet)
+
+\begin{multicols}{2}
+	
+\subsection{Other Responses to Temperature and Water Potential}
+
+Our growth model takes into account temperature (T) and water potential ($\psi$) in two more parameters: the soil temperature coefficient ($S_T$) and the soil temperature coefficient ($S_M$). Moorhead et al. (1991) provides a simple relationship between $S_T$ and T using the rate of increase (Q):
+\begin{equation}
+\log_{10}(S_T) = \frac{T-25}{10}\log_{10}(Q)
+\end{equation}
+Although this equation does not take into account specific fungal response to temperature change, more recent evidence supports that this relationship is not direct, with most of the direct impact coming from moisture \cite{Petraglia2018}. As the ratio of rates of decomposition given a temperature change, Q as a parameter should represent the effective output of various mechanisms influenced by temperature rather than focusing on specific mechanisms. However, for the sake of simplicity, Q has been set standard constant to a value of 2.5 \cite{Moorhead1991}.
+
+Water potential also relates to a constant, $S_M$, in a simple equation described in Moorhead et al. (1991) using $\alpha_2$ and $\lambda$:
+\begin{equation}
+S_M = \alpha_2 -\lambda \log_{10}(-\psi)
+\end{equation}
+
+These two parameters help calculate the maximum growth rate by the relationship:
+\begin{equation}
+\beta = S_T S_M r
+\end{equation}
+where r is the enzyme biomass ratio.
+
+\subsection{Assumptions}
+
+\begin{itemize}
+	\item Growth
+	\begin{itemize}
+		\item[--] unlimited available resources (ground litter and woody fibers)
+		\item[--] neglecting effects from direct interactions between fungi
+		\item[--] PROBLEM: neglecting synergistic effects on growth/metabolic efficiency
+		\item[--] non-exhaustive substrates
+		\item[--] not considering N addition by anthropogenic nitrogen deposition
+		\item[--] LCI < 0.7 at all times because we're focusing on wood fibers and we don't want lignin block holocellulose decay in bad ways. but we could use the formula
+		\item[--] LCI is not changing over time anastomosis, the formation of reconnections. 
+		\item[--] dynamics regarding the rate of nutrient absorption and transport of metabolites within the
+		mycelium are ignored or simplified
+		\item[--] growth dynamics incurred by the formation of concentric density rings are not considered <-- this doesn't need to exist because we're considering growth in a 1D tube
+		\item[--] only considering one configuration of growth traits out of many possible options, that configuration being: tip-hypha anasmotosis, dichotomous branching, and hyphal death
+		\item[--] decomposition coefficients are representative of those families of enzymes
+	\end{itemize}
+	\item Decomposition Kinetics
+	\begin{itemize}
+		\item[--] Elements can be stacked in any configuration without structural limitations
+	\end{itemize}
+	\item Temperature/Moisture effects
+	\begin{itemize}
+		\item[--] experimental data for water potentials in specific biomes/environments are representative of the conditions of those environments 
+	\end{itemize}
+	\item Interactions
+	\begin{itemize}
+		\item[--] Influences from wind are neglected
+		\item[--] The drones are assumed to be unobstructed by terrain
+		\item[--] The drones do not experience any malfunctions
+		\item[--] The earth’s curve is neglected
+	\end{itemize}
+\end{itemize}
 
 \subsection{Environmental Influence on Hyphal Tip Extension}
 
@@ -188,18 +351,18 @@ The time scale for our model is following the experimental results from (paper c
 \begin{itemize}
 	\item Growth
 	\begin{itemize}
-		\item[--] unlimited available resources (ground litter and woody fibers)
-		\item[--] neglecting effects from direct interactions between fungi
-		\item[--] PROBLEM: neglecting synergistic effects on growth/metabolic efficiency
-		\item[--] non-exhaustive substrates
-		\item[--] not considering N addition by anthropogenic nitrogen deposition
-		\item[--] LCI < 0.7 at all times because we're focusing on wood fibers and we don't want lignin block holocellulose decay in bad ways. but we could use the formula
-		\item[--] LCI is not changing over time anastomosis, the formation of reconnections. 
-		\item[--] dynamics regarding the rate of nutrient absorption and transport of metabolites within the
+		\item unlimited available resources (ground litter and woody fibers)
+		\item neglecting effects from direct interactions between fungi
+		\item PROBLEM: neglecting synergistic effects on growth/metabolic efficiency
+		\item non-exhaustive substrates
+		\item not considering N addition by anthropogenic nitrogen deposition
+		\item LCI < 0.7 at all times because we're focusing on wood fibers and we don't want lignin block holocellulose decay in bad ways. but we could use the formula
+		\item LCI is not changing over time anastomosis, the formation of reconnections. 
+		\item dynamics regarding the rate of nutrient absorption and transport of metabolites within the
 		mycelium are ignored or simplified
-		\item[--] growth dynamics incurred by the formation of concentric density rings are not considered <-- this doesn't need to exist because we're considering growth in a 1D tube
-		\item[--] only considering one configuration of growth traits out of many possible options, that configuration being: tip-hypha anasmotosis, dichotomous branching, and hyphal death
-		\item[--] decomposition coefficients are representative of those families of enzymes
+		\item growth dynamics incurred by the formation of concentric density rings are not considered <-- this doesn't need to exist because we're considering growth in a 1D tube
+		\item only considering one configuration of growth traits out of many possible options, that configuration being: tip-hypha anasmotosis, dichotomous branching, and hyphal death
+		\item decomposition coefficients are representative of those families of enzymes
 	\end{itemize}
 	\item Decomposition Kinetics
 	\begin{itemize}
@@ -209,41 +372,7 @@ The time scale for our model is following the experimental results from (paper c
 	\begin{itemize}
 		\item[--] experimental data for water potentials in specific biomes/environments are representative of the conditions of those environments 
 	\end{itemize}
-	\item Interactions
-	\begin{itemize}
-		\item[--] Influences from wind are neglected
-		\item[--] The drones are assumed to be unobstructed by terrain
-		\item[--] The drones do not experience any malfunctions
-		\item[--] The earth’s curve is neglected
-	\end{itemize}
 \end{itemize}
-
-
-\subsection{Flight Path Sub-model}
-\lipsum[3]
-
-\subsection{Packing Sub-model}
-\lipsum[4]
-
-\subsection{Storage Location Determination}
-\lipsum[5]
-\[ 
-L_n = \sum_{i=1}^{m} p_i(x_i, y_i) / \sum_{i=1}^{m} p_i 
-\]
-where $L_n$ = Location number within grouping \\
-n being number of distinct locations (1 to 3) \\
-i = hospitals in the group \\
-p = package demand of hospital i \\
-x, y = longitude, latitude of hospital i \\
-The output lists a discrete set of groupings of the hospitals with the corresponding locations of the storage containers for each hospital group. In figure 1, one potential combination of hospitals grouped to specific storage locations is shown. 
-
-% TODO: \usepackage{graphicx} required
-%\begin{figure}
-%	\centering
-%	\includegraphics[width=0.7\linewidth]{}
-%	\caption[Fig 1]{caption 0??}
-%	\label{Fig 1}
-%\end{figure}
 
 
 \subsection{Cost Function}
@@ -307,6 +436,8 @@ Where $P$ represents the total medpacks delivered, $\sum{t}$ is an estimate of t
 \subsection{Limitations/ Further Work}
 \lipsum[8]
 
-\printbibliography
+In all models, the terms for $\nu$, $\sigma$ are taken to be constants given from experimental data. [citations]. Lin et al. (2016) takes a different approach in reviewing previous literature to apply a model that closely matches experimental data, which we will take advantage of for our model.  
+
 \end{multicols}
+\printbibliography
 \end{document}
