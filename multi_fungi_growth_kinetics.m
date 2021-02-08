@@ -5,8 +5,8 @@
 
 %define what fungi are present
 % fungi_vec = zeros(1,35);    %must be normalized to 1
-% fungi_vec = ones(1,35);
-% fungi_vec = fungi_vec/((sum(fungi_vec))^1);
+fungi_vec = ones(1,35);
+fungi_vec = fungi_vec/((sum(fungi_vec))^1);
 
 %define domains
 n_x = 100;
