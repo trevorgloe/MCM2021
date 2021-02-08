@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 00:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 09:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -102,6 +102,9 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks26
 )
 (./stuff.aux
+
+LaTeX Warning: Label `eq' multiply defined.
+
 
 LaTeX Warning: Label `eq' multiply defined.
 
@@ -518,19 +521,35 @@ my insertion and my current dilemma will both disappear.
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 83.
-[2] [3] [4] [5] (./stuff.aux)
+[2] [3]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 105.
+
+
+LaTeX Warning: Citation `Maynard2019' on page 4 undefined on input line 105.
+
+
+LaTeX Warning: Citation `Zobel2001' on page 4 undefined on input line 114.
+
+
+LaTeX Warning: Citation `Maynard2019' on page 4 undefined on input line 114.
+
+[4] [5] [6] (./stuff.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1879 strings out of 492616
- 24619 string characters out of 6129482
- 94802 words of memory out of 5000000
- 5788 multiletter control sequences out of 15000+600000
- 33043 words of font info for 85 fonts, out of 8000000 for 9000
+ 1882 strings out of 492616
+ 24652 string characters out of 6129482
+ 96802 words of memory out of 5000000
+ 5790 multiletter control sequences out of 15000+600000
+ 34492 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 25i,8n,32p,2218b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,8n,32p,2284b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -541,10 +560,10 @@ e/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
 xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on stuff.pdf (5 pages, 107175 bytes).
+Output written on stuff.pdf (6 pages, 112091 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
