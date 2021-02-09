@@ -73,8 +73,8 @@ sorting=ynt]{biblatex}
 % Replace the text from here ...
 \begin{center}
 \textcolor{red}{%
-\lipsum[1]
-}
+In a model coupling fungal growth with standard decomposition reaction kinetics, we study the effect of varying parameters of fungal growth on the overall decomposition of a wood-based substrate by 35 species. 
+Growth is simulated using a 1-dimensional growth model based on fundamental microscopic growth mechanisms, linearly coupled with a Michaelis-Menten reaction equation. Interactions between different fungi was limited to competition for a common nutrient pool. Various fungal species were differentiated by their enzymic makeup of four different representative enzymes and their ecological niches. The parameters of moisture potential and temperature, combined with data on hyphal extension rates, were used to represent the influence of the environment across the model. We studied two areas: the relative advantages of individual fungi and the effect of biodiversity on the community decomposition efficiency. Our results support the existence of a spectrum where species either tend towards being more competitive, demonstrating a higher hyphal extension and decomposition rate, or more stress tolerant, demonstrating less variability facing long term environmental fluctuations. The introduction of yearly moisture potential fluctuations corresponded with a slight increase in overall decomposition system efficiency. The positive impact of biodiversity distribution correlated with competitive ranking coefficients up to a critical point, where further following competitive ranking coefficient distribution appeared to have no correspondence with the  total decomposition efficiency. The gap in understanding between short and long term fluctuations of environmental parameters and this critical point of biodiversity distribution prompt further investigation.}
 \end{center}
 % to here
 %%%%%%%%%%% End Summary %%%%%%%%%%%
@@ -221,11 +221,11 @@ The following are the specific environments selected to represent various biomes
 				\hline\hline
 				Dessert (Arid) & Sonoran Desert, USA \\ 
 				\hline
-				Grasslands/shrublands & (Semi-Arid), central Argentina\\
+				Grasslands/shrublands & (Semi-Arid), Shrubland, central Argentina\\
 				\hline
-				Temperate Forest & Sal Forests, central Himalayas\\
+				Temperate Forest & Sal Forests, Kumaun region, central Himalayas\\
 				\hline
-				Boreal Forest (Arboreal) & Pine Forests, central Himalayas\\
+				Boreal Forest (Arboreal) & Pine Forests, Kumaun region, central Himalayas\\
 				\hline
 				Tropical Rain Forest & Tropical Forests, Barro Colorado Island, Panama \\
 				\hline
@@ -245,7 +245,7 @@ Although water potentials can be approximated based on predictive models, the me
 			\hline
 			Biome/ Environment & Temperature [$^{\circ}C$] & Water Potential [MPA]\\ [0.5ex] 
 			\hline\hline
-			Dessert (Arid) & 15 & -4.5 \\ 
+			Desert (Arid) & 15 & -4.5 \\ 
 			\hline
 			Grasslands/shrublands (Semi-Arid) &15.3 & -3.2\\
 			\hline
@@ -261,7 +261,7 @@ Although water potentials can be approximated based on predictive models, the me
 	\end{center}
 \end{table}
 
-Note that these are not wholly representative configurations, but rather examples to provide insight into how fungal species with specific traits may respond in discrete and distinct conditions likely to exist. We can then find $\nu$ using experimental data from Maynard et al 2019 \cite{Maynard2019}.\textbf{talk about continuous data technique thingy in the extra methods info sheet}
+Note that these are not wholly representative configurations, but rather examples to provide insight into how fungal species with specific traits may respond in discrete and distinct conditions likely to exist. We can then find an approximate corresponding $\nu$ for each species based off each selected moisture potential and temperature, using experimental data from Maynard et al. 2019 where nonlinear least squares was used to fit a discrete data to a standard 3-parametter skew distribution \cite{Maynard2019}. These two $\nu$ values for each species and environment were then averaged to general one value for a given $\psi$ and $T$.
 
 \begin{multicols}{2}	
 \subsection{Other Responses to Temperature and Water Potential}\label{Other Responses to Temperature and Water Potential}
@@ -344,7 +344,7 @@ The value for $G$ represents a rate constant relating the concentration of relev
 \subsection{Representative results}
 We ran the coupled growth and decomposition model using parameters summarized in Table \ref{table3} to obtain a representative result. In the growth model, $\rho$ was found to exhibit travelling wave dispersion throughout space, as similarly shown in Mimura et al. (2000) and Edelstein (1982) \cite{Mimura2000, Edelstein1982}. As a consequence of only running the simulation for a timespan of three years, the decrease in carbon over time looks fairly linear, with slight fluctuations likely due to the fluctuating fungal biomass densities over time. 
 
-In the first initial runs, no coupling term defining a limited nutrient availability was present in the growth equations. This eliminated the effects of decreasing concentration of carbon as the growth model assumed an abundance of nutrients was present. Under short time scales this could be a perfectly valid assumption, as short time scales tended to show little overall decrease in the concentration of holocellulose carbon. However the consequences seen from introducing this term in the growth equations become more apparent as longer time scales are considered. These effects can be seen in our results. The outcome for overall biomass of the communitty was mostly unaffected other than replacing decaying oscillations towards a steady state with a somewhat constantly increasing biomass overtime with a decaying slope. 
+In the first initial runs, no coupling term defining a limited nutrient availability was present in the growth equations. This eliminated the effects of decreasing concentration of carbon as the growth model assumed an abundance of nutrients was present. Under short time scales this could be a perfectly valid assumption, as short time scales tended to show little overall decrease in the concentration of holocellulose carbon. However the consequences seen from introducing this term in the growth equations become more apparent as longer time scales are considered. These effects can be seen in our results in Figure \ref{Growth with and without coupling}. The outcome for overall biomass of the communitty was mostly unaffected other than replacing decaying oscillations towards a steady state with a somewhat constantly increasing biomass overtime with a decaying slope. 
 
 Overall, including the nutrient availability term in the growth equation captures more of the fundamental interaction that this paper is concerned with (that of decomposing wood and ground litter rather than free-growing fungi), so it remained present for further analysis.
 
@@ -361,7 +361,7 @@ Overall, including the nutrient availability term in the growth equation capture
 	\label{fig-b}
 \end{subfigure}
 \caption[Coupled/un-coupled fungi growth]{Fungal biomass of coupled growth and decomposition kinetics model} 
-\label{fig:main}
+\label{Growth with and without coupling}
 \end{figure}
 \begin{multicols}{2}
 
@@ -552,7 +552,7 @@ Here are the model parameters for the coupled growth and decomposition model for
 			\hline
 			Biome/ Environment & Average Annual Temperature [$^{\circ}C$] & Selected Value [$^{\circ}C$]\\ [0.5ex] 
 			\hline\hline
-			Dessert (Arid) & 10 to 20 \cite{Davey2007} & 15 \\ 
+			Desert (Arid) & 10 to 20 \cite{Davey2007} & 15 \\ 
 			\hline
 			Grasslands/shrublands (Semi-Arid) & 15.3 \cite{Pelaez1994} & 15.3 \\
 			\hline
@@ -580,7 +580,7 @@ Here are the model parameters for the coupled growth and decomposition model for
 				\hline
 				Biome/ Environment & Water Potential Range [MPa] & Selected Value [MPa] \\ [0.5ex] 
 				\hline\hline
-				Dessert (Arid) & -4.0 to -5.0 MPa \cite{Nilsen1983} & -4.5 MPa \\ 
+				Desert (Arid) & -4.0 to -5.0 MPa \cite{Nilsen1983} & -4.5 MPa \\ 
 				\hline
 				Grasslands/shrublands (Semi-Arid) & -1.4 to -5.0 \footnote{Measurements taken November through January at 100 cm soil depth.} \cite{Pelaez1994} & -3.2 MPa\\
 				\hline
@@ -642,6 +642,33 @@ Here are the model parameters for the coupled growth and decomposition model for
 \end{center}
 
 %\end{multicols}
+\newpage
+\begin{multicols}{2}
+Natural ecological systems rely on an expanse of cycling, from carbon to energy. Materials pass in and out of organisms and throughout environments, each piece occupying niches that play roles in determining the total structure.
+
+Fungi, a group of eukaryotic organisms \footnote{"Eukaryotes are unicellular or multicellular organisms, which have membrane enclosed organelles such as specially nucleus, mitochondria, golgi apparatus and chloroplasts in plants". \cite{Panawala2017}}, are one such piece that hold an integral role in this continuous system. They serve as the interface between other living organic material and the soil with a important job: decomposition.
+
+Decomposition is the process of breaking down larger substances, called substrates, into smaller molecules that can be realised into the soil or air. Without decomposers like fungi, the nutrient cycle would be halted. This role has been long established \cite{Kakde2009}. However, more precise mechanisms and models for fungal decomposition are being progressively developed. In particular, we have built a greater understanding of more specialized fungal niches and response to environmental changes on various time scales.
+
+Within the role of decomposer, there are yet more divisions of work. Sepcific species of fungi are abel to sucrete different enzymes capable of breaking down distinct substrates. Alone, a single species of fungi would not be able to break down a log, but a community of fungi will. Amongst a variety of specific fungal roles, there emerges a pattern of two factions of fungal types. %need better word than factions
+
+The first type if that of the competitive, fast growing fungi. In the right conditions, these fungi grow and decompose material faster than the other grouping. This fast growth is indicated by the hyphal extension rate. Fungi are composed of long interwoven strands of filament, know as hyphae, that grow by extending outwards from Spitzenkörper - a vesicle bundle located at the tip of each strand \cite{Edelstein1982}. Given this growth nature, hyphal extension rate can be used as a proxy measure for overall fungal growth. These species are opportunists, meaning they seek out specific conditions in which to seize the opportunity to grow. Indeed, these species are particularly environmentally dependent. Despite generally having these higher hyphal extension rates, in order to reach there competitive and productive potential they require more optimal growth conditions. For example, if the species are place in an environment with limited access to water, meaning there is low moisture potential, often there advantage over the other species is little to none.
+
+By comparison, the advantage of the second group of fungi relies more on their resilience in a variety of environmental conditions rather than in there speed of growth. When placed in environments with more or less optimal moisture and temperature, they maintain a roughly consistent growth rate, increasing growth to more favorable conditions at a fraction of the increase demonstrated by fast-growing fungi.
+
+Both niches are significant to a fluctuating environment. Having a biodiversity of fungal types supports the entire niches ability to break down organics matter, with opportunists making for quicker decomposition as possible and slower-growing fungi serving as a steady, more-permanent  source.
+
+In addition to our understanding of this further niche differentiation, we have also gained insight into how these environmental fluctuations themselves may impact decomposition. Changes on short time scales, such as seasonal variations of temperature and moisture availability, have potentially impacted the system by both creating incentive for a diverse array of fungal species. When this variation was implemented, it resulted in increased growth rates.
+
+On larger time scales, climate and geological changes care result in evolving biomes. This can be thought of as a common general environmental configuration transforming into another, such a a temperate forest transitioning into and arid dessert or a tundra transitioning into a grassland as global temperatures increase. In general, of environments examined, fungal species tended to grow quicker in environments with higher water potentials. For example, a sampled tropical rain forest contained significantly faster growth rates than other sampled biomes. This agrees with the rain forests' relatively increased rate of nutrient cycling, with high average plant growth \cite{Lodge1993}.
+
+Interactions between members of ecological systems are complex and intricate: there are many mechanisms of fungal decomposition yet to be understood and investigated. However, our understanding of fungi and their roles will continued to be studies, as more advanced techniques for both modeling interactions both experimentally and mathematically.
+
+\begin{center}\label{Competitive Distribution Coefficients in article}
+	\includegraphics[width=\linewidth]{avg_contr_nu_competative_rankings.png}
+	\captionof{figure}{Hyphal extension rate, $\nu$, compared with resulting average contribution to decomposition for 35 different species of fungi studied in Maynard et al. (2019) in 5 different sample biomes with varying temperatures and soil moisture potentials, demonstrating the importance of environmental conditions to more competitive species.}
+\end{center}
+\end{multicols}
 \newpage
 \printbibliography
 \end{document}

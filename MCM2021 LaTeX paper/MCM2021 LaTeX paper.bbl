@@ -293,6 +293,29 @@
       \verb https://www.sciencedirect.com/science/article/pii/030438009190200K
       \endverb
     \endentry
+    \entry{Lodge1993}{article}{}
+      \name{author}{1}{}{%
+        {{hash=461f96caf1f96490de96555a45b17c03}{%
+           family={Lodge},
+           familyi={L\bibinitperiod},
+           given={Deborah},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{461f96caf1f96490de96555a45b17c03}
+      \strng{fullhash}{461f96caf1f96490de96555a45b17c03}
+      \strng{bibnamehash}{461f96caf1f96490de96555a45b17c03}
+      \strng{authorbibnamehash}{461f96caf1f96490de96555a45b17c03}
+      \strng{authornamehash}{461f96caf1f96490de96555a45b17c03}
+      \strng{authorfullhash}{461f96caf1f96490de96555a45b17c03}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Aspects of tropical mycology. Symposium, Liverpool, 1992}
+      \field{month}{01}
+      \field{title}{Nutrient cycling by fungi in wet tropical forests}
+      \field{year}{1993}
+    \endentry
     \entry{Pelaez1994}{article}{}
       \name{author}{5}{}{%
         {{hash=961cfe8c38690a251412f1bbc1a20896}{%
@@ -825,6 +848,32 @@
       \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2007.1250
       \endverb
     \endentry
+    \entry{Kakde2009}{article}{}
+      \name{author}{1}{}{%
+        {{hash=68f7704895d100a01b24fb7f425b2845}{%
+           family={KAKDE},
+           familyi={K\bibinitperiod},
+           given={UMESH},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{68f7704895d100a01b24fb7f425b2845}
+      \strng{fullhash}{68f7704895d100a01b24fb7f425b2845}
+      \strng{bibnamehash}{68f7704895d100a01b24fb7f425b2845}
+      \strng{authorbibnamehash}{68f7704895d100a01b24fb7f425b2845}
+      \strng{authornamehash}{68f7704895d100a01b24fb7f425b2845}
+      \strng{authorfullhash}{68f7704895d100a01b24fb7f425b2845}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bionano Frontier}
+      \field{month}{05}
+      \field{title}{STUDIES ON FUNGI RESPONSIBLE FOR BIODEGRADATION AND HUMIFICATION OF ORGANIC MATTER}
+      \field{volume}{2}
+      \field{year}{2009}
+      \field{pages}{77\bibrangedash 81}
+      \range{pages}{5}
+    \endentry
     \entry{McGuire2010}{article}{}
       \name{author}{2}{}{%
         {{hash=cafe33b4f8d0857ab3d07b1fbc91bc69}{%
@@ -1261,6 +1310,28 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0022519316001624
       \endverb
       \keyw{Fungal growth,Model discrepancy,Statistical modeling,Model calibration}
+    \endentry
+    \entry{Panawala2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=be7f294ba82aee88d504242b1aed832a}{%
+           family={Panawala},
+           familyi={P\bibinitperiod},
+           given={Lakna},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{be7f294ba82aee88d504242b1aed832a}
+      \strng{fullhash}{be7f294ba82aee88d504242b1aed832a}
+      \strng{bibnamehash}{be7f294ba82aee88d504242b1aed832a}
+      \strng{authorbibnamehash}{be7f294ba82aee88d504242b1aed832a}
+      \strng{authornamehash}{be7f294ba82aee88d504242b1aed832a}
+      \strng{authorfullhash}{be7f294ba82aee88d504242b1aed832a}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{Difference Between Prokaryotic and Eukaryotic Cells}
+      \field{year}{2017}
     \endentry
     \entry{Mucina2018}{book}{}
       \name{author}{1}{}{%

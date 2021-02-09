@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1384,7 +1384,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-[4] [5]
+[4]
+Overfull \vbox (22.8677pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (22.8677pt too high) has occurred while \output is active []
+
+
+[5]
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
 85.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
@@ -1392,8 +1399,8 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 285.
-
-[6] [7]
+ [6]
+[7]
 <biomass_growth_no_Cterm.png, id=41, 1126.2075pt x 843.15pt>
 File: biomass_growth_no_Cterm.png Graphic file (type png)
 <use biomass_growth_no_Cterm.png>
@@ -1474,13 +1481,25 @@ Package pdftex.def Info: rho_growth_no_Cterm.png  used on input line 640.
 (pdftex.def)             Requested size: 487.82251pt x 364.34103pt.
  [17 <./contributions_over_time(rainbowspaghetti).png (PNG copy)>] [18 <./rho_g
 rowth_no_Cterm.png (PNG copy)>]
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 19 might be wrong on input line 664
+.
+
+[19]
+File: avg_contr_nu_competative_rankings.png Graphic file (type png)
+<use avg_contr_nu_competative_rankings.png>
+Package pdftex.def Info: avg_contr_nu_competative_rankings.png  used on input l
+ine 668.
+(pdftex.def)             Requested size: 238.91125pt x 185.10516pt.
+ [20]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 646.
- [19]
+(Font)              scaled to size 12.0pt on input line 673.
+ [21]
 ! Missing { inserted.
 <to be read again> 
                    $
-l.647 \end
+l.674 \end
           {document}
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1490,7 +1509,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.647 \end
+l.674 \end
           {document}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1498,7 +1517,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[20] (./MCM2021 LaTeX paper.aux)
+[22] (./MCM2021 LaTeX paper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1515,10 +1534,10 @@ Package logreq Info: Writing requests to '"MCM2021 LaTeX paper".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25217 strings out of 492616
- 451231 string characters out of 6129482
- 998069 words of memory out of 5000000
- 28778 multiletter control sequences out of 15000+600000
+ 25224 strings out of 492616
+ 451560 string characters out of 6129482
+ 939745 words of memory out of 5000000
+ 28785 multiletter control sequences out of 15000+600000
  616694 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,13n,92p,2712b,1704s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1537,10 +1556,10 @@ usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2019/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "MCM2021 LaTeX paper.pdf" (22 pages, 1114224 bytes).
+Output written on "MCM2021 LaTeX paper.pdf" (24 pages, 1120541 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 145 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
