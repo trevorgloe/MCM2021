@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 FEB 2021 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,25 +748,332 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@caption@flags=\count280
 \c@ContinuedFloat=\count281
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/multicolrule/multicolrule.sty
+Package: multicolrule 2019/01/01 v1.2 Decorative vertical rules between columns
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2019-05-03 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
+)
+\l__mcrule_repeat_int=\count282
+\l__mcrule_repeat_distance_dim=\dimen171
+\l__mcrule_extend_top_dim=\dimen172
+\l__mcrule_extend_bot_dim=\dimen173
+\l__mcrule_extend_reserve_dim=\dimen174
+\g__mcrule_pattern_count_int=\count283
+\g__mcrule_pattern_for_int=\count284
+\g__mcrule_pattern_after_int=\count285
+
+Package multicolrule Info: Patched \LR@column@boxes .
+
+
+Package multicolrule Info: Patched \RL@column@boxes .
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen175
+\pgfutil@tempdimb=\dimen176
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box74
+(/usr/local/texlive/2019/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2019/04/04 v3.1.2 (3.1.2)
+))
+Package: pgf 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2019/04/04 v3.1.2 (3.1.2)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen177
+\pgf@y=\dimen178
+\pgf@xa=\dimen179
+\pgf@ya=\dimen180
+\pgf@xb=\dimen181
+\pgf@yb=\dimen182
+\pgf@xc=\dimen183
+\pgf@yc=\dimen184
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count290
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2019/04/04 v3.1.2 (3.1.2)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2019/04/04 v3.1.2 (3.1.2)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2019/04/04 v3.1.2 (3.1.2)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen185
+\pgfmath@count=\count293
+\pgfmath@box=\box75
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count294
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@picminx=\dimen186
+\pgf@picmaxx=\dimen187
+\pgf@picminy=\dimen188
+\pgf@picmaxy=\dimen189
+\pgf@pathminx=\dimen190
+\pgf@pathmaxx=\dimen191
+\pgf@pathminy=\dimen192
+\pgf@pathmaxy=\dimen193
+\pgf@xx=\dimen194
+\pgf@xy=\dimen195
+\pgf@yx=\dimen196
+\pgf@yy=\dimen197
+\pgf@zx=\dimen198
+\pgf@zy=\dimen199
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@path@lastx=\dimen256
+\pgf@path@lasty=\dimen257
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@shorten@end@additional=\dimen258
+\pgf@shorten@start@additional=\dimen259
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfpic=\box76
+\pgf@hbox=\box77
+\pgf@layerbox@main=\box78
+\pgf@picture@serial@count=\count295
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgflinewidth=\dimen260
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@pt@x=\dimen261
+\pgf@pt@y=\dimen262
+\pgf@pt@temp=\dimen263
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfarrowsep=\dimen264
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@max=\dimen265
+\pgf@sys@shading@range@num=\count296
+\pgf@shadingcount=\count297
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfexternal@startupbox=\box79
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfnodeparttextbox=\box80
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2019/04/04 v3.1.2 (3.1.2)
+\pgf@nodesepstart=\dimen266
+\pgf@nodesepend=\dimen267
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2019/04/04 v3.1.2 (3.1.2)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen268
+\pgffor@skip=\dimen269
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@plot@mark@count=\count298
+\pgfplotmarksize=\dimen270
+)
+\tikz@lastx=\dimen271
+\tikz@lasty=\dimen272
+\tikz@lastxsaved=\dimen273
+\tikz@lastysaved=\dimen274
+\tikzleveldistance=\dimen275
+\tikzsiblingdistance=\dimen276
+\tikz@figbox=\box81
+\tikz@figbox@bg=\box82
+\tikz@tempbox=\box83
+\tikz@tempbox@bg=\box84
+\tikztreelevel=\count299
+\tikznumberofchildren=\count300
+\tikznumberofcurrentchild=\count301
+\tikz@fig@count=\count302
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfmatrixcurrentrow=\count303
+\pgfmatrixcurrentcolumn=\count304
+\pgf@matrix@numberofcolumns=\count305
+)
+\tikz@expandcount=\count306
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
-\c@subfigure=\count282
-\c@subtable=\count283
+\c@subfigure=\count307
+\c@subtable=\count308
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box74
-\fn@width=\dimen171
+\fn@notes=\box85
+\fn@width=\dimen277
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count284
-\float@exts=\toks29
-\float@box=\box75
-\@float@everytoks=\toks30
-\@floatcapt=\box76
+\c@float@type=\count309
+\float@exts=\toks41
+\float@box=\box86
+\@float@everytoks=\toks42
+\@floatcapt=\box87
 )
-\@float@every@table=\toks31
+\@float@every@table=\toks43
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
@@ -780,41 +1087,41 @@ Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box77
+\collectedbox=\box88
 )
-\tc@llx=\dimen172
-\tc@lly=\dimen173
-\tc@urx=\dimen174
-\tc@ury=\dimen175
+\tc@llx=\dimen278
+\tc@lly=\dimen279
+\tc@urx=\dimen280
+\tc@ury=\dimen281
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen176
-\adjbox@Height=\dimen177
-\adjbox@Depth=\dimen178
-\adjbox@Totalheight=\dimen179
-\adjbox@pwidth=\dimen180
-\adjbox@pheight=\dimen181
-\adjbox@pdepth=\dimen182
-\adjbox@ptotalheight=\dimen183
+\adjbox@Width=\dimen282
+\adjbox@Height=\dimen283
+\adjbox@Depth=\dimen284
+\adjbox@Totalheight=\dimen285
+\adjbox@pwidth=\dimen286
+\adjbox@pheight=\dimen287
+\adjbox@pdepth=\dimen288
+\adjbox@ptotalheight=\dimen289
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count285
+\c@checkoddpage=\count310
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box78
-\sift@deathcycles=\count286
-\@vwid@loff=\dimen184
-\@vwid@roff=\dimen185
+\@vwid@box=\box89
+\sift@deathcycles=\count311
+\@vwid@loff=\dimen290
+\@vwid@roff=\dimen291
 ))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks32
-\inpenc@posthook=\toks33
+\inpenc@prehook=\toks44
+\inpenc@posthook=\toks45
 )
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2019/05/04 3.31 The Babel package
@@ -827,11 +1134,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2019/05/04 3.31 Babel common definitions
-\babel@savecnt=\count287
-\U@D=\dimen186
+\babel@savecnt=\count312
+\U@D=\dimen292
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count288
+\bbl@dirlevel=\count313
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -866,7 +1173,7 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 )))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count289
+\lrq@indent=\count314
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -878,47 +1185,47 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count290
-\c@listtotal=\count291
-\c@listcount=\count292
-\c@liststart=\count293
-\c@liststop=\count294
-\c@citecount=\count295
-\c@citetotal=\count296
-\c@multicitecount=\count297
-\c@multicitetotal=\count298
-\c@instcount=\count299
-\c@maxnames=\count300
-\c@minnames=\count301
-\c@maxitems=\count302
-\c@minitems=\count303
-\c@citecounter=\count304
-\c@maxcitecounter=\count305
-\c@savedcitecounter=\count306
-\c@uniquelist=\count307
-\c@uniquename=\count308
-\c@refsection=\count309
-\c@refsegment=\count310
-\c@maxextratitle=\count311
-\c@maxextratitleyear=\count312
-\c@maxextraname=\count313
-\c@maxextradate=\count314
-\c@maxextraalpha=\count315
-\c@abbrvpenalty=\count316
-\c@highnamepenalty=\count317
-\c@lownamepenalty=\count318
-\c@maxparens=\count319
-\c@parenlevel=\count320
-\blx@tempcnta=\count321
-\blx@tempcntb=\count322
-\blx@tempcntc=\count323
-\blx@maxsection=\count324
-\blx@maxsegment@0=\count325
-\blx@notetype=\count326
-\blx@parenlevel@text=\count327
-\blx@parenlevel@foot=\count328
-\blx@sectionciteorder@0=\count329
-\blx@entrysetcounter=\count330
+\c@tabx@nest=\count315
+\c@listtotal=\count316
+\c@listcount=\count317
+\c@liststart=\count318
+\c@liststop=\count319
+\c@citecount=\count320
+\c@citetotal=\count321
+\c@multicitecount=\count322
+\c@multicitetotal=\count323
+\c@instcount=\count324
+\c@maxnames=\count325
+\c@minnames=\count326
+\c@maxitems=\count327
+\c@minitems=\count328
+\c@citecounter=\count329
+\c@maxcitecounter=\count330
+\c@savedcitecounter=\count331
+\c@uniquelist=\count332
+\c@uniquename=\count333
+\c@refsection=\count334
+\c@refsegment=\count335
+\c@maxextratitle=\count336
+\c@maxextratitleyear=\count337
+\c@maxextraname=\count338
+\c@maxextradate=\count339
+\c@maxextraalpha=\count340
+\c@abbrvpenalty=\count341
+\c@highnamepenalty=\count342
+\c@lownamepenalty=\count343
+\c@maxparens=\count344
+\c@parenlevel=\count345
+\blx@tempcnta=\count346
+\blx@tempcntb=\count347
+\blx@tempcntc=\count348
+\blx@maxsection=\count349
+\blx@maxsegment@0=\count350
+\blx@notetype=\count351
+\blx@parenlevel@text=\count352
+\blx@parenlevel@foot=\count353
+\blx@sectionciteorder@0=\count354
+\blx@entrysetcounter=\count355
 \labelnumberwidth=\skip66
 \labelalphawidth=\skip67
 \biblabelsep=\skip68
@@ -927,11 +1234,11 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibinitsep=\skip71
 \bibparsep=\skip72
 \bibhang=\skip73
-\blx@bcfin=\read2
-\blx@bcfout=\write3
-\c@mincomprange=\count331
-\c@maxcomprange=\count332
-\c@mincompwidth=\count333
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\c@mincomprange=\count356
+\c@maxcomprange=\count357
+\c@mincompwidth=\count358
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -942,74 +1249,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chem-angew.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count334
-\c@savedafterword=\count335
-\c@annotator=\count336
-\c@savedannotator=\count337
-\c@author=\count338
-\c@savedauthor=\count339
-\c@bookauthor=\count340
-\c@savedbookauthor=\count341
-\c@commentator=\count342
-\c@savedcommentator=\count343
-\c@editor=\count344
-\c@savededitor=\count345
-\c@editora=\count346
-\c@savededitora=\count347
-\c@editorb=\count348
-\c@savededitorb=\count349
-\c@editorc=\count350
-\c@savededitorc=\count351
-\c@foreword=\count352
-\c@savedforeword=\count353
-\c@holder=\count354
-\c@savedholder=\count355
-\c@introduction=\count356
-\c@savedintroduction=\count357
-\c@namea=\count358
-\c@savednamea=\count359
-\c@nameb=\count360
-\c@savednameb=\count361
-\c@namec=\count362
-\c@savednamec=\count363
-\c@translator=\count364
-\c@savedtranslator=\count365
-\c@shortauthor=\count366
-\c@savedshortauthor=\count367
-\c@shorteditor=\count368
-\c@savedshorteditor=\count369
-\c@labelname=\count370
-\c@savedlabelname=\count371
-\c@institution=\count372
-\c@savedinstitution=\count373
-\c@lista=\count374
-\c@savedlista=\count375
-\c@listb=\count376
-\c@savedlistb=\count377
-\c@listc=\count378
-\c@savedlistc=\count379
-\c@listd=\count380
-\c@savedlistd=\count381
-\c@liste=\count382
-\c@savedliste=\count383
-\c@listf=\count384
-\c@savedlistf=\count385
-\c@location=\count386
-\c@savedlocation=\count387
-\c@organization=\count388
-\c@savedorganization=\count389
-\c@origlocation=\count390
-\c@savedoriglocation=\count391
-\c@origpublisher=\count392
-\c@savedorigpublisher=\count393
-\c@publisher=\count394
-\c@savedpublisher=\count395
-\c@language=\count396
-\c@savedlanguage=\count397
-\c@origlanguage=\count398
-\c@savedoriglanguage=\count399
-\c@pageref=\count400
-\c@savedpageref=\count401
+\c@afterword=\count359
+\c@savedafterword=\count360
+\c@annotator=\count361
+\c@savedannotator=\count362
+\c@author=\count363
+\c@savedauthor=\count364
+\c@bookauthor=\count365
+\c@savedbookauthor=\count366
+\c@commentator=\count367
+\c@savedcommentator=\count368
+\c@editor=\count369
+\c@savededitor=\count370
+\c@editora=\count371
+\c@savededitora=\count372
+\c@editorb=\count373
+\c@savededitorb=\count374
+\c@editorc=\count375
+\c@savededitorc=\count376
+\c@foreword=\count377
+\c@savedforeword=\count378
+\c@holder=\count379
+\c@savedholder=\count380
+\c@introduction=\count381
+\c@savedintroduction=\count382
+\c@namea=\count383
+\c@savednamea=\count384
+\c@nameb=\count385
+\c@savednameb=\count386
+\c@namec=\count387
+\c@savednamec=\count388
+\c@translator=\count389
+\c@savedtranslator=\count390
+\c@shortauthor=\count391
+\c@savedshortauthor=\count392
+\c@shorteditor=\count393
+\c@savedshorteditor=\count394
+\c@labelname=\count395
+\c@savedlabelname=\count396
+\c@institution=\count397
+\c@savedinstitution=\count398
+\c@lista=\count399
+\c@savedlista=\count400
+\c@listb=\count401
+\c@savedlistb=\count402
+\c@listc=\count403
+\c@savedlistc=\count404
+\c@listd=\count405
+\c@savedlistd=\count406
+\c@liste=\count407
+\c@savedliste=\count408
+\c@listf=\count409
+\c@savedlistf=\count410
+\c@location=\count411
+\c@savedlocation=\count412
+\c@organization=\count413
+\c@savedorganization=\count414
+\c@origlocation=\count415
+\c@savedoriglocation=\count416
+\c@origpublisher=\count417
+\c@savedorigpublisher=\count418
+\c@publisher=\count419
+\c@savedpublisher=\count420
+\c@language=\count421
+\c@savedlanguage=\count422
+\c@origlanguage=\count423
+\c@savedoriglanguage=\count424
+\c@pageref=\count425
+\c@savedpageref=\count426
 \shorthandwidth=\skip74
 \shortjournalwidth=\skip75
 \shortserieswidth=\skip76
@@ -1035,13 +1342,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
-\c@textcitecount=\count402
-\c@textcitetotal=\count403
-\c@textcitemaxnames=\count404
-\c@biburlnumpenalty=\count405
-\c@biburlucpenalty=\count406
-\c@biburllcpenalty=\count407
-\c@smartand=\count408
+\c@textcitecount=\count427
+\c@textcitetotal=\count428
+\c@textcitemaxnames=\count429
+\c@biburlnumpenalty=\count430
+\c@biburlucpenalty=\count431
+\c@biburllcpenalty=\count432
+\c@smartand=\count433
 )
 Package biblatex Info: Trying to load bibliography style 'chem-angew'...
 Package biblatex Info: ... file 'chem-angew.bbx' found.
@@ -1063,8 +1370,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count409
-\c@bbx:relatedtotal=\count410
+\c@bbx:relatedcount=\count434
+\c@bbx:relatedtotal=\count435
 ))))
 Package biblatex Info: Trying to load citation style 'chem-angew'...
 Package biblatex Info: ... file 'chem-angew.cbx' found.
@@ -1076,8 +1383,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count411
-\c@cbx@tempcntb=\count412
+\c@cbx@tempcnta=\count436
+\c@cbx@tempcntb=\count437
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1098,16 +1405,16 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-\c@theorem=\count413
-\c@definition=\count414
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 60
+\c@theorem=\count438
+\c@definition=\count439
+LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 61
 .
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 60.
+(Font)              scaled to size 12.0pt on input line 61.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1118,8 +1425,8 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count415
-\@quotereset=\count416
+\@quotelevel=\count440
+\@quotereset=\count441
 (./MCM2021 LaTeX paper.aux
 
 LaTeX Warning: Label `eq' multiply defined.
@@ -1130,52 +1437,52 @@ LaTeX Warning: Label `eq' multiply defined.
 )
 \openout1 = `"MCM2021 LaTeX paper.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 60.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 60
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 61.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 61
 .
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 60.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 61.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 61.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 60.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 60
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 61.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 61
 .
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 61.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 6
-0.
+1.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    ... okay on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1211,21 +1518,21 @@ LaTeX Font Info:    ... okay on input line 60.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count417
-\c@mv@boldtabular=\count418
+\c@mv@tabular=\count442
+\c@mv@boldtabular=\count443
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count419
-\scratchdimen=\dimen187
-\scratchbox=\box79
-\nofMPsegments=\count420
-\nofMParguments=\count421
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count422
-\MPscratchDim=\dimen188
-\MPnumerator=\count423
-\makeMPintoPDFobject=\count424
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count444
+\scratchdimen=\dimen293
+\scratchbox=\box90
+\nofMPsegments=\count445
+\nofMParguments=\count446
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count447
+\MPscratchDim=\dimen294
+\MPnumerator=\count448
+\makeMPintoPDFobject=\count449
+\everyMPtoPDFconversion=\toks47
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1249,78 +1556,95 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
+
+ABD: EveryShipout initializing macros
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `"MCM2021 LaTeX paper.bcf"'.
+\openout4 = `"MCM2021 LaTeX paper.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"MCM2021 LaTeX paper".bbl' found.
-
-(./MCM2021 LaTeX paper.bbl)
-Package biblatex Info: Reference section=0 on input line 60.
-Package biblatex Info: Reference segment=0 on input line 60.
+ (./MCM2021 LaTeX paper.bbl)
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 7
-0.
+1.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 70.
+(Font)              scaled to size 12.0pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 70.
+(Font)              scaled to size 8.8pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 70.
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+(Font)              scaled to size 6.6pt on input line 71.
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 70.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 71.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 70.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 71.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 70.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 71.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <12> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 70.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 70.
+(Font)              scaled to size 12.0pt on input line 71.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 70.
+(Font)              scaled to size 17.28pt on input line 71.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 85.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 85.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 20.74pt on input line 87.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.5pt on input line 87.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.9pt on input line 87.
 
-(./MCM2021 LaTeX paper.toc)
-\tf@toc=\write4
-\openout4 = `"MCM2021 LaTeX paper.toc"'.
+
+LaTeX Warning: No \author given.
+
+[2
+
+]
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 90.
+ (./MCM2021 LaTeX paper.toc)
+\tf@toc=\write5
+\openout5 = `"MCM2021 LaTeX paper.toc"'.
 
  (./MCM2021 LaTeX paper.lot)
-\tf@lot=\write5
-\openout5 = `"MCM2021 LaTeX paper.lot"'.
+\tf@lot=\write6
+\openout6 = `"MCM2021 LaTeX paper.lot"'.
 
 
 (./MCM2021 LaTeX paper.lof
@@ -1328,20 +1652,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--18
  [][] []\T1/ntxtlf/m/n/12 Average to-tal de-com-po-si-tion 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ [][] []\T1/ntxtlf/m/n/12 Decomposition con-tri-bu-tion 
+ []
+
 )
-\tf@lof=\write6
-\openout6 = `"MCM2021 LaTeX paper.lof"'.
+\tf@lof=\write7
+\openout7 = `"MCM2021 LaTeX paper.lof"'.
 
- [2
-
-]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 108.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 108.
-
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 108.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1349,38 +1668,38 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[1]
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 128.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 128.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.9pt on input line 128.
+[3]
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 112.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 112.
+ [1]
 LaTeX Font Info:    Try loading font information for T1+ntxsups on input line 1
-29.
+33.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxsups.fd
 File: t1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 12.0pt on input line 129.
+(Font)              scaled to size 12.0pt on input line 133.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 129.
+(Font)              scaled to size 10.0pt on input line 133.
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 129.
+(Font)              scaled to size 10.0pt on input line 133.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 129.
+(Font)              scaled to size 10.0pt on input line 133.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 129.
+(Font)              scaled to size 7.3pt on input line 133.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 129.
+(Font)              scaled to size 5.5pt on input line 133.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 2 might be wrong on input line 150.
+(multicol)                Footnotes on page 2 might be wrong on input line 154.
 
 
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
 
  []
 
@@ -1393,113 +1712,107 @@ Overfull \vbox (22.8677pt too high) has occurred while \output is active []
 
 [5]
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
-85.
+89.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 285.
+(Font)              scaled to size 12.0pt on input line 289.
  [6]
 [7]
-<biomass_growth_no_Cterm.png, id=41, 1126.2075pt x 843.15pt>
+<biomass_growth_no_Cterm.png, id=47, 1126.2075pt x 843.15pt>
 File: biomass_growth_no_Cterm.png Graphic file (type png)
 <use biomass_growth_no_Cterm.png>
-Package pdftex.def Info: biomass_growth_no_Cterm.png  used on input line 354.
+Package pdftex.def Info: biomass_growth_no_Cterm.png  used on input line 358.
 (pdftex.def)             Requested size: 243.91125pt x 182.59885pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 355.
-<biomass_growth_Cterm.png, id=42, 1126.2075pt x 841.1425pt>
+(Font)              scaled to size 10.95pt on input line 359.
+<biomass_growth_Cterm.png, id=48, 1126.2075pt x 841.1425pt>
 File: biomass_growth_Cterm.png Graphic file (type png)
 <use biomass_growth_Cterm.png>
-Package pdftex.def Info: biomass_growth_Cterm.png  used on input line 359.
+Package pdftex.def Info: biomass_growth_Cterm.png  used on input line 363.
 (pdftex.def)             Requested size: 243.91125pt x 182.1641pt.
-<direct_compare_decom_environment.png, id=43, 1126.2075pt x 841.1425pt>
+<direct_compare_decom_environment.png, id=49, 1126.2075pt x 841.1425pt>
 File: direct_compare_decom_environment.png Graphic file (type png)
 <use direct_compare_decom_environment.png>
 Package pdftex.def Info: direct_compare_decom_environment.png  used on input li
-ne 380.
+ne 384.
 (pdftex.def)             Requested size: 487.82251pt x 364.34103pt.
  [8 <./biomass_growth_no_Cterm.png (PNG copy)> <./biomass_growth_Cterm.png (PNG
  copy)>]
-<avg_contr_nu_competative_rankings.png, id=47, 829.0975pt x 642.4pt>
+<avg_contr_nu_competative_rankings.png, id=53, 829.0975pt x 642.4pt>
 File: avg_contr_nu_competative_rankings.png Graphic file (type png)
 <use avg_contr_nu_competative_rankings.png>
 Package pdftex.def Info: avg_contr_nu_competative_rankings.png  used on input l
-ine 394.
+ine 398.
 (pdftex.def)             Requested size: 238.91125pt x 185.10516pt.
  [9 <./direct_compare_decom_environment.png (PNG copy)> <./avg_contr_nu_competa
 tive_rankings.png (PNG copy)>]
-<avg_contr_nu_environment.png, id=53, 1614.03pt x 911.405pt>
+<avg_contr_nu_environment.png, id=59, 1614.03pt x 911.405pt>
 File: avg_contr_nu_environment.png Graphic file (type png)
 <use avg_contr_nu_environment.png>
-Package pdftex.def Info: avg_contr_nu_environment.png  used on input line 402.
+Package pdftex.def Info: avg_contr_nu_environment.png  used on input line 406.
 (pdftex.def)             Requested size: 487.82251pt x 275.45401pt.
  [10 <./avg_contr_nu_environment.png (PNG copy)>]
-<oscillating_psi_contribution.png, id=57, 1126.2075pt x 841.1425pt>
+<oscillating_psi_contribution.png, id=64, 1126.2075pt x 841.1425pt>
 File: oscillating_psi_contribution.png Graphic file (type png)
 <use oscillating_psi_contribution.png>
 Package pdftex.def Info: oscillating_psi_contribution.png  used on input line 4
-21.
+25.
 (pdftex.def)             Requested size: 238.91125pt x 178.42917pt.
-<oscillating_psi_nu.png, id=58, 1126.2075pt x 843.15pt>
+<oscillating_psi_nu.png, id=65, 1126.2075pt x 843.15pt>
 File: oscillating_psi_nu.png Graphic file (type png)
 <use oscillating_psi_nu.png>
-Package pdftex.def Info: oscillating_psi_nu.png  used on input line 427.
+Package pdftex.def Info: oscillating_psi_nu.png  used on input line 431.
 (pdftex.def)             Requested size: 238.91125pt x 178.85501pt.
  [11 <./oscillating_psi_contribution.png (PNG copy)> <./oscillating_psi_nu.png 
 (PNG copy)>]
-<carbon_decrease_fungi_distribution.png, id=63, 786.94pt x 698.61pt>
+<carbon_decrease_fungi_distribution.png, id=69, 786.94pt x 698.61pt>
 File: carbon_decrease_fungi_distribution.png Graphic file (type png)
 <use carbon_decrease_fungi_distribution.png>
 Package pdftex.def Info: carbon_decrease_fungi_distribution.png  used on input 
-line 443.
+line 447.
 (pdftex.def)             Requested size: 238.91125pt x 212.08969pt.
  [12 <./carbon_decrease_fungi_distribution.png (PNG copy)>]
-<a-competative-distribution-coef_to_avg_Clost.png, id=67, 1126.2075pt x 841.142
+<a-competative-distribution-coef_to_avg_Clost.png, id=73, 1126.2075pt x 841.142
 5pt>
 File: a-competative-distribution-coef_to_avg_Clost.png Graphic file (type png)
 <use a-competative-distribution-coef_to_avg_Clost.png>
 Package pdftex.def Info: a-competative-distribution-coef_to_avg_Clost.png  used
- on input line 452.
+ on input line 456.
 (pdftex.def)             Requested size: 487.82251pt x 364.34103pt.
  [13 <./a-competative-distribution-coef_to_avg_Clost.png (PNG copy)>]
 [14] [15]
 
-LaTeX Warning: Citation 'Davey2007' on page 16 undefined on input line 555.
+LaTeX Warning: Citation 'Davey2007' on page 16 undefined on input line 559.
 
 [16]
-<contributions_over_time(rainbowspaghetti).png, id=80, 829.0975pt x 702.625pt>
+<contributions_over_time(rainbowspaghetti).png, id=87, 829.0975pt x 702.625pt>
 File: contributions_over_time(rainbowspaghetti).png Graphic file (type png)
 <use contributions_over_time(rainbowspaghetti).png>
 Package pdftex.def Info: contributions_over_time(rainbowspaghetti).png  used on
- input line 635.
+ input line 639.
 (pdftex.def)             Requested size: 292.69647pt x 248.04523pt.
-<rho_growth_no_Cterm.png, id=81, 1126.2075pt x 841.1425pt>
+<rho_growth_no_Cterm.png, id=88, 1126.2075pt x 841.1425pt>
 File: rho_growth_no_Cterm.png Graphic file (type png)
 <use rho_growth_no_Cterm.png>
-Package pdftex.def Info: rho_growth_no_Cterm.png  used on input line 640.
+Package pdftex.def Info: rho_growth_no_Cterm.png  used on input line 644.
 (pdftex.def)             Requested size: 487.82251pt x 364.34103pt.
  [17 <./contributions_over_time(rainbowspaghetti).png (PNG copy)>] [18 <./rho_g
-rowth_no_Cterm.png (PNG copy)>]
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 19 might be wrong on input line 664
-.
-
-[19]
+rowth_no_Cterm.png (PNG copy)>] [19]
 File: avg_contr_nu_competative_rankings.png Graphic file (type png)
 <use avg_contr_nu_competative_rankings.png>
 Package pdftex.def Info: avg_contr_nu_competative_rankings.png  used on input l
-ine 668.
-(pdftex.def)             Requested size: 238.91125pt x 185.10516pt.
+ine 671.
+(pdftex.def)             Requested size: 487.82251pt x 377.97368pt.
  [20]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 673.
+(Font)              scaled to size 12.0pt on input line 676.
  [21]
 ! Missing { inserted.
 <to be read again> 
                    $
-l.674 \end
+l.677 \end
           {document}
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1509,7 +1822,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.674 \end
+l.677 \end
           {document}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1534,13 +1847,13 @@ Package logreq Info: Writing requests to '"MCM2021 LaTeX paper".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25224 strings out of 492616
- 451560 string characters out of 6129482
- 939745 words of memory out of 5000000
- 28785 multiletter control sequences out of 15000+600000
- 616694 words of font info for 176 fonts, out of 8000000 for 9000
+ 35327 strings out of 492616
+ 673716 string characters out of 6129482
+ 1130864 words of memory out of 5000000
+ 38663 multiletter control sequences out of 15000+600000
+ 619502 words of font info for 177 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,13n,92p,2712b,1704s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,13n,92p,2712b,1708s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/us
 r/local/texlive/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/
 texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/local/texli
@@ -1556,10 +1869,10 @@ usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2019/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "MCM2021 LaTeX paper.pdf" (24 pages, 1120541 bytes).
+Output written on "MCM2021 LaTeX paper.pdf" (25 pages, 1120679 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 153 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

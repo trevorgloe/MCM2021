@@ -49,6 +49,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Short-Term Environmental Fluctuations}{11}% 
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Distribution of relative concentration of fungi}{11}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Limitations}{13}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1}Growth Coupling}{13}% 
